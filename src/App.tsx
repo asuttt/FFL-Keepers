@@ -7,6 +7,7 @@ import {
   ChevronRight,
   Copyright,
   Grid2X2,
+  Search,
   Shield,
   Sparkles,
   X,
@@ -21,6 +22,16 @@ type DraftPick = {
   player: string;
   nflTeam: string;
   pos: Position;
+};
+
+type RankingEntry = {
+  keeper_rank: string;
+  source_rank: string;
+  player: string;
+  team: string;
+  pos: Position;
+  pos_rank: string;
+  source_date: string;
 };
 
 type TeamSummary = {
@@ -43,12 +54,20 @@ type DraftData = {
 
 type DraftDataState = {
   data: DraftData | null;
+  rankings: RankingEntry[] | null;
   loading: boolean;
   error: string | null;
 };
 
-type PickerRecommendation = DraftPick & {
-  grade: 'Elite' | 'Strong' | 'Viable' | 'Pass';
+type KeeperEvaluation = DraftPick & {
+  ranking: RankingEntry | null;
+  sourceRank: number | null;
+  sourceTier: number | null;
+  keeperScore: number;
+  keeperCost: number;
+  keeperValue: number | null;
+  keeperCostValue: number;
+  sourceValue: number | null;
   why: string;
 };
 
@@ -78,6 +97,7 @@ function useDraftData() {
 function DraftDataProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<DraftDataState>({
     data: null,
+    rankings: null,
     loading: true,
     error: null,
   });
@@ -87,18 +107,30 @@ function DraftDataProvider({ children }: { children: ReactNode }) {
 
     async function load() {
       try {
-        const response = await fetch('/draft-data.json', { signal: controller.signal });
-        if (!response.ok) {
-          throw new Error(`Failed to load draft-data.json (${response.status})`);
+        const [draftResponse, rankingsResponse] = await Promise.all([
+          fetch('/draft-data.json', { signal: controller.signal }),
+          fetch('/espn-rankings-2026.json', { signal: controller.signal }),
+        ]);
+
+        if (!draftResponse.ok) {
+          throw new Error(`Failed to load draft-data.json (${draftResponse.status})`);
         }
-        const json = (await response.json()) as DraftData;
-        setState({ data: json, loading: false, error: null });
+        if (!rankingsResponse.ok) {
+          throw new Error(`Failed to load espn-rankings-2026.json (${rankingsResponse.status})`);
+        }
+
+        const [draftJson, rankingsJson] = await Promise.all([
+          draftResponse.json() as Promise<DraftData>,
+          rankingsResponse.json() as Promise<RankingEntry[]>,
+        ]);
+
+        setState({ data: draftJson, rankings: rankingsJson, loading: false, error: null });
       } catch (error) {
         if (controller.signal.aborted) {
           return;
         }
         const message = error instanceof Error ? error.message : 'Unable to load draft data';
-        setState({ data: null, loading: false, error: message });
+        setState({ data: null, rankings: null, loading: false, error: message });
       }
     }
 
@@ -128,39 +160,97 @@ function teamFromSlug(data: DraftData | null, slug?: string) {
   return data.teams.find((team) => slugify(team.name) === slug) ?? null;
 }
 
-function hashString(value: string) {
-  let hash = 0;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 31 + value.charCodeAt(i)) | 0;
+function normalizePlayerName(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+function rankingLookup(rankings: RankingEntry[] | null) {
+  return new Map((rankings ?? []).map((entry) => [normalizePlayerName(entry.player), entry]));
+}
+
+function parsePositionRank(value: string) {
+  const match = value.match(/(\d+)$/);
+  return match ? Number(match[1]) : null;
+}
+
+function evaluatePick(pick: DraftPick, ranking: RankingEntry | null): KeeperEvaluation {
+  if (!ranking) {
+    return {
+      ...pick,
+      ranking: null,
+      sourceRank: null,
+      sourceTier: null,
+      keeperScore: 1,
+      keeperValue: null,
+      keeperCostValue: draftValueScore(pick.round),
+      keeperCost: pick.round,
+      why: 'Not found in the 2026 ESPN rankings, so not recommended as a keeper.',
+    };
   }
-  return Math.abs(hash);
-}
 
-function gradeFromRound(round: number): PickerRecommendation['grade'] {
-  if (round <= 3) return 'Elite';
-  if (round <= 6) return 'Strong';
-  if (round <= 10) return 'Viable';
-  return 'Pass';
-}
+  const sourceRank = Number(ranking.source_rank);
+  const sourceTier = Math.ceil(sourceRank / 10);
+  const sourceValue = rankValueScore(sourceRank);
+  const keeperCostValue = draftValueScore(pick.round);
+  const positionValue = scarcityValue(ranking.pos, ranking.pos_rank);
+  const positionRank = parsePositionRank(ranking.pos_rank) ?? 999;
+  let keeperScore = sourceValue * 0.45 + keeperCostValue * 0.35 + positionValue * 0.2;
 
-function roundBand(round: number) {
-  if (round <= 5) return 'early';
-  if (round <= 10) return 'mid';
-  return 'late';
-}
-
-function tempRecommendationForTeam(team: string, picks: DraftPick[]) {
-  const teamPicks = picks.filter((pick) => pick.team === team);
-  if (!teamPicks.length) {
-    return null;
+  if (ranking.pos === 'QB' && positionRank > 5) {
+    keeperScore = Math.min(keeperScore, 3.5);
   }
-  const index = hashString(team) % teamPicks.length;
-  const pick = teamPicks[index];
+  if (ranking.pos === 'TE' && positionRank > 5) {
+    keeperScore = Math.min(keeperScore, 5.8);
+  }
+  if (ranking.pos === 'K' || ranking.pos === 'D/ST') {
+    keeperScore = Math.min(keeperScore, 2.5);
+  }
+
+  keeperScore = clampScore(keeperScore);
   return {
     ...pick,
-    grade: gradeFromRound(pick.round),
-    why: 'Temporary placeholder rec. Real summer rankings will replace this logic later.',
-  } satisfies PickerRecommendation;
+    ranking,
+    sourceRank,
+    sourceTier,
+    keeperScore,
+    keeperCost: pick.round,
+    keeperValue: sourceValue,
+    keeperCostValue,
+    sourceValue,
+    why: `ESPN ranks ${ranking.player} at #${sourceRank} overall, with round cost and light positional scarcity folded into a ${keeperScore.toFixed(1)} Keeper Score.`,
+  };
+}
+
+function clampScore(value: number) {
+  return Math.min(10, Math.max(1, Math.round(value * 10) / 10));
+}
+
+function rankValueScore(sourceRank: number) {
+  return 10 - ((sourceRank - 1) / 159) * 9;
+}
+
+function draftValueScore(round: number) {
+  return ((round - 1) / 14) * 9 + 1;
+}
+
+function scarcityValue(pos: Position, posRank: string) {
+  const positionRank = parsePositionRank(posRank) ?? 999;
+  switch (pos) {
+    case 'RB':
+      return positionRank <= 12 ? 9.6 : positionRank <= 24 ? 9.1 : 8.4;
+    case 'WR':
+      return positionRank <= 12 ? 9.0 : positionRank <= 24 ? 8.4 : 7.7;
+    case 'TE':
+      return positionRank <= 5 ? 9.7 : positionRank <= 10 ? 8.6 : 7.0;
+    case 'QB':
+      return positionRank <= 5 ? 8.6 : 4.0;
+    case 'K':
+      return 2.1;
+    case 'D/ST':
+      return 2.0;
+    default:
+      return 6.0;
+  }
 }
 
 function positionTone(pos: Position) {
@@ -182,48 +272,16 @@ function positionTone(pos: Position) {
   }
 }
 
-function gradeTone(grade: PickerRecommendation['grade']) {
-  switch (grade) {
-    case 'Elite':
-      return 'elite';
-    case 'Strong':
-      return 'strong';
-    case 'Viable':
-      return 'viable';
-    case 'Pass':
-      return 'pass';
-    default:
-      return 'viable';
-  }
-}
-
-function value2026ForPick(pick: DraftPick) {
-  const roundCurve = 98 - (pick.round - 1) * 4.8;
-  const positionBoost: Record<Position, number> = {
-    QB: -3,
-    RB: 4,
-    WR: 3,
-    TE: 1,
-    K: -9,
-    'D/ST': -7,
-  };
-  const noise = (hashString(`${pick.player}-${pick.team}`) % 7) - 3;
-  return Math.max(20, Math.min(99, Math.round(roundCurve + positionBoost[pick.pos] + noise)));
-}
-
-function draftCostValue(round: number) {
-  return Math.max(20, Math.round(98 - (round - 1) * 5.2));
-}
-
-function deltaForPick(pick: DraftPick) {
-  return value2026ForPick(pick) - draftCostValue(pick.round);
-}
-
-function deltaTone(delta: number) {
-  if (delta >= 12) return 'elite';
-  if (delta >= 6) return 'strong';
-  if (delta >= 0) return 'viable';
+function scoreTone(score: number) {
+  if (score >= 8.5) return 'elite';
+  if (score >= 7.4) return 'strong';
+  if (score >= 6.0) return 'viable';
   return 'pass';
+}
+
+function scoreToneFromValue(score: number | null) {
+  if (score === null) return 'pass';
+  return scoreTone(score);
 }
 
 function NavLink({
@@ -330,20 +388,12 @@ function PositionPill({ pos }: { pos: Position }) {
   return <span className={cn('pill', `pill--${positionTone(pos)}`)}>{pos}</span>;
 }
 
-function GradePill({ grade }: { grade: PickerRecommendation['grade'] }) {
-  return <span className={cn('pill', `pill--${gradeTone(grade)}`)}>{grade}</span>;
+function ScorePill({ score }: { score: number | null }) {
+  return <span className={cn('pill', `pill--${scoreToneFromValue(score)}`)}>{score === null ? 'NR' : score.toFixed(1)}</span>;
 }
 
 function TeamBadge({ team }: { team: string }) {
   return <span className={cn('pill', `pill--${teamColors[team] ?? 'slate'}`)}>{team}</span>;
-}
-
-function ValuePill({ value }: { value: number }) {
-  return <span className="pill pill--value">{value}</span>;
-}
-
-function DeltaPill({ delta }: { delta: number }) {
-  return <span className={cn('pill', `pill--${deltaTone(delta)}`)}>{delta >= 0 ? `+${delta}` : delta}</span>;
 }
 
 function PlayerWithSuffix({
@@ -369,14 +419,25 @@ function PlayerWithSuffix({
   );
 }
 
-function RecommendationCell({ rec }: { rec: PickerRecommendation }) {
+function RecommendationCell({ rec }: { rec: KeeperEvaluation }) {
   return <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
+}
+
+function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>) {
+  return picks
+    .filter((pick) => pick.team === team)
+    .map((pick) => evaluatePick(pick, rankings.get(normalizePlayerName(pick.player)) ?? null))
+    .sort((a, b) => b.keeperScore - a.keeperScore || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
+}
+
+function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>) {
+  return evaluateTeam(team, picks, rankings)[0] ?? null;
 }
 
 function DashboardTable({
   rows,
 }: {
-  rows: PickerRecommendation[];
+  rows: KeeperEvaluation[];
 }) {
   return (
     <div className="table-shell">
@@ -386,13 +447,11 @@ function DashboardTable({
             <th>Team</th>
             <th>Keeper rec</th>
             <th>Rnd</th>
-            <th>Val</th>
-            <th>Δ</th>
+            <th>Keeper score</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((rec) => {
-            const delta = deltaForPick(rec);
             return (
               <tr key={rec.team} className="keeper-table__row">
                 <td className="keeper-table__team">
@@ -404,10 +463,7 @@ function DashboardTable({
                 <td className="keeper-table__rec">{<RecommendationCell rec={rec} />}</td>
                 <td className="keeper-table__round">R{rec.round}</td>
                 <td className="keeper-table__value">
-                  <ValuePill value={value2026ForPick(rec)} />
-                </td>
-                <td className="keeper-table__delta">
-                  <DeltaPill delta={delta} />
+                  <ScorePill score={rec.keeperScore} />
                 </td>
               </tr>
             );
@@ -419,7 +475,7 @@ function DashboardTable({
 }
 
 function DashboardPage() {
-  const { data, loading, error } = useDraftData();
+  const { data, rankings, loading, error } = useDraftData();
 
   if (loading) {
     return (
@@ -462,15 +518,16 @@ function DashboardPage() {
     );
   }
 
+  const rankingMap = rankingLookup(rankings);
   const recs = data.teams
-    .map((team) => tempRecommendationForTeam(team.name, data.picks))
-    .filter(Boolean) as PickerRecommendation[];
+    .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap))
+    .filter(Boolean) as KeeperEvaluation[];
 
   return (
     <div className="page-stack">
       <SectionIntro
         title="Best keeper picks, team by team"
-        description="One recommendation per team. Click any team name to jump into roster breakdown"
+        description="One recommendation per team, ranked by exact ESPN value against that draft slot. Click any team name to jump into roster breakdown."
       />
       <DashboardTable rows={recs} />
     </div>
@@ -561,7 +618,7 @@ function TeamPickerModal({
 }
 
 function TeamPage() {
-  const { data, loading, error } = useDraftData();
+  const { data, rankings, loading, error } = useDraftData();
   const params = useParams();
   const navigate = useNavigate();
   const [selectorOpen, setSelectorOpen] = useState(false);
@@ -580,16 +637,9 @@ function TeamPage() {
     return <Navigate to="/" replace />;
   }
 
-  const teamPicks = data.picks.filter((pick) => pick.team === team.name);
-  const recommendation = tempRecommendationForTeam(team.name, data.picks);
-  const rankedPicks = [...teamPicks]
-    .map((pick) => ({
-      pick,
-      value: value2026ForPick(pick),
-      delta: deltaForPick(pick),
-      grade: gradeFromRound(pick.round),
-    }))
-    .sort((a, b) => b.delta - a.delta);
+  const rankingMap = rankingLookup(rankings);
+  const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap);
+  const recommendation = rankedPicks[0] ?? null;
 
   return (
     <div className="page-stack">
@@ -598,7 +648,7 @@ function TeamPage() {
       <section className="hero-card hero-card--stacked">
         <div className="hero-copy">
           <h1>{team.name}</h1>
-          <p>Inspect the roster built from last year&apos;s draft. The recommendation slot is still temporary, but the layout is ready for the real keeper logic.</p>
+          <p>Inspect the roster built from last year&apos;s draft. It is now sorted by our exact ESPN keeper value so the best candidates rise to the top.</p>
         </div>
 
         <div className="hero-actions">
@@ -614,25 +664,25 @@ function TeamPage() {
 
       <section className="panel team-spotlight">
         <div className="spotlight-copy">
-          <div className="team-card__eyebrow">Temporary keeper anchor</div>
-          <h2>{recommendation?.player ?? 'No recommendation yet'}</h2>
+          <div className="team-card__eyebrow">Top keeper anchor</div>
+          <h2>{recommendation?.player ?? 'No ranked keeper yet'}</h2>
           <div className="pill-row">
             {recommendation ? (
               <>
                 <PositionPill pos={recommendation.pos} />
                 <TeamBadge team={recommendation.nflTeam} />
-                <GradePill grade={recommendation.grade} />
+                <ScorePill score={recommendation.keeperScore} />
               </>
             ) : null}
           </div>
           <p>{recommendation?.why ?? 'No recommendation available yet.'}</p>
         </div>
         <div className="meter-card">
-          <div className="meter-card__label">Placeholder confidence</div>
+          <div className="meter-card__label">Keeper score</div>
           <div className="meter">
-            <span className={cn('meter__fill', recommendation && `meter__fill--${gradeTone(recommendation.grade)}`)} />
+            <span className={cn('meter__fill', recommendation && `meter__fill--${scoreTone(recommendation.keeperScore)}`)} />
           </div>
-          <small>Real summer rankings will drive this later.</small>
+          <small>Weighted from ESPN rank, keeper cost, and positional scarcity.</small>
         </div>
       </section>
 
@@ -642,7 +692,7 @@ function TeamPage() {
             <div className="team-card__eyebrow">Draft history</div>
             <h2>Keeper ranking list</h2>
           </div>
-          <span className="status-chip status-chip--soft">Sorted by temporary delta</span>
+          <span className="status-chip status-chip--soft">Sorted by keeper score</span>
         </div>
 
         <div className="table-shell">
@@ -651,21 +701,21 @@ function TeamPage() {
               <tr>
                 <th>Player</th>
                 <th>Rnd</th>
-                <th>Val</th>
-                <th>Δ</th>
+                <th>Keeper score</th>
               </tr>
             </thead>
             <tbody>
-              {rankedPicks.map(({ pick, value, delta, grade }) => {
-                const isRecommendation = recommendation?.pick === pick.pick;
+              {rankedPicks.map((rec) => {
+                const isRecommendation = recommendation?.pick === rec.pick;
                 return (
-                  <tr key={pick.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
+                  <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
                     <td className="keeper-table__player">
-                      <PlayerWithSuffix player={pick.player} nflTeam={pick.nflTeam} pos={pick.pos} />
+                      <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} />
                     </td>
-                    <td className="keeper-table__round">R{pick.round}</td>
-                    <td><ValuePill value={value} /></td>
-                    <td><DeltaPill delta={delta} /></td>
+                    <td className="keeper-table__round">R{rec.round}</td>
+                    <td>
+                      <ScorePill score={rec.keeperScore} />
+                    </td>
                   </tr>
                 );
               })}
@@ -695,7 +745,7 @@ function ErrorPanel({ message }: { message: string }) {
 }
 
 function DraftBoardPage() {
-  const { data, loading, error } = useDraftData();
+  const { data, rankings, loading, error } = useDraftData();
 
   if (loading) {
     return <LoadingPanel title="Loading draft board..." />;
@@ -710,12 +760,18 @@ function DraftBoardPage() {
   );
   const snakeRows = byRound.map((roundPicks, index) => (index % 2 === 0 ? roundPicks : [...roundPicks].reverse()));
   const draftOrderTeams = [...byRound[0]].sort((a, b) => a.pick - b.pick);
-  const recs = new Set(data.teams.map((team) => tempRecommendationForTeam(team.name, data.picks)?.pick).filter(Boolean));
+  const rankingMap = rankingLookup(rankings);
+  const recs = new Set(
+    data.teams
+      .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap)?.pick)
+      .filter((pick): pick is number => typeof pick === 'number'),
+  );
 
   return (
     <div className="page-stack">
       <SectionIntro
         title="2025 Draft Board"
+        description="Snake-format draft board from last season, used as the keeper cost baseline."
       />
 
       <section className="panel">

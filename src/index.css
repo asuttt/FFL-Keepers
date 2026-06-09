@@ -788,8 +788,7 @@ a {
 
 .keeper-table__team,
 .keeper-table__round,
-.keeper-table__value,
-.keeper-table__delta {
+.keeper-table__value {
   text-align: center;
 }
 
@@ -862,13 +861,27 @@ a {
 }
 
 .keeper-table__round,
-.keeper-table__value,
-.keeper-table__delta {
+.keeper-table__value {
   font-weight: 800;
 }
 
 .keeper-table__round {
   color: hsl(var(--muted-foreground));
+}
+
+.rank-cell {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+}
+
+.rank-cell__sub {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .player-line {
@@ -930,19 +943,13 @@ a {
 
 .keeper-table--league th:nth-child(4),
 .keeper-table--league td:nth-child(4) {
-  width: 12%;
-  text-align: center;
-}
-
-.keeper-table--league th:nth-child(5),
-.keeper-table--league td:nth-child(5) {
-  width: 16%;
+  width: 28%;
   text-align: center;
 }
 
 .keeper-table--drilldown th:nth-child(1),
 .keeper-table--drilldown td:nth-child(1) {
-  width: 52%;
+  width: 58%;
 }
 
 .keeper-table--drilldown th:nth-child(2),
@@ -952,12 +959,7 @@ a {
 
 .keeper-table--drilldown th:nth-child(3),
 .keeper-table--drilldown td:nth-child(3) {
-  width: 16%;
-}
-
-.keeper-table--drilldown th:nth-child(4),
-.keeper-table--drilldown td:nth-child(4) {
-  width: 16%;
+  width: 26%;
 }
 
 .team-spotlight {
