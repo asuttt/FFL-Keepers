@@ -74,6 +74,38 @@ type KeeperEvaluation = DraftPick & {
 
 type SourceRow = RankingEntry & {
   pointsPpr: number | null;
+  player_id?: number | null;
+  player_square_image_url?: string | null;
+  player_image_url?: string | null;
+  player_page_url?: string | null;
+  player_bye_week?: string | null;
+  player_owned_avg?: number | null;
+  player_owned_espn?: number | null;
+  player_owned_yahoo?: number | null;
+  player_ecr_delta?: number | null;
+  rank_ave?: string | null;
+  rank_min?: string | null;
+  rank_max?: string | null;
+  rank_std?: string | null;
+  tier?: number | null;
+  projectionPassYds?: number | null;
+  projectionPassTds?: number | null;
+  projectionRushAtt?: number | null;
+  projectionRushYds?: number | null;
+  projectionRushTds?: number | null;
+  projectionRecRec?: number | null;
+  projectionRecYds?: number | null;
+  projectionRecTds?: number | null;
+  projectionFga?: number | null;
+  projectionFg?: number | null;
+  projectionXpt?: number | null;
+  projectionDefSack?: number | null;
+  projectionDefInt?: number | null;
+  projectionDefTd?: number | null;
+  projectionDefSafety?: number | null;
+  projectionDefFf?: number | null;
+  projectionDefFr?: number | null;
+  projectionDefRetd?: number | null;
 };
 
 const teamColors: Record<string, string> = {
@@ -234,6 +266,38 @@ function normalizeSourceRows(rankings: RankingEntry[], pointsPprByPlayer: Map<st
   return rankings.map((entry) => ({
     ...entry,
     pointsPpr: pointsPprByPlayer.get(normalizePlayerName(entry.player)) ?? null,
+    player_id: null,
+    player_square_image_url: null,
+    player_image_url: null,
+    player_page_url: null,
+    player_bye_week: null,
+    player_owned_avg: null,
+    player_owned_espn: null,
+    player_owned_yahoo: null,
+    player_ecr_delta: null,
+    rank_ave: null,
+    rank_min: null,
+    rank_max: null,
+    rank_std: null,
+    tier: null,
+    projectionPassYds: null,
+    projectionPassTds: null,
+    projectionRushAtt: null,
+    projectionRushYds: null,
+    projectionRushTds: null,
+    projectionRecRec: null,
+    projectionRecYds: null,
+    projectionRecTds: null,
+    projectionFga: null,
+    projectionFg: null,
+    projectionXpt: null,
+    projectionDefSack: null,
+    projectionDefInt: null,
+    projectionDefTd: null,
+    projectionDefSafety: null,
+    projectionDefFf: null,
+    projectionDefFr: null,
+    projectionDefRetd: null,
   }));
 }
 

@@ -1,463 +1,472 @@
-keeper_rank,source_rank,player,team,pos,pos_rank,pointsPpr,source_date
-1,1,Ja'Marr Chase,CIN,WR,WR1,338.99,2026-06-09
-2,2,Puka Nacua,LAR,WR,WR2,365.21,2026-06-09
-3,3,Bijan Robinson,ATL,RB,RB1,373.3,2026-06-09
-4,4,Jaxon Smith-Njigba,SEA,WR,WR3,352.37,2026-06-09
-5,5,Jahmyr Gibbs,DET,RB,RB2,372.88,2026-06-09
-6,6,Amon-Ra St. Brown,DET,WR,WR4,321.08,2026-06-09
-7,7,Christian McCaffrey,SF,RB,RB3,324.89,2026-06-09
-8,8,CeeDee Lamb,DAL,WR,WR5,284.16,2026-06-09
-9,9,Justin Jefferson,MIN,WR,WR6,271.66,2026-06-09
-10,10,Jonathan Taylor,IND,RB,RB4,323.15,2026-06-09
-11,11,Drake London,ATL,WR,WR7,298.99,2026-06-09
-12,12,Nico Collins,HOU,WR,WR8,254.15,2026-06-09
-13,13,De'Von Achane,MIA,RB,RB5,306.68,2026-06-09
-14,14,Ashton Jeanty,LV,RB,RB6,281.14,2026-06-09
-15,15,A.J. Brown,NE,WR,WR9,264.45,2026-06-09
-16,16,Chris Olave,NO,WR,WR10,262.75,2026-06-09
-17,17,Trey McBride,ARI,TE,TE1,261.01,2026-06-09
-18,18,George Pickens,DAL,WR,WR11,265.91,2026-06-09
-19,19,Chase Brown,CIN,RB,RB7,286.3,2026-06-09
-20,20,Brock Bowers,LV,TE,TE2,238.85,2026-06-09
-21,21,James Cook III,BUF,RB,RB8,270.15,2026-06-09
-22,22,Rashee Rice,KC,WR,WR12,284.84,2026-06-09
-23,23,Malik Nabers,NYG,WR,WR13,220.91,2026-06-09
-24,24,Josh Allen,BUF,QB,QB1,374.75,2026-06-09
-25,25,Omarion Hampton,LAC,RB,RB9,262.26,2026-06-09
-26,26,Tetairoa McMillan,CAR,WR,WR14,228.53,2026-06-09
-27,27,Saquon Barkley,PHI,RB,RB10,268.32,2026-06-09
-28,28,Garrett Wilson,NYJ,WR,WR15,246.03,2026-06-09
-29,29,DeVonta Smith,PHI,WR,WR16,239.39,2026-06-09
-30,30,Lamar Jackson,BAL,QB,QB2,327.7,2026-06-09
-31,31,Kenneth Walker III,KC,RB,RB11,248.21,2026-06-09
-32,32,Drake Maye,NE,QB,QB3,328.9,2026-06-09
-33,33,Ladd McConkey,LAC,WR,WR17,215.18,2026-06-09
-34,34,Tee Higgins,CIN,WR,WR18,230.44,2026-06-09
-35,35,Colston Loveland,CHI,TE,TE3,217.04,2026-06-09
-36,36,Jeremiyah Love,ARI,RB,RB12,255.63,2026-06-09
-37,37,Zay Flowers,BAL,WR,WR19,250.52,2026-06-09
-38,38,Jaylen Waddle,DEN,WR,WR20,211.63,2026-06-09
-39,39,Breece Hall,NYJ,RB,RB13,258.88,2026-06-09
-40,40,Derrick Henry,BAL,RB,RB14,281.27,2026-06-09
-41,41,Luther Burden III,CHI,WR,WR21,208.57,2026-06-09
-42,42,Terry McLaurin,WAS,WR,WR22,221.58,2026-06-09
-43,43,Josh Jacobs,GB,RB,RB15,264.54,2026-06-09
-44,44,Joe Burrow,CIN,QB,QB4,314.12,2026-06-09
-45,45,Travis Etienne Jr.,NO,RB,RB16,240.24,2026-06-09
-46,46,Kyren Williams,LAR,RB,RB17,242.22,2026-06-09
-47,47,Emeka Egbuka,TB,WR,WR23,225.56,2026-06-09
-48,48,Javonte Williams,DAL,RB,RB18,238.95,2026-06-09
-49,49,Davante Adams,LAR,WR,WR24,222.74,2026-06-09
-50,50,Mike Evans,SF,WR,WR25,193.2,2026-06-09
-51,51,Jameson Williams,DET,WR,WR26,215.51,2026-06-09
-52,52,Jayden Daniels,WAS,QB,QB5,329.59,2026-06-09
-53,53,Tyler Warren,IND,TE,TE4,207.11,2026-06-09
-54,54,Jalen Hurts,PHI,QB,QB6,324.25,2026-06-09
-55,55,Bucky Irving,TB,RB,RB19,229.58,2026-06-09
-56,56,Cam Skattebo,NYG,RB,RB20,244.37,2026-06-09
-57,57,DJ Moore,BUF,WR,WR27,208.66,2026-06-09
-58,58,Christian Watson,GB,WR,WR28,183.97,2026-06-09
-59,59,TreVeyon Henderson,NE,RB,RB21,198.78,2026-06-09
-60,60,Quinshon Judkins,CLE,RB,RB22,217.14,2026-06-09
-61,61,Rome Odunze,CHI,WR,WR29,214.26,2026-06-09
-62,62,D'Andre Swift,CHI,RB,RB23,223.23,2026-06-09
-63,63,Jaylen Warren,PIT,RB,RB24,196.14,2026-06-09
-64,64,Carnell Tate,TEN,WR,WR30,179.22,2026-06-09
-65,65,Marvin Harrison Jr.,ARI,WR,WR31,199.54,2026-06-09
-66,66,David Montgomery,HOU,RB,RB25,186.73,2026-06-09
-67,67,Harold Fannin Jr.,CLE,TE,TE5,193.16,2026-06-09
-68,68,Courtland Sutton,DEN,WR,WR32,212.05,2026-06-09
-69,69,Tucker Kraft,GB,TE,TE6,178.19,2026-06-09
-70,70,Justin Herbert,LAC,QB,QB7,302.1,2026-06-09
-71,71,Caleb Williams,CHI,QB,QB8,296.56,2026-06-09
-72,72,Alec Pierce,IND,WR,WR33,212.29,2026-06-09
-73,73,DK Metcalf,PIT,WR,WR34,194.36,2026-06-09
-74,74,RJ Harvey,DEN,RB,RB26,184.72,2026-06-09
-75,75,Bhayshul Tuten,JAC,RB,RB27,201.74,2026-06-09
-76,76,Chris Godwin Jr.,TB,WR,WR35,176.02,2026-06-09
-77,77,Chuba Hubbard,CAR,RB,RB28,196.14,2026-06-09
-78,78,Michael Wilson,ARI,WR,WR36,174.38,2026-06-09
-79,79,Jaxson Dart,NYG,QB,QB9,314.92,2026-06-09
-80,80,Trevor Lawrence,JAC,QB,QB10,308.72,2026-06-09
-81,81,Kyle Pitts Sr.,ATL,TE,TE7,201.1,2026-06-09
-82,82,Jadarian Price,SEA,RB,RB29,191.57,2026-06-09
-83,83,Dak Prescott,DAL,QB,QB11,309.13,2026-06-09
-84,84,Tony Pollard,TEN,RB,RB30,187.61,2026-06-09
-85,85,Rhamondre Stevenson,NE,RB,RB31,192.94,2026-06-09
-86,86,Michael Pittman Jr.,PIT,WR,WR37,188.85,2026-06-09
-87,87,Jakobi Meyers,JAC,WR,WR38,190.72,2026-06-09
-88,88,Rico Dowdle,PIT,RB,RB32,200.26,2026-06-09
-89,89,Jordyn Tyson,NO,WR,WR39,178.31,2026-06-09
-90,90,Sam LaPorta,DET,TE,TE8,193.5,2026-06-09
-91,91,Wan'Dale Robinson,TEN,WR,WR40,185.52,2026-06-09
-92,92,Brian Thomas Jr.,JAC,WR,WR41,179.36,2026-06-09
-93,93,Makai Lemon,PHI,WR,WR42,166.85,2026-06-09
-94,94,Brock Purdy,SF,QB,QB12,311.7,2026-06-09
-95,95,Kyle Monangai,CHI,RB,RB33,165.66,2026-06-09
-96,96,Parker Washington,JAC,WR,WR43,189.03,2026-06-09
-97,97,Ricky Pearsall,SF,WR,WR44,166.83,2026-06-09
-98,98,Patrick Mahomes II,KC,QB,QB13,307.39,2026-06-09
-99,99,Josh Downs,IND,WR,WR45,173.66,2026-06-09
-100,100,Bo Nix,DEN,QB,QB14,293.64,2026-06-09
-101,101,Aaron Jones Sr.,MIN,RB,RB34,176.54,2026-06-09
-102,102,Kenneth Gainwell,TB,RB,RB35,184.45,2026-06-09
-103,103,Jake Ferguson,DAL,TE,TE9,172.72,2026-06-09
-104,104,Matthew Stafford,LAR,QB,QB15,296.25,2026-06-09
-105,105,Jordan Addison,MIN,WR,WR46,171.44,2026-06-09
-106,106,Travis Kelce,KC,TE,TE10,185.38,2026-06-09
-107,107,Dalton Kincaid,BUF,TE,TE11,165.95,2026-06-09
-108,108,J.K. Dobbins,DEN,RB,RB36,173.29,2026-06-09
-109,109,Blake Corum,LAR,RB,RB37,137.53,2026-06-09
-110,110,Jared Goff,DET,QB,QB16,284,2026-06-09
-111,111,Jayden Reed,GB,WR,WR47,172.47,2026-06-09
-112,112,Khalil Shakir,BUF,WR,WR48,172.18,2026-06-09
-113,113,Quentin Johnston,LAC,WR,WR49,176.85,2026-06-09
-114,114,Kyler Murray,MIN,QB,QB17,272.87,2026-06-09
-115,115,Jordan Love,GB,QB,QB18,267.93,2026-06-09
-116,116,Rachaad White,WAS,RB,RB38,164.03,2026-06-09
-117,117,George Kittle,SF,TE,TE12,180.94,2026-06-09
-118,118,Jayden Higgins,HOU,WR,WR50,138.11,2026-06-09
-119,119,Baker Mayfield,TB,QB,QB19,290.75,2026-06-09
-120,120,Tyler Shough,NO,QB,QB20,281.69,2026-06-09
-121,121,Dallas Goedert,PHI,TE,TE13,190.69,2026-06-09
-122,122,Jacory Croskey-Merritt,WAS,RB,RB39,148.95,2026-06-09
-123,123,Isaiah Likely,NYG,TE,TE14,176.62,2026-06-09
-124,124,Xavier Worthy,KC,WR,WR51,166.54,2026-06-09
-125,125,Tyler Allgeier,ARI,RB,RB40,95.53,2026-06-09
-126,126,Romeo Doubs,NE,WR,WR52,167.72,2026-06-09
-127,127,Malik Willis,MIA,QB,QB21,274.19,2026-06-09
-128,128,KC Concepcion,CLE,WR,WR53,145.38,2026-06-09
-129,129,Jordan Mason,MIN,RB,RB41,142.89,2026-06-09
-130,130,Jalen Coker,CAR,WR,WR54,148.21,2026-06-09
-131,131,Tyrone Tracy Jr.,NYG,RB,RB42,113.12,2026-06-09
-132,132,Woody Marks,HOU,RB,RB43,127.87,2026-06-09
-133,133,C.J. Stroud,HOU,QB,QB22,268.54,2026-06-09
-134,134,Juwan Johnson,NO,TE,TE15,159.47,2026-06-09
-135,135,Mark Andrews,BAL,TE,TE16,163.7,2026-06-09
-136,136,Matthew Golden,GB,WR,WR55,157.1,2026-06-09
-137,137,Sam Darnold,SEA,QB,QB23,267.37,2026-06-09
-138,138,Oronde Gadsden II,LAC,TE,TE17,124.83,2026-06-09
-139,139,Tyjae Spears,TEN,RB,RB44,143.07,2026-06-09
-140,140,Zach Charbonnet,SEA,RB,RB45,129.93,2026-06-09
-141,141,Brenton Strange,JAC,TE,TE18,161.18,2026-06-09
-142,142,Alvin Kamara,NO,RB,RB46,124.05,2026-06-09
-143,143,Jonathon Brooks,CAR,RB,RB47,125.97,2026-06-09
-144,144,Dylan Sampson,CLE,RB,RB48,105.81,2026-06-09
-145,145,Chris Rodriguez Jr.,JAC,RB,RB49,91.17,2026-06-09
-146,146,Cam Ward,TEN,QB,QB24,227.45,2026-06-09
-147,147,Isiah Pacheco,DET,RB,RB50,127.13,2026-06-09
-148,148,Jerry Jeudy,CLE,WR,WR56,145.2,2026-06-09
-149,149,Rashid Shaheed,SEA,WR,WR57,143.97,2026-06-09
-150,150,Bryce Young,CAR,QB,QB25,241.85,2026-06-09
-151,151,Denzel Boston,CLE,WR,WR58,130.53,2026-06-09
-152,152,James Conner,ARI,RB,RB51,61.65,2026-06-09
-153,153,Jauan Jennings,MIN,WR,WR59,133.92,2026-06-09
-154,154,Hunter Henry,NE,TE,TE19,156.76,2026-06-09
-155,155,Omar Cooper Jr.,NYJ,WR,WR60,139.63,2026-06-09
-156,156,Keaton Mitchell,LAC,RB,RB52,52.22,2026-06-09
-157,157,Houston Texans,HOU,D/ST,DST1,120.8,2026-06-09
-158,158,Braelon Allen,NYJ,RB,RB53,91.32,2026-06-09
-159,159,Daniel Jones,IND,QB,QB26,289.99,2026-06-09
-160,160,Jonah Coleman,DEN,RB,RB54,20.86,2026-06-09
-161,161,Travis Hunter,JAC,WR,WR61,111.65,2026-06-09
-162,162,Deebo Samuel Sr.,FA,WR,WR62,,2026-06-09
-163,163,Brian Robinson Jr.,ATL,RB,RB55,92.97,2026-06-09
-164,164,Stefon Diggs,FA,WR,WR63,,2026-06-09
-165,165,Dalton Schultz,HOU,TE,TE20,149.01,2026-06-09
-166,166,Adonai Mitchell,NYJ,WR,WR64,79.49,2026-06-09
-167,167,Chig Okonkwo,WAS,TE,TE21,125.34,2026-06-09
-168,168,Brandon Aiyuk,SF,WR,WR65,,2026-06-09
-169,169,Jalen McMillan,TB,WR,WR66,136.89,2026-06-09
-170,170,Emanuel Wilson,SEA,RB,RB56,65.71,2026-06-09
-171,171,Tre' Harris,LAC,WR,WR67,89.29,2026-06-09
-172,172,Denver Broncos,DEN,D/ST,DST2,119.21,2026-06-09
-173,173,Kayshon Boutte,NE,WR,WR68,100.5,2026-06-09
-174,174,Tank Bigsby,PHI,RB,RB57,67.26,2026-06-09
-175,175,Seattle Seahawks,SEA,D/ST,DST3,112.48,2026-06-09
-176,176,Los Angeles Rams,LAR,D/ST,DST4,110.42,2026-06-09
-177,177,Troy Franklin,DEN,WR,WR69,99.64,2026-06-09
-178,178,Philadelphia Eagles,PHI,D/ST,DST5,104.79,2026-06-09
-179,179,Tre Tucker,LV,WR,WR70,141.95,2026-06-09
-180,180,T.J. Hockenson,MIN,TE,TE22,143.63,2026-06-09
-181,181,Jaylin Noel,HOU,WR,WR71,56.26,2026-06-09
-182,182,Emmett Johnson,KC,RB,RB58,40.54,2026-06-09
-183,183,Kimani Vidal,LAC,RB,RB59,78.6,2026-06-09
-184,184,Brandon Aubrey,DAL,K,K1,153.23,2026-06-09
-185,185,Ryan Flournoy,DAL,WR,WR72,89.55,2026-06-09
-186,186,Jacoby Brissett,ARI,QB,QB27,235.67,2026-06-09
-187,187,New England Patriots,NE,D/ST,DST6,103.19,2026-06-09
-188,188,Jacksonville Jaguars,JAC,D/ST,DST7,99.17,2026-06-09
-189,189,Pat Bryant,DEN,WR,WR73,72.51,2026-06-09
-190,190,Kenyon Sadiq,NYJ,TE,TE23,147.39,2026-06-09
-191,191,Minnesota Vikings,MIN,D/ST,DST8,113.78,2026-06-09
-192,192,Pittsburgh Steelers,PIT,D/ST,DST9,113.02,2026-06-09
-193,193,Calvin Ridley,TEN,WR,WR74,150.48,2026-06-09
-194,194,Isaac TeSlaa,DET,WR,WR75,85.06,2026-06-09
-195,195,Los Angeles Chargers,LAC,D/ST,DST10,110.68,2026-06-09
-196,196,Sean Tucker,TB,RB,RB60,30.12,2026-06-09
-197,197,Ray Davis,BUF,RB,RB61,35.84,2026-06-09
-198,198,AJ Barner,SEA,TE,TE24,122.47,2026-06-09
-199,199,Cameron Dicker,LAC,K,K2,143.6,2026-06-09
-200,200,Mike Washington Jr.,LV,RB,RB62,77.7,2026-06-09
-201,201,Ka'imi Fairbairn,HOU,K,K3,147.92,2026-06-09
-202,202,Darnell Mooney,NYG,WR,WR76,107.1,2026-06-09
-203,203,Jason Myers,SEA,K,K4,154.4,2026-06-09
-204,204,Chimere Dike,TEN,WR,WR77,72.59,2026-06-09
-205,205,Cam Little,JAC,K,K5,131.07,2026-06-09
-206,206,Green Bay Packers,GB,D/ST,DST11,98.43,2026-06-09
-207,207,Kansas City Chiefs,KC,D/ST,DST12,97.48,2026-06-09
-208,208,Gunnar Helm,TEN,TE,TE25,110.95,2026-06-09
-209,209,Eddy Pineiro,SF,K,K6,134.19,2026-06-09
-210,210,Antonio Williams,WAS,WR,WR78,126.05,2026-06-09
-211,211,Kaytron Allen,WAS,RB,RB63,21.52,2026-06-09
-212,212,Dontayvion Wicks,PHI,WR,WR79,76.68,2026-06-09
-213,213,Tyler Loop,BAL,K,K7,134.09,2026-06-09
-214,214,Tyreek Hill,FA,WR,WR80,,2026-06-09
-215,215,Cleveland Browns,CLE,D/ST,DST13,103.21,2026-06-09
-216,216,Evan McPherson,CIN,K,K8,132.69,2026-06-09
-217,217,Baltimore Ravens,BAL,D/ST,DST14,106.39,2026-06-09
-218,218,Nicholas Singleton,TEN,RB,RB64,19.68,2026-06-09
-219,219,Andy Borregales,NE,K,K9,121.52,2026-06-09
-220,220,Cairo Santos,CHI,K,K10,135.79,2026-06-09
-221,221,Elic Ayomanor,TEN,WR,WR81,65.82,2026-06-09
-222,222,Chase McLaughlin,TB,K,K11,134.14,2026-06-09
-223,223,Detroit Lions,DET,D/ST,DST15,112.64,2026-06-09
-224,224,Jaylen Wright,MIA,RB,RB65,49.32,2026-06-09
-225,225,Malik Washington,MIA,WR,WR82,103.16,2026-06-09
-226,226,Jalen Nailor,LV,WR,WR83,125.7,2026-06-09
-227,227,Fernando Mendoza,LV,QB,QB28,193.33,2026-06-09
-228,228,David Njoku,LAC,TE,TE26,101.53,2026-06-09
-229,229,Jake Bates,DET,K,K12,139.27,2026-06-09
-230,230,Terrance Ferguson,LAR,TE,TE27,111.68,2026-06-09
-231,231,De'Zhaun Stribling,SF,WR,WR84,92.64,2026-06-09
-232,232,Buffalo Bills,BUF,D/ST,DST16,105.57,2026-06-09
-233,233,Geno Smith,NYJ,QB,QB29,233.9,2026-06-09
-234,234,Cooper Kupp,SEA,WR,WR85,125.04,2026-06-09
-235,235,Harrison Butker,KC,K,K13,133.67,2026-06-09
-236,236,Tank Dell,HOU,WR,WR86,141.5,2026-06-09
-237,237,Ollie Gordon II,MIA,RB,RB66,31.86,2026-06-09
-238,238,Rashod Bateman,BAL,WR,WR87,133.36,2026-06-09
-239,239,Mason Taylor,NYJ,TE,TE28,91.57,2026-06-09
-240,240,Germie Bernard,PIT,WR,WR88,118.43,2026-06-09
-241,241,Kaleb Johnson,PIT,RB,RB67,4.84,2026-06-09
-242,242,Devin Neal,NO,RB,RB68,19.25,2026-06-09
-243,243,Cade Otton,TB,TE,TE29,136.05,2026-06-09
-244,244,Zachariah Branch,ATL,WR,WR89,53.36,2026-06-09
-245,245,Harrison Mevis,LAR,K,K14,143.35,2026-06-09
-246,246,Pat Freiermuth,PIT,TE,TE30,131.65,2026-06-09
-247,247,Trey Benson,ARI,RB,RB69,0,2026-06-09
-248,248,Jack Bech,LV,WR,WR90,99.52,2026-06-09
-249,249,Chris Boswell,PIT,K,K15,120.37,2026-06-09
-250,250,Ted Hurst III,TB,WR,WR91,82.71,2026-06-09
-251,251,Theo Johnson,NYG,TE,TE31,82.57,2026-06-09
-252,252,Aaron Rodgers,PIT,QB,QB30,221.11,2026-06-09
-253,253,Colby Parkinson,LAR,TE,TE32,95.91,2026-06-09
-254,254,Evan Engram,DEN,TE,TE33,113.55,2026-06-09
-255,255,Chris Bell,MIA,WR,WR92,113.87,2026-06-09
-256,256,Christian Kirk,SF,WR,WR93,106.95,2026-06-09
-257,257,Isaiah Davis,NYJ,RB,RB70,37.55,2026-06-09
-258,258,Justice Hill,BAL,RB,RB71,116.05,2026-06-09
-259,259,Eli Stowers,PHI,TE,TE34,53.77,2026-06-09
-260,260,Keon Coleman,BUF,WR,WR94,68.49,2026-06-09
-261,261,Michael Penix Jr.,ATL,QB,QB31,78.76,2026-06-09
-262,262,Marvin Mims Jr.,DEN,WR,WR95,66.77,2026-06-09
-263,263,Tory Horton,SEA,WR,WR96,94.33,2026-06-09
-264,264,Kendre Miller,NO,RB,RB72,40.62,2026-06-09
-265,265,Demond Claiborne,MIN,RB,RB73,23.64,2026-06-09
-266,266,Elijah Sarratt,BAL,WR,WR97,59.21,2026-06-09
-267,267,Ty Johnson,BUF,RB,RB74,94.06,2026-06-09
-268,268,Kyle Williams,NE,WR,WR98,22.05,2026-06-09
-269,269,Malachi Fields,NYG,WR,WR99,34.1,2026-06-09
-270,270,Wil Lutz,DEN,K,K16,128.34,2026-06-09
-271,271,Mack Hollins,NE,WR,WR100,28,2026-06-09
-272,272,Brashard Smith,KC,RB,RB75,59.17,2026-06-09
-273,273,Chris Brooks,GB,RB,RB76,66.9,2026-06-09
-274,274,MarShawn Lloyd,GB,RB,RB77,43.17,2026-06-09
-275,275,Jaydon Blue,DAL,RB,RB78,35.25,2026-06-09
-276,276,Atlanta Falcons,ATL,D/ST,DST17,110.84,2026-06-09
-277,277,DJ Giddens,IND,RB,RB79,35.88,2026-06-09
-278,278,Tua Tagovailoa,ATL,QB,QB32,173.35,2026-06-09
-279,279,Najee Harris,LAC,RB,RB80,22.4,2026-06-09
-280,280,Darius Slayton,NYG,WR,WR101,99.26,2026-06-09
-281,281,Xavier Legette,CAR,WR,WR102,70.69,2026-06-09
-282,282,Keenan Allen,LAC,WR,WR103,,2026-06-09
-283,283,Chris Brazzell II,CAR,WR,WR104,60.8,2026-06-09
-284,284,LeQuint Allen Jr.,JAC,RB,RB81,45.77,2026-06-09
-285,285,Will Reichard,MIN,K,K17,133.51,2026-06-09
-286,286,Max Klare,LAR,TE,TE35,19.82,2026-06-09
-287,287,Shedeur Sanders,CLE,QB,QB33,55.47,2026-06-09
-288,288,San Francisco 49ers,SF,D/ST,DST18,92.71,2026-06-09
-289,289,Jordan James,SF,RB,RB82,93.31,2026-06-09
-290,290,Devaughn Vele,NO,WR,WR105,94.15,2026-06-09
-291,291,Jaleel McLaughlin,DEN,RB,RB83,,2026-06-09
-292,292,Seth McGowan,IND,RB,RB84,23.17,2026-06-09
-293,293,Malik Davis,DAL,RB,RB85,71.1,2026-06-09
-294,294,Tyquan Thornton,KC,WR,WR106,92.33,2026-06-09
-295,295,Jerome Ford,WAS,RB,RB86,19.05,2026-06-09
-296,296,Samaje Perine,CIN,RB,RB87,96.17,2026-06-09
-297,297,George Holani,SEA,RB,RB88,10.19,2026-06-09
-298,298,Devin Singletary,NYG,RB,RB89,27.26,2026-06-09
-299,299,Charlie Smyth,NO,K,K18,125.13,2026-06-09
-300,300,Adam Randall,BAL,RB,RB90,65.95,2026-06-09
-301,301,Indianapolis Colts,IND,D/ST,DST19,95.13,2026-06-09
-302,302,Oscar Delp,NO,TE,TE36,8.95,2026-06-09
-303,303,Hollywood Brown,PHI,WR,WR107,89.52,2026-06-09
-304,304,Jake Tonges,SF,TE,TE37,62.98,2026-06-09
-305,305,Mike Gesicki,CIN,TE,TE38,113.79,2026-06-09
-306,306,Emari Demercado,KC,RB,RB91,50.95,2026-06-09
-307,307,Joe Mixon,FA,RB,RB92,,2026-06-09
-308,308,Jarquez Hunter,LAR,RB,RB93,23.2,2026-06-09
-309,309,Kirk Cousins,LV,QB,QB34,45.05,2026-06-09
-310,310,Isaac Guerendo,SF,RB,RB94,14.85,2026-06-09
-311,311,Isaiah Bond,CLE,WR,WR108,10.75,2026-06-09
-312,312,Trevor Etienne,CAR,RB,RB95,17.18,2026-06-09
-313,313,Greg Dulcich,MIA,TE,TE39,128.37,2026-06-09
-314,314,Deshaun Watson,CLE,QB,QB35,184.87,2026-06-09
-315,315,Skyler Bell,BUF,WR,WR109,33.91,2026-06-09
-316,316,J'Mari Taylor,JAC,RB,RB96,,2026-06-09
-317,317,Tahj Brooks,CIN,RB,RB97,18.33,2026-06-09
-318,318,Kaelon Black,SF,RB,RB98,75.59,2026-06-09
-319,319,Ja'Kobi Lane,BAL,WR,WR110,96.47,2026-06-09
-320,320,Andrei Iosivas,CIN,WR,WR111,88.99,2026-06-09
-321,321,Audric Estime,NO,RB,RB99,23.6,2026-06-09
-322,322,J.J. McCarthy,MIN,QB,QB36,25.99,2026-06-09
-323,323,Chicago Bears,CHI,D/ST,DST20,108.74,2026-06-09
-324,324,Konata Mumpfield,LAR,WR,WR112,29.25,2026-06-09
-325,325,New Orleans Saints,NO,D/ST,DST21,104.54,2026-06-09
-326,326,Bam Knight,ARI,RB,RB100,0,2026-06-09
-327,327,Cedric Tillman,CLE,WR,WR113,61.91,2026-06-09
-328,328,Tez Johnson,TB,WR,WR114,21.52,2026-06-09
-329,329,Jalen Royals,KC,WR,WR115,45.72,2026-06-09
-330,330,Calvin Austin III,NYG,WR,WR116,61.27,2026-06-09
-331,331,Kareem Hunt,FA,RB,RB101,,2026-06-09
-332,332,Will Shipley,PHI,RB,RB102,27.48,2026-06-09
-333,333,Mac Jones,SF,QB,QB37,10.28,2026-06-09
-334,334,Luke McCaffrey,WAS,WR,WR117,42.9,2026-06-09
-335,335,Darnell Washington,PIT,TE,TE40,77.89,2026-06-09
-336,336,Jahan Dotson,ATL,WR,WR118,84.09,2026-06-09
-337,337,Ty Simpson,LAR,QB,QB38,23.4,2026-06-09
-338,338,Carolina Panthers,CAR,D/ST,DST22,90.81,2026-06-09
-339,339,Dont'e Thornton Jr.,LV,WR,WR119,40.37,2026-06-09
-340,340,Dallas Cowboys,DAL,D/ST,DST23,93.48,2026-06-09
-341,341,Olamide Zaccheaus,ATL,WR,WR120,85.95,2026-06-09
-342,342,Bryce Lance,NO,WR,WR121,42.04,2026-06-09
-343,343,Noah Gray,KC,TE,TE41,47.5,2026-06-09
-344,344,Joshua Palmer,BUF,WR,WR122,69.28,2026-06-09
-345,345,Anthony Richardson Sr.,IND,QB,QB39,,2026-06-09
-346,346,Xavier Hutchinson,HOU,WR,WR123,72.77,2026-06-09
-347,347,Nick Chubb,FA,RB,RB103,,2026-06-09
-348,348,Eli Heidenreich,PIT,RB,RB104,,2026-06-09
-349,349,Tyler Higbee,LAR,TE,TE42,76.02,2026-06-09
-350,350,Elijah Arroyo,SEA,TE,TE43,44.01,2026-06-09
-351,351,Jalen Tolbert,MIA,WR,WR124,74.53,2026-06-09
-352,352,Michael Carter,TEN,RB,RB105,,2026-06-09
-353,353,DeMario Douglas,NE,WR,WR125,61.3,2026-06-09
-354,354,Caleb Douglas,MIA,WR,WR126,104.59,2026-06-09
-355,355,Justin Fields,KC,QB,QB40,10.94,2026-06-09
-356,356,Blake Grupe,IND,K,K19,60.22,2026-06-09
-357,357,John Metchie III,CAR,WR,WR127,153.9,2026-06-09
-358,358,Michael Mayer,LV,TE,TE44,83.69,2026-06-09
-359,359,Ja'Tavion Sanders,CAR,TE,TE45,71.06,2026-06-09
-360,360,Brenen Thompson,LAC,WR,WR128,27.31,2026-06-09
-361,361,Carson Beck,ARI,QB,QB41,19.72,2026-06-09
-362,362,Treylon Burks,WAS,WR,WR129,44.78,2026-06-09
-363,363,Justin Joly,DEN,TE,TE46,,2026-06-09
-364,364,Jaylin Lane,WAS,WR,WR130,61.23,2026-06-09
-365,365,New York Giants,NYG,D/ST,DST24,95.54,2026-06-09
-366,366,Tyler Bass,BUF,K,K20,124.45,2026-06-09
-367,367,Zane Gonzalez,MIA,K,K21,115.43,2026-06-09
-368,368,Tutu Atwell,MIA,WR,WR131,53.62,2026-06-09
-369,369,Jake Elliott,PHI,K,K22,121.37,2026-06-09
-370,370,Austin Ekeler,FA,RB,RB106,33.2,2026-06-09
-371,371,Tampa Bay Buccaneers,TB,D/ST,DST25,98.95,2026-06-09
-372,372,Jawhar Jordan,HOU,RB,RB107,50.81,2026-06-09
-373,373,Miami Dolphins,MIA,D/ST,DST26,100.23,2026-06-09
-374,374,Tommy Myers,FA,TE,TE47,,2026-06-09
-375,375,John Bates,WAS,TE,TE48,43.92,2026-06-09
-376,376,Tennessee Titans,TEN,D/ST,DST27,103.53,2026-06-09
-377,377,Cole Kmet,CHI,TE,TE49,54.25,2026-06-09
-378,378,Cincinnati Bengals,CIN,D/ST,DST28,102.34,2026-06-09
-379,379,Washington Commanders,WAS,D/ST,DST29,101.22,2026-06-09
-380,380,Nick Folk,ATL,K,K23,138.03,2026-06-09
-381,381,Kalif Raymond,CHI,WR,WR132,63.8,2026-06-09
-382,382,Raheim Sanders,CLE,RB,RB108,,2026-06-09
-383,383,Kendrick Bourne,ARI,WR,WR133,50.26,2026-06-09
-384,384,Brandon McManus,FA,K,K24,0,2026-06-09
-385,385,Savion Williams,GB,WR,WR134,69.04,2026-06-09
-386,386,Dawson Knox,BUF,TE,TE50,79.98,2026-06-09
-387,387,Ben Sauls,NYG,K,K25,104.96,2026-06-09
-388,388,Kevin Coleman Jr.,MIA,WR,WR135,22.04,2026-06-09
-389,389,Chad Ryland,ARI,K,K26,112.65,2026-06-09
-390,390,Dameon Pierce,PHI,RB,RB109,22.1,2026-06-09
-391,391,Joey Slye,TEN,K,K27,113.39,2026-06-09
-392,392,Ryan Fitzgerald,CAR,K,K28,103.71,2026-06-09
-393,393,Daniel Carlson,LV,K,K29,,2026-06-09
-394,394,Nick Westbrook-Ikhine,IND,WR,WR136,95.13,2026-06-09
-395,395,Darren Waller,FA,TE,TE51,25,2026-06-09
-396,396,Greg Dortch,DET,WR,WR137,14.14,2026-06-09
-397,397,Marcus Mariota,WAS,QB,QB42,18.09,2026-06-09
-398,398,Joe Milton III,DAL,QB,QB43,12.22,2026-06-09
-399,399,Ben Sinnott,WAS,TE,TE52,31.69,2026-06-09
-400,400,Jordan Whittington,LAR,WR,WR138,41.2,2026-06-09
-401,401,Tommy Tremble,CAR,TE,TE53,64.38,2026-06-09
-402,402,Jameis Winston,NYG,QB,QB44,9.22,2026-06-09
-403,403,Joe Flacco,CIN,QB,QB45,10.31,2026-06-09
-404,404,Terrell Jennings,NE,RB,RB110,,2026-06-09
-405,405,Antonio Gibson,FA,RB,RB111,,2026-06-09
-406,406,Dyami Brown,WAS,WR,WR139,84.86,2026-06-09
-407,407,Kyle Juszczyk,SF,RB,RB112,55.19,2026-06-09
-408,408,Luke Musgrave,GB,TE,TE54,48.49,2026-06-09
-409,409,Rasheen Ali,BAL,RB,RB113,0,2026-06-09
-410,410,Devontez Walker,BAL,WR,WR140,35,2026-06-09
-411,411,KaVontae Turpin,DAL,WR,WR141,63.69,2026-06-09
-412,412,Raheem Mostert,LV,RB,RB114,,2026-06-09
-413,413,Eli Raridon,NE,TE,TE55,46.52,2026-06-09
-414,414,Noah Fant,NO,TE,TE56,67.96,2026-06-09
-415,415,Marlin Klein,HOU,TE,TE57,44.53,2026-06-09
-416,416,CJ Daniels,LAR,WR,WR142,9.61,2026-06-09
-417,417,Gardner Minshew II,ARI,QB,QB46,9.71,2026-06-09
-418,418,Daniel Bellinger,TEN,TE,TE58,50.48,2026-06-09
-419,419,Jam Miller,NE,RB,RB115,26.1,2026-06-09
-420,420,Brandin Cooks,FA,WR,WR143,,2026-06-09
-421,421,Ashton Dulin,IND,WR,WR144,74.14,2026-06-09
-422,422,Ty Chandler,NO,RB,RB116,38.1,2026-06-09
-423,423,Deion Burks,IND,WR,WR145,,2026-06-09
-424,424,Roschon Johnson,CHI,RB,RB117,34.3,2026-06-09
-425,425,Zavier Scott,MIN,RB,RB118,0,2026-06-09
-426,426,Austin Hooper,ATL,TE,TE59,54.37,2026-06-09
-427,427,Jonnu Smith,FA,TE,TE60,,2026-06-09
-428,428,Damien Martinez,GB,RB,RB119,,2026-06-09
-429,429,Cyrus Allen,KC,WR,WR146,17.24,2026-06-09
-430,430,Mitchell Evans,CAR,TE,TE61,34.33,2026-06-09
-431,431,Xavier Restrepo,TEN,WR,WR147,,2026-06-09
-432,432,Zavion Thomas,CHI,WR,WR148,8.68,2026-06-09
-433,433,Tyler Badie,DEN,RB,RB120,31.66,2026-06-09
-434,434,Elijah Higgins,ARI,TE,TE62,45.45,2026-06-09
-435,435,Elijah Moore,PHI,WR,WR149,,2026-06-09
-436,436,Riley Leonard,IND,QB,QB47,10.13,2026-06-09
-437,437,JuJu Smith-Schuster,NYG,WR,WR150,2.84,2026-06-09
-438,438,Erick All Jr.,CIN,TE,TE63,58.53,2026-06-09
-439,439,Zach Ertz,FA,TE,TE64,24.7,2026-06-09
-440,440,Jahdae Walker,CHI,WR,WR151,60.25,2026-06-09
-441,441,Tyler Goodson,ATL,RB,RB121,,2026-06-09
-442,442,Roman Wilson,PIT,WR,WR152,,2026-06-09
-443,443,Malik Benson,LV,WR,WR153,,2026-06-09
-444,444,Sam Roush,CHI,TE,TE65,8.63,2026-06-09
-445,445,Durham Smythe,BAL,TE,TE66,23.58,2026-06-09
-446,446,Tai Felton,MIN,WR,WR154,8.78,2026-06-09
-447,447,Marquez Valdes-Scantling,DAL,WR,WR155,,2026-06-09
-448,448,Theo Wease Jr.,MIA,WR,WR156,145.2,2026-06-09
-449,449,Jack Endries,CIN,TE,TE67,31.3,2026-06-09
-450,450,Quinn Ewers,MIA,QB,QB48,8.85,2026-06-09
-451,451,DeAndre Hopkins,BAL,WR,WR157,,2026-06-09
-452,452,Phil Mafah,DAL,RB,RB122,33.6,2026-06-09
-453,453,Antwane Wells Jr.,FA,WR,WR158,,2026-06-09
-454,454,Cade Klubnik,NYJ,QB,QB49,8.66,2026-06-09
-455,455,Demarcus Robinson,SF,WR,WR159,53,2026-06-09
-456,456,Michael Trigg,DAL,TE,TE68,,2026-06-09
-457,457,Jaret Patterson,LAC,RB,RB123,,2026-06-09
-458,458,Tanner Koziol,JAC,TE,TE69,9.19,2026-06-09
-459,459,Skyy Moore,GB,WR,WR160,0,2026-06-09
-460,460,Thomas Fidone II,NYG,TE,TE70,,2026-06-09
-461,461,Luke Schoonmaker,DAL,TE,TE71,31,2026-06-09
-462,462,Robert Henry Jr.,WAS,RB,RB124,,2026-06-09
+keeper_rank,source_rank,player,team,pos,pos_rank,pointsPpr,player_id,player_square_image_url,player_image_url,player_page_url,player_bye_week,player_owned_avg,player_owned_espn,player_owned_yahoo,player_ecr_delta,rank_ave,rank_min,rank_max,rank_std,tier,projectionPassYds,projectionPassTds,projectionRushAtt,projectionRushYds,projectionRushTds,projectionRecRec,projectionRecYds,projectionRecTds,projectionFga,projectionFg,projectionXpt,projectionDefSack,projectionDefInt,projectionDefTd,projectionDefSafety,projectionDefFf,projectionDefFr,projectionDefRetd,source_date
+1,1,Ja'Marr Chase,CIN,WR,WR1,,19788,https://images.fantasypros.com/images/players/nfl/19788/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19788/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jamarr-chase.php,6,99.3,99.7,100,,1.32,1,4,0.78,1,,,,,,124.23,1529.82,10.33,,,,,,,,,,,2026-06-11
+2,2,Puka Nacua,LAR,WR,WR2,,23180,https://images.fantasypros.com/images/players/nfl/23180/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23180/headshot/210x210.png,https://www.fantasypros.com/nfl/players/puka-nacua.php,11,99.5,99.7,100,,3.00,1,5,0.86,1,,,,,,125.98,1645.71,9.39,,,,,,,,,,,2026-06-11
+3,3,Bijan Robinson,ATL,RB,RB1,,23133,https://images.fantasypros.com/images/players/nfl/23133/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23133/headshot/210x210.png,https://www.fantasypros.com/nfl/players/bijan-robinson.php,11,99.1,99.7,100,,3.05,2,5,1.41,1,,,294.21,1438.56,9.7,77.33,753.28,3.71,,,,,,,,,,,2026-06-11
+4,4,Jahmyr Gibbs,DET,RB,RB2,,22968,https://images.fantasypros.com/images/players/nfl/22968/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22968/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jahmyr-gibbs.php,6,99.2,99.8,100,,4.10,2,7,1.60,1,,,272.03,1359.3,14.74,70.4,584.77,4.19,,,,,,,,,,,2026-06-11
+5,5,Jaxon Smith-Njigba,SEA,WR,WR3,,23070,https://images.fantasypros.com/images/players/nfl/23070/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23070/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaxon-smith-njigba.php,11,99.4,99.7,100,,4.10,3,6,0.73,1,,,,,,119.37,1671.34,10.76,,,,,,,,,,,2026-06-11
+6,6,Amon-Ra St. Brown,DET,WR,WR4,,19799,https://images.fantasypros.com/images/players/nfl/19799/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19799/headshot/210x210.png,https://www.fantasypros.com/nfl/players/amonra-stbrown.php,6,99.2,99.7,100,,6.49,3,9,1.33,2,,,,,,116.54,1397.44,10.7,,,,,,,,,,,2026-06-11
+7,7,Christian McCaffrey,SF,RB,RB3,,16393,https://images.fantasypros.com/images/players/nfl/16393/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16393/headshot/210x210.png,https://www.fantasypros.com/nfl/players/christian-mccaffrey.php,8,99.4,99.7,100,,8.00,2,23,3.40,2,,,258.32,1043.56,8.78,74.38,657.15,5.01,,,,,,,,,,,2026-06-11
+8,8,CeeDee Lamb,DAL,WR,WR5,,19202,https://images.fantasypros.com/images/players/nfl/19202/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19202/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ceedee-lamb.php,14,99.1,99.7,100,,8.17,6,17,2.06,2,,,,,,103.08,1358.35,7.29,,,,,,,,,,,2026-06-11
+9,9,Justin Jefferson,MIN,WR,WR6,,19236,https://images.fantasypros.com/images/players/nfl/19236/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19236/headshot/210x210.png,https://www.fantasypros.com/nfl/players/justin-jefferson.php,6,99,99.7,100,,8.68,6,11,1.14,2,,,,,,100.36,1308.05,6.68,,,,,,,,,,,2026-06-11
+10,10,Jonathan Taylor,IND,RB,RB4,,19217,https://images.fantasypros.com/images/players/nfl/19217/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19217/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jonathan-taylor.php,13,99.1,99.7,100,,11.29,7,23,3.62,2,,,343.07,1548.61,13.31,47.69,346.09,1.63,,,,,,,,,,,2026-06-11
+11,11,Drake London,ATL,WR,WR7,,23163,https://images.fantasypros.com/images/players/nfl/23163/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23163/headshot/210x210.png,https://www.fantasypros.com/nfl/players/drake-london.php,11,99,99.5,100,,11.46,9,18,1.86,2,,,,,,102.96,1340.34,10.66,,,,,,,,,,,2026-06-11
+12,12,Nico Collins,HOU,WR,WR8,,20130,https://images.fantasypros.com/images/players/nfl/20130/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20130/headshot/210x210.png,https://www.fantasypros.com/nfl/players/nico-collins.php,8,99.3,99.4,100,,14.41,11,20,2.55,3,,,,,,84.34,1226.51,7.38,,,,,,,,,,,2026-06-11
+13,13,De'Von Achane,MIA,RB,RB5,,23136,https://images.fantasypros.com/images/players/nfl/23136/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23136/headshot/210x210.png,https://www.fantasypros.com/nfl/players/devon-achane.php,6,99.1,99.7,100,-1,16.34,7,33,5.98,3,,,247.13,1238.06,6.07,69.86,529.94,4.47,,,,,,,,,,,2026-06-11
+14,14,A.J. Brown,NE,WR,WR9,,18218,https://images.fantasypros.com/images/players/nfl/18218/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18218/headshot/210x210.png,https://www.fantasypros.com/nfl/players/aj-brown.php,11,98.6,99.1,99,,16.63,9,30,4.21,3,,,,,,89.98,1273.44,7.96,,,,,,,,,,,2026-06-11
+15,15,Ashton Jeanty,LV,RB,RB6,,25989,https://images.fantasypros.com/images/players/nfl/25989/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25989/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ashton-jeanty.php,13,99.1,99.5,100,,16.76,7,31,5.43,3,,,286.53,1092.73,8.56,59.95,418.13,3.51,,,,,,,,,,,2026-06-11
+16,16,George Pickens,DAL,WR,WR10,,22963,https://images.fantasypros.com/images/players/nfl/22963/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22963/headshot/210x210.png,https://www.fantasypros.com/nfl/players/george-pickens.php,14,98.9,99.5,100,,17.51,12,29,3.50,3,,,,,,87.07,1252.65,9.08,,,,,,,,,,,2026-06-11
+17,17,Trey McBride,ARI,TE,TE1,,22936,https://images.fantasypros.com/images/players/nfl/22936/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22936/headshot/210x210.png,https://www.fantasypros.com/nfl/players/trey-mcbride.php,14,99.1,99.7,100,,17.68,16,32,4.53,3,,,,,,113.42,1074.12,6.78,,,,,,,,,,,2026-06-11
+18,18,Chris Olave,NO,WR,WR11,,20111,https://images.fantasypros.com/images/players/nfl/20111/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20111/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chris-olave.php,8,98,98.3,99,-2,17.83,11,35,5.39,3,,,,,,94.23,1199.16,8.21,,,,,,,,,,,2026-06-11
+19,19,Chase Brown,CIN,RB,RB7,,25324,https://images.fantasypros.com/images/players/nfl/25324/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25324/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chase-brown.php,6,98.4,98.3,100,,20.85,13,24,3.36,3,,,238.1,1026.56,8.19,68.08,453.13,3.91,,,,,,,,,,,2026-06-11
+20,20,Brock Bowers,LV,TE,TE2,,22955,https://images.fantasypros.com/images/players/nfl/22955/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22955/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brock-bowers.php,13,99.1,99.6,100,,21.41,16,22,1.78,3,,,,,,93.17,994.13,7.78,,,,,,,,,,,2026-06-11
+21,21,James Cook III,BUF,RB,RB8,,22958,https://images.fantasypros.com/images/players/nfl/22958/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22958/headshot/210x210.png,https://www.fantasypros.com/nfl/players/james-cook.php,7,99.3,99.7,100,,21.51,9,34,5.84,3,,,293.95,1417.29,9.99,33.97,285.08,1.81,,,,,,,,,,,2026-06-11
+22,22,Rashee Rice,KC,WR,WR12,,23113,https://images.fantasypros.com/images/players/nfl/23113/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23113/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rashee-rice.php,5,98,98.9,99,,24.56,12,51,11.05,4,,,,,,100.08,1089.84,11,,,,,,,,,,,2026-06-11
+23,23,Josh Allen,BUF,QB,QB1,,17298,https://images.fantasypros.com/images/players/nfl/17298/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17298/headshot/210x210.png,https://www.fantasypros.com/nfl/players/josh-allen-qb.php,7,99.5,99.7,100,,25.39,25,32,1.25,4,3826.18,28.11,120.69,594.73,11.72,,,,,,,,,,,,,,2026-06-11
+24,24,Malik Nabers,NYG,WR,WR13,,25409,https://images.fantasypros.com/images/players/nfl/25409/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25409/headshot/210x210.png,https://www.fantasypros.com/nfl/players/malik-nabers.php,8,98.9,99,100,,26.32,11,69,13.48,4,,,,,,75.08,999.34,8.78,,,,,,,,,,,2026-06-11
+25,25,Omarion Hampton,LAC,RB,RB9,,25395,https://images.fantasypros.com/images/players/nfl/25395/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25395/headshot/210x210.png,https://www.fantasypros.com/nfl/players/omarion-hampton.php,7,98.8,98.6,100,,26.63,15,46,7.31,4,,,245.19,1044.35,10.43,51.46,345.96,1.95,,,,,,,,,,,2026-06-11
+26,26,Tetairoa McMillan,CAR,WR,WR14,,25417,https://images.fantasypros.com/images/players/nfl/25417/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25417/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tetairoa-mcmillan.php,5,98,98.2,99,,27.95,18,49,7.49,4,,,,,,77.9,1126.87,6.63,,,,,,,,,,,2026-06-11
+27,27,DeVonta Smith,PHI,WR,WR15,,19222,https://images.fantasypros.com/images/players/nfl/19222/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19222/headshot/210x210.png,https://www.fantasypros.com/nfl/players/devonta-smith.php,10,98,98.4,99,,29.05,15,49,9.18,4,,,,,,90.16,1139.45,5.99,,,,,,,,,,,2026-06-11
+28,28,Saquon Barkley,PHI,RB,RB10,,17240,https://images.fantasypros.com/images/players/nfl/17240/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17240/headshot/210x210.png,https://www.fantasypros.com/nfl/players/saquon-barkley.php,10,99.2,99.6,100,,29.10,17,46,5.83,4,,,303.24,1347.66,7.85,41.56,341.08,2.14,,,,,,,,,,,2026-06-11
+29,29,Garrett Wilson,NYJ,WR,WR16,,23072,https://images.fantasypros.com/images/players/nfl/23072/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23072/headshot/210x210.png,https://www.fantasypros.com/nfl/players/garrett-wilson.php,13,97.2,98,98,,29.80,19,44,5.06,4,,,,,,96.25,1083.3,7.16,,,,,,,,,,,2026-06-11
+30,30,Lamar Jackson,BAL,QB,QB2,,17233,https://images.fantasypros.com/images/players/nfl/17233/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17233/headshot/210x210.png,https://www.fantasypros.com/nfl/players/lamar-jackson.php,13,98.9,99.5,100,,32.02,25,70,9.49,4,3624.25,29.46,114.57,636.67,3.34,,,,,,,,,,,,,,2026-06-11
+31,31,Kenneth Walker III,KC,RB,RB11,,23021,https://images.fantasypros.com/images/players/nfl/23021/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23021/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kenneth-walker-rb.php,5,99,99.2,100,,32.46,21,53,7.00,4,,,253.04,1150.17,8.02,46.6,359.33,0.84,,,,,,,,,,,2026-06-11
+32,32,Drake Maye,NE,QB,QB3,,23046,https://images.fantasypros.com/images/players/nfl/23046/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23046/headshot/210x210.png,https://www.fantasypros.com/nfl/players/drake-maye.php,11,98.8,99.1,99,,33.90,25,78,11.20,5,4024.27,27.98,102.52,541.8,4.03,,,,,,,,,,,,,,2026-06-11
+33,33,Ladd McConkey,LAC,WR,WR17,,26122,https://images.fantasypros.com/images/players/nfl/26122/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26122/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ladd-mcconkey.php,7,96.5,95.4,98,,33.95,15,46,7.06,5,,,,,,77.31,987.32,6.63,,,,,,,,,,,2026-06-11
+34,34,Tee Higgins,CIN,WR,WR18,,19211,https://images.fantasypros.com/images/players/nfl/19211/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19211/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tee-higgins.php,6,97.5,97,99,,34.56,20,48,6.06,5,,,,,,73.55,995.45,9.66,,,,,,,,,,,2026-06-11
+35,35,Jeremiyah Love,ARI,RB,RB12,,25403,https://images.fantasypros.com/images/players/nfl/25403/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25403/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jeremiyah-love.php,14,96.9,96.7,98,,35.88,18,56,7.44,5,,,234.39,1076,7.34,53.54,420.74,2.12,,,,,,,,,,,2026-06-11
+36,36,Colston Loveland,CHI,TE,TE3,,26006,https://images.fantasypros.com/images/players/nfl/26006/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26006/headshot/210x210.png,https://www.fantasypros.com/nfl/players/colston-loveland.php,10,98.5,98.7,99,,36.29,22,67,11.02,5,,,,,,80.42,949.45,7.03,,,,,,,,,,,2026-06-11
+37,37,Zay Flowers,BAL,WR,WR19,,22916,https://images.fantasypros.com/images/players/nfl/22916/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22916/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zay-flowers.php,13,97.1,98.1,97,,37.44,15,57,8.21,5,,,,,,83.39,1194.77,6.76,,,,,,,,,,,2026-06-11
+38,38,Jaylen Waddle,DEN,WR,WR20,,19790,https://images.fantasypros.com/images/players/nfl/19790/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19790/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaylen-waddle.php,10,96.1,96.3,96,,39.39,19,55,8.30,5,,,,,,75.87,983.01,6,,,,,,,,,,,2026-06-11
+39,39,Derrick Henry,BAL,RB,RB13,,15514,https://images.fantasypros.com/images/players/nfl/15514/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15514/headshot/210x210.png,https://www.fantasypros.com/nfl/players/derrick-henry.php,13,98.7,99.5,100,,40.76,24,50,6.15,5,,,310.93,1567.22,14.04,18.7,186.22,1.1,,,,,,,,,,,2026-06-11
+40,40,Breece Hall,NYJ,RB,RB14,,22982,https://images.fantasypros.com/images/players/nfl/22982/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22982/headshot/210x210.png,https://www.fantasypros.com/nfl/players/breece-hall.php,13,97.4,97.8,98,,41.17,30,53,4.67,5,,,260,1157.55,7.27,47.53,415.88,2.35,,,,,,,,,,,2026-06-11
+41,41,Terry McLaurin,WAS,WR,WR21,,18466,https://images.fantasypros.com/images/players/nfl/18466/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18466/headshot/210x210.png,https://www.fantasypros.com/nfl/players/terry-mclaurin.php,7,94.9,96,95,,41.88,26,51,6.04,5,,,,,,74.83,1005.4,7.89,,,,,,,,,,,2026-06-11
+42,42,Luther Burden III,CHI,WR,WR22,,27016,https://images.fantasypros.com/images/players/nfl/27016/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27016/headshot/210x210.png,https://www.fantasypros.com/nfl/players/luther-burden-iii.php,10,93.9,91,95,,42.34,26,68,7.56,5,,,,,,73.86,972.85,5.56,,,,,,,,,,,2026-06-11
+43,43,Joe Burrow,CIN,QB,QB4,,19196,https://images.fantasypros.com/images/players/nfl/19196/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19196/headshot/210x210.png,https://www.fantasypros.com/nfl/players/joe-burrow.php,6,97.2,96,99,,43.51,27,101,14.09,5,4195.72,33.97,41.88,177.01,1.54,,,,,,,,,,,,,,2026-06-11
+44,44,Josh Jacobs,GB,RB,RB15,,18269,https://images.fantasypros.com/images/players/nfl/18269/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18269/headshot/210x210.png,https://www.fantasypros.com/nfl/players/josh-jacobs.php,11,98.5,99.1,99,,44.54,31,58,7.80,5,,,292.09,1164.14,13.01,36.01,287.6,1.32,,,,,,,,,,,2026-06-11
+45,45,Kyren Williams,LAR,RB,RB16,,23059,https://images.fantasypros.com/images/players/nfl/23059/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23059/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kyren-williams.php,11,98,97.8,99,,44.80,34,56,5.93,5,,,242.59,1123.01,10.37,33.21,236.94,2.33,,,,,,,,,,,2026-06-11
+46,46,Emeka Egbuka,TB,WR,WR23,,23062,https://images.fantasypros.com/images/players/nfl/23062/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23062/headshot/210x210.png,https://www.fantasypros.com/nfl/players/emeka-egbuka.php,10,95.6,95.5,96,,45.27,19,62,7.39,5,,,,,,68.77,1098.66,7.59,,,,,,,,,,,2026-06-11
+47,47,Travis Etienne Jr.,NO,RB,RB17,,19231,https://images.fantasypros.com/images/players/nfl/19231/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19231/headshot/210x210.png,https://www.fantasypros.com/nfl/players/travis-etienne.php,8,96.9,96.5,98,,45.39,36,61,4.68,5,,,255.32,1054.66,5.51,45.8,367.11,3.53,,,,,,,,,,,2026-06-11
+48,48,Javonte Williams,DAL,RB,RB18,,22739,https://images.fantasypros.com/images/players/nfl/22739/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22739/headshot/210x210.png,https://www.fantasypros.com/nfl/players/javonte-williams.php,14,97.1,97.6,98,,46.05,17,61,7.78,5,,,260.73,1173.13,11.05,33.08,179.84,1.26,,,,,,,,,,,2026-06-11
+49,49,Davante Adams,LAR,WR,WR24,,12123,https://images.fantasypros.com/images/players/nfl/12123/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/12123/headshot/210x210.png,https://www.fantasypros.com/nfl/players/davante-adams.php,11,97.1,98.3,97,,47.61,38,75,6.49,5,,,,,,67.78,933.26,10.34,,,,,,,,,,,2026-06-11
+50,50,Mike Evans,SF,WR,WR25,,12119,https://images.fantasypros.com/images/players/nfl/12119/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/12119/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mike-evans.php,8,93.4,91.5,94,,49.76,35,76,7.98,6,,,,,,63.11,899.5,6.58,,,,,,,,,,,2026-06-11
+51,51,Jameson Williams,DET,WR,WR26,,23677,https://images.fantasypros.com/images/players/nfl/23677/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23677/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jameson-williams.php,6,95.1,94.3,96,,53.66,40,83,7.80,6,,,,,,63.6,1053.34,6.34,,,,,,,,,,,2026-06-11
+52,52,Tyler Warren,IND,TE,TE4,,26434,https://images.fantasypros.com/images/players/nfl/26434/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26434/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-warren.php,13,98.2,98.9,99,,54.66,32,73,9.14,6,,,,,,85.82,889.29,5.6,,,,,,,,,,,2026-06-11
+53,53,Jayden Daniels,WAS,QB,QB5,,22902,https://images.fantasypros.com/images/players/nfl/22902/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22902/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jayden-daniels.php,7,98,98.6,99,,55.07,30,104,15.56,6,3660.65,24.68,135.48,707.38,5.06,,,,,,,,,,,,,,2026-06-11
+54,54,Cam Skattebo,NYG,RB,RB19,,27166,https://images.fantasypros.com/images/players/nfl/27166/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27166/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cam-skattebo.php,8,97,97.9,97,,56.10,41,72,8.67,6,,,234.25,1001.34,8.1,45.64,363.01,2.82,,,,,,,,,,,2026-06-11
+55,55,Jalen Hurts,PHI,QB,QB6,,19275,https://images.fantasypros.com/images/players/nfl/19275/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19275/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jalen-hurts.php,10,97.5,97.7,99,,56.27,27,79,11.39,6,3575.6,24.76,112.15,463.9,8.58,,,,,,,,,,,,,,2026-06-11
+56,56,Christian Watson,GB,WR,WR27,,23886,https://images.fantasypros.com/images/players/nfl/23886/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23886/headshot/210x210.png,https://www.fantasypros.com/nfl/players/christian-watson.php,11,91.8,88.4,94,,56.63,44,94,8.92,6,,,,,,51.47,861.4,7.55,,,,,,,,,,,2026-06-11
+57,57,DJ Moore,BUF,WR,WR28,,17265,https://images.fantasypros.com/images/players/nfl/17265/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17265/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dj-moore-wr.php,7,94.5,93,95,,56.66,27,115,17.57,6,,,,,,68.09,871.93,7.51,,,,,,,,,,,2026-06-11
+58,58,Bucky Irving,TB,RB,RB20,,25981,https://images.fantasypros.com/images/players/nfl/25981/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25981/headshot/210x210.png,https://www.fantasypros.com/nfl/players/bucky-irving.php,10,96.3,95.9,96,,56.71,35,77,9.70,6,,,262.84,1043,5.94,41.44,356.55,2.43,,,,,,,,,,,2026-06-11
+59,59,TreVeyon Henderson,NE,RB,RB21,,23065,https://images.fantasypros.com/images/players/nfl/23065/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23065/headshot/210x210.png,https://www.fantasypros.com/nfl/players/treveyon-henderson.php,11,94.6,92.7,95,,61.46,41,85,10.31,6,,,194.14,900.9,7.41,38.57,253.8,1.3,,,,,,,,,,,2026-06-11
+60,60,Quinshon Judkins,CLE,RB,RB22,,25391,https://images.fantasypros.com/images/players/nfl/25391/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25391/headshot/210x210.png,https://www.fantasypros.com/nfl/players/quinshon-judkins.php,11,94.9,94.9,95,,61.71,46,78,8.53,6,,,294.07,1091.41,8.1,31.42,219.49,0.37,,,,,,,,,,,2026-06-11
+61,61,Rome Odunze,CHI,WR,WR29,,25411,https://images.fantasypros.com/images/players/nfl/25411/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25411/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rome-odunze.php,10,93.4,91.9,94,,62.32,38,88,11.82,6,,,,,,62.53,997.3,8.75,,,,,,,,,,,2026-06-11
+62,62,D'Andre Swift,CHI,RB,RB23,,19210,https://images.fantasypros.com/images/players/nfl/19210/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19210/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dandre-swift.php,10,93.7,91.5,95,,64.15,53,80,7.54,6,,,233.17,1054.66,8.57,32.65,291.76,1.07,,,,,,,,,,,2026-06-11
+63,63,Carnell Tate,TEN,WR,WR30,,26009,https://images.fantasypros.com/images/players/nfl/26009/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26009/headshot/210x210.png,https://www.fantasypros.com/nfl/players/carnell-tate.php,9,92.7,93,91,,66.85,40,218,29.44,6,,,,,,65.97,898.62,4.32,,,,,,,,,,,2026-06-11
+64,64,Jaylen Warren,PIT,RB,RB24,,24209,https://images.fantasypros.com/images/players/nfl/24209/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24209/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaylen-warren.php,9,91.1,88.1,93,,69.95,65,89,6.16,7,,,186.95,814.83,5.22,43.04,319.39,1.73,,,,,,,,,,,2026-06-11
+65,65,Marvin Harrison Jr.,ARI,WR,WR31,,23064,https://images.fantasypros.com/images/players/nfl/23064/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23064/headshot/210x210.png,https://www.fantasypros.com/nfl/players/marvin-harrison-jr.php,14,91.7,90.7,92,,70.85,52,123,14.12,7,,,,,,68.84,951.48,6.03,,,,,,,,,,,2026-06-11
+66,66,David Montgomery,HOU,RB,RB25,,18239,https://images.fantasypros.com/images/players/nfl/18239/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18239/headshot/210x210.png,https://www.fantasypros.com/nfl/players/david-montgomery.php,8,93.6,91.3,95,,71.32,53,103,10.52,7,,,230.21,938.48,7.49,28.77,217.49,0.31,,,,,,,,,,,2026-06-11
+67,67,Harold Fannin Jr.,CLE,TE,TE5,,27050,https://images.fantasypros.com/images/players/nfl/27050/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27050/headshot/210x210.png,https://www.fantasypros.com/nfl/players/harold-fannin-jr.php,11,95.4,93.1,98,,72.34,57,95,9.66,7,,,,,,77.52,801.16,5.59,,,,,,,,,,,2026-06-11
+68,68,Justin Herbert,LAC,QB,QB7,,18635,https://images.fantasypros.com/images/players/nfl/18635/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18635/headshot/210x210.png,https://www.fantasypros.com/nfl/players/justin-herbert.php,7,92.7,85.1,98,,73.59,54,113,16.11,7,3810.2,26.76,80.66,474.45,2.16,,,,,,,,,,,,,,2026-06-11
+69,69,Caleb Williams,CHI,QB,QB8,,23084,https://images.fantasypros.com/images/players/nfl/23084/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23084/headshot/210x210.png,https://www.fantasypros.com/nfl/players/caleb-williams.php,10,93.9,90.3,96,,73.68,32,104,14.74,7,3803.01,27.13,74.55,391.39,2.14,,,,,,,,,,,,,,2026-06-11
+70,70,Tucker Kraft,GB,TE,TE6,,25298,https://images.fantasypros.com/images/players/nfl/25298/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25298/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tucker-kraft.php,11,93.4,86.4,99,,73.98,54,106,11.48,7,,,,,,59.49,771.99,6.99,,,,,,,,,,,2026-06-11
+71,71,Courtland Sutton,DEN,WR,WR32,,17253,https://images.fantasypros.com/images/players/nfl/17253/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17253/headshot/210x210.png,https://www.fantasypros.com/nfl/players/courtland-sutton.php,10,91.9,91.5,91,,74.00,49,96,13.72,7,,,,,,72.67,930.74,7.79,,,,,,,,,,,2026-06-11
+72,72,Bhayshul Tuten,JAC,RB,RB26,,27297,https://images.fantasypros.com/images/players/nfl/27297/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27297/headshot/210x210.png,https://www.fantasypros.com/nfl/players/bhayshul-tuten.php,7,91.8,89.7,93,,75.46,56,89,8.66,7,,,236.01,961.81,8.84,24.87,188.46,2.21,,,,,,,,,,,2026-06-11
+73,73,DK Metcalf,PIT,WR,WR33,,18219,https://images.fantasypros.com/images/players/nfl/18219/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18219/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dk-metcalf.php,9,92.4,92.9,92,,76.15,52,96,12.24,7,,,,,,63.36,921.66,6.07,,,,,,,,,,,2026-06-11
+74,74,Alec Pierce,IND,WR,WR34,,23791,https://images.fantasypros.com/images/players/nfl/23791/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23791/headshot/210x210.png,https://www.fantasypros.com/nfl/players/alec-pierce.php,13,90.7,89.2,92,,76.37,55,107,13.08,7,,,,,,62.97,1066.29,7.23,,,,,,,,,,,2026-06-11
+75,75,RJ Harvey,DEN,RB,RB27,,27142,https://images.fantasypros.com/images/players/nfl/27142/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27142/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rj-harvey.php,10,90.5,86,91,,77.66,58,120,15.99,7,,,135.16,506.82,4.93,47.93,353.3,3.78,,,,,,,,,,,2026-06-11
+76,76,Chris Godwin Jr.,TB,WR,WR35,,16406,https://images.fantasypros.com/images/players/nfl/16406/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16406/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chris-godwin.php,10,88.3,87.1,89,,78.68,49,100,10.82,7,,,,,,67.61,771.48,5.28,,,,,,,,,,,2026-06-11
+77,77,Michael Wilson,ARI,WR,WR36,,25333,https://images.fantasypros.com/images/players/nfl/25333/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25333/headshot/210x210.png,https://www.fantasypros.com/nfl/players/michael-wilson.php,14,89.6,86,91,,79.00,49,110,12.96,7,,,,,,66.49,804.86,4.62,,,,,,,,,,,2026-06-11
+78,78,Chuba Hubbard,CAR,RB,RB28,,19792,https://images.fantasypros.com/images/players/nfl/19792/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19792/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chuba-hubbard.php,5,92.7,91.3,94,,79.32,50,117,13.08,7,,,205.24,822.2,4.66,36.93,257.38,2.25,,,,,,,,,,,2026-06-11
+79,79,Jaxson Dart,NYG,QB,QB9,,23160,https://images.fantasypros.com/images/players/nfl/23160/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23160/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaxson-dart.php,8,95.5,94.3,97,,79.61,59,125,16.38,7,3604.48,23.45,99.9,542.62,6.78,,,,,,,,,,,,,,2026-06-11
+80,80,Trevor Lawrence,JAC,QB,QB10,,19780,https://images.fantasypros.com/images/players/nfl/19780/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19780/headshot/210x210.png,https://www.fantasypros.com/nfl/players/trevor-lawrence.php,7,91.9,88.3,94,,79.88,59,108,12.90,7,3864.91,27.39,75.23,331.16,5.4,,,,,,,,,,,,,,2026-06-11
+81,81,Kyle Pitts Sr.,ATL,TE,TE7,,20164,https://images.fantasypros.com/images/players/nfl/20164/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20164/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kyle-pitts.php,11,96,95.1,97,,80.83,66,96,8.98,7,,,,,,81.17,896.64,5.1,,,,,,,,,,,2026-06-11
+82,82,Dak Prescott,DAL,QB,QB11,,15600,https://images.fantasypros.com/images/players/nfl/15600/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15600/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dak-prescott.php,14,93.6,90.5,96,,83.02,59,101,12.31,7,4274.57,31.33,51.1,179.47,2.08,,,,,,,,,,,,,,2026-06-11
+83,83,Jadarian Price,SEA,RB,RB29,,27329,https://images.fantasypros.com/images/players/nfl/27329/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27329/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jadarian-price.php,11,90.2,89.2,91,,83.28,56,118,10.60,7,,,225.75,949.27,7.95,23.53,217.12,1.13,,,,,,,,,,,2026-06-11
+84,84,Jordyn Tyson,NO,WR,WR37,,26035,https://images.fantasypros.com/images/players/nfl/26035/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26035/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jordyn-tyson.php,8,88.6,84.7,89,,83.90,48,208,28.47,7,,,,,,64.24,893.2,4.49,,,,,,,,,,,2026-06-11
+85,85,Tony Pollard,TEN,RB,RB30,,18705,https://images.fantasypros.com/images/players/nfl/18705/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18705/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tony-pollard.php,9,89.5,88.9,90,,84.17,70,102,6.77,7,,,243.62,1056.46,5.8,30.86,191.98,0.25,,,,,,,,,,,2026-06-11
+86,86,Rhamondre Stevenson,NE,RB,RB31,,22726,https://images.fantasypros.com/images/players/nfl/22726/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22726/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rhamondre-stevenson.php,11,90.1,86.8,91,,84.24,66,102,8.98,7,,,171.74,732.85,6.8,36.15,323.67,1.93,,,,,,,,,,,2026-06-11
+87,87,Michael Pittman Jr.,PIT,WR,WR38,,19278,https://images.fantasypros.com/images/players/nfl/19278/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19278/headshot/210x210.png,https://www.fantasypros.com/nfl/players/michael-pittman.php,9,88.8,91.6,86,,84.98,49,115,14.87,7,,,,,,82.69,773,4.94,,,,,,,,,,,2026-06-11
+88,88,Rico Dowdle,PIT,RB,RB32,,19647,https://images.fantasypros.com/images/players/nfl/19647/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19647/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rico-dowdle.php,9,90.2,88.2,92,,85.49,72,117,10.50,7,,,216.86,952.01,6.74,33.61,239.46,1.54,,,,,,,,,,,2026-06-11
+89,89,Jakobi Meyers,JAC,WR,WR39,,18598,https://images.fantasypros.com/images/players/nfl/18598/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18598/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jakobi-meyers.php,7,86.7,87.1,83,,86.02,68,116,13.55,7,,,,,,72.91,830.69,5.59,,,,,,,,,,,2026-06-11
+90,90,Sam LaPorta,DET,TE,TE8,,22978,https://images.fantasypros.com/images/players/nfl/22978/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22978/headshot/210x210.png,https://www.fantasypros.com/nfl/players/sam-laporta.php,6,95.1,92.7,98,,87.00,66,97,6.91,7,,,,,,75.15,846.88,5.68,,,,,,,,,,,2026-06-11
+91,91,Wan'Dale Robinson,TEN,WR,WR40,,22985,https://images.fantasypros.com/images/players/nfl/22985/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22985/headshot/210x210.png,https://www.fantasypros.com/nfl/players/wandale-robinson.php,9,82.2,86.3,72,,87.95,68,115,10.23,7,,,,,,83.93,827.24,2.96,,,,,,,,,,,2026-06-11
+92,92,Brian Thomas Jr.,JAC,WR,WR41,,23000,https://images.fantasypros.com/images/players/nfl/23000/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23000/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brian-thomas-jr.php,7,90.5,87.7,90,,88.85,55,123,16.31,7,,,,,,55.54,849.05,5.52,,,,,,,,,,,2026-06-11
+93,93,Makai Lemon,PHI,WR,WR42,,25420,https://images.fantasypros.com/images/players/nfl/25420/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25420/headshot/210x210.png,https://www.fantasypros.com/nfl/players/makai-lemon.php,10,88.4,84.7,88,,92.17,62,224,25.50,8,,,,,,58.31,820.84,4.74,,,,,,,,,,,2026-06-11
+94,94,Brock Purdy,SF,QB,QB12,,19797,https://images.fantasypros.com/images/players/nfl/19797/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19797/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brock-purdy.php,8,91.5,90.3,92,,95.32,73,114,9.23,8,4149.88,28.04,73.21,313.14,4.31,,,,,,,,,,,,,,2026-06-11
+95,95,Parker Washington,JAC,WR,WR43,,23106,https://images.fantasypros.com/images/players/nfl/23106/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23106/headshot/210x210.png,https://www.fantasypros.com/nfl/players/parker-washington.php,7,88.4,86.5,88,,96.24,60,123,15.96,8,,,,,,62.37,881.96,6.08,,,,,,,,,,,2026-06-11
+96,96,Kyle Monangai,CHI,RB,RB33,,27131,https://images.fantasypros.com/images/players/nfl/27131/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27131/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kyle-monangai.php,10,89,85.7,90,,96.56,77,120,11.03,8,,,198.96,837.95,5.74,24.27,207.55,0.65,,,,,,,,,,,2026-06-11
+97,97,Ricky Pearsall,SF,WR,WR44,,26214,https://images.fantasypros.com/images/players/nfl/26214/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26214/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ricky-pearsall.php,8,85.9,84.1,84,,99.44,71,149,17.17,8,,,,,,60.17,831.97,3.4,,,,,,,,,,,2026-06-11
+98,98,Josh Downs,IND,WR,WR45,,24706,https://images.fantasypros.com/images/players/nfl/24706/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24706/headshot/210x210.png,https://www.fantasypros.com/nfl/players/josh-downs.php,13,79.8,76.8,79,,99.59,64,133,17.99,8,,,,,,76.81,715.78,4.34,,,,,,,,,,,2026-06-11
+99,99,Patrick Mahomes II,KC,QB,QB13,,16413,https://images.fantasypros.com/images/players/nfl/16413/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16413/headshot/210x210.png,https://www.fantasypros.com/nfl/players/patrick-mahomes.php,5,92.5,89.9,94,,101.37,74,119,8.20,8,3830.87,27.57,62.04,381.72,3.62,,,,,,,,,,,,,,2026-06-11
+100,100,Kenneth Gainwell,TB,RB,RB34,,23310,https://images.fantasypros.com/images/players/nfl/23310/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23310/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kenneth-gainwell.php,10,86.2,86,86,,102.51,65,145,18.84,8,,,116.02,507.83,4.19,55.99,390.48,2.03,,,,,,,,,,,2026-06-11
+101,101,Bo Nix,DEN,QB,QB14,,22910,https://images.fantasypros.com/images/players/nfl/22910/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22910/headshot/210x210.png,https://www.fantasypros.com/nfl/players/bo-nix.php,10,90.5,86.7,92,,103.41,74,115,6.39,8,3692.55,26.66,77.63,331.15,3.47,,,,,,,,,,,,,,2026-06-11
+102,102,Aaron Jones Sr.,MIN,RB,RB35,,16673,https://images.fantasypros.com/images/players/nfl/16673/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16673/headshot/210x210.png,https://www.fantasypros.com/nfl/players/aaron-jones.php,6,87.5,87.7,88,,104.20,86,138,14.26,8,,,168.5,722.29,3.36,43.01,320.99,2.04,,,,,,,,,,,2026-06-11
+103,103,Jake Ferguson,DAL,TE,TE9,,22718,https://images.fantasypros.com/images/players/nfl/22718/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22718/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jake-ferguson.php,14,90.6,88.9,92,,104.90,87,124,9.95,8,,,,,,75.69,617.99,6.43,,,,,,,,,,,2026-06-11
+104,104,Travis Kelce,KC,TE,TE10,,11594,https://images.fantasypros.com/images/players/nfl/11594/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11594/headshot/210x210.png,https://www.fantasypros.com/nfl/players/travis-kelce.php,5,91.9,91.1,94,,105.20,73,196,24.30,8,,,,,,75.83,790.53,5.23,,,,,,,,,,,2026-06-11
+105,105,Matthew Stafford,LAR,QB,QB15,,9451,https://images.fantasypros.com/images/players/nfl/9451/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/9451/headshot/210x210.png,https://www.fantasypros.com/nfl/players/matthew-stafford.php,11,92.8,91.8,93,,105.22,79,119,8.88,8,4165.02,34.47,27.02,38.71,0.3,,,,,,,,,,,,,,2026-06-11
+106,106,Jordan Addison,MIN,WR,WR46,,23107,https://images.fantasypros.com/images/players/nfl/23107/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23107/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jordan-addison.php,6,85.8,84.3,85,,105.98,88,131,10.27,8,,,,,,55.24,751.46,5.59,,,,,,,,,,,2026-06-11
+107,107,Dalton Kincaid,BUF,TE,TE11,,25247,https://images.fantasypros.com/images/players/nfl/25247/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25247/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dalton-kincaid.php,7,74.4,38.3,93,,109.00,91,155,13.36,8,,,,,,59.15,729.87,5.73,,,,,,,,,,,2026-06-11
+108,108,J.K. Dobbins,DEN,RB,RB36,,19245,https://images.fantasypros.com/images/players/nfl/19245/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19245/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jk-dobbins.php,10,87.9,87.2,88,,109.37,86,152,16.47,8,,,226.36,1046.13,6.44,18.57,89.36,0.33,,,,,,,,,,,2026-06-11
+109,109,Blake Corum,LAR,RB,RB37,,23013,https://images.fantasypros.com/images/players/nfl/23013/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23013/headshot/210x210.png,https://www.fantasypros.com/nfl/players/blake-corum.php,11,86.3,80.6,89,,109.54,86,141,11.62,8,,,165.15,798.34,6.38,11.35,76.07,0.31,,,,,,,,,,,2026-06-11
+110,110,Jared Goff,DET,QB,QB16,,15501,https://images.fantasypros.com/images/players/nfl/15501/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15501/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jared-goff.php,6,76.2,51.6,88,,109.90,74,134,11.57,8,4219.6,31.47,24.11,46.74,0.34,,,,,,,,,,,,,,2026-06-11
+111,111,Jayden Reed,GB,WR,WR47,,23020,https://images.fantasypros.com/images/players/nfl/23020/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23020/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jayden-reed.php,11,79,72.4,80,,111.98,88,137,12.05,8,,,,,,61.22,729.68,4.7,,,,,,,,,,,2026-06-11
+112,112,Khalil Shakir,BUF,WR,WR48,,23748,https://images.fantasypros.com/images/players/nfl/23748/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23748/headshot/210x210.png,https://www.fantasypros.com/nfl/players/khalil-shakir.php,7,70.1,81.3,44,,113.93,82,128,11.72,8,,,,,,72.56,739.63,4.35,,,,,,,,,,,2026-06-11
+113,113,Kyler Murray,MIN,QB,QB17,,18600,https://images.fantasypros.com/images/players/nfl/18600/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18600/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kyler-murray.php,6,76.7,58.3,88,,115.07,79,255,25.78,8,3372.61,23.21,76.96,467.24,3.58,,,,,,,,,,,,,,2026-06-11
+114,114,Quentin Johnston,LAC,WR,WR49,,23123,https://images.fantasypros.com/images/players/nfl/23123/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23123/headshot/210x210.png,https://www.fantasypros.com/nfl/players/quentin-johnston.php,7,78.8,77.8,72,,115.71,88,149,12.25,8,,,,,,55.4,779.9,7.29,,,,,,,,,,,2026-06-11
+115,115,George Kittle,SF,TE,TE12,,16499,https://images.fantasypros.com/images/players/nfl/16499/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16499/headshot/210x210.png,https://www.fantasypros.com/nfl/players/george-kittle.php,8,92,90.2,93,,117.27,85,209,22.90,8,,,,,,73,827.41,6.38,,,,,,,,,,,2026-06-11
+116,116,Jordan Love,GB,QB,QB18,,19246,https://images.fantasypros.com/images/players/nfl/19246/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19246/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jordan-love.php,11,60.5,21.3,72,,118.15,105,134,6.41,9,3836.19,27.03,47.69,199.91,0.46,,,,,,,,,,,,,,2026-06-11
+117,117,Jayden Higgins,HOU,WR,WR50,,27077,https://images.fantasypros.com/images/players/nfl/27077/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27077/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jayden-higgins.php,8,51.7,24.5,48,,118.49,90,137,10.21,9,,,,,,49.33,608.66,4.72,,,,,,,,,,,2026-06-11
+118,118,Rachaad White,WAS,RB,RB38,,23891,https://images.fantasypros.com/images/players/nfl/23891/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23891/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rachaad-white.php,7,77.7,84.8,67,,118.63,77,152,14.88,9,,,139.35,638.32,5.54,36.48,235,1.44,,,,,,,,,,,2026-06-11
+119,119,Baker Mayfield,TB,QB,QB19,,17237,https://images.fantasypros.com/images/players/nfl/17237/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17237/headshot/210x210.png,https://www.fantasypros.com/nfl/players/baker-mayfield.php,10,61.2,36.4,60,,121.24,104,129,7.17,9,3883.29,26.81,56.53,360.12,1.72,,,,,,,,,,,,,,2026-06-11
+120,120,Tyler Shough,NO,QB,QB20,,23096,https://images.fantasypros.com/images/players/nfl/23096/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23096/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-shough.php,8,62.4,46.6,57,,121.56,101,147,10.28,9,3942,22.14,70.29,305.62,4.13,,,,,,,,,,,,,,2026-06-11
+121,121,Dallas Goedert,PHI,TE,TE13,,17270,https://images.fantasypros.com/images/players/nfl/17270/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17270/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dallas-goedert.php,10,89.9,90.5,90,,122.20,86,155,17.26,9,,,,,,69.23,719.91,8.31,,,,,,,,,,,2026-06-11
+122,122,Jacory Croskey-Merritt,WAS,RB,RB39,,27316,https://images.fantasypros.com/images/players/nfl/27316/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27316/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jacory-croskeymerritt.php,7,79.4,66.5,86,,125.22,102,238,19.78,9,,,187.46,852.56,7.72,11.31,80.95,0.24,,,,,,,,,,,2026-06-11
+123,123,Isaiah Likely,NYG,TE,TE14,,23781,https://images.fantasypros.com/images/players/nfl/23781/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23781/headshot/210x210.png,https://www.fantasypros.com/nfl/players/isaiah-likely.php,8,85.5,80.6,88,,125.44,85,229,29.68,9,,,,,,66.37,791.26,5.59,,,,,,,,,,,2026-06-11
+124,124,Xavier Worthy,KC,WR,WR51,,23019,https://images.fantasypros.com/images/players/nfl/23019/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23019/headshot/210x210.png,https://www.fantasypros.com/nfl/players/xavier-worthy.php,5,81.7,82.7,76,,126.85,106,168,13.85,9,,,,,,54.21,714.67,4.28,,,,,,,,,,,2026-06-11
+125,125,Tyler Allgeier,ARI,RB,RB40,,24172,https://images.fantasypros.com/images/players/nfl/24172/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24172/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-allgeier.php,14,55.2,22.8,60,,130.32,99,164,15.08,9,,,111.71,427.55,4.16,17.04,108.53,0.2,,,,,,,,,,,2026-06-11
+126,126,Tyrone Tracy Jr.,NYG,RB,RB41,,22980,https://images.fantasypros.com/images/players/nfl/22980/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22980/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyrone-tracy-jr.php,8,46.2,9.2,49,,130.32,103,152,10.91,9,,,121.01,515,2.2,23.5,182.4,1.28,,,,,,,,,,,2026-06-11
+127,127,KC Concepcion,CLE,WR,WR52,,27331,,,https://www.fantasypros.com/nfl/players/kevin-concepcion.php,11,67.7,71.2,46,,130.63,81,245,34.58,9,,,,,,54.66,690.81,3.14,,,,,,,,,,,2026-06-11
+128,128,Jordan Mason,MIN,RB,RB42,,22969,https://images.fantasypros.com/images/players/nfl/22969/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22969/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jordan-mason.php,6,65.1,45.2,68,,131.00,102,160,12.10,9,,,178.45,826.23,6.21,15.7,82.66,0.17,,,,,,,,,,,2026-06-11
+129,129,Romeo Doubs,NE,WR,WR53,,23794,https://images.fantasypros.com/images/players/nfl/23794/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23794/headshot/210x210.png,https://www.fantasypros.com/nfl/players/romeo-doubs.php,11,75.9,77.9,63,,131.10,91,174,16.73,9,,,,,,57.76,747.38,5.98,,,,,,,,,,,2026-06-11
+130,130,Malik Willis,MIA,QB,QB21,,23499,https://images.fantasypros.com/images/players/nfl/23499/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23499/headshot/210x210.png,https://www.fantasypros.com/nfl/players/malik-willis.php,6,51.8,10.3,66,,131.78,103,276,35.91,9,3325.2,19.52,125.3,634.1,4.19,,,,,,,,,,,,,,2026-06-11
+131,131,Jalen Coker,CAR,WR,WR54,,26403,https://images.fantasypros.com/images/players/nfl/26403/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26403/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jalen-coker.php,5,52.1,38,38,,132.34,110,170,13.86,9,,,,,,56.9,684.75,4.08,,,,,,,,,,,2026-06-11
+132,132,Woody Marks,HOU,RB,RB43,,27520,https://images.fantasypros.com/images/players/nfl/27520/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27520/headshot/210x210.png,https://www.fantasypros.com/nfl/players/woody-marks.php,8,63.6,69.4,40,,134.54,93,228,22.79,9,,,146.47,570.6,2.98,22.6,189.63,2.18,,,,,,,,,,,2026-06-11
+133,133,C.J. Stroud,HOU,QB,QB22,,23071,https://images.fantasypros.com/images/players/nfl/23071/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23071/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cj-stroud.php,8,43.3,9.4,41,,136.78,114,159,9.31,9,3940.45,24.69,56.03,248.97,1.03,,,,,,,,,,,,,,2026-06-11
+134,134,Mark Andrews,BAL,TE,TE15,,17269,https://images.fantasypros.com/images/players/nfl/17269/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17269/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mark-andrews.php,13,85.5,80.7,87,,138.49,94,173,20.07,9,,,,,,57,589.4,8.06,,,,,,,,,,,2026-06-11
+135,135,Matthew Golden,GB,WR,WR55,,26024,https://images.fantasypros.com/images/players/nfl/26024/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26024/headshot/210x210.png,https://www.fantasypros.com/nfl/players/matthew-golden.php,11,70.6,84.7,45,,140.34,110,180,17.36,9,,,,,,55.39,746.92,3.87,,,,,,,,,,,2026-06-11
+136,136,Sam Darnold,SEA,QB,QB23,,17236,https://images.fantasypros.com/images/players/nfl/17236/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17236/headshot/210x210.png,https://www.fantasypros.com/nfl/players/sam-darnold.php,11,47.2,13.1,46,,141.24,113,179,14.14,9,4064.85,28,46.04,134.73,0.43,,,,,,,,,,,,,,2026-06-11
+137,137,Juwan Johnson,NO,TE,TE16,,19562,https://images.fantasypros.com/images/players/nfl/19562/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19562/headshot/210x210.png,https://www.fantasypros.com/nfl/players/juwan-johnson.php,8,52.3,22.3,53,,141.34,111,203,20.97,9,,,,,,66.74,751.35,3.37,,,,,,,,,,,2026-06-11
+138,138,Tyjae Spears,TEN,RB,RB44,,25323,https://images.fantasypros.com/images/players/nfl/25323/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25323/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyjae-spears.php,9,55.3,57.3,32,,141.95,102,175,11.75,9,,,97.64,387.45,3.36,48.79,321.25,0.8,,,,,,,,,,,2026-06-11
+139,139,Zach Charbonnet,SEA,RB,RB45,,23152,https://images.fantasypros.com/images/players/nfl/23152/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23152/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zach-charbonnet.php,11,71.9,72,58,,142.54,80,231,26.78,9,,,131.75,530,6.92,20.17,152.44,0.22,,,,,,,,,,,2026-06-11
+140,140,Oronde Gadsden II,LAC,TE,TE17,,25997,https://images.fantasypros.com/images/players/nfl/25997/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25997/headshot/210x210.png,https://www.fantasypros.com/nfl/players/oronde-gadsden-ii.php,7,63.2,18.7,80,-2,144.44,95,254,44.32,9,,,,,,47.19,587.36,3.38,,,,,,,,,,,2026-06-11
+141,141,Alvin Kamara,NO,RB,RB46,,16421,https://images.fantasypros.com/images/players/nfl/16421/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16421/headshot/210x210.png,https://www.fantasypros.com/nfl/players/alvin-kamara.php,8,56.7,64.7,29,,144.71,102,231,18.37,9,,,120.23,481.2,2.19,35.24,232.25,0.93,,,,,,,,,,,2026-06-11
+142,142,Jonathon Brooks,CAR,RB,RB47,,26148,https://images.fantasypros.com/images/players/nfl/26148/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26148/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jonathon-brooks.php,5,65.5,61.7,59,,144.93,97,257,39.37,9,,,161.63,645.58,3.81,23.17,184.92,1.08,,,,,,,,,,,2026-06-11
+143,143,Brenton Strange,JAC,TE,TE18,,25345,https://images.fantasypros.com/images/players/nfl/25345/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25345/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brenton-strange.php,7,53.7,7.8,68,,145.44,95,209,26.75,9,,,,,,64.54,701.55,4.49,,,,,,,,,,,2026-06-11
+144,144,Dylan Sampson,CLE,RB,RB48,,27102,https://images.fantasypros.com/images/players/nfl/27102/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27102/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dylan-sampson.php,11,33.5,3,24,,146.88,120,201,13.45,9,,,78.75,254.11,1.52,32.79,260.43,2.11,,,,,,,,,,,2026-06-11
+145,145,Cam Ward,TEN,QB,QB24,,24755,https://images.fantasypros.com/images/players/nfl/24755/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24755/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cam-ward.php,9,38.6,7.1,32,,148.34,129,179,9.45,9,3456.16,19.21,42.78,177.69,2.52,,,,,,,,,,,,,,2026-06-11
+146,146,Chris Rodriguez Jr.,JAC,RB,RB49,,22986,https://images.fantasypros.com/images/players/nfl/22986/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22986/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chris-rodriguez-jr.php,7,50.4,23.9,50,,148.76,118,237,29.19,9,,,136.22,552.19,5.2,3.06,25.72,0.08,,,,,,,,,,,2026-06-11
+147,147,Isiah Pacheco,DET,RB,RB50,,24333,https://images.fantasypros.com/images/players/nfl/24333/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24333/headshot/210x210.png,https://www.fantasypros.com/nfl/players/isiah-pacheco.php,6,57.4,60.5,37,,150.22,126,169,10.45,9,,,147.75,627.17,3.77,21.59,134.69,0.9,,,,,,,,,,,2026-06-11
+148,148,Jerry Jeudy,CLE,WR,WR56,,19201,https://images.fantasypros.com/images/players/nfl/19201/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19201/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jerry-jeudy.php,11,41.1,32,18,,153.27,136,190,14.04,10,,,,,,53.2,725.76,2.85,,,,,,,,,,,2026-06-11
+149,149,Rashid Shaheed,SEA,WR,WR57,,24687,https://images.fantasypros.com/images/players/nfl/24687/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24687/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rashid-shaheed.php,11,46.8,25.9,38,,154.15,121,174,12.13,10,,,,,,45.92,698.17,3.25,,,,,,,,,,,2026-06-11
+150,150,Denzel Boston,CLE,WR,WR58,,27339,https://images.fantasypros.com/images/players/nfl/27339/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27339/headshot/210x210.png,https://www.fantasypros.com/nfl/players/denzel-boston.php,11,40.7,11.4,32,,156.85,119,244,27.97,10,,,,,,47.82,596.48,2.88,,,,,,,,,,,2026-06-11
+151,151,Bryce Young,CAR,QB,QB25,,22900,https://images.fantasypros.com/images/players/nfl/22900/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22900/headshot/210x210.png,https://www.fantasypros.com/nfl/players/bryce-young.php,5,36.4,4.4,29,,157.05,134,214,17.13,10,3371.58,21.17,59.89,269.68,2.57,,,,,,,,,,,,,,2026-06-11
+152,152,James Conner,ARI,RB,RB51,,16447,https://images.fantasypros.com/images/players/nfl/16447/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16447/headshot/210x210.png,https://www.fantasypros.com/nfl/players/james-conner.php,14,37.7,19.1,16,,160.12,86,304,40.30,10,,,42.5,155,1.5,18,131.5,1,,,,,,,,,,,2026-06-11
+153,153,Jauan Jennings,MIN,WR,WR59,,19590,https://images.fantasypros.com/images/players/nfl/19590/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19590/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jauan-jennings.php,6,41,12.5,30,,149.23,91,202,26.38,10,,,,,,48.74,556.51,5.17,,,,,,,,,,,2026-06-11
+154,154,Hunter Henry,NE,TE,TE19,,15561,https://images.fantasypros.com/images/players/nfl/15561/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15561/headshot/210x210.png,https://www.fantasypros.com/nfl/players/hunter-henry.php,11,64.6,33.3,73,,163.59,131,203,14.76,10,,,,,,56.88,665.51,5.61,,,,,,,,,,,2026-06-11
+155,155,Omar Cooper Jr.,NYJ,WR,WR60,,28127,https://images.fantasypros.com/images/players/nfl/28127/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28127/headshot/210x210.png,https://www.fantasypros.com/nfl/players/omar-cooper-jr.php,13,49.1,38.3,30,,158.20,121,269,35.09,10,,,,,,46.3,550.85,3.32,,,,,,,,,,,2026-06-11
+156,156,Keaton Mitchell,LAC,RB,RB52,,25360,https://images.fantasypros.com/images/players/nfl/25360/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25360/headshot/210x210.png,https://www.fantasypros.com/nfl/players/keaton-mitchell.php,7,34.6,1.5,32,,164.51,130,243,24.46,10,,,85.2,395.37,1.9,11.52,82.25,0.23,,,,,,,,,,,2026-06-11
+157,157,Daniel Jones,IND,QB,QB26,,18232,https://images.fantasypros.com/images/players/nfl/18232/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18232/headshot/210x210.png,https://www.fantasypros.com/nfl/players/daniel-jones.php,13,47.3,31.3,33,,164.56,129,321,38.11,10,3858.45,25.3,63.52,240.19,4.95,,,,,,,,,,,,,,2026-06-11
+158,158,Braelon Allen,NYJ,RB,RB53,,24346,https://images.fantasypros.com/images/players/nfl/24346/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24346/headshot/210x210.png,https://www.fantasypros.com/nfl/players/braelon-allen.php,13,30.3,3.8,21,,164.88,120,257,24.64,10,,,105.96,427.91,4.26,12.85,94.24,0.71,,,,,,,,,,,2026-06-11
+159,159,Houston Texans,HOU,D/ST,DST1,,8120,https://images.fantasypros.com/images/players/nfl/8120/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8120/headshot/210x210.png,https://www.fantasypros.com/nfl/players/houston-defense.php,8,94.8,96,99,,152.97,151,172,5.01,10,,,,,,,,,,,,49.43,14.17,2.74,1,18.37,12.44,0,2026-06-11
+160,160,Travis Hunter,JAC,WR,WR61,,26034,https://images.fantasypros.com/images/players/nfl/26034/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26034/headshot/210x210.png,https://www.fantasypros.com/nfl/players/travis-hunter.php,7,64.8,59.4,35,,162.33,90,264,32.76,10,,,,,,41.62,496.16,3.3,,,,,,,,,,,2026-06-11
+161,161,Brian Robinson Jr.,ATL,RB,RB54,,20094,https://images.fantasypros.com/images/players/nfl/20094/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20094/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brian-robinson-jr.php,11,37.8,9.3,22,,170.73,145,222,15.48,10,,,129.27,563.94,4.34,6.87,43.21,0.15,,,,,,,,,,,2026-06-11
+162,162,Dalton Schultz,HOU,TE,TE20,,17349,https://images.fantasypros.com/images/players/nfl/17349/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17349/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dalton-schultz.php,8,36.1,3.9,25,,173.73,124,226,25.34,10,,,,,,65.81,622.06,3.55,,,,,,,,,,,2026-06-11
+163,163,Jonah Coleman,DEN,RB,RB55,,27320,https://images.fantasypros.com/images/players/nfl/27320/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27320/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jonah-coleman.php,10,39.2,3.9,35,,168.30,131,278,37.58,10,,,20.44,84.8,0.65,8.74,62.33,0.4,,,,,,,,,,,2026-06-11
+164,164,Adonai Mitchell,NYJ,WR,WR62,,24357,https://images.fantasypros.com/images/players/nfl/24357/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24357/headshot/210x210.png,https://www.fantasypros.com/nfl/players/adonai-mitchell.php,13,22.1,1.7,7,,174.63,142,258,26.30,10,,,,,,38.51,563.9,3.28,,,,,,,,,,,2026-06-11
+165,165,Jalen McMillan,TB,WR,WR63,,23179,https://images.fantasypros.com/images/players/nfl/23179/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23179/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jalen-mcmillan.php,10,38.1,19.9,25,,176.20,139,267,24.01,10,,,,,,46.58,607.26,3.94,,,,,,,,,,,2026-06-11
+166,166,Chig Okonkwo,WAS,TE,TE21,,23982,https://images.fantasypros.com/images/players/nfl/23982/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23982/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chigoziem-okonkwo.php,7,38.5,4.5,34,,176.78,106,254,40.48,10,,,,,,52.36,576.36,2.61,,,,,,,,,,,2026-06-11
+167,167,Deebo Samuel Sr.,FA,WR,WR64,,18244,https://images.fantasypros.com/images/players/nfl/18244/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18244/headshot/210x210.png,https://www.fantasypros.com/nfl/players/deebo-samuel.php,,37.5,11.2,30,-10,159.45,126,302,37.25,10,,,,,,,,,,,,,,,,,,,2026-06-11
+168,168,Tre' Harris,LAC,WR,WR65,,26215,https://images.fantasypros.com/images/players/nfl/26215/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26215/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tre-harris.php,7,23.2,1.7,6,,177.17,140,232,19.14,10,,,,,,34.51,407.79,2.45,,,,,,,,,,,2026-06-11
+169,169,Stefon Diggs,FA,WR,WR66,,13981,https://images.fantasypros.com/images/players/nfl/13981/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13981/headshot/210x210.png,https://www.fantasypros.com/nfl/players/stefon-diggs.php,,51.8,28.3,44,,154.14,82,334,47.98,10,,,,,,,,,,,,,,,,,,,2026-06-11
+170,170,Emanuel Wilson,SEA,RB,RB56,,25885,https://images.fantasypros.com/images/players/nfl/25885/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25885/headshot/210x210.png,https://www.fantasypros.com/nfl/players/emanuel-wilson.php,11,26.6,2.3,15,,178.61,127,243,32.15,10,,,69.71,289.49,1.71,7.68,51.63,0.03,,,,,,,,,,,2026-06-11
+171,171,Denver Broncos,DEN,D/ST,DST2,,8090,https://images.fantasypros.com/images/players/nfl/8090/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8090/headshot/210x210.png,https://www.fantasypros.com/nfl/players/denver-defense.php,10,93,97.7,99,,163.05,151,183,5.50,10,,,,,,,,,,,,58.88,13.98,2.59,0,12.27,8.43,0,2026-06-11
+172,172,Kayshon Boutte,NE,WR,WR67,,22989,https://images.fantasypros.com/images/players/nfl/22989/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22989/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kayshon-boutte.php,11,27.6,2.8,11,,181.34,141,241,22.11,10,,,,,,30.28,462,4.04,,,,,,,,,,,2026-06-11
+173,173,Tank Bigsby,PHI,RB,RB57,,22908,https://images.fantasypros.com/images/players/nfl/22908/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22908/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tank-bigsby.php,10,29,7.1,13,,183.07,141,231,25.05,10,,,85.61,419.38,3.18,3.31,29.3,0.07,,,,,,,,,,,2026-06-11
+174,174,Brandon Aiyuk,SF,WR,WR68,,19252,https://images.fantasypros.com/images/players/nfl/19252/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19252/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brandon-aiyuk.php,8,36.2,11.7,25,,172.59,133,294,34.41,10,,,,,,,,,,,,,,,,,,,2026-06-11
+175,175,Seattle Seahawks,SEA,D/ST,DST3,,8260,https://images.fantasypros.com/images/players/nfl/8260/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8260/headshot/210x210.png,https://www.fantasypros.com/nfl/players/seattle-defense.php,11,95.5,92.3,99,,167.18,161,183,3.71,10,,,,,,,,,,,,46.5,13.38,3.34,0,13.53,9.59,0,2026-06-11
+176,176,Los Angeles Rams,LAR,D/ST,DST4,,8280,https://images.fantasypros.com/images/players/nfl/8280/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8280/headshot/210x210.png,https://www.fantasypros.com/nfl/players/los-angeles-rams-defense.php,11,76.5,67,96,,169.74,151,185,4.88,10,,,,,,,,,,,,47.44,13.62,2.5,0,14.48,10.21,0,2026-06-11
+177,177,Troy Franklin,DEN,WR,WR69,,23092,https://images.fantasypros.com/images/players/nfl/23092/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23092/headshot/210x210.png,https://www.fantasypros.com/nfl/players/troy-franklin.php,10,20.9,1.2,6,,188.15,136,262,30.40,10,,,,,,36.52,396.39,3.89,,,,,,,,,,,2026-06-11
+178,178,Tre Tucker,LV,WR,WR70,,25337,https://images.fantasypros.com/images/players/nfl/25337/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25337/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tre-tucker.php,13,27.3,9.4,12,,188.29,128,287,27.83,10,,,,,,50.08,634.01,3.76,,,,,,,,,,,2026-06-11
+179,179,Philadelphia Eagles,PHI,D/ST,DST5,,8230,https://images.fantasypros.com/images/players/nfl/8230/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8230/headshot/210x210.png,https://www.fantasypros.com/nfl/players/philadelphia-defense.php,10,82.1,71.5,97,,172.84,171,188,3.54,10,,,,,,,,,,,,42.3,13.47,2.6,0,14.37,9.99,0,2026-06-11
+180,180,T.J. Hockenson,MIN,TE,TE22,,18290,https://images.fantasypros.com/images/players/nfl/18290/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18290/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tj-hockenson.php,6,61.2,69.6,36,,190.46,131,246,20.89,10,,,,,,65.85,577.01,3.41,,,,,,,,,,,2026-06-11
+181,181,Emmett Johnson,KC,RB,RB58,,28107,https://images.fantasypros.com/images/players/nfl/28107/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28107/headshot/210x210.png,https://www.fantasypros.com/nfl/players/emmett-johnson.php,5,30.1,3.1,12,,182.10,146,322,38.80,10,,,39.73,165.65,1.29,5.19,41.1,0.2,,,,,,,,,,,2026-06-11
+182,182,Jaylin Noel,HOU,WR,WR71,,27122,https://images.fantasypros.com/images/players/nfl/27122/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27122/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaylin-noel.php,8,16.8,0.7,4,,193.32,151,289,31.53,10,,,,,,21.63,239.32,1.37,,,,,,,,,,,2026-06-11
+183,183,Kimani Vidal,LAC,RB,RB59,,26355,https://images.fantasypros.com/images/players/nfl/26355/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26355/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kimani-vidal.php,7,24,3.4,6,,197.29,150,243,29.02,11,,,62.22,251.01,1.61,11.92,103.8,0.69,,,,,,,,,,,2026-06-11
+184,184,Ryan Flournoy,DAL,WR,WR72,,26398,https://images.fantasypros.com/images/players/nfl/26398/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26398/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ryan-flournoy.php,14,19.7,1.5,4,,199.24,155,273,23.44,11,,,,,,34.03,384.61,2.66,,,,,,,,,,,2026-06-11
+185,185,Kenyon Sadiq,NYJ,TE,TE23,,26055,https://images.fantasypros.com/images/players/nfl/26055/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26055/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kenyon-sadiq.php,13,70.2,68.3,54,,200.95,138,281,29.79,11,,,,,,57.08,609.97,5.16,,,,,,,,,,,2026-06-11
+186,186,Pat Bryant,DEN,WR,WR73,,27211,https://images.fantasypros.com/images/players/nfl/27211/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27211/headshot/210x210.png,https://www.fantasypros.com/nfl/players/pat-bryant.php,10,19.9,1,3,,202.37,168,270,23.58,11,,,,,,28.46,319.53,2.1,,,,,,,,,,,2026-06-11
+187,187,Brandon Aubrey,DAL,K,K1,,26068,https://images.fantasypros.com/images/players/nfl/26068/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26068/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brandon-aubrey.php,14,96.9,99.7,100,,187.16,187,193,0.96,11,,,,,,,,,39.82,35.24,47.51,,,,,,,,2026-06-11
+188,188,Jacoby Brissett,ARI,QB,QB27,,15642,https://images.fantasypros.com/images/players/nfl/15642/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15642/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jacoby-brissett.php,14,28.8,2,15,,198.48,134,308,40.48,11,3565.09,20.02,51.6,233.65,1.66,,,,,,,,,,,,,,2026-06-11
+189,189,New England Patriots,NE,D/ST,DST6,,8180,https://images.fantasypros.com/images/players/nfl/8180/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8180/headshot/210x210.png,https://www.fantasypros.com/nfl/players/new-england-defense.php,11,80.6,88.7,85,,187.97,183,279,15.77,11,,,,,,,,,,,,42.47,12.91,2.84,0,12.48,8.91,0,2026-06-11
+190,190,Calvin Ridley,TEN,WR,WR74,,17258,https://images.fantasypros.com/images/players/nfl/17258/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17258/headshot/210x210.png,https://www.fantasypros.com/nfl/players/calvin-ridley.php,9,33,40.7,6,,203.98,140,264,24.63,11,,,,,,47.12,761.37,2.79,,,,,,,,,,,2026-06-11
+191,191,Pittsburgh Steelers,PIT,D/ST,DST7,,8240,https://images.fantasypros.com/images/players/nfl/8240/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8240/headshot/210x210.png,https://www.fantasypros.com/nfl/players/pittsburgh-defense.php,9,66,74.8,64,,188.61,172,194,3.48,11,,,,,,,,,,,,47.06,12.39,2.65,0,18.82,13.26,0,2026-06-11
+192,192,Jacksonville Jaguars,JAC,D/ST,DST8,,8140,https://images.fantasypros.com/images/players/nfl/8140/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8140/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jacksonville-defense.php,7,65.4,70,81,,188.68,185,220,7.82,11,,,,,,,,,,,,37.15,12.85,3,0,13.58,9.3,0,2026-06-11
+193,193,Minnesota Vikings,MIN,D/ST,DST9,,8170,https://images.fantasypros.com/images/players/nfl/8170/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8170/headshot/210x210.png,https://www.fantasypros.com/nfl/players/minnesota-defense.php,6,62.3,44.8,86,,189.74,181,356,27.98,11,,,,,,,,,,,,49.75,11.86,2.52,0,18.03,12.57,0,2026-06-11
+194,194,Isaac TeSlaa,DET,WR,WR75,,27446,https://images.fantasypros.com/images/players/nfl/27446/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27446/headshot/210x210.png,https://www.fantasypros.com/nfl/players/isaac-teslaa.php,6,26.3,2.8,12,,206.49,158,303,25.64,11,,,,,,25.38,351.82,4.12,,,,,,,,,,,2026-06-11
+195,195,Los Angeles Chargers,LAC,D/ST,DST10,,8250,https://images.fantasypros.com/images/players/nfl/8250/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8250/headshot/210x210.png,https://www.fantasypros.com/nfl/players/los-angeles-chargers-defense.php,7,49.2,39.3,74,,193.92,185,279,15.65,11,,,,,,,,,,,,49.92,14.44,2.48,0,12.64,8.49,0,2026-06-11
+196,196,Ray Davis,BUF,RB,RB60,,26191,https://images.fantasypros.com/images/players/nfl/26191/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26191/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ray-davis.php,7,20.5,2.1,7,,210.07,160,260,27.04,11,,,32.3,137.77,1.06,7.75,59.96,0.39,,,,,,,,,,,2026-06-11
+197,197,Cameron Dicker,LAC,K,K2,,23901,https://images.fantasypros.com/images/players/nfl/23901/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23901/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cameron-dicker.php,7,94.1,98.9,93,,196.84,192,253,9.58,11,,,,,,,,,38.41,34.48,40.17,,,,,,,,2026-06-11
+198,198,Ka'imi Fairbairn,HOU,K,K3,,15756,https://images.fantasypros.com/images/players/nfl/15756/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15756/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kaimi-fairbairn.php,8,87.6,92.9,98,,192.54,192,204,2.15,11,,,,,,,,,41.7,37.45,35.57,,,,,,,,2026-06-11
+199,199,Sean Tucker,TB,RB,RB61,,23679,https://images.fantasypros.com/images/players/nfl/23679/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23679/headshot/210x210.png,https://www.fantasypros.com/nfl/players/sean-tucker.php,10,22.4,0.9,6,,208.08,148,266,28.84,11,,,34.45,145.39,2,0.5,3,0,,,,,,,,,,,2026-06-11
+200,200,AJ Barner,SEA,TE,TE24,,26335,https://images.fantasypros.com/images/players/nfl/26335/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26335/headshot/210x210.png,https://www.fantasypros.com/nfl/players/aj-barner.php,11,35.3,4.1,24,,213.00,155,254,23.73,11,,,,,,45.86,452.23,5.32,,,,,,,,,,,2026-06-11
+201,201,Darnell Mooney,NYG,WR,WR76,,19810,https://images.fantasypros.com/images/players/nfl/19810/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19810/headshot/210x210.png,https://www.fantasypros.com/nfl/players/darnell-mooney.php,8,21,4.1,4,,208.70,160,291,27.38,11,,,,,,36.49,534.79,2.76,,,,,,,,,,,2026-06-11
+202,202,Mike Washington Jr.,LV,RB,RB62,,28108,,,https://www.fantasypros.com/nfl/players/mike-washington-jr.php,13,29.2,5.9,12,,204.38,148,314,38.80,11,,,92.81,352.52,2.12,15.17,121.91,0.64,,,,,,,,,,,2026-06-11
+203,203,Jason Myers,SEA,K,K4,,14003,https://images.fantasypros.com/images/players/nfl/14003/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/14003/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jason-myers.php,11,90,97.7,96,,200.82,193,213,3.03,11,,,,,,,,,40.94,36.05,46.26,,,,,,,,2026-06-11
+204,204,Cam Little,JAC,K,K5,,26475,https://images.fantasypros.com/images/players/nfl/26475/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26475/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cam-little.php,7,84.7,89.3,98,,196.95,192,240,7.61,11,,,,,,,,,33.18,29.17,43.57,,,,,,,,2026-06-11
+205,205,Chimere Dike,TEN,WR,WR77,,27315,https://images.fantasypros.com/images/players/nfl/27315/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27315/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chimere-dike.php,9,20.3,1.2,5,,212.20,140,299,42.65,11,,,,,,25.06,240.36,3.26,,,,,,,,,,,2026-06-11
+206,206,Green Bay Packers,GB,D/ST,DST11,,8110,https://images.fantasypros.com/images/players/nfl/8110/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8110/headshot/210x210.png,https://www.fantasypros.com/nfl/players/green-bay-defense.php,11,33.6,49.8,27,,197.38,188,280,15.38,11,,,,,,,,,,,,40.1,12.39,2.39,0,13.54,9.6,0,2026-06-11
+207,207,Kansas City Chiefs,KC,D/ST,DST12,,8150,https://images.fantasypros.com/images/players/nfl/8150/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8150/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kansas-city-defense.php,5,27.4,33.5,18,,211.46,190,235,10.17,11,,,,,,,,,,,,42.48,12.03,2.31,0,12.28,8.43,0,2026-06-11
+208,208,Eddy Pineiro,SF,K,K6,,17575,https://images.fantasypros.com/images/players/nfl/17575/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17575/headshot/210x210.png,https://www.fantasypros.com/nfl/players/eddy-pineiro.php,8,64.8,84,77,,208.39,204,240,6.43,11,,,,,,,,,35.04,31.56,39.51,,,,,,,,2026-06-11
+209,209,Gunnar Helm,TEN,TE,TE25,,27109,https://images.fantasypros.com/images/players/nfl/27109/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27109/headshot/210x210.png,https://www.fantasypros.com/nfl/players/gunnar-helm.php,9,25,2,7,,222.37,173,289,23.54,11,,,,,,49.88,426.61,3.16,,,,,,,,,,,2026-06-11
+210,210,Dontayvion Wicks,PHI,WR,WR78,,24354,https://images.fantasypros.com/images/players/nfl/24354/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24354/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dontayvion-wicks.php,10,14.3,1.1,3,,218.73,165,262,20.57,11,,,,,,29.61,333.58,2.28,,,,,,,,,,,2026-06-11
+211,211,Kaytron Allen,WAS,RB,RB63,,24362,https://images.fantasypros.com/images/players/nfl/24362/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24362/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kaytron-allen.php,7,24.4,1.8,7,,214.44,156,314,43.32,11,,,23.62,110.83,0.72,3.13,25.54,0.09,,,,,,,,,,,2026-06-11
+212,212,Tyler Loop,BAL,K,K7,,27534,https://images.fantasypros.com/images/players/nfl/27534/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27534/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-loop.php,13,55.6,45.3,84,,210.08,200,253,10.52,11,,,,,,,,,33.23,29.14,46.67,,,,,,,,2026-06-11
+213,213,Antonio Williams,WAS,WR,WR79,,25418,https://images.fantasypros.com/images/players/nfl/25418/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25418/headshot/210x210.png,https://www.fantasypros.com/nfl/players/antonio-williams-wr.php,7,28.7,3.9,15,,175.84,133,263,30.33,11,,,,,,44.37,600.12,3.61,,,,,,,,,,,2026-06-11
+214,214,Baltimore Ravens,BAL,D/ST,DST13,,8020,https://images.fantasypros.com/images/players/nfl/8020/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8020/headshot/210x210.png,https://www.fantasypros.com/nfl/players/baltimore-defense.php,13,46.5,43.4,33,,212.55,185,356,29.12,11,,,,,,,,,,,,46.35,13.18,2.54,0,13.91,9.84,0,2026-06-11
+215,215,Evan McPherson,CIN,K,K8,,23297,https://images.fantasypros.com/images/players/nfl/23297/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23297/headshot/210x210.png,https://www.fantasypros.com/nfl/players/evan-mcpherson.php,6,40.3,7.3,58,,212.84,200,252,11.63,11,,,,,,,,,33.22,29.01,45.66,,,,,,,,2026-06-11
+216,216,Andy Borregales,NE,K,K9,,27291,https://images.fantasypros.com/images/players/nfl/27291/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27291/headshot/210x210.png,https://www.fantasypros.com/nfl/players/andres-borregales.php,11,29.4,3.1,66,,215.92,207,282,13.59,11,,,,,,,,,31.32,26.19,42.95,,,,,,,,2026-06-11
+217,217,Cleveland Browns,CLE,D/ST,DST14,,8070,https://images.fantasypros.com/images/players/nfl/8070/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8070/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cleveland-defense.php,11,33.6,50.9,18,,200.37,190,280,23.77,11,,,,,,,,,,,,47.34,12.71,2.37,0,12.72,8.89,0,2026-06-11
+218,218,Cairo Santos,CHI,K,K10,,13731,https://images.fantasypros.com/images/players/nfl/13731/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13731/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cairo-santos.php,10,21,37.7,15,,216.74,211,253,7.26,11,,,,,,,,,35.74,30.99,42.84,,,,,,,,2026-06-11
+219,219,Nicholas Singleton,TEN,RB,RB64,,24343,https://images.fantasypros.com/images/players/nfl/24343/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24343/headshot/210x210.png,https://www.fantasypros.com/nfl/players/nick-singleton.php,9,29.1,2.9,12,,217.16,141,311,45.07,11,,,20.27,83.43,0.55,4.29,29.9,0.16,,,,,,,,,,,2026-06-11
+220,220,Elic Ayomanor,TEN,WR,WR80,,27059,https://images.fantasypros.com/images/players/nfl/27059/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27059/headshot/210x210.png,https://www.fantasypros.com/nfl/players/elic-ayomanor.php,9,16.5,0.7,3,,226.50,166,331,39.62,11,,,,,,22.95,306.96,2.71,,,,,,,,,,,2026-06-11
+221,221,Detroit Lions,DET,D/ST,DST15,,8100,https://images.fantasypros.com/images/players/nfl/8100/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8100/headshot/210x210.png,https://www.fantasypros.com/nfl/players/detroit-defense.php,6,43.4,75.5,25,,218.00,185,276,19.05,11,,,,,,,,,,,,49.73,13.34,2.73,0,13.97,9.53,0,2026-06-11
+222,222,Tyreek Hill,FA,WR,WR81,,15802,https://images.fantasypros.com/images/players/nfl/15802/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15802/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyreek-hill.php,,44,34.8,23,-10,198.74,121,335,53.02,11,,,,,,,,,,,,,,,,,,,2026-06-11
+223,223,Jaylen Wright,MIA,RB,RB65,,25987,https://images.fantasypros.com/images/players/nfl/25987/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25987/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaylen-wright.php,6,17,1.3,4,,224.90,162,278,26.06,11,,,77.77,299.57,1.5,7.23,52.43,0.1,,,,,,,,,,,2026-06-11
+224,224,Malik Washington,MIA,WR,WR82,,26314,https://images.fantasypros.com/images/players/nfl/26314/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26314/headshot/210x210.png,https://www.fantasypros.com/nfl/players/malik-washington.php,6,21.6,1.8,8,,233.49,154,302,37.39,11,,,,,,43.49,389.65,2.28,,,,,,,,,,,2026-06-11
+225,225,Chase McLaughlin,TB,K,K11,,19058,https://images.fantasypros.com/images/players/nfl/19058/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19058/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chase-mclaughlin.php,10,26.3,23,21,,218.16,212,250,8.66,11,,,,,,,,,37.24,31.79,38.29,,,,,,,,2026-06-11
+226,226,Jalen Nailor,LV,WR,WR83,,24177,https://images.fantasypros.com/images/players/nfl/24177/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24177/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jalen-nailor.php,13,30.2,3.4,18,,219.73,149,303,45.46,11,,,,,,41.98,566.42,4.4,,,,,,,,,,,2026-06-11
+227,227,David Njoku,LAC,TE,TE26,,16399,https://images.fantasypros.com/images/players/nfl/16399/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16399/headshot/210x210.png,https://www.fantasypros.com/nfl/players/david-njoku.php,7,30.6,4.9,15,,239.73,174,281,20.69,12,,,,,,37.31,370.8,4.57,,,,,,,,,,,2026-06-11
+228,228,Fernando Mendoza,LV,QB,QB28,,28013,https://images.fantasypros.com/images/players/nfl/28013/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28013/headshot/210x210.png,https://www.fantasypros.com/nfl/players/fernando-mendoza.php,13,40.5,21.8,18,,231.69,159,332,42.35,12,2843.77,16.59,51.56,232.14,1.46,,,,,,,,,,,,,,2026-06-11
+229,229,Jake Bates,DET,K,K12,,26075,https://images.fantasypros.com/images/players/nfl/26075/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26075/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jake-bates.php,6,47.8,72.5,26,,232.41,192,252,14.91,12,,,,,,,,,35.22,29.42,51.03,,,,,,,,2026-06-11
+230,230,De'Zhaun Stribling,SF,WR,WR84,,28138,https://images.fantasypros.com/images/players/nfl/28138/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28138/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dezhaun-stribling.php,8,16.9,2.1,5,,240.86,178,347,36.59,12,,,,,,32.27,440.36,2.49,,,,,,,,,,,2026-06-11
+231,231,Buffalo Bills,BUF,D/ST,DST16,,8030,https://images.fantasypros.com/images/players/nfl/8030/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8030/headshot/210x210.png,https://www.fantasypros.com/nfl/players/buffalo-defense.php,7,32.8,63.5,13,,229.16,191,279,14.56,12,,,,,,,,,,,,44.05,13.86,2.69,0,13.07,8.8,0,2026-06-11
+232,232,Cooper Kupp,SEA,WR,WR85,,16433,https://images.fantasypros.com/images/players/nfl/16433/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16433/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cooper-kupp.php,11,19.9,6.7,5,,238.30,174,299,29.10,12,,,,,,47.43,583.76,3.41,,,,,,,,,,,2026-06-11
+233,233,Terrance Ferguson,LAR,TE,TE27,,23091,https://images.fantasypros.com/images/players/nfl/23091/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23091/headshot/210x210.png,https://www.fantasypros.com/nfl/players/terrance-ferguson.php,11,25.6,3.1,14,,242.78,180,372,27.93,12,,,,,,34.21,507.6,4.5,,,,,,,,,,,2026-06-11
+234,234,Tank Dell,HOU,WR,WR86,,25361,https://images.fantasypros.com/images/players/nfl/25361/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25361/headshot/210x210.png,https://www.fantasypros.com/nfl/players/nathaniel-dell.php,8,28.2,16.7,7,,231.89,172,283,22.47,12,,,,,,50.03,633.24,3.84,,,,,,,,,,,2026-06-11
+235,235,Geno Smith,NYJ,QB,QB29,,11687,https://images.fantasypros.com/images/players/nfl/11687/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11687/headshot/210x210.png,https://www.fantasypros.com/nfl/players/geno-smith.php,13,24.5,1.5,8,,240.70,153,312,37.13,12,3377.22,22.17,58.02,235.95,1.02,,,,,,,,,,,,,,2026-06-11
+236,236,Harrison Butker,KC,K,K13,,16712,https://images.fantasypros.com/images/players/nfl/16712/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16712/headshot/210x210.png,https://www.fantasypros.com/nfl/players/harrison-butker.php,5,40.5,73.4,16,,238.28,200,333,29.23,12,,,,,,,,,37.34,31.92,37.93,,,,,,,,2026-06-11
+237,237,Rashod Bateman,BAL,WR,WR87,,19794,https://images.fantasypros.com/images/players/nfl/19794/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19794/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rashod-bateman.php,13,12.3,1.9,2,,243.08,202,293,24.09,12,,,,,,38.35,594.86,5.98,,,,,,,,,,,2026-06-11
+238,238,Ollie Gordon II,MIA,RB,RB66,,25984,https://images.fantasypros.com/images/players/nfl/25984/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25984/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ollie-gordon.php,6,7.9,1.2,3,,245.18,169,297,23.45,12,,,45.09,185.16,1.11,3.93,27.71,0.12,,,,,,,,,,,2026-06-11
+239,239,Mason Taylor,NYJ,TE,TE28,,26005,https://images.fantasypros.com/images/players/nfl/26005/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26005/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mason-taylor.php,13,20.6,1.1,3,,250.24,193,355,36.67,12,,,,,,41.77,346.24,2.58,,,,,,,,,,,2026-06-11
+240,240,Germie Bernard,PIT,WR,WR88,,26039,,,https://www.fantasypros.com/nfl/players/germie-bernard.php,9,22.3,6.2,4,,226.80,163,299,37.96,12,,,,,,44.56,555.3,3.1,,,,,,,,,,,2026-06-11
+241,241,Jack Bech,LV,WR,WR89,,27224,https://images.fantasypros.com/images/players/nfl/27224/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27224/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jack-bech.php,13,16.2,1.8,4,,245.82,137,351,36.24,12,,,,,,41.39,483.01,1.78,,,,,,,,,,,2026-06-11
+242,242,Cade Otton,TB,TE,TE29,,23181,https://images.fantasypros.com/images/players/nfl/23181/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23181/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cade-otton.php,10,25.2,1.5,5,,254.56,209,290,13.78,12,,,,,,57.56,592.96,3.24,,,,,,,,,,,2026-06-11
+243,243,Harrison Mevis,LAR,K,K14,,26638,https://images.fantasypros.com/images/players/nfl/26638/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26638/headshot/210x210.png,https://www.fantasypros.com/nfl/players/harrison-mevis.php,11,42.5,91.4,12,,243.29,205,282,25.53,12,,,,,,,,,32.73,29.48,54.93,,,,,,,,2026-06-11
+244,244,Kaleb Johnson,PIT,RB,RB67,,27165,https://images.fantasypros.com/images/players/nfl/27165/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27165/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kaleb-johnson-rb.php,9,16.1,1.3,4,,247.85,152,338,43.10,12,,,8.57,35.78,0.22,0,0,0,,,,,,,,,,,2026-06-11
+245,245,Pat Freiermuth,PIT,TE,TE30,,20163,https://images.fantasypros.com/images/players/nfl/20163/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20163/headshot/210x210.png,https://www.fantasypros.com/nfl/players/pat-freiermuth.php,9,23.9,4.7,9,,251.73,173,306,23.66,12,,,,,,53.45,558.87,3.89,,,,,,,,,,,2026-06-11
+246,246,Devin Neal,NO,RB,RB68,,23682,https://images.fantasypros.com/images/players/nfl/23682/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23682/headshot/210x210.png,https://www.fantasypros.com/nfl/players/devin-neal.php,8,12.8,0.5,2,,244.21,179,360,37.72,12,,,22.5,90,1,2.5,17.5,0,,,,,,,,,,,2026-06-11
+247,247,Ted Hurst III,TB,WR,WR90,,28130,https://images.fantasypros.com/images/players/nfl/28130/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28130/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ted-hurst.php,10,17.6,1.2,2,,256.38,184,319,32.77,12,,,,,,28.87,389.83,2.57,,,,,,,,,,,2026-06-11
+248,248,Zachariah Branch,ATL,WR,WR91,,25419,https://images.fantasypros.com/images/players/nfl/25419/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25419/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zachariah-branch.php,11,23.3,2.1,4,,245.16,189,294,28.01,12,,,,,,21,251.6,1.27,,,,,,,,,,,2026-06-11
+249,249,Trey Benson,ARI,RB,RB69,,25388,https://images.fantasypros.com/images/players/nfl/25388/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25388/headshot/210x210.png,https://www.fantasypros.com/nfl/players/trey-benson.php,14,21.8,1.5,3,,238.69,127,337,56.32,12,,,0,0,0,0,0,0,,,,,,,,,,,2026-06-11
+250,250,Chris Boswell,PIT,K,K15,,13029,https://images.fantasypros.com/images/players/nfl/13029/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13029/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chris-boswell.php,9,43.6,35,57,,247.71,200,282,13.85,12,,,,,,,,,32.55,28.69,34.32,,,,,,,,2026-06-11
+251,251,Aaron Rodgers,PIT,QB,QB30,,9001,https://images.fantasypros.com/images/players/nfl/9001/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/9001/headshot/210x210.png,https://www.fantasypros.com/nfl/players/aaron-rodgers.php,9,27.2,2.8,13,,245.38,153,305,41.93,12,3421.68,21.99,24.56,83.73,0.94,,,,,,,,,,,,,,2026-06-11
+252,252,Theo Johnson,NYG,TE,TE31,,23104,https://images.fantasypros.com/images/players/nfl/23104/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23104/headshot/210x210.png,https://www.fantasypros.com/nfl/players/theo-johnson.php,8,20.6,0.9,3,,260.59,155,325,35.26,12,,,,,,29.51,332.05,3.33,,,,,,,,,,,2026-06-11
+253,253,Colby Parkinson,LAR,TE,TE32,,19372,https://images.fantasypros.com/images/players/nfl/19372/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19372/headshot/210x210.png,https://www.fantasypros.com/nfl/players/colby-parkinson.php,11,23.2,1.1,4,,257.83,198,300,18.06,12,,,,,,34.51,366.09,4.34,,,,,,,,,,,2026-06-11
+254,254,Evan Engram,DEN,TE,TE33,,16411,https://images.fantasypros.com/images/players/nfl/16411/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16411/headshot/210x210.png,https://www.fantasypros.com/nfl/players/evan-engram.php,10,17.5,2,3,,258.75,181,290,20.97,12,,,,,,51.69,466.16,2.59,,,,,,,,,,,2026-06-11
+255,255,Christian Kirk,SF,WR,WR92,,17268,https://images.fantasypros.com/images/players/nfl/17268/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17268/headshot/210x210.png,https://www.fantasypros.com/nfl/players/christian-kirk.php,8,17,2.2,2,,255.11,174,325,32.96,12,,,,,,39.51,476.02,3.05,,,,,,,,,,,2026-06-11
+256,256,Chris Bell,MIA,WR,WR93,,26038,,,https://www.fantasypros.com/nfl/players/chris-bell.php,6,24.7,5.8,8,,224.00,136,294,34.04,12,,,,,,40.39,535.16,1.95,,,,,,,,,,,2026-06-11
+257,257,Isaiah Davis,NYJ,RB,RB70,,25977,https://images.fantasypros.com/images/players/nfl/25977/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25977/headshot/210x210.png,https://www.fantasypros.com/nfl/players/isaiah-davis.php,13,5.1,0.6,2,,253.70,190,317,28.79,12,,,26.36,134.99,0.87,9.94,78.18,0.21,,,,,,,,,,,2026-06-11
+258,258,Justice Hill,BAL,RB,RB71,,18256,https://images.fantasypros.com/images/players/nfl/18256/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18256/headshot/210x210.png,https://www.fantasypros.com/nfl/players/justice-hill.php,13,10.4,2.9,2,,258.66,145,310,40.50,12,,,56.38,273.97,2.18,34.74,302.98,1.84,,,,,,,,,,,2026-06-11
+259,259,Keon Coleman,BUF,WR,WR94,,26019,https://images.fantasypros.com/images/players/nfl/26019/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26019/headshot/210x210.png,https://www.fantasypros.com/nfl/players/keon-coleman.php,7,15.4,2,4,,251.86,195,305,28.78,12,,,,,,19.41,265.99,2.25,,,,,,,,,,,2026-06-11
+260,260,Marvin Mims Jr.,DEN,WR,WR95,,23080,https://images.fantasypros.com/images/players/nfl/23080/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23080/headshot/210x210.png,https://www.fantasypros.com/nfl/players/marvin-mims.php,10,14.6,0.9,3,,251.31,205,305,27.04,12,,,,,,24.19,272.37,1.6,,,,,,,,,,,2026-06-11
+261,261,Michael Penix Jr.,ATL,QB,QB31,,22973,https://images.fantasypros.com/images/players/nfl/22973/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22973/headshot/210x210.png,https://www.fantasypros.com/nfl/players/michael-penix-jr.php,11,22.7,1.2,5,,267.49,179,324,33.00,12,1247.14,6.74,12.68,47.37,0.45,,,,,,,,,,,,,,2026-06-11
+262,262,Eli Stowers,PHI,TE,TE34,,23144,https://images.fantasypros.com/images/players/nfl/23144/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23144/headshot/210x210.png,https://www.fantasypros.com/nfl/players/eli-stowers.php,10,29.7,2.9,10,,260.68,173,375,35.14,12,,,,,,22.66,231.78,1.51,,,,,,,,,,,2026-06-11
+263,263,Tory Horton,SEA,WR,WR96,,26022,https://images.fantasypros.com/images/players/nfl/26022/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26022/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tory-horton.php,11,19,1.1,3,,260.68,202,338,24.51,12,,,,,,29.82,400.44,4.16,,,,,,,,,,,2026-06-11
+264,264,Elijah Sarratt,BAL,WR,WR97,,27463,https://images.fantasypros.com/images/players/nfl/27463/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27463/headshot/210x210.png,https://www.fantasypros.com/nfl/players/elijah-sarratt.php,13,19,1.1,2,,256.74,176,328,28.18,12,,,,,,19.54,294.45,1.77,,,,,,,,,,,2026-06-11
+265,265,Ty Johnson,BUF,RB,RB72,,18406,https://images.fantasypros.com/images/players/nfl/18406/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18406/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ty-johnson.php,7,5.9,1,1,,264.59,191,386,30.03,12,,,51.38,222.09,2.06,22.82,241.51,2.15,,,,,,,,,,,2026-06-11
+266,266,Kendre Miller,NO,RB,RB73,,24360,https://images.fantasypros.com/images/players/nfl/24360/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24360/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kendre-miller.php,8,8.2,0.5,2,,265.08,177,364,45.53,12,,,52.94,209.82,2.15,4,28.5,0,,,,,,,,,,,2026-06-11
+267,267,MarShawn Lloyd,GB,RB,RB74,,23118,https://images.fantasypros.com/images/players/nfl/23118/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23118/headshot/210x210.png,https://www.fantasypros.com/nfl/players/marshawn-lloyd.php,11,11.8,3.8,4,,269.03,164,326,39.04,12,,,50.6,211.52,1.55,6.53,48.61,0.28,,,,,,,,,,,2026-06-11
+268,268,Demond Claiborne,MIN,RB,RB75,,28084,,,https://www.fantasypros.com/nfl/players/demond-claiborne.php,6,18.4,1.4,4,,255.21,182,322,38.86,12,,,27.66,121.5,0.89,3.25,25.21,0.09,,,,,,,,,,,2026-06-11
+269,269,Malachi Fields,NYG,WR,WR98,,27994,https://images.fantasypros.com/images/players/nfl/27994/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27994/headshot/210x210.png,https://www.fantasypros.com/nfl/players/malachi-fields.php,8,18.9,1.9,5,,255.97,208,378,37.64,12,,,,,,13.22,157.53,0.9,,,,,,,,,,,2026-06-11
+270,270,Kyle Williams,NE,WR,WR99,,27487,https://images.fantasypros.com/images/players/nfl/27487/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27487/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kyle-williams-wr-2025.php,11,12.2,0.8,2,,260.06,205,379,35.87,12,,,,,,6.43,91.46,0.55,,,,,,,,,,,2026-06-11
+271,271,Chris Brooks,GB,RB,RB76,,25823,https://images.fantasypros.com/images/players/nfl/25823/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25823/headshot/210x210.png,https://www.fantasypros.com/nfl/players/christopher-brooks.php,11,10.5,1.3,6,,271.08,177,313,33.46,12,,,72.7,323.2,1.31,15.37,107.58,0.29,,,,,,,,,,,2026-06-11
+272,272,Mack Hollins,NE,WR,WR100,,16489,https://images.fantasypros.com/images/players/nfl/16489/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16489/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mack-hollins.php,11,6.8,0.6,1,,265.78,199,384,42.28,12,,,,,,10.77,126.66,0.79,,,,,,,,,,,2026-06-11
+273,273,Wil Lutz,DEN,K,K16,,16026,https://images.fantasypros.com/images/players/nfl/16026/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16026/headshot/210x210.png,https://www.fantasypros.com/nfl/players/wil-lutz.php,10,9,2.7,7,,269.73,215,330,26.15,12,,,,,,,,,34.51,28.98,41.4,,,,,,,,2026-06-11
+274,274,Brashard Smith,KC,RB,RB77,,27259,https://images.fantasypros.com/images/players/nfl/27259/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27259/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brashard-smith.php,5,9.7,1,2,,263.54,203,322,27.35,12,,,25,89.5,0.5,10.5,70.5,0.5,,,,,,,,,,,2026-06-11
+275,275,Jaydon Blue,DAL,RB,RB78,,24344,https://images.fantasypros.com/images/players/nfl/24344/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24344/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaydon-blue.php,14,15,1.5,4,,274.61,197,328,25.32,12,,,44.23,186.39,1.39,4.39,30.76,0.2,,,,,,,,,,,2026-06-11
+276,276,Atlanta Falcons,ATL,D/ST,DST17,,8010,https://images.fantasypros.com/images/players/nfl/8010/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8010/headshot/210x210.png,https://www.fantasypros.com/nfl/players/atlanta-defense.php,11,16.1,22.6,9,,260.85,235,347,26.25,12,,,,,,,,,,,,52.32,13.43,2.48,0,13.29,9.09,0,2026-06-11
+277,277,DJ Giddens,IND,RB,RB79,,27097,https://images.fantasypros.com/images/players/nfl/27097/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27097/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dj-giddens.php,13,5.6,0.8,2,,273.27,222,330,24.75,12,,,33.55,141.45,1.01,8.61,56.69,0.29,,,,,,,,,,,2026-06-11
+278,278,Darius Slayton,NYG,WR,WR101,,18706,https://images.fantasypros.com/images/players/nfl/18706/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18706/headshot/210x210.png,https://www.fantasypros.com/nfl/players/darius-slayton.php,8,8.6,0.8,2,,270.03,185,382,40.09,13,,,,,,35.42,520.46,2,,,,,,,,,,,2026-06-11
+279,279,Tua Tagovailoa,ATL,QB,QB32,,19198,https://images.fantasypros.com/images/players/nfl/19198/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19198/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tua-tagovailoa.php,11,25,1.7,6,,280.95,159,332,34.45,13,2813.94,17.18,20.44,48.92,0.13,,,,,,,,,,,,,,2026-06-11
+280,280,Xavier Legette,CAR,WR,WR102,,26136,https://images.fantasypros.com/images/players/nfl/26136/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26136/headshot/210x210.png,https://www.fantasypros.com/nfl/players/xavier-legette.php,5,5.3,1.3,2,,260.67,208,305,31.64,13,,,,,,26.63,308.12,2.06,,,,,,,,,,,2026-06-11
+281,281,Keenan Allen,LAC,WR,WR103,,11616,https://images.fantasypros.com/images/players/nfl/11616/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11616/headshot/210x210.png,https://www.fantasypros.com/nfl/players/keenan-allen.php,7,12.2,0.8,3,,266.53,196,296,25.66,13,,,,,,,,,,,,,,,,,,,2026-06-11
+282,282,Max Klare,LAR,TE,TE35,,27993,https://images.fantasypros.com/images/players/nfl/27993/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27993/headshot/210x210.png,https://www.fantasypros.com/nfl/players/max-klare.php,11,16.8,0.7,2,,291.94,268,341,19.69,13,,,,,,7.52,82.59,0.68,,,,,,,,,,,2026-06-11
+283,283,LeQuint Allen Jr.,JAC,RB,RB80,,27285,https://images.fantasypros.com/images/players/nfl/27285/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27285/headshot/210x210.png,https://www.fantasypros.com/nfl/players/lequint-allen-jr.php,7,10.2,0.8,1,,273.63,175,326,30.61,13,,,8.03,33.92,0.19,21.68,148.01,0.84,,,,,,,,,,,2026-06-11
+284,284,Will Reichard,MIN,K,K17,,26341,https://images.fantasypros.com/images/players/nfl/26341/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26341/headshot/210x210.png,https://www.fantasypros.com/nfl/players/will-reichard.php,6,24.6,29.3,14,,266.39,200,333,35.45,13,,,,,,,,,34.76,31.85,37.97,,,,,,,,2026-06-11
+285,285,Chris Brazzell II,CAR,WR,WR104,,28047,,,https://www.fantasypros.com/nfl/players/chris-brazzell-ii.php,5,17.3,1.1,2,,254.57,178,297,27.06,13,,,,,,22.47,287.86,1.67,,,,,,,,,,,2026-06-11
+286,286,Jordan James,SF,RB,RB81,,27310,https://images.fantasypros.com/images/players/nfl/27310/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27310/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jordan-james.php,8,17.1,2.4,5,,275.49,169,403,47.22,13,,,102.31,416.04,3.17,16.12,148.34,0.68,,,,,,,,,,,2026-06-11
+287,287,San Francisco 49ers,SF,D/ST,DST18,,8270,https://images.fantasypros.com/images/players/nfl/8270/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8270/headshot/210x210.png,https://www.fantasypros.com/nfl/players/san-francisco-defense.php,8,27.8,29.4,11,,264.31,167,356,39.43,13,,,,,,,,,,,,35.33,11.11,2.36,0,15.42,10.5,0,2026-06-11
+288,288,Najee Harris,LAC,RB,RB82,,19302,https://images.fantasypros.com/images/players/nfl/19302/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19302/headshot/210x210.png,https://www.fantasypros.com/nfl/players/najee-harris-rb.php,7,14.8,0.5,3,,265.09,222,312,26.75,13,,,28,126,1,2,18,0,,,,,,,,,,,2026-06-11
+289,289,Devaughn Vele,NO,WR,WR105,,26409,https://images.fantasypros.com/images/players/nfl/26409/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26409/headshot/210x210.png,https://www.fantasypros.com/nfl/players/devaughn-vele.php,8,13.5,0.8,1,,277.09,218,367,31.49,13,,,,,,35.07,422.76,2.84,,,,,,,,,,,2026-06-11
+290,290,Seth McGowan,IND,RB,RB83,,23079,,,https://www.fantasypros.com/nfl/players/seth-mcgowan.php,13,2.6,0.5,1,,294.93,237,332,26.44,13,,,22.29,97.05,1.2,3.19,26.9,0.08,,,,,,,,,,,2026-06-11
+291,291,Shedeur Sanders,CLE,QB,QB33,,25968,https://images.fantasypros.com/images/players/nfl/25968/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25968/headshot/210x210.png,https://www.fantasypros.com/nfl/players/shedeur-sanders.php,11,23.2,2.8,5,,288.13,214,335,31.43,13,1752.14,9.57,25.59,153.64,0.81,,,,,,,,,,,,,,2026-06-11
+292,292,Malik Davis,DAL,RB,RB84,,24205,https://images.fantasypros.com/images/players/nfl/24205/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24205/headshot/210x210.png,https://www.fantasypros.com/nfl/players/malik-davis.php,14,4.5,0.7,1,,288.34,227,329,22.46,13,,,81.83,382.71,2.78,8.66,67.27,0.16,,,,,,,,,,,2026-06-11
+293,293,Jaleel McLaughlin,DEN,RB,RB85,,25876,https://images.fantasypros.com/images/players/nfl/25876/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25876/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaleel-mclaughlin.php,10,1.2,0.2,1,,276.32,175,332,35.12,13,,,,,,,,,,,,,,,,,,,2026-06-11
+294,294,Samaje Perine,CIN,RB,RB86,,16423,https://images.fantasypros.com/images/players/nfl/16423/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16423/headshot/210x210.png,https://www.fantasypros.com/nfl/players/samaje-perine.php,6,4.5,1.4,1,,287.11,152,416,46.01,13,,,98.89,443.25,3.68,17.88,135.61,0.37,,,,,,,,,,,2026-06-11
+295,295,Tyquan Thornton,KC,WR,WR106,,22913,https://images.fantasypros.com/images/players/nfl/22913/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22913/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyquan-thornton.php,5,6.3,0.6,1,,280.43,174,320,31.02,13,,,,,,25.39,465.43,3.47,,,,,,,,,,,2026-06-11
+296,296,Jerome Ford,WAS,RB,RB87,,22921,https://images.fantasypros.com/images/players/nfl/22921/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22921/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jerome-ford.php,7,5.4,0.5,1,,280.97,225,314,22.04,13,,,17.5,97,0.5,4,23.5,0,,,,,,,,,,,2026-06-11
+297,297,George Holani,SEA,RB,RB88,,22915,https://images.fantasypros.com/images/players/nfl/22915/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22915/headshot/210x210.png,https://www.fantasypros.com/nfl/players/george-holani.php,11,9.2,10.7,2,,278.88,233,315,24.47,13,,,38.86,164.16,1.53,8.01,62.21,0.28,,,,,,,,,,,2026-06-11
+298,298,Charlie Smyth,NO,K,K18,,26444,https://images.fantasypros.com/images/players/nfl/26444/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26444/headshot/210x210.png,https://www.fantasypros.com/nfl/players/charlie-smyth.php,8,2.7,1,2,,280.09,207,362,37.37,13,,,,,,,,,36.02,30.32,34.17,,,,,,,,2026-06-11
+299,299,Indianapolis Colts,IND,D/ST,DST19,,8130,https://images.fantasypros.com/images/players/nfl/8130/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8130/headshot/210x210.png,https://www.fantasypros.com/nfl/players/indianapolis-defense.php,13,20.5,38.9,3,,279.63,220,358,27.32,13,,,,,,,,,,,,40.06,12.44,2.4,0,12.14,8.52,0,2026-06-11
+300,300,Devin Singletary,NYG,RB,RB89,,18280,https://images.fantasypros.com/images/players/nfl/18280/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18280/headshot/210x210.png,https://www.fantasypros.com/nfl/players/devin-singletary.php,8,2.9,0.8,2,,290.69,231,329,22.81,13,,,35.64,142.74,0.98,4.21,26.34,0.09,,,,,,,,,,,2026-06-11
+301,301,Mike Gesicki,CIN,TE,TE36,,17272,https://images.fantasypros.com/images/players/nfl/17272/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17272/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mike-gesicki.php,6,17.7,1.3,2,,276.60,229,306,19.42,13,,,,,,44.57,467.15,3.8,,,,,,,,,,,2026-06-11
+302,302,Oscar Delp,NO,TE,TE37,,25430,https://images.fantasypros.com/images/players/nfl/25430/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25430/headshot/210x210.png,https://www.fantasypros.com/nfl/players/oscar-delp.php,8,6.6,0.6,1,,309.60,274,357,29.30,13,,,,,,7.46,75.73,0.62,,,,,,,,,,,2026-06-11
+303,303,Hollywood Brown,PHI,WR,WR107,,18226,https://images.fantasypros.com/images/players/nfl/18226/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18226/headshot/210x210.png,https://www.fantasypros.com/nfl/players/marquise-brown.php,10,9.4,0.9,2,,292.18,241,370,24.11,13,,,,,,31.3,388.79,3.26,,,,,,,,,,,2026-06-11
+304,304,Adam Randall,BAL,RB,RB90,,24367,,,https://www.fantasypros.com/nfl/players/adam-randall.php,13,7.7,1,2,,277.10,231,322,31.46,13,,,55.13,281.54,1.96,10.31,103.4,1.1,,,,,,,,,,,2026-06-11
+305,305,Emari Demercado,KC,RB,RB91,,25654,https://images.fantasypros.com/images/players/nfl/25654/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25654/headshot/210x210.png,https://www.fantasypros.com/nfl/players/emari-demercado.php,5,3.6,0.6,1,,300.83,234,354,22.79,13,,,77.29,426.87,1.7,16.34,118.99,0.81,,,,,,,,,,,2026-06-11
+306,306,Greg Dulcich,MIA,TE,TE38,,23153,https://images.fantasypros.com/images/players/nfl/23153/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23153/headshot/210x210.png,https://www.fantasypros.com/nfl/players/greg-dulcich.php,6,15,1,3,,228.65,124,306,47.98,13,,,,,,53.12,605.94,2.77,,,,,,,,,,,2026-06-11
+307,307,Joe Mixon,FA,RB,RB92,,16420,https://images.fantasypros.com/images/players/nfl/16420/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16420/headshot/210x210.png,https://www.fantasypros.com/nfl/players/joe-mixon.php,,15.1,1.3,2,,285.73,157,341,44.54,13,,,,,,,,,,,,,,,,,,,2026-06-11
+308,308,Jarquez Hunter,LAR,RB,RB93,,24335,https://images.fantasypros.com/images/players/nfl/24335/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24335/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jarquez-hunter.php,11,4.7,0.3,1,,297.88,240,354,24.78,13,,,,,,,,,,,,,,,,,,,2026-06-11
+309,309,Jake Tonges,SF,TE,TE39,,24778,https://images.fantasypros.com/images/players/nfl/24778/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24778/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jake-tonges.php,8,23.6,2.1,8,,277.15,209,357,26.32,13,,,,,,12.67,119.23,1.05,,,,,,,,,,,2026-06-11
+310,310,Kirk Cousins,LV,QB,QB34,,11177,https://images.fantasypros.com/images/players/nfl/11177/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11177/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kirk-cousins.php,13,18.6,1.4,3,,302.79,251,335,20.68,13,753.87,4.58,6.36,10.05,0.13,,,,,,,,,,,,,,2026-06-11
+311,311,Deshaun Watson,CLE,QB,QB35,,16398,https://images.fantasypros.com/images/players/nfl/16398/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16398/headshot/210x210.png,https://www.fantasypros.com/nfl/players/deshaun-watson.php,11,18.7,1.4,4,,290.47,214,339,29.00,13,1647.78,8.16,35.51,167.43,0.98,,,,,,,,,,,,,,2026-06-11
+312,312,Trevor Etienne,CAR,RB,RB94,,25393,https://images.fantasypros.com/images/players/nfl/25393/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25393/headshot/210x210.png,https://www.fantasypros.com/nfl/players/trevor-etienne.php,5,3.1,1,1,,307.11,275,332,13.31,13,,,24.81,105.62,0.59,8.15,59.2,0.3,,,,,,,,,,,2026-06-11
+313,313,Isaac Guerendo,SF,RB,RB95,,26392,https://images.fantasypros.com/images/players/nfl/26392/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26392/headshot/210x210.png,https://www.fantasypros.com/nfl/players/isaac-guerendo.php,8,2.8,0.5,1,,295.87,238,366,28.12,13,,,16.5,80,0.5,2,18.5,0,,,,,,,,,,,2026-06-11
+314,314,Isaiah Bond,CLE,WR,WR108,,24371,https://images.fantasypros.com/images/players/nfl/24371/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24371/headshot/210x210.png,https://www.fantasypros.com/nfl/players/isaiah-bond.php,11,4.3,0.6,1,,297.03,244,372,32.00,13,,,,,,5.64,73.73,0.44,,,,,,,,,,,2026-06-11
+315,315,J'Mari Taylor,JAC,RB,RB96,,28109,,,https://www.fantasypros.com/nfl/players/jmari-taylor.php,7,5.7,0,0,,323.33,296,381,23.25,13,,,,,,,,,,,,,,,,,,,2026-06-11
+316,316,Tahj Brooks,CIN,RB,RB97,,26212,https://images.fantasypros.com/images/players/nfl/26212/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26212/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tahj-brooks.php,6,2.4,0.5,1,,309.97,271,362,20.22,13,,,30.53,129.25,0.94,0,0,0,,,,,,,,,,,2026-06-11
+317,317,Skyler Bell,BUF,WR,WR109,,28126,https://images.fantasypros.com/images/players/nfl/28126/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28126/headshot/210x210.png,https://www.fantasypros.com/nfl/players/skyler-bell.php,7,14.5,1.4,2,,267.74,223,375,36.13,13,,,,,,15.07,205.5,1.21,,,,,,,,,,,2026-06-11
+318,318,Kaelon Black,SF,RB,RB98,,28401,https://images.fantasypros.com/images/players/nfl/28401/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28401/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kaelon-black.php,8,11.1,2.7,4,,271.57,189,332,40.01,13,,,98.12,387.6,3.17,8.56,79.37,0.6,,,,,,,,,,,2026-06-11
+319,319,Andrei Iosivas,CIN,WR,WR110,,25335,https://images.fantasypros.com/images/players/nfl/25335/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25335/headshot/210x210.png,https://www.fantasypros.com/nfl/players/andrei-iosivas.php,6,8.1,0.7,2,,275.90,223,344,30.50,13,,,,,,31.15,394.15,2.89,,,,,,,,,,,2026-06-11
+320,320,Audric Estime,NO,RB,RB99,,23054,https://images.fantasypros.com/images/players/nfl/23054/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23054/headshot/210x210.png,https://www.fantasypros.com/nfl/players/audric-estime.php,8,5.2,0.2,1,,313.10,244,371,25.66,13,,,30,122,1,3,24,0,,,,,,,,,,,2026-06-11
+321,321,J.J. McCarthy,MIN,QB,QB36,,23018,https://images.fantasypros.com/images/players/nfl/23018/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23018/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jj-mccarthy.php,6,18.8,1.3,4,,301.60,159,366,48.49,13,367.36,2.18,6.92,31.43,0.32,,,,,,,,,,,,,,2026-06-11
+322,322,Ja'Kobi Lane,BAL,WR,WR111,,27337,https://images.fantasypros.com/images/players/nfl/27337/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27337/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jakobi-lane.php,13,20.2,3,2,,279.40,231,343,25.89,13,,,,,,30.41,459.66,3.43,,,,,,,,,,,2026-06-11
+323,323,Konata Mumpfield,LAR,WR,WR112,,27449,https://images.fantasypros.com/images/players/nfl/27449/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27449/headshot/210x210.png,https://www.fantasypros.com/nfl/players/konata-mumpfield.php,11,2,0.2,1,,282.40,262,315,17.26,13,,,,,,9.88,126.72,1.15,,,,,,,,,,,2026-06-11
+324,324,New Orleans Saints,NO,D/ST,DST20,,8190,https://images.fantasypros.com/images/players/nfl/8190/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8190/headshot/210x210.png,https://www.fantasypros.com/nfl/players/new-orleans-defense.php,8,22.4,48.8,3,,277.53,183,351,38.84,13,,,,,,,,,,,,46.29,12.97,2.47,0,13.25,9.41,0,2026-06-11
+325,325,Chicago Bears,CHI,D/ST,DST21,,8050,https://images.fantasypros.com/images/players/nfl/8050/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8050/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chicago-defense.php,10,16.7,20.9,8,,283.42,185,356,47.42,14,,,,,,,,,,,,40.82,14.53,2.65,0,16.67,11.49,0,2026-06-11
+326,326,Cedric Tillman,CLE,WR,WR113,,25287,https://images.fantasypros.com/images/players/nfl/25287/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25287/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cedric-tillman.php,11,2.2,0.5,1,,301.77,273,379,23.92,14,,,,,,20.98,257.47,2.27,,,,,,,,,,,2026-06-11
+327,327,Tez Johnson,TB,WR,WR114,,27147,https://images.fantasypros.com/images/players/nfl/27147/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27147/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tez-johnson.php,10,5,0.5,2,,308.09,265,367,25.87,14,,,,,,6.64,77.77,0.61,,,,,,,,,,,2026-06-11
+328,328,Bam Knight,ARI,RB,RB100,,24901,https://images.fantasypros.com/images/players/nfl/24901/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24901/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zonovan-bam-knight.php,14,1,0.3,1,,302.33,234,373,34.49,14,,,0,0,0,0,0,0,,,,,,,,,,,2026-06-11
+329,329,Jalen Royals,KC,WR,WR115,,27076,https://images.fantasypros.com/images/players/nfl/27076/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27076/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jalen-royals.php,5,2.9,0.4,1,,304.62,262,371,27.33,14,,,,,,17.05,198.67,1.56,,,,,,,,,,,2026-06-11
+330,330,Calvin Austin III,NYG,WR,WR116,,23739,https://images.fantasypros.com/images/players/nfl/23739/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23739/headshot/210x210.png,https://www.fantasypros.com/nfl/players/calvin-austin.php,8,4.7,0.5,1,,307.86,258,413,41.51,14,,,,,,20.51,273.23,2.25,,,,,,,,,,,2026-06-11
+331,331,Kareem Hunt,FA,RB,RB101,,16425,https://images.fantasypros.com/images/players/nfl/16425/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16425/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kareem-hunt.php,,2.7,0.4,1,,315.32,271,424,27.71,14,,,,,,,,,,,,,,,,,,,2026-06-11
+332,332,Darnell Washington,PIT,TE,TE40,,22967,https://images.fantasypros.com/images/players/nfl/22967/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22967/headshot/210x210.png,https://www.fantasypros.com/nfl/players/darnell-washington.php,9,13.8,1.3,2,,301.50,254,390,32.83,14,,,,,,32.98,345.55,1.94,,,,,,,,,,,2026-06-11
+333,333,Will Shipley,PHI,RB,RB102,,22930,https://images.fantasypros.com/images/players/nfl/22930/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22930/headshot/210x210.png,https://www.fantasypros.com/nfl/players/will-shipley.php,10,2.6,0.6,1,,315.70,284,348,15.56,14,,,9.25,39.56,0.3,11.28,83.24,0.39,,,,,,,,,,,2026-06-11
+334,334,Luke McCaffrey,WAS,WR,WR117,,26328,https://images.fantasypros.com/images/players/nfl/26328/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26328/headshot/210x210.png,https://www.fantasypros.com/nfl/players/luke-mccaffrey.php,7,2.3,0.4,1,,312.47,277,371,28.80,14,,,,,,12,189,2,,,,,,,,,,,2026-06-11
+335,335,Mac Jones,SF,QB,QB37,,20156,https://images.fantasypros.com/images/players/nfl/20156/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20156/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mac-jones.php,8,15.8,0.7,2,,329.48,276,446,35.00,14,156.35,0.98,2.98,10.11,0.01,,,,,,,,,,,,,,2026-06-11
+336,336,Jahan Dotson,ATL,WR,WR118,,23101,https://images.fantasypros.com/images/players/nfl/23101/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23101/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jahan-dotson.php,11,5.7,0.6,2,,304.87,184,371,45.01,14,,,,,,31.9,402.85,2.06,,,,,,,,,,,2026-06-11
+337,337,Carolina Panthers,CAR,D/ST,DST22,,8040,https://images.fantasypros.com/images/players/nfl/8040/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8040/headshot/210x210.png,https://www.fantasypros.com/nfl/players/carolina-defense.php,5,7.8,6.1,3,,291.92,185,368,50.92,14,,,,,,,,,,,,39.66,11.92,2.23,0,10.46,7.07,0,2026-06-11
+338,338,Dont'e Thornton Jr.,LV,WR,WR119,,27288,https://images.fantasypros.com/images/players/nfl/27288/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27288/headshot/210x210.png,https://www.fantasypros.com/nfl/players/donte-thornton-jr.php,13,3.2,0.4,1,,315.56,277,376,31.77,14,,,,,,15.14,210.54,0.75,,,,,,,,,,,2026-06-11
+339,339,Ty Simpson,LAR,QB,QB38,,25368,https://images.fantasypros.com/images/players/nfl/25368/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25368/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ty-simpson.php,11,19.3,1.4,2,,329.05,274,398,25.74,14,298.19,2.6,4.05,18.42,0.03,,,,,,,,,,,,,,2026-06-11
+340,340,Joshua Palmer,BUF,WR,WR120,,22845,https://images.fantasypros.com/images/players/nfl/22845/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22845/headshot/210x210.png,https://www.fantasypros.com/nfl/players/josh-palmer.php,7,1.6,0.3,1,,310.93,208,375,41.55,14,,,,,,25.95,337.25,1.62,,,,,,,,,,,2026-06-11
+341,341,Olamide Zaccheaus,ATL,WR,WR121,,18864,https://images.fantasypros.com/images/players/nfl/18864/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18864/headshot/210x210.png,https://www.fantasypros.com/nfl/players/olamide-zaccheaus.php,11,4.7,0.6,1,,311.71,268,396,30.46,14,,,,,,37.22,353.38,2.14,,,,,,,,,,,2026-06-11
+342,342,Dallas Cowboys,DAL,D/ST,DST23,,8080,https://images.fantasypros.com/images/players/nfl/8080/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8080/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dallas-defense.php,14,19.4,28.2,11,,266.33,186,367,58.04,14,,,,,,,,,,,,41.05,10.09,2.31,0,13.21,9.21,0,2026-06-11
+343,343,Tyler Higbee,LAR,TE,TE41,,15623,https://images.fantasypros.com/images/players/nfl/15623/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15623/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-higbee.php,11,5.2,0.6,2,,312.77,259,356,29.68,14,,,,,,27.65,326.72,2.63,,,,,,,,,,,2026-06-11
+344,344,Bryce Lance,NO,WR,WR122,,28129,https://images.fantasypros.com/images/players/nfl/28129/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28129/headshot/210x210.png,https://www.fantasypros.com/nfl/players/bryce-lance.php,8,4.6,0.6,1,,307.58,224,387,38.90,14,,,,,,16.37,204.29,0.93,,,,,,,,,,,2026-06-11
+345,345,Noah Gray,KC,TE,TE42,,19539,https://images.fantasypros.com/images/players/nfl/19539/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19539/headshot/210x210.png,https://www.fantasypros.com/nfl/players/noah-gray.php,5,6.3,0.5,1,,323.14,263,359,26.20,14,,,,,,20.54,199.93,1.21,,,,,,,,,,,2026-06-11
+346,346,Nick Chubb,FA,RB,RB103,,17246,https://images.fantasypros.com/images/players/nfl/17246/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17246/headshot/210x210.png,https://www.fantasypros.com/nfl/players/nick-chubb.php,,1.4,0.4,1,,326.07,305,369,20.16,14,,,,,,,,,,,,,,,,,,,2026-06-11
+347,347,Michael Carter,TEN,RB,RB104,,22728,https://images.fantasypros.com/images/players/nfl/22728/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22728/headshot/210x210.png,https://www.fantasypros.com/nfl/players/michael-carter-rb.php,9,1.1,0.2,1,,337.69,308,418,32.64,14,,,,,,,,,,,,,,,,,,,2026-06-11
+348,348,Xavier Hutchinson,HOU,WR,WR123,,25332,https://images.fantasypros.com/images/players/nfl/25332/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25332/headshot/210x210.png,https://www.fantasypros.com/nfl/players/xavier-hutchinson.php,8,2.1,0.3,1,,318.33,286,395,30.44,14,,,,,,26.87,320.65,2.06,,,,,,,,,,,2026-06-11
+349,349,Elijah Arroyo,SEA,TE,TE43,,23004,https://images.fantasypros.com/images/players/nfl/23004/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23004/headshot/210x210.png,https://www.fantasypros.com/nfl/players/elijah-arroyo.php,11,10.6,0.8,2,,318.67,268,372,33.32,14,,,,,,24.1,264.1,1.71,,,,,,,,,,,2026-06-11
+350,350,Anthony Richardson Sr.,IND,QB,QB39,,24347,https://images.fantasypros.com/images/players/nfl/24347/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24347/headshot/210x210.png,https://www.fantasypros.com/nfl/players/anthony-richardson.php,13,15.5,0.7,2,,336.73,301,381,22.48,14,,,,,,,,,,,,,,,,,,,2026-06-11
+351,351,Jalen Tolbert,MIA,WR,WR124,,23770,https://images.fantasypros.com/images/players/nfl/23770/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23770/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jalen-tolbert.php,6,7.3,0.9,1,,314.82,225,389,48.22,14,,,,,,26.61,324.79,1.31,,,,,,,,,,,2026-06-11
+352,352,DeMario Douglas,NE,WR,WR125,,25304,https://images.fantasypros.com/images/players/nfl/25304/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25304/headshot/210x210.png,https://www.fantasypros.com/nfl/players/demario-douglas.php,11,9.5,0.7,1,,331.62,269,426,45.08,14,,,,,,22.73,271.01,1.5,,,,,,,,,,,2026-06-11
+353,353,Eli Heidenreich,PIT,RB,RB105,,28297,,,https://www.fantasypros.com/nfl/players/eli-heidenreich.php,9,2.9,0.7,1,,318.91,271,387,37.11,14,,,,,,,,,,,,,,,,,,,2026-06-11
+354,354,Ja'Tavion Sanders,CAR,TE,TE44,,24334,https://images.fantasypros.com/images/players/nfl/24334/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24334/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jatavion-sanders.php,5,6.4,0.7,1,,312.80,261,353,27.97,14,,,,,,32.4,266.78,2.04,,,,,,,,,,,2026-06-11
+355,355,Michael Mayer,LV,TE,TE45,,23056,https://images.fantasypros.com/images/players/nfl/23056/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23056/headshot/210x210.png,https://www.fantasypros.com/nfl/players/michael-mayer.php,13,14.9,0.9,1,,313.30,274,348,29.10,14,,,,,,38.43,355.91,1.66,,,,,,,,,,,2026-06-11
+356,356,Caleb Douglas,MIA,WR,WR126,,28135,https://images.fantasypros.com/images/players/nfl/28135/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28135/headshot/210x210.png,https://www.fantasypros.com/nfl/players/caleb-douglas.php,6,5.2,1.6,1,,322.36,265,391,38.96,14,,,,,,34.59,440.03,2.33,,,,,,,,,,,2026-06-11
+357,357,Blake Grupe,IND,K,K19,,25533,https://images.fantasypros.com/images/players/nfl/25533/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25533/headshot/210x210.png,https://www.fantasypros.com/nfl/players/blake-grupe.php,13,2.5,0.7,1,,237.00,199,282,35.88,14,,,,,,,,,17.23,14.28,17.39,,,,,,,,2026-06-11
+358,358,Justin Fields,KC,QB,QB40,,19781,https://images.fantasypros.com/images/players/nfl/19781/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19781/headshot/210x210.png,https://www.fantasypros.com/nfl/players/justin-fields.php,5,16.1,1.2,2,,337.15,277,376,27.99,14,144.12,0.96,3.39,18.15,0.08,,,,,,,,,,,,,,2026-06-11
+359,359,John Metchie III,CAR,WR,WR127,,22895,https://images.fantasypros.com/images/players/nfl/22895/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22895/headshot/210x210.png,https://www.fantasypros.com/nfl/players/john-metchie.php,5,2.5,0.3,1,,336.08,281,419,42.39,14,,,,,,64,599,5,,,,,,,,,,,2026-06-11
+360,360,Treylon Burks,WAS,WR,WR128,,22905,https://images.fantasypros.com/images/players/nfl/22905/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22905/headshot/210x210.png,https://www.fantasypros.com/nfl/players/treylon-burks.php,7,2.8,0.3,1,,316.33,221,398,49.60,14,,,,,,15.75,215.54,1.29,,,,,,,,,,,2026-06-11
+361,361,Brenen Thompson,LAC,WR,WR129,,28133,,,https://www.fantasypros.com/nfl/players/brenen-thompson.php,7,5.5,0.5,1,,324.70,258,363,29.91,14,,,,,,9.54,120.85,0.7,,,,,,,,,,,2026-06-11
+362,362,Carson Beck,ARI,QB,QB41,,22953,https://images.fantasypros.com/images/players/nfl/22953/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22953/headshot/210x210.png,https://www.fantasypros.com/nfl/players/carson-beck.php,14,14,1.6,2,,340.75,295,398,31.19,14,282.21,1.76,4.28,18.12,0.14,,,,,,,,,,,,,,2026-06-11
+363,363,Justin Joly,DEN,TE,TE46,,28079,https://images.fantasypros.com/images/players/nfl/28079/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28079/headshot/210x210.png,https://www.fantasypros.com/nfl/players/justin-joly.php,10,7.1,0.4,1,,329.40,261,374,37.33,14,,,,,,12,105,1,,,,,,,,,,,2026-06-11
+364,364,Cole Kmet,CHI,TE,TE47,,19229,https://images.fantasypros.com/images/players/nfl/19229/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19229/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cole-kmet.php,10,11.6,1,2,,324.00,267,382,34.88,14,,,,,,21.3,220.14,1.85,,,,,,,,,,,2026-06-11
+365,365,Jaylin Lane,WAS,WR,WR130,,27454,https://images.fantasypros.com/images/players/nfl/27454/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27454/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaylin-lane.php,7,3.5,0.4,1,,339.00,294,383,31.44,14,,,,,,22.79,280.95,1.8,,,,,,,,,,,2026-06-11
+366,366,New York Giants,NYG,D/ST,DST24,,8200,https://images.fantasypros.com/images/players/nfl/8200/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8200/headshot/210x210.png,https://www.fantasypros.com/nfl/players/new-york-giants-defense.php,8,28.3,32.9,5,,234.75,171,388,88.86,14,,,,,,,,,,,,40.51,11.21,2.53,0,12.91,8.7,0,2026-06-11
+367,367,Tutu Atwell,MIA,WR,WR131,,20126,https://images.fantasypros.com/images/players/nfl/20126/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20126/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tutu-atwell.php,6,2.5,0.6,1,,336.50,269,427,46.30,14,,,,,,20.34,291.14,0.44,,,,,,,,,,,2026-06-11
+368,368,Tyler Bass,BUF,K,K20,,19760,https://images.fantasypros.com/images/players/nfl/19760/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19760/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-bass.php,7,11.5,1.3,7,,272.40,200,412,72.44,14,,,,,,,,,30.8,25.92,46.7,,,,,,,,2026-06-11
+369,369,Jake Elliott,PHI,K,K21,,16540,https://images.fantasypros.com/images/players/nfl/16540/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16540/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jake-elliott.php,10,7.9,5,4,,270.40,216,384,61.89,14,,,,,,,,,32.75,26.57,41.66,,,,,,,,2026-06-11
+370,370,Zane Gonzalez,MIA,K,K22,,16548,https://images.fantasypros.com/images/players/nfl/16548/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16548/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zane-gonzalez.php,6,2.4,0.5,1,,321.00,212,410,50.12,14,,,,,,,,,32.61,28.3,30.53,,,,,,,,2026-06-11
+371,371,Austin Ekeler,FA,RB,RB106,,16483,https://images.fantasypros.com/images/players/nfl/16483/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16483/headshot/210x210.png,https://www.fantasypros.com/nfl/players/austin-ekeler.php,,2.6,0.3,1,,341.60,306,394,31.40,14,,,35,150,1,6,62,0,,,,,,,,,,,2026-06-11
+372,372,Tampa Bay Buccaneers,TB,D/ST,DST25,,8290,https://images.fantasypros.com/images/players/nfl/8290/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8290/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tampa-bay-defense.php,10,22.4,36.6,3,,255.75,188,366,73.50,14,,,,,,,,,,,,41.05,12.08,2.43,0,13.46,9.57,0,2026-06-11
+373,373,Cincinnati Bengals,CIN,D/ST,DST26,,8060,https://images.fantasypros.com/images/players/nfl/8060/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8060/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cincinnati-defense.php,6,5.2,3.5,3,,208.67,185,235,20.50,14,,,,,,,,,,,,42.69,12.63,2.71,0,13.36,9.66,0,2026-06-11
+374,374,Miami Dolphins,MIA,D/ST,DST27,,8160,https://images.fantasypros.com/images/players/nfl/8160/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8160/headshot/210x210.png,https://www.fantasypros.com/nfl/players/miami-defense.php,6,10.2,14.5,1,,285.80,186,394,84.31,14,,,,,,,,,,,,44.96,10.73,2.45,0,13.7,9.55,0,2026-06-11
+375,375,Tennessee Titans,TEN,D/ST,DST28,,8300,https://images.fantasypros.com/images/players/nfl/8300/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8300/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tennessee-defense.php,9,13,11.9,2,,211.33,191,249,26.66,14,,,,,,,,,,,,47.32,11.04,2.63,0,13.13,9.34,0,2026-06-11
+376,376,Tommy Myers,FA,TE,TE48,,25167,,,https://www.fantasypros.com/nfl/players/tommy-myers.php,,0,0,0,-6,322.86,281,428,48.11,14,,,,,,,,,,,,,,,,,,,2026-06-11
+377,377,John Bates,WAS,TE,TE49,,22833,https://images.fantasypros.com/images/players/nfl/22833/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22833/headshot/210x210.png,https://www.fantasypros.com/nfl/players/john-bates.php,7,0.7,0.1,0,,333.38,274,432,46.45,14,,,,,,18.4,173.71,1.55,,,,,,,,,,,2026-06-11
+378,378,Jawhar Jordan,HOU,RB,RB107,,26329,https://images.fantasypros.com/images/players/nfl/26329/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26329/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jawhar-jordan.php,8,0.9,0.2,1,,343.90,294,400,31.24,14,,,51.31,218.48,1.13,11.5,87,0.5,,,,,,,,,,,2026-06-11
+379,379,Dawson Knox,BUF,TE,TE50,,18631,https://images.fantasypros.com/images/players/nfl/18631/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18631/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dawson-knox.php,7,10.4,1,1,,332.63,271,370,30.57,14,,,,,,29.98,328.55,2.89,,,,,,,,,,,2026-06-11
+380,380,Chad Ryland,ARI,K,K23,,25354,https://images.fantasypros.com/images/players/nfl/25354/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25354/headshot/210x210.png,https://www.fantasypros.com/nfl/players/chad-ryland.php,14,2.5,0.5,1,,293.00,192,396,78.40,14,,,,,,,,,33.64,26.95,31.82,,,,,,,,2026-06-11
+381,381,Washington Commanders,WAS,D/ST,DST29,,8310,https://images.fantasypros.com/images/players/nfl/8310/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/8310/headshot/210x210.png,https://www.fantasypros.com/nfl/players/washington-defense.php,7,18,13.8,2,,270.25,190,405,84.88,14,,,,,,,,,,,,44.76,11.07,2.57,0,13.62,9.45,0,2026-06-11
+382,382,Nick Folk,ATL,K,K24,,9491,https://images.fantasypros.com/images/players/nfl/9491/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/9491/headshot/210x210.png,https://www.fantasypros.com/nfl/players/nick-folk.php,11,6.4,3.6,5,,225.67,212,249,16.58,14,,,,,,,,,36.23,33.02,38.99,,,,,,,,2026-06-11
+383,383,Kendrick Bourne,ARI,WR,WR132,,17066,https://images.fantasypros.com/images/players/nfl/17066/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17066/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kendrick-bourne.php,14,3.6,0.4,1,,347.22,287,449,46.85,14,,,,,,22.73,239.71,0.67,,,,,,,,,,,2026-06-11
+384,384,Raheim Sanders,CLE,RB,RB108,,24351,https://images.fantasypros.com/images/players/nfl/24351/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24351/headshot/210x210.png,https://www.fantasypros.com/nfl/players/raheim-sanders.php,11,1,0.1,1,,344.78,311,385,25.90,15,,,,,,,,,,,,,,,,,,,2026-06-11
+385,385,Kalif Raymond,CHI,WR,WR133,,16081,https://images.fantasypros.com/images/players/nfl/16081/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16081/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kalif-raymond.php,10,1.2,0.3,0,,321.50,270,371,33.79,15,,,,,,26.72,264.8,1.26,,,,,,,,,,,2026-06-11
+386,386,Ben Sauls,NYG,K,K25,,27798,https://images.fantasypros.com/images/players/nfl/27798/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27798/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ben-sauls.php,8,2.8,0.5,0,,305.75,213,456,90.60,15,,,,,,,,,30.24,24.84,30.44,,,,,,,,2026-06-11
+387,387,Savion Williams,GB,WR,WR134,,27144,https://images.fantasypros.com/images/players/nfl/27144/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27144/headshot/210x210.png,https://www.fantasypros.com/nfl/players/savion-williams.php,11,1.9,0.7,1,,347.57,293,447,47.42,15,,,,,,23.93,272.04,1.99,,,,,,,,,,,2026-06-11
+388,388,Brandon McManus,FA,K,K26,,13274,https://images.fantasypros.com/images/players/nfl/13274/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13274/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brandon-mcmanus.php,,1.4,0.4,1,,274.00,210,397,87.00,15,,,,,,,,,0,0,0,,,,,,,,2026-06-11
+389,389,Joey Slye,TEN,K,K27,,19028,https://images.fantasypros.com/images/players/nfl/19028/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19028/headshot/210x210.png,https://www.fantasypros.com/nfl/players/joey-slye.php,9,3,0.5,1,,282.00,203,406,88.77,15,,,,,,,,,32.7,27.62,30.55,,,,,,,,2026-06-11
+390,390,Ryan Fitzgerald,CAR,K,K28,,27261,https://images.fantasypros.com/images/players/nfl/27261/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27261/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ryan-fitzgerald.php,5,2.4,0.6,1,,288.00,205,411,88.73,15,,,,,,,,,29.74,24.76,29.43,,,,,,,,2026-06-11
+391,391,Daniel Carlson,LV,K,K29,,17420,https://images.fantasypros.com/images/players/nfl/17420/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17420/headshot/210x210.png,https://www.fantasypros.com/nfl/players/daniel-carlson.php,13,1,0.1,1,,287.33,209,407,85.95,15,,,,,,,,,,,,,,,,,,,2026-06-11
+392,392,Eli Raridon,NE,TE,TE51,,28154,,,https://www.fantasypros.com/nfl/players/eli-raridon.php,11,4.8,0.6,1,14,362.63,300,450,43.61,15,,,,,,18.78,195.8,1.55,,,,,,,,,,,2026-06-11
+393,393,Dameon Pierce,PHI,RB,RB109,,22947,https://images.fantasypros.com/images/players/nfl/22947/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22947/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dameon-pierce.php,10,1.2,0.1,0,,351.29,327,380,17.71,15,,,35,161,1,0,0,0,,,,,,,,,,,2026-06-11
+394,394,Kevin Coleman Jr.,MIA,WR,WR135,,28067,,,https://www.fantasypros.com/nfl/players/kevin-coleman-jr.php,6,3.1,0.3,0,,357.43,296,423,44.58,15,,,,,,21.1,270.03,0.66,,,,,,,,,,,2026-06-11
+395,395,Luke Musgrave,GB,TE,TE52,,25282,https://images.fantasypros.com/images/players/nfl/25282/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25282/headshot/210x210.png,https://www.fantasypros.com/nfl/players/luke-musgrave.php,11,7.8,0.4,1,,364.22,335,390,16.98,15,,,,,,20.48,200.15,1.35,,,,,,,,,,,2026-06-11
+396,396,Joe Milton III,DAL,QB,QB42,,25967,https://images.fantasypros.com/images/players/nfl/25967/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25967/headshot/210x210.png,https://www.fantasypros.com/nfl/players/joe-milton.php,14,4.7,0.4,1,,347.83,310,386,23.50,15,170.2,1.08,3.18,13.45,0.04,,,,,,,,,,,,,,2026-06-11
+397,397,Ben Sinnott,WAS,TE,TE53,,26310,https://images.fantasypros.com/images/players/nfl/26310/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26310/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ben-sinnott.php,7,3.4,0.2,1,,348.17,309,383,25.05,15,,,,,,11.83,116.32,1.39,,,,,,,,,,,2026-06-11
+398,398,Marcus Mariota,WAS,QB,QB43,,13890,https://images.fantasypros.com/images/players/nfl/13890/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13890/headshot/210x210.png,https://www.fantasypros.com/nfl/players/marcus-mariota.php,7,8.8,0.4,1,,348.33,324,397,24.32,15,256.61,1.98,1.38,7.9,0.03,,,,,,,,,,,,,,2026-06-11
+399,399,Darren Waller,FA,TE,TE54,,14104,https://images.fantasypros.com/images/players/nfl/14104/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/14104/headshot/210x210.png,https://www.fantasypros.com/nfl/players/darren-waller.php,,4.1,0.2,1,-6,349.33,320,382,18.88,15,,,,,,,,,,,,,,,,,,,2026-06-11
+400,400,Nick Westbrook-Ikhine,IND,WR,WR136,,19747,https://images.fantasypros.com/images/players/nfl/19747/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19747/headshot/210x210.png,https://www.fantasypros.com/nfl/players/nick-westbrook.php,13,1.5,0.5,1,,341.40,265,385,42.11,15,,,,,,34.26,432.7,3.03,,,,,,,,,,,2026-06-11
+401,401,Jameis Winston,NYG,QB,QB44,,13891,https://images.fantasypros.com/images/players/nfl/13891/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13891/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jameis-winston.php,8,7.9,0.5,1,,351.17,330,398,23.71,15,153.69,0.97,2.87,12.33,0.02,,,,,,,,,,,,,,2026-06-11
+402,402,CJ Daniels,LAR,WR,WR137,,28125,,,https://www.fantasypros.com/nfl/players/cj-daniels.php,11,3.1,0.3,0,,346.60,305,421,45.99,15,,,,,,3.35,42.82,0.34,,,,,,,,,,,2026-06-11
+403,403,Greg Dortch,DET,WR,WR138,,18585,https://images.fantasypros.com/images/players/nfl/18585/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18585/headshot/210x210.png,https://www.fantasypros.com/nfl/players/greg-dortch.php,6,1.5,0.3,1,,328.50,232,374,58.06,15,,,,,,4.1,39.81,0.27,,,,,,,,,,,2026-06-11
+404,404,Antonio Gibson,FA,RB,RB110,,19624,https://images.fantasypros.com/images/players/nfl/19624/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19624/headshot/210x210.png,https://www.fantasypros.com/nfl/players/antonio-gibson.php,,0.8,0.1,1,,350.20,312,437,46.57,15,,,,,,,,,,,,,,,,,,,2026-06-11
+405,405,KaVontae Turpin,DAL,WR,WR139,,18520,https://images.fantasypros.com/images/players/nfl/18520/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18520/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kavontae-turpin.php,14,6.5,0.9,2,,352.20,286,436,52.13,15,,,,,,18.25,230.36,1.72,,,,,,,,,,,2026-06-11
+406,406,Noah Fant,NO,TE,TE55,,17527,https://images.fantasypros.com/images/players/nfl/17527/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17527/headshot/210x210.png,https://www.fantasypros.com/nfl/players/noah-fant.php,8,3.6,0.4,1,,360.29,338,390,17.74,15,,,,,,32.13,300.43,1.49,,,,,,,,,,,2026-06-11
+407,407,Kyle Juszczyk,SF,RB,RB111,,11798,https://images.fantasypros.com/images/players/nfl/11798/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11798/headshot/210x210.png,https://www.fantasypros.com/nfl/players/kyle-juszczyk.php,8,1.4,0.9,0,,310.00,243,365,50.52,15,,,4.21,10.3,0.08,23.8,209.53,1.5,,,,,,,,,,,2026-06-11
+408,408,Daniel Bellinger,TEN,TE,TE56,,24238,https://images.fantasypros.com/images/players/nfl/24238/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24238/headshot/210x210.png,https://www.fantasypros.com/nfl/players/daniel-bellinger.php,9,4.5,0.2,0,,356.33,295,399,31.91,15,,,,,,18.84,212.83,1.75,,,,,,,,,,,2026-06-11
+409,409,Terrell Jennings,NE,RB,RB112,,26964,https://images.fantasypros.com/images/players/nfl/26964/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26964/headshot/210x210.png,https://www.fantasypros.com/nfl/players/terrell-jennings.php,11,0.6,0.1,0,,350.60,311,409,39.97,15,,,,,,,,,,,,,,,,,,,2026-06-11
+410,410,Tommy Tremble,CAR,TE,TE57,,22795,https://images.fantasypros.com/images/players/nfl/22795/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22795/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tommy-tremble.php,5,1.8,0.3,0,,357.67,342,392,18.37,15,,,,,,27.28,256.08,1.95,,,,,,,,,,,2026-06-11
+411,411,Joe Flacco,CIN,QB,QB45,,9300,https://images.fantasypros.com/images/players/nfl/9300/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/9300/headshot/210x210.png,https://www.fantasypros.com/nfl/players/joe-flacco.php,6,8.1,0.5,1,,352.20,331,378,18.14,15,169.18,1.16,2.2,8.59,0.01,,,,,,,,,,,,,,2026-06-11
+412,412,Jordan Whittington,LAR,WR,WR140,,23135,https://images.fantasypros.com/images/players/nfl/23135/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23135/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jordan-whittington.php,11,0.9,0.3,1,,363.60,291,445,57.25,15,,,,,,15.03,171.99,1.23,,,,,,,,,,,2026-06-11
+413,413,Raheem Mostert,LV,RB,RB113,,14338,https://images.fantasypros.com/images/players/nfl/14338/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/14338/headshot/210x210.png,https://www.fantasypros.com/nfl/players/raheem-mostert.php,13,0.7,0.1,1,,289.00,263,315,26.00,15,,,,,,,,,,,,,,,,,,,2026-06-11
+414,414,Dyami Brown,WAS,WR,WR141,,20113,https://images.fantasypros.com/images/players/nfl/20113/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20113/headshot/210x210.png,https://www.fantasypros.com/nfl/players/dyami-brown.php,7,1.3,0.6,1,,368.00,298,458,54.87,15,,,,,,29.88,394.56,2.7,,,,,,,,,,,2026-06-11
+415,415,Devontez Walker,BAL,WR,WR142,,26011,https://images.fantasypros.com/images/players/nfl/26011/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/26011/headshot/210x210.png,https://www.fantasypros.com/nfl/players/devontez-walker.php,13,1.1,0.4,0,,346.67,239,454,87.77,15,,,,,,11.58,166.38,1.17,,,,,,,,,,,2026-06-11
+416,416,Alec Ingold,LAC,RB,RB114,,18571,https://images.fantasypros.com/images/players/nfl/18571/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18571/headshot/210x210.png,https://www.fantasypros.com/nfl/players/alec-ingold.php,7,0.6,0.2,0,,294.00,234,354,60.00,15,,,2.08,8.57,0.08,7.92,58.24,0.22,,,,,,,,,,,2026-06-11
+417,417,Marlin Klein,HOU,TE,TE58,,28157,https://images.fantasypros.com/images/players/nfl/28157/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28157/headshot/210x210.png,https://www.fantasypros.com/nfl/players/marlin-klein.php,8,2.4,0.2,0,,357.80,335,372,12.32,15,,,,,,19.49,193.65,1.11,,,,,,,,,,,2026-06-11
+418,418,Rasheen Ali,BAL,RB,RB115,,25983,https://images.fantasypros.com/images/players/nfl/25983/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25983/headshot/210x210.png,https://www.fantasypros.com/nfl/players/rasheen-ali.php,13,2.4,0.2,0,,301.50,292,311,9.50,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-06-11
+419,419,Patrick Ricard,NYG,RB,RB116,,17145,https://images.fantasypros.com/images/players/nfl/17145/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17145/headshot/210x210.png,https://www.fantasypros.com/nfl/players/patrick-ricard.php,8,0.8,0.2,0,,303.00,248,358,55.00,15,,,0,0,0,3.95,26.9,0.14,,,,,,,,,,,2026-06-11
+420,420,Jam Miller,NE,RB,RB117,,27326,,,https://www.fantasypros.com/nfl/players/jam-miller.php,11,1.8,0.2,0,,352.00,317,379,24.38,15,,,34,156,1,2,25,0,,,,,,,,,,,2026-06-11
+421,421,Ashton Dulin,IND,WR,WR143,,18656,https://images.fantasypros.com/images/players/nfl/18656/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18656/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ashton-dulin.php,13,0.1,0.1,0,,310.50,302,319,8.50,15,,,,,,22.51,379.36,1.47,,,,,,,,,,,2026-06-11
+422,422,Brandin Cooks,FA,WR,WR144,,12122,https://images.fantasypros.com/images/players/nfl/12122/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/12122/headshot/210x210.png,https://www.fantasypros.com/nfl/players/brandin-cooks.php,,0.7,0.1,1,,312.00,284,340,28.00,15,,,,,,,,,,,,,,,,,,,2026-06-11
+423,423,Gardner Minshew II,ARI,QB,QB46,,18562,https://images.fantasypros.com/images/players/nfl/18562/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18562/headshot/210x210.png,https://www.fantasypros.com/nfl/players/gardner-minshew.php,14,3.4,0.2,1,,356.25,333,388,21.92,15,147.91,0.82,2.45,9.28,0.02,,,,,,,,,,,,,,2026-06-11
+424,424,Xavier Smith,LAR,WR,WR145,,25627,https://images.fantasypros.com/images/players/nfl/25627/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25627/headshot/210x210.png,https://www.fantasypros.com/nfl/players/xavier-smith.php,11,0.6,0.2,0,,320.00,262,378,58.00,15,,,,,,7.17,89.33,0.65,,,,,,,,,,,2026-06-11
+425,425,Tyler Badie,DEN,RB,RB118,,23812,https://images.fantasypros.com/images/players/nfl/23812/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23812/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-badie.php,10,1.2,0.4,0,,346.33,288,381,41.49,15,,,4.09,17.64,0.13,12.02,98.73,0.53,,,,,,,,,,,2026-06-11
+426,426,Jonnu Smith,FA,TE,TE59,,16460,https://images.fantasypros.com/images/players/nfl/16460/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16460/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jonnu-smith.php,,5.9,0.2,1,-14,358.00,268,431,67.62,15,,,,,,,,,,,,,,,,,,,2026-06-11
+427,427,Deion Burks,IND,WR,WR146,,27093,https://images.fantasypros.com/images/players/nfl/27093/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27093/headshot/210x210.png,https://www.fantasypros.com/nfl/players/deion-burks.php,13,3.3,0.2,1,,380.00,327,457,44.98,15,,,,,,,,,,,,,,,,,,,2026-06-11
+428,428,Max Bredeson,MIN,RB,RB119,,28434,,,https://www.fantasypros.com/nfl/players/max-bredeson.php,6,0.1,0.1,0,,324.50,283,366,41.50,15,,,2.02,8.46,0.06,4.5,29.42,0.17,,,,,,,,,,,2026-06-11
+429,429,Austin Hooper,ATL,TE,TE60,,15581,https://images.fantasypros.com/images/players/nfl/15581/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15581/headshot/210x210.png,https://www.fantasypros.com/nfl/players/austin-hooper.php,11,1.9,0.3,0,,350.33,320,395,32.25,15,,,,,,22.77,233.07,1.42,,,,,,,,,,,2026-06-11
+430,430,Reggie Gilliam,NE,RB,RB120,,19844,https://images.fantasypros.com/images/players/nfl/19844/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19844/headshot/210x210.png,https://www.fantasypros.com/nfl/players/reggie-gilliam.php,11,0.2,0.2,0,,329.00,294,364,35.00,15,,,0,0,0,4.11,29.79,0.15,,,,,,,,,,,2026-06-11
+431,431,Damien Martinez,GB,RB,RB121,,25976,https://images.fantasypros.com/images/players/nfl/25976/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25976/headshot/210x210.png,https://www.fantasypros.com/nfl/players/damien-martinez.php,11,0.9,0.1,0,,368.00,316,414,38.10,15,,,,,,,,,,,,,,,,,,,2026-06-11
+432,432,Roschon Johnson,CHI,RB,RB122,,25322,https://images.fantasypros.com/images/players/nfl/25322/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25322/headshot/210x210.png,https://www.fantasypros.com/nfl/players/roschon-johnson.php,10,0.7,0.2,1,,353.00,329,392,27.82,15,,,34,116,3,3,17,0,,,,,,,,,,,2026-06-11
+433,433,Zavion Thomas,CHI,WR,WR147,,28132,https://images.fantasypros.com/images/players/nfl/28132/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28132/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zavion-thomas.php,10,4,0.6,1,,377.25,298,444,52.05,15,,,,,,3.1,37.75,0.31,,,,,,,,,,,2026-06-11
+434,434,Xavier Restrepo,TEN,WR,WR148,,27066,https://images.fantasypros.com/images/players/nfl/27066/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27066/headshot/210x210.png,https://www.fantasypros.com/nfl/players/xavier-restrepo.php,9,0.6,0.1,0,,333.50,331,336,2.50,15,,,,,,,,,,,,,,,,,,,2026-06-11
+435,435,Khalil Herbert,FA,RB,RB123,,22763,https://images.fantasypros.com/images/players/nfl/22763/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22763/headshot/210x210.png,https://www.fantasypros.com/nfl/players/khalil-herbert.php,,1.1,0,0,,335.50,311,360,24.50,15,,,,,,,,,,,,,,,,,,,2026-06-11
+436,436,Elijah Higgins,ARI,TE,TE61,,23119,https://images.fantasypros.com/images/players/nfl/23119/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23119/headshot/210x210.png,https://www.fantasypros.com/nfl/players/elijah-higgins.php,14,2.5,0.2,0,,379.80,340,430,31.79,15,,,,,,21.94,196.23,0.84,,,,,,,,,,,2026-06-11
+437,437,Riley Leonard,IND,QB,QB47,,25373,https://images.fantasypros.com/images/players/nfl/25373/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25373/headshot/210x210.png,https://www.fantasypros.com/nfl/players/riley-leonard.php,13,7.6,0.3,0,,368.25,310,389,33.65,15,160.07,0.92,3.12,12.71,0.04,,,,,,,,,,,,,,2026-06-11
+438,438,Erick All Jr.,CIN,TE,TE62,,23837,https://images.fantasypros.com/images/players/nfl/23837/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23837/headshot/210x210.png,https://www.fantasypros.com/nfl/players/erick-all.php,6,1.4,0.2,0,,358.67,336,375,16.54,15,,,,,,26.63,228.81,1.62,,,,,,,,,,,2026-06-11
+439,439,Elijah Moore,PHI,WR,WR149,,20114,https://images.fantasypros.com/images/players/nfl/20114/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20114/headshot/210x210.png,https://www.fantasypros.com/nfl/players/elijah-moore.php,10,0.6,0.1,0,,340.00,300,380,40.00,15,,,,,,,,,,,,,,,,,,,2026-06-11
+440,440,Hunter Luepke,DAL,RB,RB124,,25941,https://images.fantasypros.com/images/players/nfl/25941/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25941/headshot/210x210.png,https://www.fantasypros.com/nfl/players/hunter-luepke.php,14,0.7,0.3,0,,340.50,288,393,52.50,15,,,13.27,56.06,0.44,8.64,61.75,0.35,,,,,,,,,,,2026-06-11
+441,441,Jahdae Walker,CHI,WR,WR150,,27810,https://images.fantasypros.com/images/players/nfl/27810/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27810/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jahdae-walker.php,10,1.6,0.2,0,,342.50,323,362,19.50,15,,,,,,18.67,243.78,2.83,,,,,,,,,,,2026-06-11
+442,442,Adam Prentice,DEN,RB,RB125,,23451,https://images.fantasypros.com/images/players/nfl/23451/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23451/headshot/210x210.png,https://www.fantasypros.com/nfl/players/adam-prentice.php,10,0.6,0.2,0,,343.00,297,389,46.00,15,,,4.09,17.35,0.13,4.14,29.74,0.15,,,,,,,,,,,2026-06-11
+443,443,Ty Chandler,NO,RB,RB126,,19471,https://images.fantasypros.com/images/players/nfl/19471/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/19471/headshot/210x210.png,https://www.fantasypros.com/nfl/players/ty-chandler.php,8,0.6,0.1,0,,347.50,314,381,33.50,15,,,54,144,1,12,57,0,,,,,,,,,,,2026-06-11
+444,444,Mitchell Evans,CAR,TE,TE63,,27138,https://images.fantasypros.com/images/players/nfl/27138/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27138/headshot/210x210.png,https://www.fantasypros.com/nfl/players/mitchell-evans.php,5,1.1,0.2,0,,373.25,339,395,22.57,15,,,,,,14.96,136.57,0.97,,,,,,,,,,,2026-06-11
+445,445,Malik Benson,LV,WR,WR151,,26012,,,https://www.fantasypros.com/nfl/players/malik-benson.php,13,1,0.2,0,,383.00,344,438,34.19,15,,,,,,,,,,,,,,,,,,,2026-06-11
+446,446,Zavier Scott,MIN,RB,RB127,,25748,https://images.fantasypros.com/images/players/nfl/25748/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25748/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zavier-scott.php,6,0.7,0.2,0,,365.67,343,394,21.20,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-06-11
+447,447,Zach Ertz,FA,TE,TE64,,11689,https://images.fantasypros.com/images/players/nfl/11689/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11689/headshot/210x210.png,https://www.fantasypros.com/nfl/players/zach-ertz.php,,3.8,0.3,1,-13,369.00,342,404,25.94,16,,,,,,,,,,,,,,,,,,,2026-06-11
+448,448,Tyler Goodson,ATL,RB,RB128,,22976,https://images.fantasypros.com/images/players/nfl/22976/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22976/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-goodson.php,11,0.7,0.1,0,,367.67,327,389,28.77,16,,,,,,,,,,,,,,,,,,,2026-06-11
+449,449,Sam Roush,CHI,TE,TE65,,28161,https://images.fantasypros.com/images/players/nfl/28161/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/28161/headshot/210x210.png,https://www.fantasypros.com/nfl/players/sam-roush.php,10,1.6,0.2,0,,353.00,345,361,8.00,16,,,,,,6.82,70.9,0.64,,,,,,,,,,,2026-06-11
+450,450,Durham Smythe,BAL,TE,TE66,,17508,https://images.fantasypros.com/images/players/nfl/17508/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/17508/headshot/210x210.png,https://www.fantasypros.com/nfl/players/durham-smythe.php,13,0.6,0.1,0,-7,353.00,353,353,0.00,16,,,,,,9.83,94.05,0.74,,,,,,,,,,,2026-06-11
+451,451,Tyler Lockett,LV,WR,WR152,,13971,https://images.fantasypros.com/images/players/nfl/13971/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/13971/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tyler-lockett.php,13,0.7,0.1,1,,361.00,307,415,54.00,16,,,,,,,,,,,,,,,,,,,2026-06-11
+452,452,Cyrus Allen,KC,WR,WR153,,28424,,,https://www.fantasypros.com/nfl/players/cyrus-allen.php,5,2.3,0.3,0,,389.20,362,441,27.51,16,,,,,,6.44,79.71,0.5,,,,,,,,,,,2026-06-11
+453,453,JuJu Smith-Schuster,NYG,WR,WR154,,16427,https://images.fantasypros.com/images/players/nfl/16427/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/16427/headshot/210x210.png,https://www.fantasypros.com/nfl/players/juju-smith-schuster.php,8,0.8,0.2,1,,354.00,346,362,8.00,16,,,,,,1.38,12.41,0.06,,,,,,,,,,,2026-06-11
+454,454,Josh Oliver,MIN,TE,TE67,,18487,https://images.fantasypros.com/images/players/nfl/18487/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18487/headshot/210x210.png,https://www.fantasypros.com/nfl/players/josh-oliver.php,6,1.2,0.2,0,11,357.00,353,361,4.00,16,,,,,,19.33,196.37,2.57,,,,,,,,,,,2026-06-11
+455,455,DeAndre Hopkins,BAL,WR,WR155,,11606,https://images.fantasypros.com/images/players/nfl/11606/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/11606/headshot/210x210.png,https://www.fantasypros.com/nfl/players/deandre-hopkins.php,13,0.7,0.2,1,,384.00,315,453,69.00,16,,,,,,,,,,,,,,,,,,,2026-06-11
+456,456,Tai Felton,MIN,WR,WR156,,27182,https://images.fantasypros.com/images/players/nfl/27182/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27182/headshot/210x210.png,https://www.fantasypros.com/nfl/players/tai-felton.php,6,1.7,0.3,0,-16,388.00,317,459,71.00,16,,,,,,3.72,37.04,0.24,,,,,,,,,,,2026-06-11
+457,457,Jack Endries,CIN,TE,TE68,,27501,,,https://www.fantasypros.com/nfl/players/jack-endries.php,6,4.3,0.1,0,9,374.00,353,392,16.06,16,,,,,,13,123,1,,,,,,,,,,,2026-06-11
+458,458,Theo Wease Jr.,MIA,WR,WR157,,27222,https://images.fantasypros.com/images/players/nfl/27222/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27222/headshot/210x210.png,https://www.fantasypros.com/nfl/players/theo-wease-jr.php,6,3,0.1,0,,376.00,330,422,46.00,16,,,,,,48,685,5,,,,,,,,,,,2026-06-11
+459,459,Quinn Ewers,MIA,QB,QB48,,23680,https://images.fantasypros.com/images/players/nfl/23680/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23680/headshot/210x210.png,https://www.fantasypros.com/nfl/players/quinn-ewers.php,6,6.1,0.3,1,,365.50,349,382,16.50,16,138.45,0.78,2.49,11.51,0.01,,,,,,,,,,,,,,2026-06-11
+460,460,Tanner Koziol,JAC,TE,TE69,,27499,,,https://www.fantasypros.com/nfl/players/tanner-koziol.php,7,1.5,0.1,0,8,377.67,357,394,15.41,16,,,,,,6.96,72.82,0.64,,,,,,,,,,,2026-06-11
+461,461,Antwane Wells Jr.,FA,WR,WR158,,27218,https://images.fantasypros.com/images/players/nfl/27218/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/27218/headshot/210x210.png,https://www.fantasypros.com/nfl/players/antwane-wells-jr.php,,1.1,0,0,,399.50,338,461,61.50,16,,,,,,,,,,,,,,,,,,,2026-06-11
+462,462,Roman Wilson,PIT,WR,WR159,,28896,,,https://www.fantasypros.com/nfl/players/roman-wilson-wr.php,9,1.2,0.3,1,,371.00,346,396,25.00,16,,,,,,,,,,,,,,,,,,,2026-06-11
+463,463,Lil'Jordan Humphrey,DEN,WR,WR160,,18590,https://images.fantasypros.com/images/players/nfl/18590/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/18590/headshot/210x210.png,https://www.fantasypros.com/nfl/players/liljordan-humphrey.php,10,1.1,0.1,0,,372.00,371,373,1.00,16,,,,,,,,,,,,,,,,,,,2026-06-11
+464,464,Cade Klubnik,NYJ,QB,QB49,,24361,https://images.fantasypros.com/images/players/nfl/24361/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/24361/headshot/210x210.png,https://www.fantasypros.com/nfl/players/cade-klubnik.php,13,6.3,0.4,1,,372.50,357,388,15.50,16,116.67,0.89,1.75,7.83,0.04,,,,,,,,,,,,,,2026-06-11
+465,465,Michael Trigg,DAL,TE,TE70,,23167,,,https://www.fantasypros.com/nfl/players/michael-trigg.php,14,13.4,0.2,0,,391.50,348,435,43.50,16,,,,,,,,,,,,,,,,,,,2026-06-11
+466,466,Luke Schoonmaker,DAL,TE,TE71,,25267,https://images.fantasypros.com/images/players/nfl/25267/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/25267/headshot/210x210.png,https://www.fantasypros.com/nfl/players/luke-schoonmaker.php,14,1,0.3,0,,375.00,367,383,8.00,16,,,,,,13.23,121.68,0.95,,,,,,,,,,,2026-06-11
+467,467,Demarcus Robinson,SF,WR,WR161,,15665,https://images.fantasypros.com/images/players/nfl/15665/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/15665/headshot/210x210.png,https://www.fantasypros.com/nfl/players/demarcus-robinson.php,8,1,0.2,1,,389.67,376,417,19.33,16,,,,,,17.66,252.3,1.67,,,,,,,,,,,2026-06-11
+468,468,Phil Mafah,DAL,RB,RB129,,22928,https://images.fantasypros.com/images/players/nfl/22928/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/22928/headshot/210x210.png,https://www.fantasypros.com/nfl/players/phil-mafah.php,14,0.9,0.1,1,,385.00,370,402,13.14,16,,,32,142,2,4,34,0,,,,,,,,,,,2026-06-11
+469,469,Thomas Fidone II,NYG,TE,TE72,,23039,https://images.fantasypros.com/images/players/nfl/23039/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/23039/headshot/210x210.png,https://www.fantasypros.com/nfl/players/thomas-fidone.php,8,1,0,0,,399.50,356,443,43.50,16,,,,,,,,,,,,,,,,,,,2026-06-11
+470,470,Jaret Patterson,LAC,RB,RB130,,20155,https://images.fantasypros.com/images/players/nfl/20155/headshot/210x210.png,https://images.fantasypros.com/images/players/nfl/20155/headshot/210x210.png,https://www.fantasypros.com/nfl/players/jaret-patterson.php,7,0.6,0.1,0,,387.00,381,393,6.00,16,,,,,,,,,,,,,,,,,,,2026-06-11
+471,471,Robert Henry Jr.,WAS,RB,RB131,,28404,,,https://www.fantasypros.com/nfl/players/robert-henry-jr.php,7,0,0,0,,389.50,378,401,11.50,16,,,,,,,,,,,,,,,,,,,2026-06-11
