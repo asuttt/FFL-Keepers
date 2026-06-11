@@ -3,14 +3,12 @@ import { BrowserRouter, Link, Navigate, Route, Routes, useLocation, useNavigate,
 import {
   ArrowLeft,
   CalendarDays,
-  ChevronDown,
   ChevronRight,
   Copyright,
   Grid2X2,
   Search,
   Shield,
   Sparkles,
-  X,
 } from 'lucide-react';
 
 type Position = 'QB' | 'RB' | 'WR' | 'TE' | 'K' | 'D/ST';
@@ -258,6 +256,26 @@ function parsePositionRank(value: string) {
   return match ? Number(match[1]) : null;
 }
 
+function hashString(value: string) {
+  let hash = 0;
+  for (let index = 0; index < value.length; index += 1) {
+    hash = (hash * 31 + value.charCodeAt(index)) >>> 0;
+  }
+  return hash;
+}
+
+function keeperAnchorOpener(teamName: string) {
+  const openers = [
+    'Best keeper value on this roster',
+    'Top keeper value on this roster',
+    'Strongest keeper on this roster',
+    'Best value keeper here',
+    'Most attractive keeper on this roster',
+  ];
+
+  return openers[hashString(teamName) % openers.length];
+}
+
 function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSource: string): KeeperEvaluation {
   if (!ranking) {
     return {
@@ -270,7 +288,7 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSour
       keeperCostValue: draftValueScore(pick.round),
       keeperCost: pick.round,
       sourceValue: null,
-      why: `Not found in the 2026 ${rankingSource} rankings, so not recommended as a keeper.`,
+      why: `Not found in the 2026 ${rankingSource} rankings, so not recommended as a keeper`,
     };
   }
 
@@ -303,7 +321,7 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSour
     keeperValue: sourceValue,
     keeperCostValue,
     sourceValue,
-    why: `${rankingSource} ranks ${ranking.player} at #${sourceRank} overall, with round cost and light positional scarcity folded into a ${keeperScore.toFixed(1)} Keeper Score.`,
+    why: `Round ${pick.round} cost versus #${sourceRank} overall rank`,
   };
 }
 
@@ -368,6 +386,11 @@ function scoreTone(score: number) {
 function scoreToneFromValue(score: number | null) {
   if (score === null) return 'pass';
   return scoreTone(score);
+}
+
+function meterWidth(score: number | null) {
+  if (score === null) return '0%';
+  return `${Math.min(100, Math.max(0, score * 10))}%`;
 }
 
 function NavLink({
@@ -487,6 +510,19 @@ function RankBadge({ rank }: { rank: string }) {
   return <span className="source-rank-badge" aria-hidden="true">{rank}</span>;
 }
 
+function RankValueCell({ sourceRank, posRank }: { sourceRank: number | null; posRank: string | null }) {
+  if (sourceRank === null) {
+    return <div className="rank-value-cell rank-value-cell--blank">-</div>;
+  }
+
+  return (
+    <div className="rank-value-cell">
+      <strong>{sourceRank}</strong>
+      <span>{posRank ? `(${posRank})` : '-'}</span>
+    </div>
+  );
+}
+
 function TeamBadge({ team }: { team: string }) {
   return <span className={cn('pill', `pill--${teamColors[team] ?? 'slate'}`)}>{team}</span>;
 }
@@ -541,7 +577,8 @@ function DashboardTable({
           <tr>
             <th>Team</th>
             <th>Keeper rec</th>
-            <th>Rnd</th>
+            <th>2025 round</th>
+            <th>2026 rank</th>
             <th>Keeper score</th>
           </tr>
         </thead>
@@ -558,6 +595,9 @@ function DashboardTable({
                 <td className="keeper-table__rec">{<RecommendationCell rec={rec} />}</td>
                 <td className="keeper-table__round">R{rec.round}</td>
                 <td className="keeper-table__value">
+                  <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
+                </td>
+                <td className="keeper-table__score">
                   <ScorePill score={rec.keeperScore} />
                 </td>
               </tr>
@@ -623,92 +663,9 @@ function DashboardPage() {
     <div className="page-stack">
       <SectionIntro
         title="Team-by-Team Keeper Recs"
-        description={`Top keepers, ranked by current value versus last year's draft slot. Select team for full breakdown`}
+        description={`Top picks, ranked by current value versus last year's draft slot. Select team for full breakdown`}
       />
       <DashboardTable rows={recs} />
-    </div>
-  );
-}
-
-function TeamPickerModal({
-  open,
-  onClose,
-  teams,
-}: {
-  open: boolean;
-  onClose: () => void;
-  teams: TeamSummary[];
-}) {
-  const navigate = useNavigate();
-  const [search, setSearch] = useState('');
-
-  useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === 'Escape') {
-        onClose();
-      }
-    }
-
-    if (open) {
-      window.addEventListener('keydown', onKeyDown);
-      document.body.style.overflow = 'hidden';
-    }
-
-    return () => {
-      window.removeEventListener('keydown', onKeyDown);
-      document.body.style.overflow = '';
-    };
-  }, [open, onClose]);
-
-  const visibleTeams = teams.filter((team) => team.name.toLowerCase().includes(search.toLowerCase()));
-
-  if (!open) {
-    return null;
-  }
-
-  return (
-    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-      <div className="modal-card" role="dialog" aria-modal="true" aria-label="Select team" onMouseDown={(event) => event.stopPropagation()}>
-        <div className="modal-head">
-          <div>
-            <div className="team-card__eyebrow">Team selector</div>
-            <h3>Pick a roster to inspect</h3>
-          </div>
-          <button className="icon-button" type="button" onClick={onClose} aria-label="Close selector">
-            <X size={18} />
-          </button>
-        </div>
-
-        <label className="search-field search-field--modal">
-          <Search size={16} />
-          <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Filter teams..." />
-        </label>
-
-        <div className="team-picker-list">
-          {visibleTeams.map((team) => {
-            return (
-              <button
-                key={team.name}
-                className="team-picker-row"
-                type="button"
-                onClick={() => {
-                  navigate(`/teams/${slugify(team.name)}`);
-                  onClose();
-                }}
-              >
-                <div>
-                  <strong>{team.name}</strong>
-                  <span>{team.picks} picks · avg pick {team.avgPick}</span>
-                </div>
-                <div className="team-picker-row__meta">
-                  <span>Open roster</span>
-                  <ChevronDown size={14} />
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
     </div>
   );
 }
@@ -717,7 +674,6 @@ function TeamPage() {
   const { data, rankings, rankingSource, loading, error } = useDraftData();
   const params = useParams();
   const navigate = useNavigate();
-  const [selectorOpen, setSelectorOpen] = useState(false);
 
   if (loading) {
     return <LoadingPanel title="Loading team drilldown..." />;
@@ -737,57 +693,48 @@ function TeamPage() {
   const sourceLabel = rankingSource ?? 'current rankings';
   const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceLabel);
   const recommendation = rankedPicks[0] ?? null;
+  const anchorOpener = recommendation ? keeperAnchorOpener(team.name) : null;
 
   return (
     <div className="page-stack">
-      <TeamPickerModal open={selectorOpen} onClose={() => setSelectorOpen(false)} teams={data.teams} />
-
-      <section className="hero-card hero-card--stacked">
-        <div className="hero-copy">
-          <h1>{team.name}</h1>
-          <p>Inspect the roster built from last year&apos;s draft. It is now sorted by our exact {sourceLabel} keeper value so the best candidates rise to the top.</p>
-        </div>
-
-        <div className="hero-actions">
-          <button className="button button-secondary" type="button" onClick={() => navigate('/')}>
-            <ArrowLeft size={16} />
-            Back to dashboard
-          </button>
-          <button className="button button-primary" type="button" onClick={() => setSelectorOpen(true)}>
-            Choose another team
-          </button>
-        </div>
-      </section>
+      <SectionIntro
+        title={team.name}
+        description="Last year's roster, sorted by keeper value"
+        meta={
+          <>
+            <button className="text-link" type="button" onClick={() => navigate('/')}>
+              <ArrowLeft size={16} />
+              Back
+            </button>
+          </>
+        }
+      />
 
       <section className="panel team-spotlight">
         <div className="spotlight-copy">
-          <div className="team-card__eyebrow">Top keeper anchor</div>
-          <h2>{recommendation?.player ?? 'No ranked keeper yet'}</h2>
-          <div className="pill-row">
-            {recommendation ? (
-              <>
-                <PositionPill pos={recommendation.pos} />
-                <TeamBadge team={recommendation.nflTeam} />
-                <ScorePill score={recommendation.keeperScore} />
-              </>
-            ) : null}
-          </div>
-          <p>{recommendation?.why ?? 'No recommendation available yet.'}</p>
+          <div className="team-card__eyebrow spotlight-copy__eyebrow">Top keeper anchor</div>
+          {recommendation ? <PlayerWithSuffix player={recommendation.player} nflTeam={recommendation.nflTeam} pos={recommendation.pos} compact /> : <h2>No ranked keeper yet</h2>}
+          <p>{recommendation && anchorOpener ? <>{anchorOpener}: {recommendation.why}</> : 'No recommendation available yet'}</p>
         </div>
         <div className="meter-card">
-          <div className="meter-card__label">Keeper score</div>
-          <div className="meter">
-            <span className={cn('meter__fill', recommendation && `meter__fill--${scoreTone(recommendation.keeperScore)}`)} />
+          <div className="meter-card__head">
+            <div className="meter-card__label">Keeper score</div>
+            <ScorePill score={recommendation?.keeperScore ?? null} />
           </div>
-          <small>Weighted from {sourceLabel} rank, keeper cost, and positional scarcity.</small>
+          <div className="meter">
+            <span
+              className={cn('meter__fill', recommendation && `meter__fill--${scoreTone(recommendation.keeperScore)}`)}
+              style={{ width: meterWidth(recommendation?.keeperScore ?? null) }}
+            />
+          </div>
+          <small>Weighted from {sourceLabel} rank, keeper cost, and positional scarcity</small>
         </div>
       </section>
 
-      <section className="panel table-panel">
+      <section className="panel table-panel table-panel--drilldown">
         <div className="panel-head panel-head--stacked">
           <div>
-            <div className="team-card__eyebrow">Draft history</div>
-            <h2>Keeper ranking list</h2>
+            <div className="team-card__eyebrow">Keeper Rankings</div>
           </div>
           <span className="status-chip status-chip--soft">Sorted by keeper score</span>
         </div>
@@ -798,6 +745,7 @@ function TeamPage() {
               <tr>
                 <th>Player</th>
                 <th>Rnd</th>
+                <th>2026 rank</th>
                 <th>Keeper score</th>
               </tr>
             </thead>
@@ -807,10 +755,13 @@ function TeamPage() {
                 return (
                   <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
                     <td className="keeper-table__player">
-                      <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} />
+                      <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />
                     </td>
                     <td className="keeper-table__round">R{rec.round}</td>
-                    <td>
+                    <td className="keeper-table__value">
+                      <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
+                    </td>
+                    <td className="keeper-table__score">
                       <ScorePill score={rec.keeperScore} />
                     </td>
                   </tr>
@@ -947,7 +898,7 @@ function SourceDataPage() {
     <div className="page-stack">
       <SectionIntro
         title="FantasyPros Source Data"
-        description={`Projected PPR Rankings as of ${snapshotDate}`}
+        description={`Projected PPR Points and Rankings as of ${snapshotDate}`}
       />
 
       <section className="panel table-panel">

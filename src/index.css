@@ -297,8 +297,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-self: center;
   gap: 8px;
-  padding-top: 4px;
+  padding-top: 0;
+}
+
+.section-intro__meta .button {
+  white-space: nowrap;
 }
 
 .hero-card {
@@ -565,6 +570,13 @@ a {
 
 .text-link {
   color: hsl(var(--blue));
+  cursor: pointer;
+}
+
+.section-intro__meta .text-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .text-link:hover,
@@ -578,6 +590,7 @@ a {
 .button {
   padding: 11px 14px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .button-primary {
@@ -744,6 +757,10 @@ a {
   padding: 14px;
 }
 
+.table-panel--drilldown .table-shell {
+  margin-top: 12px;
+}
+
 .table-shell {
   position: relative;
   overflow: hidden;
@@ -791,7 +808,8 @@ a {
 
 .keeper-table__team,
 .keeper-table__round,
-.keeper-table__value {
+.keeper-table__value,
+.keeper-table__score {
   text-align: center;
 }
 
@@ -872,6 +890,39 @@ a {
   color: hsl(var(--muted-foreground));
 }
 
+.keeper-table__score {
+  text-align: center;
+}
+
+.rank-value-cell {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.rank-value-cell strong {
+  color: hsl(var(--foreground));
+}
+
+.rank-value-cell span {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.84em;
+  font-weight: 700;
+}
+
+.rank-value-cell--blank {
+  color: hsl(var(--foreground));
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 .rank-cell {
   display: grid;
   justify-items: center;
@@ -898,12 +949,17 @@ a {
 
 .player-line--compact {
   justify-content: flex-start;
+  gap: 4px;
+}
+
+.player-line--compact .player-line__name {
+  gap: 0;
 }
 
 .player-line__name {
   display: flex;
   align-items: baseline;
-  gap: 1px;
+  gap: 2px;
   min-width: 0;
 }
 
@@ -919,8 +975,8 @@ a {
 .player-line__comma {
   color: hsl(var(--muted-foreground));
   flex: none;
-  margin-left: -1px;
-  margin-right: 2px;
+  margin-left: 0;
+  margin-right: 3px;
 }
 
 .player-line__team {
@@ -931,40 +987,58 @@ a {
 
 .keeper-table--league th:nth-child(1),
 .keeper-table--league td:nth-child(1) {
-  width: 22%;
+  width: 20%;
   text-align: center;
 }
 
 .keeper-table--league th:nth-child(2),
 .keeper-table--league td:nth-child(2) {
-  width: 38%;
+  width: 34%;
 }
 
 .keeper-table--league th:nth-child(3),
 .keeper-table--league td:nth-child(3) {
-  width: 12%;
+  width: 14%;
   text-align: center;
 }
 
 .keeper-table--league th:nth-child(4),
 .keeper-table--league td:nth-child(4) {
-  width: 28%;
+  width: 18%;
+  text-align: center;
+}
+
+.keeper-table--league th:nth-child(5),
+.keeper-table--league td:nth-child(5) {
+  width: 14%;
   text-align: center;
 }
 
 .keeper-table--drilldown th:nth-child(1),
 .keeper-table--drilldown td:nth-child(1) {
-  width: 58%;
+  width: 50%;
 }
 
 .keeper-table--drilldown th:nth-child(2),
 .keeper-table--drilldown td:nth-child(2) {
-  width: 16%;
+  width: 14%;
+  text-align: center;
 }
 
 .keeper-table--drilldown th:nth-child(3),
 .keeper-table--drilldown td:nth-child(3) {
-  width: 26%;
+  width: 20%;
+  text-align: center;
+}
+
+.keeper-table--drilldown th:nth-child(4),
+.keeper-table--drilldown td:nth-child(4) {
+  width: 16%;
+  text-align: center;
+}
+
+.keeper-table--drilldown th:nth-child(1) {
+  text-align: left;
 }
 
 .keeper-table--source th:nth-child(1),
@@ -1029,6 +1103,10 @@ a {
   gap: 18px;
 }
 
+.spotlight-copy__eyebrow {
+  margin-bottom: 10px;
+}
+
 .meter-card {
   display: grid;
   gap: 10px;
@@ -1036,6 +1114,13 @@ a {
   border-radius: 18px;
   background: rgba(10, 13, 18, 0.98);
   border: 1px solid rgba(34, 197, 94, 0.12);
+}
+
+.meter-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .meter {
@@ -1049,27 +1134,23 @@ a {
 .meter__fill {
   display: block;
   height: 100%;
-  width: 58%;
+  width: 0%;
   border-radius: inherit;
   background: linear-gradient(135deg, hsl(var(--accent)), hsl(145 68% 28%));
 }
 
 .meter__fill--elite {
-  width: 84%;
   background: linear-gradient(135deg, hsl(var(--accent)), hsl(145 68% 28%));
 }
 
 .meter__fill--strong {
-  width: 72%;
 }
 
 .meter__fill--viable {
-  width: 52%;
   background: linear-gradient(135deg, hsl(var(--amber)), hsl(35 96% 52%));
 }
 
 .meter__fill--pass {
-  width: 32%;
   background: linear-gradient(135deg, hsl(var(--slate)), hsl(215 24% 25%));
 }
 
@@ -1522,22 +1603,22 @@ a {
 
   .keeper-table--league th:nth-child(1),
   .keeper-table--league td:nth-child(1) {
-    width: 22%;
+    width: 20%;
   }
 
   .keeper-table--league th:nth-child(2),
   .keeper-table--league td:nth-child(2) {
-    width: 40%;
+    width: 34%;
   }
 
   .keeper-table--league th:nth-child(3),
   .keeper-table--league td:nth-child(3) {
-    width: 12%;
+    width: 14%;
   }
 
   .keeper-table--league th:nth-child(4),
   .keeper-table--league td:nth-child(4) {
-    width: 12%;
+    width: 18%;
   }
 
   .keeper-table--league th:nth-child(5),
@@ -1558,6 +1639,19 @@ a {
   }
 
   .hero-actions .button {
+    width: 100%;
+  }
+
+  .section-intro {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-intro__meta {
+    justify-content: flex-start;
+  }
+
+  .section-intro__meta .button {
     width: 100%;
   }
 
@@ -1583,6 +1677,10 @@ a {
   .keeper-table__team-name,
   .player-line__player {
     font-size: 0.92rem;
+  }
+
+  .rank-value-cell {
+    font-size: 0.84rem;
   }
 
   .board-grid {
