@@ -55,6 +55,9 @@ type DraftData = {
 type DraftDataState = {
   data: DraftData | null;
   rankings: RankingEntry[] | null;
+  rankingSource: string | null;
+  sourceRows: SourceRow[] | null;
+  sourceSource: string | null;
   loading: boolean;
   error: string | null;
 };
@@ -69,6 +72,10 @@ type KeeperEvaluation = DraftPick & {
   keeperCostValue: number;
   sourceValue: number | null;
   why: string;
+};
+
+type SourceRow = RankingEntry & {
+  pointsPpr: number | null;
 };
 
 const teamColors: Record<string, string> = {
@@ -98,6 +105,9 @@ function DraftDataProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<DraftDataState>({
     data: null,
     rankings: null,
+    rankingSource: null,
+    sourceRows: null,
+    sourceSource: null,
     loading: true,
     error: null,
   });
@@ -107,30 +117,33 @@ function DraftDataProvider({ children }: { children: ReactNode }) {
 
     async function load() {
       try {
-        const [draftResponse, rankingsResponse] = await Promise.all([
+        const [draftResponse, rankingSnapshot] = await Promise.all([
           fetch('/draft-data.json', { signal: controller.signal }),
-          fetch('/espn-rankings-2026.json', { signal: controller.signal }),
+          loadRankingSnapshot(controller.signal),
         ]);
 
         if (!draftResponse.ok) {
           throw new Error(`Failed to load draft-data.json (${draftResponse.status})`);
         }
-        if (!rankingsResponse.ok) {
-          throw new Error(`Failed to load espn-rankings-2026.json (${rankingsResponse.status})`);
-        }
 
-        const [draftJson, rankingsJson] = await Promise.all([
-          draftResponse.json() as Promise<DraftData>,
-          rankingsResponse.json() as Promise<RankingEntry[]>,
-        ]);
+        const draftJson = (await draftResponse.json()) as DraftData;
+        const sourceSnapshot = await loadSourceSnapshot(rankingSnapshot.rankings, controller.signal);
 
-        setState({ data: draftJson, rankings: rankingsJson, loading: false, error: null });
+        setState({
+          data: draftJson,
+          rankings: rankingSnapshot.rankings,
+          rankingSource: rankingSnapshot.source,
+          sourceRows: sourceSnapshot.rows,
+          sourceSource: sourceSnapshot.source,
+          loading: false,
+          error: null,
+        });
       } catch (error) {
         if (controller.signal.aborted) {
           return;
         }
         const message = error instanceof Error ? error.message : 'Unable to load draft data';
-        setState({ data: null, rankings: null, loading: false, error: message });
+        setState({ data: null, rankings: null, rankingSource: null, sourceRows: null, sourceSource: null, loading: false, error: message });
       }
     }
 
@@ -160,6 +173,23 @@ function teamFromSlug(data: DraftData | null, slug?: string) {
   return data.teams.find((team) => slugify(team.name) === slug) ?? null;
 }
 
+function formatSnapshotDate(value: string | undefined) {
+  if (!value) {
+    return 'unknown date';
+  }
+
+  const parsed = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+
+  return parsed.toLocaleDateString('en-US', {
+    month: 'numeric',
+    day: 'numeric',
+    year: 'numeric',
+  });
+}
+
 function normalizePlayerName(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
@@ -168,12 +198,67 @@ function rankingLookup(rankings: RankingEntry[] | null) {
   return new Map((rankings ?? []).map((entry) => [normalizePlayerName(entry.player), entry]));
 }
 
+type RankingSnapshot = {
+  source: string;
+  rankings: RankingEntry[];
+};
+
+type SourceSnapshot = {
+  source: string;
+  rows: SourceRow[];
+};
+
+const rankingSources = [
+  { path: '/fantasypros-rankings-2026.json', label: 'FantasyPros' },
+  { path: '/espn-rankings-2026.json', label: 'ESPN' },
+] as const;
+
+const fantasyProsSourcePath = '/fantasypros-source-2026.json';
+
+async function loadRankingSnapshot(signal: AbortSignal): Promise<RankingSnapshot> {
+  const errors: string[] = [];
+
+  for (const rankingSource of rankingSources) {
+    const response = await fetch(rankingSource.path, { signal });
+    if (!response.ok) {
+      errors.push(`${rankingSource.path} (${response.status})`);
+      continue;
+    }
+
+    const rankings = (await response.json()) as RankingEntry[];
+    return { source: rankingSource.label, rankings };
+  }
+
+  throw new Error(`Failed to load rankings: ${errors.join(', ')}`);
+}
+
+function normalizeSourceRows(rankings: RankingEntry[], pointsPprByPlayer: Map<string, number | null>) {
+  return rankings.map((entry) => ({
+    ...entry,
+    pointsPpr: pointsPprByPlayer.get(normalizePlayerName(entry.player)) ?? null,
+  }));
+}
+
+async function loadSourceSnapshot(rankings: RankingEntry[], signal: AbortSignal): Promise<SourceSnapshot> {
+  try {
+    const response = await fetch(fantasyProsSourcePath, { signal });
+    if (!response.ok) {
+      throw new Error(`Failed to load ${fantasyProsSourcePath} (${response.status})`);
+    }
+
+    const rows = (await response.json()) as SourceRow[];
+    return { source: 'FantasyPros', rows };
+  } catch {
+    return { source: 'FantasyPros', rows: normalizeSourceRows(rankings, new Map()) };
+  }
+}
+
 function parsePositionRank(value: string) {
   const match = value.match(/(\d+)$/);
   return match ? Number(match[1]) : null;
 }
 
-function evaluatePick(pick: DraftPick, ranking: RankingEntry | null): KeeperEvaluation {
+function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSource: string): KeeperEvaluation {
   if (!ranking) {
     return {
       ...pick,
@@ -184,7 +269,8 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null): KeeperEval
       keeperValue: null,
       keeperCostValue: draftValueScore(pick.round),
       keeperCost: pick.round,
-      why: 'Not found in the 2026 ESPN rankings, so not recommended as a keeper.',
+      sourceValue: null,
+      why: `Not found in the 2026 ${rankingSource} rankings, so not recommended as a keeper.`,
     };
   }
 
@@ -217,7 +303,7 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null): KeeperEval
     keeperValue: sourceValue,
     keeperCostValue,
     sourceValue,
-    why: `ESPN ranks ${ranking.player} at #${sourceRank} overall, with round cost and light positional scarcity folded into a ${keeperScore.toFixed(1)} Keeper Score.`,
+    why: `${rankingSource} ranks ${ranking.player} at #${sourceRank} overall, with round cost and light positional scarcity folded into a ${keeperScore.toFixed(1)} Keeper Score.`,
   };
 }
 
@@ -319,6 +405,7 @@ function AppShell({ children }: { children: ReactNode }) {
         <nav className="nav-pills" aria-label="Primary navigation">
           <NavLink to="/" icon={Grid2X2} label="Keepers" />
           <NavLink to="/draft-board" icon={CalendarDays} label="2025 Draft" />
+          <NavLink to="/source-data" icon={Search} label="Data" />
         </nav>
       </header>
 
@@ -392,6 +479,14 @@ function ScorePill({ score }: { score: number | null }) {
   return <span className={cn('pill', `pill--${scoreToneFromValue(score)}`)}>{score === null ? 'NR' : score.toFixed(1)}</span>;
 }
 
+function ValuePill({ value }: { value: number | null }) {
+  return <span className={cn('pill', `pill--slate`)}>{value === null ? '-' : value.toFixed(1)}</span>;
+}
+
+function RankBadge({ rank }: { rank: string }) {
+  return <span className="source-rank-badge" aria-hidden="true">{rank}</span>;
+}
+
 function TeamBadge({ team }: { team: string }) {
   return <span className={cn('pill', `pill--${teamColors[team] ?? 'slate'}`)}>{team}</span>;
 }
@@ -423,15 +518,15 @@ function RecommendationCell({ rec }: { rec: KeeperEvaluation }) {
   return <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
 }
 
-function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>) {
+function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
   return picks
     .filter((pick) => pick.team === team)
-    .map((pick) => evaluatePick(pick, rankings.get(normalizePlayerName(pick.player)) ?? null))
+    .map((pick) => evaluatePick(pick, rankings.get(normalizePlayerName(pick.player)) ?? null, rankingSource))
     .sort((a, b) => b.keeperScore - a.keeperScore || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
 }
 
-function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>) {
-  return evaluateTeam(team, picks, rankings)[0] ?? null;
+function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
+  return evaluateTeam(team, picks, rankings, rankingSource)[0] ?? null;
 }
 
 function DashboardTable({
@@ -475,7 +570,7 @@ function DashboardTable({
 }
 
 function DashboardPage() {
-  const { data, rankings, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, loading, error } = useDraftData();
 
   if (loading) {
     return (
@@ -519,15 +614,16 @@ function DashboardPage() {
   }
 
   const rankingMap = rankingLookup(rankings);
+  const sourceLabel = rankingSource ?? 'current rankings';
   const recs = data.teams
-    .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap))
+    .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceLabel))
     .filter(Boolean) as KeeperEvaluation[];
 
   return (
     <div className="page-stack">
       <SectionIntro
-        title="Best keeper picks, team by team"
-        description="One recommendation per team, ranked by exact ESPN value against that draft slot. Click any team name to jump into roster breakdown."
+        title="Team-by-Team Keeper Recs"
+        description={`Top keepers, ranked by current value versus last year's draft slot. Select team for full breakdown`}
       />
       <DashboardTable rows={recs} />
     </div>
@@ -618,7 +714,7 @@ function TeamPickerModal({
 }
 
 function TeamPage() {
-  const { data, rankings, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, loading, error } = useDraftData();
   const params = useParams();
   const navigate = useNavigate();
   const [selectorOpen, setSelectorOpen] = useState(false);
@@ -638,7 +734,8 @@ function TeamPage() {
   }
 
   const rankingMap = rankingLookup(rankings);
-  const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap);
+  const sourceLabel = rankingSource ?? 'current rankings';
+  const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceLabel);
   const recommendation = rankedPicks[0] ?? null;
 
   return (
@@ -648,7 +745,7 @@ function TeamPage() {
       <section className="hero-card hero-card--stacked">
         <div className="hero-copy">
           <h1>{team.name}</h1>
-          <p>Inspect the roster built from last year&apos;s draft. It is now sorted by our exact ESPN keeper value so the best candidates rise to the top.</p>
+          <p>Inspect the roster built from last year&apos;s draft. It is now sorted by our exact {sourceLabel} keeper value so the best candidates rise to the top.</p>
         </div>
 
         <div className="hero-actions">
@@ -682,7 +779,7 @@ function TeamPage() {
           <div className="meter">
             <span className={cn('meter__fill', recommendation && `meter__fill--${scoreTone(recommendation.keeperScore)}`)} />
           </div>
-          <small>Weighted from ESPN rank, keeper cost, and positional scarcity.</small>
+          <small>Weighted from {sourceLabel} rank, keeper cost, and positional scarcity.</small>
         </div>
       </section>
 
@@ -745,7 +842,7 @@ function ErrorPanel({ message }: { message: string }) {
 }
 
 function DraftBoardPage() {
-  const { data, rankings, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, loading, error } = useDraftData();
 
   if (loading) {
     return <LoadingPanel title="Loading draft board..." />;
@@ -761,9 +858,10 @@ function DraftBoardPage() {
   const snakeRows = byRound.map((roundPicks, index) => (index % 2 === 0 ? roundPicks : [...roundPicks].reverse()));
   const draftOrderTeams = [...byRound[0]].sort((a, b) => a.pick - b.pick);
   const rankingMap = rankingLookup(rankings);
+  const sourceLabel = rankingSource ?? 'current rankings';
   const recs = new Set(
     data.teams
-      .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap)?.pick)
+      .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceLabel)?.pick)
       .filter((pick): pick is number => typeof pick === 'number'),
   );
 
@@ -771,10 +869,10 @@ function DraftBoardPage() {
     <div className="page-stack">
       <SectionIntro
         title="2025 Draft Board"
-        description="Snake-format draft board from last season, used as the keeper cost baseline."
+        description="Last season's draft, used as the keeper cost baseline"
       />
 
-      <section className="panel">
+      <section className="panel board-panel">
         <div className="panel-head">
           <div className="team-card__eyebrow">Classy Bois 2025 Draft</div>
           <span className="status-chip status-chip--soft">PPR; Snake format</span>
@@ -821,6 +919,90 @@ function DraftBoardPage() {
   );
 }
 
+function SourceDataPage() {
+  const { sourceRows, sourceSource, loading, error } = useDraftData();
+  const [search, setSearch] = useState('');
+
+  if (loading) {
+    return <LoadingPanel title="Loading source data..." />;
+  }
+
+  if (error || !sourceRows) {
+    return <ErrorPanel message={error ?? 'Unknown error'} />;
+  }
+
+  const sourceLabel = sourceSource ?? 'FantasyPros';
+  const snapshotDate = formatSnapshotDate(sourceRows[0]?.source_date);
+  const visibleRows = sourceRows
+    .slice(0, 300)
+    .filter((row) => {
+      const query = search.trim().toLowerCase();
+      if (!query) return true;
+      return [row.player, row.team, row.pos, row.pos_rank].some((value) => value.toLowerCase().includes(query));
+    });
+  const columnSize = Math.ceil(visibleRows.length / 3);
+  const sourceColumns = Array.from({ length: 3 }, (_, index) => visibleRows.slice(index * columnSize, (index + 1) * columnSize));
+
+  return (
+    <div className="page-stack">
+      <SectionIntro
+        title="FantasyPros Source Data"
+        description={`Projected PPR Rankings as of ${snapshotDate}`}
+      />
+
+      <section className="panel table-panel">
+        <div className="panel-head panel-head--stacked">
+          <div>
+            <div className="team-card__eyebrow">Top 300</div>
+            <h2>Source rankings</h2>
+          </div>
+          <span className="status-chip status-chip--soft">{sourceLabel} PPR</span>
+        </div>
+
+        <label className="search-field search-field--table">
+          <Search size={16} />
+          <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search players, teams, or positions..." />
+        </label>
+
+        <div className="source-columns">
+          {sourceColumns.map((rows, columnIndex) => (
+            <section className="source-column" key={columnIndex}>
+              <div className="source-column__head">
+                <strong>Ranks {columnIndex * columnSize + 1}-{columnIndex * columnSize + rows.length}</strong>
+              </div>
+              <div className="table-shell table-shell--source">
+                <table className="keeper-table keeper-table--source">
+                  <thead>
+                    <tr>
+                      <th>Player</th>
+                      <th>PPR</th>
+                      <th>Pos Rank</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {rows.map((row) => (
+                      <tr key={`${row.keeper_rank}-${row.player}`} className="keeper-table__row">
+                        <td className="keeper-table__player source-player-cell">
+                          <RankBadge rank={row.keeper_rank} />
+                          <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact />
+                        </td>
+                        <td className="keeper-table__points">
+                          <ValuePill value={row.pointsPpr} />
+                        </td>
+                        <td className="keeper-table__pos-rank">{row.pos_rank}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
 function AppRoutes() {
   const location = useLocation();
 
@@ -835,6 +1017,7 @@ function AppRoutes() {
         <Route path="/" element={<DashboardPage />} />
         <Route path="/teams/:teamId" element={<TeamPage />} />
         <Route path="/draft-board" element={<DraftBoardPage />} />
+        <Route path="/source-data" element={<SourceDataPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AppShell>
