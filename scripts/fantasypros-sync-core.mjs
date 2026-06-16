@@ -113,8 +113,8 @@ export function projectionFields(player, pos) {
   }
 
   const base = {
-    pointsPpr: Number(stats.points_ppr ?? null),
     ...emptyProjectionFields(),
+    pointsPpr: Number(stats.points_ppr ?? stats.points ?? null),
   };
 
   if (pos === 'QB') {

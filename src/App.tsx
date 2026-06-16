@@ -1,5 +1,6 @@
-import { type ReactNode, createContext, useContext, useEffect, useState } from 'react';
+import { type CSSProperties, type ReactNode, createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { BrowserRouter, Link, Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { createPortal } from 'react-dom';
 import {
   ArrowLeft,
   CalendarDays,
@@ -106,6 +107,11 @@ type SourceRow = RankingEntry & {
   projectionDefFf?: number | null;
   projectionDefFr?: number | null;
   projectionDefRetd?: number | null;
+};
+
+type PreviewStat = {
+  label: string;
+  value: string;
 };
 
 const teamColors: Record<string, string> = {
@@ -299,6 +305,61 @@ function normalizeSourceRows(rankings: RankingEntry[], pointsPprByPlayer: Map<st
     projectionDefFr: null,
     projectionDefRetd: null,
   }));
+}
+
+function formatPreviewValue(value: number | null, digits = 1) {
+  if (value === null || Number.isNaN(value)) {
+    return '-';
+  }
+
+  return new Intl.NumberFormat('en-US', {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+  }).format(value);
+}
+
+function getPreviewStats(row: SourceRow): PreviewStat[] {
+  switch (row.pos) {
+    case 'QB':
+      return [
+        { label: 'Pass yds', value: formatPreviewValue(row.projectionPassYds) },
+        { label: 'Pass TDs', value: formatPreviewValue(row.projectionPassTds) },
+        { label: 'Rush yds', value: formatPreviewValue(row.projectionRushYds) },
+        { label: 'Rush TDs', value: formatPreviewValue(row.projectionRushTds) },
+      ];
+    case 'RB':
+      return [
+        { label: 'Carries', value: formatPreviewValue(row.projectionRushAtt) },
+        { label: 'Rush yds', value: formatPreviewValue(row.projectionRushYds) },
+        { label: 'Rush TDs', value: formatPreviewValue(row.projectionRushTds) },
+        { label: 'Recs', value: formatPreviewValue(row.projectionRecRec) },
+        { label: 'Rec yds', value: formatPreviewValue(row.projectionRecYds) },
+        { label: 'Rec TDs', value: formatPreviewValue(row.projectionRecTds) },
+      ];
+    case 'WR':
+    case 'TE':
+      return [
+        { label: 'Recs', value: formatPreviewValue(row.projectionRecRec) },
+        { label: 'Rec yds', value: formatPreviewValue(row.projectionRecYds) },
+        { label: 'Rec TDs', value: formatPreviewValue(row.projectionRecTds) },
+      ];
+    case 'K':
+      return [
+        { label: 'FG att', value: formatPreviewValue(row.projectionFga) },
+        { label: 'FG made', value: formatPreviewValue(row.projectionFg) },
+        { label: 'XP', value: formatPreviewValue(row.projectionXpt) },
+      ];
+    case 'D/ST':
+      return [
+        { label: 'Sacks', value: formatPreviewValue(row.projectionDefSack) },
+        { label: 'INTs', value: formatPreviewValue(row.projectionDefInt) },
+        { label: 'TDs', value: formatPreviewValue(row.projectionDefTd) },
+        { label: 'FF', value: formatPreviewValue(row.projectionDefFf) },
+        { label: 'FR', value: formatPreviewValue(row.projectionDefFr) },
+      ];
+    default:
+      return [];
+  }
 }
 
 async function loadSourceSnapshot(rankings: RankingEntry[], signal: AbortSignal): Promise<SourceSnapshot> {
@@ -558,8 +619,8 @@ function SectionIntro({
   );
 }
 
-function PositionPill({ pos }: { pos: Position }) {
-  return <span className={cn('pill', `pill--${positionTone(pos)}`)}>{pos}</span>;
+function PositionPill({ pos, compact = false }: { pos: Position; compact?: boolean }) {
+  return <span className={cn('pill', `pill--${positionTone(pos)}`, compact && 'pill--compact')}>{pos}</span>;
 }
 
 function ScorePill({ score }: { score: number | null }) {
@@ -614,8 +675,197 @@ function PlayerWithSuffix({
   );
 }
 
-function RecommendationCell({ rec }: { rec: KeeperEvaluation }) {
-  return <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
+function PlayerPreviewTrigger({ row, children }: { row: SourceRow; children: ReactNode }) {
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const popoverRef = useRef<HTMLDivElement | null>(null);
+  const closeTimerRef = useRef<number | null>(null);
+  const [open, setOpen] = useState(false);
+  const [popoverStyle, setPopoverStyle] = useState<CSSProperties>({});
+
+  const clearCloseTimer = () => {
+    if (closeTimerRef.current) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  };
+
+  const positionPopover = () => {
+    const trigger = triggerRef.current;
+    if (!trigger) return;
+
+    const rect = trigger.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const width = Math.min(332, viewportWidth - 24);
+    const estimatedHeight = 236;
+    const margin = 12;
+
+    let left = rect.left;
+    if (left + width > viewportWidth - margin) {
+      left = viewportWidth - width - margin;
+    }
+    left = Math.max(margin, left);
+
+    let top = rect.bottom + 12;
+    if (top + estimatedHeight > viewportHeight - margin) {
+      top = rect.top - estimatedHeight - 12;
+    }
+    top = Math.max(margin, top);
+
+    setPopoverStyle({
+      position: 'fixed',
+      top,
+      left,
+      width,
+    });
+  };
+
+  const openPopover = () => {
+    clearCloseTimer();
+    positionPopover();
+    setOpen(true);
+  };
+
+  const scheduleClose = () => {
+    clearCloseTimer();
+    closeTimerRef.current = window.setTimeout(() => setOpen(false), 120);
+  };
+
+  useEffect(() => {
+    if (!open) {
+      return;
+    }
+
+    const handlePointerDown = (event: PointerEvent) => {
+      const trigger = triggerRef.current;
+      const popover = popoverRef.current;
+      const target = event.target as Node | null;
+
+      if (trigger?.contains(target) || popover?.contains(target)) {
+        return;
+      }
+
+      setOpen(false);
+    };
+
+    const handleScrollOrResize = () => setOpen(false);
+
+    document.addEventListener('pointerdown', handlePointerDown);
+    window.addEventListener('scroll', handleScrollOrResize, true);
+    window.addEventListener('resize', handleScrollOrResize);
+
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      window.removeEventListener('scroll', handleScrollOrResize, true);
+      window.removeEventListener('resize', handleScrollOrResize);
+    };
+  }, [open]);
+
+  useEffect(() => {
+    return () => clearCloseTimer();
+  }, []);
+
+  const playerPopover = open && typeof document !== 'undefined'
+    ? createPortal(
+        <div
+          ref={popoverRef}
+          className="player-preview-popover"
+          style={popoverStyle}
+          onPointerEnter={clearCloseTimer}
+          onPointerLeave={scheduleClose}
+        >
+          <div className="player-preview-popover__inner">
+            <div className="player-preview-popover__head">
+              <div className="player-preview-popover__head-left">
+                {row.player_square_image_url || row.player_image_url ? (
+                  <img
+                    className="player-preview-popover__image"
+                    src={row.player_square_image_url ?? row.player_image_url ?? undefined}
+                    alt=""
+                  />
+                ) : (
+                  <div className="player-preview-popover__avatar" aria-hidden="true">
+                    {row.player
+                      .split(' ')
+                      .slice(0, 2)
+                      .map((part) => part[0])
+                      .join('')}
+                  </div>
+                )}
+                <div className="player-preview-popover__title">
+                  <strong>{row.player}</strong>
+                  <div className="player-preview-popover__meta">
+                    <span className="player-preview-popover__team">{row.team}</span>
+                    <PositionPill pos={row.pos} compact />
+                  </div>
+                </div>
+              </div>
+              <span className="player-preview-popover__tag">Projected</span>
+            </div>
+            <div className="player-preview-popover__metric">
+              <span>PPR points</span>
+              <strong>{row.pointsPpr === null ? '-' : row.pointsPpr.toFixed(1)}</strong>
+            </div>
+            <div className="player-preview-popover__grid" role="list" aria-label={`${row.player} projections`}>
+              {getPreviewStats(row).map((stat) => (
+                <div className="player-preview-popover__stat" role="listitem" key={stat.label}>
+                  <span>{stat.label}</span>
+                  <strong>{stat.value}</strong>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>,
+        document.body,
+      )
+    : null;
+
+  return (
+    <>
+      <button
+        ref={triggerRef}
+        type="button"
+        className="player-preview-trigger"
+        aria-label={`View projections for ${row.player}`}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        onPointerEnter={openPopover}
+        onPointerLeave={scheduleClose}
+        onFocus={openPopover}
+        onBlur={scheduleClose}
+        onClick={(event) => {
+          event.preventDefault();
+          if (open) {
+            setOpen(false);
+            return;
+          }
+          openPopover();
+        }}
+      >
+        {children}
+      </button>
+      {playerPopover}
+    </>
+  );
+}
+
+function RecommendationCell({ rec, sourceRow }: { rec: KeeperEvaluation; sourceRow: SourceRow | null }) {
+  const content = <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
+
+  if (!sourceRow) {
+    return content;
+  }
+
+  return <PlayerPreviewTrigger row={sourceRow}>{content}</PlayerPreviewTrigger>;
+}
+
+function PlayerPreviewName({ row, compact = false }: { row: SourceRow | null; compact?: boolean }) {
+  if (!row) {
+    return null;
+  }
+
+  const content = <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact={compact} />;
+  return <PlayerPreviewTrigger row={row}>{content}</PlayerPreviewTrigger>;
 }
 
 function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
@@ -631,9 +881,16 @@ function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<strin
 
 function DashboardTable({
   rows,
+  sourceRows,
 }: {
   rows: KeeperEvaluation[];
+  sourceRows: SourceRow[] | null;
 }) {
+  const sourceRowLookup = useMemo(
+    () => new Map((sourceRows ?? []).map((row) => [normalizePlayerName(row.player), row])),
+    [sourceRows],
+  );
+
   return (
     <div className="table-shell">
       <table className="keeper-table keeper-table--league">
@@ -656,7 +913,7 @@ function DashboardTable({
                     <ChevronRight size={16} />
                   </Link>
                 </td>
-                <td className="keeper-table__rec">{<RecommendationCell rec={rec} />}</td>
+                <td className="keeper-table__rec">{<RecommendationCell rec={rec} sourceRow={sourceRowLookup.get(normalizePlayerName(rec.player)) ?? null} />}</td>
                 <td className="keeper-table__round">R{rec.round}</td>
                 <td className="keeper-table__value">
                   <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
@@ -674,7 +931,7 @@ function DashboardTable({
 }
 
 function DashboardPage() {
-  const { data, rankings, rankingSource, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, sourceRows, loading, error } = useDraftData();
 
   if (loading) {
     return (
@@ -729,13 +986,13 @@ function DashboardPage() {
         title="Team-by-Team Keeper Recs"
         description={`Top picks, ranked by current value versus last year's draft slot. Select team for full breakdown`}
       />
-      <DashboardTable rows={recs} />
+      <DashboardTable rows={recs} sourceRows={sourceRows} />
     </div>
   );
 }
 
 function TeamPage() {
-  const { data, rankings, rankingSource, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, sourceRows, loading, error } = useDraftData();
   const params = useParams();
   const navigate = useNavigate();
 
@@ -758,6 +1015,10 @@ function TeamPage() {
   const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceLabel);
   const recommendation = rankedPicks[0] ?? null;
   const anchorOpener = recommendation ? keeperAnchorOpener(team.name) : null;
+  const sourceRowLookup = useMemo(
+    () => new Map((sourceRows ?? []).map((row) => [normalizePlayerName(row.player), row])),
+    [sourceRows],
+  );
 
   return (
     <div className="page-stack">
@@ -777,7 +1038,11 @@ function TeamPage() {
       <section className="panel team-spotlight">
         <div className="spotlight-copy">
           <div className="team-card__eyebrow spotlight-copy__eyebrow">Top keeper anchor</div>
-          {recommendation ? <PlayerWithSuffix player={recommendation.player} nflTeam={recommendation.nflTeam} pos={recommendation.pos} compact /> : <h2>No ranked keeper yet</h2>}
+          {recommendation ? (
+            <PlayerPreviewName row={sourceRowLookup.get(normalizePlayerName(recommendation.player)) ?? null} compact />
+          ) : (
+            <h2>No ranked keeper yet</h2>
+          )}
           <p>{recommendation && anchorOpener ? <>{anchorOpener}: {recommendation.why}</> : 'No recommendation available yet'}</p>
         </div>
         <div className="meter-card">
@@ -819,7 +1084,10 @@ function TeamPage() {
                 return (
                   <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
                     <td className="keeper-table__player">
-                      <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />
+                      <PlayerPreviewName
+                        row={sourceRows?.find((sourceRow) => normalizePlayerName(sourceRow.player) === normalizePlayerName(rec.player)) ?? null}
+                        compact
+                      />
                     </td>
                     <td className="keeper-table__round">R{rec.round}</td>
                     <td className="keeper-table__value">
@@ -999,7 +1267,7 @@ function SourceDataPage() {
                       <tr key={`${row.keeper_rank}-${row.player}`} className="keeper-table__row">
                         <td className="keeper-table__player source-player-cell">
                           <RankBadge rank={row.keeper_rank} />
-                          <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact />
+                          <PlayerPreviewName row={row} compact />
                         </td>
                         <td className="keeper-table__points">
                           <ValuePill value={row.pointsPpr} />
