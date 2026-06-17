@@ -425,6 +425,12 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSour
   const positionRank = parsePositionRank(ranking.pos_rank) ?? 999;
   let keeperScore = sourceValue * 0.45 + keeperCostValue * 0.35 + positionValue * 0.2;
 
+  if (sourceRank <= 10) {
+    keeperScore += 1.1;
+  } else if (sourceRank <= 20) {
+    keeperScore += 0.6;
+  }
+
   if (ranking.pos === 'QB' && positionRank > 5) {
     keeperScore = Math.min(keeperScore, 3.5);
   }
@@ -470,7 +476,7 @@ function scarcityValue(pos: Position, posRank: string) {
     case 'WR':
       return positionRank <= 12 ? 9.0 : positionRank <= 24 ? 8.4 : 7.7;
     case 'TE':
-      return positionRank <= 5 ? 9.7 : positionRank <= 10 ? 8.6 : 7.0;
+      return positionRank <= 5 ? 9.4 : positionRank <= 10 ? 8.1 : 6.6;
     case 'QB':
       return positionRank <= 5 ? 8.6 : 4.0;
     case 'K':
@@ -624,7 +630,11 @@ function PositionPill({ pos, compact = false }: { pos: Position; compact?: boole
 }
 
 function ScorePill({ score }: { score: number | null }) {
-  return <span className={cn('pill', `pill--${scoreToneFromValue(score)}`)}>{score === null ? 'NR' : score.toFixed(1)}</span>;
+  return (
+    <span className={cn('pill', `pill--${scoreToneFromValue(score)}`)}>
+      {score === null ? 'NR' : `${score > 0 ? '+' : ''}${Math.trunc(score)}`}
+    </span>
+  );
 }
 
 function ValuePill({ value }: { value: number | null }) {
@@ -899,8 +909,8 @@ function DashboardTable({
             <th>Team</th>
             <th>Keeper rec</th>
             <th>2025 round</th>
-            <th>2026 rank</th>
-            <th>Keeper score</th>
+            <th>Projected value</th>
+            <th>Round value gain</th>
           </tr>
         </thead>
         <tbody>
@@ -1047,7 +1057,7 @@ function TeamPage() {
         </div>
         <div className="meter-card">
           <div className="meter-card__head">
-            <div className="meter-card__label">Keeper score</div>
+            <div className="meter-card__label">Round value gain</div>
             <ScorePill score={recommendation?.keeperScore ?? null} />
           </div>
           <div className="meter">
@@ -1061,11 +1071,11 @@ function TeamPage() {
       </section>
 
       <section className="panel table-panel table-panel--drilldown">
-        <div className="panel-head panel-head--stacked">
+        <div className="panel-head panel-head--stacked panel-head--source">
           <div>
             <div className="team-card__eyebrow">Keeper Rankings</div>
           </div>
-          <span className="status-chip status-chip--soft">Sorted by keeper score</span>
+          <span className="status-chip status-chip--soft">Sorted by round value gain</span>
         </div>
 
         <div className="table-shell">
@@ -1074,8 +1084,8 @@ function TeamPage() {
               <tr>
                 <th>Player</th>
                 <th>Rnd</th>
-                <th>2026 rank</th>
-                <th>Keeper score</th>
+                <th>Projected value</th>
+                <th>Round value gain</th>
               </tr>
             </thead>
             <tbody>
@@ -1234,10 +1244,9 @@ function SourceDataPage() {
       />
 
       <section className="panel table-panel">
-        <div className="panel-head panel-head--stacked">
+        <div className="panel-head panel-head--stacked panel-head--source">
           <div>
             <div className="team-card__eyebrow">Top 300</div>
-            <h2>Source rankings</h2>
           </div>
           <span className="status-chip status-chip--soft">{sourceLabel} PPR</span>
         </div>

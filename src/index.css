@@ -365,6 +365,10 @@ a {
   align-items: center;
 }
 
+.panel-head--source {
+  margin-bottom: 12px;
+}
+
 .hero-badges {
   flex-wrap: wrap;
 }
@@ -1345,9 +1349,6 @@ a {
 
 .meter__fill--elite {
   background: linear-gradient(135deg, hsl(var(--accent)), hsl(145 68% 28%));
-}
-
-.meter__fill--strong {
 }
 
 .meter__fill--viable {
