@@ -909,7 +909,7 @@ function DashboardTable({
             <th>Team</th>
             <th>Keeper rec</th>
             <th>2025 round</th>
-            <th>Projected value</th>
+            <th>2026 ranking</th>
             <th>Round value gain</th>
           </tr>
         </thead>
@@ -1084,7 +1084,7 @@ function TeamPage() {
               <tr>
                 <th>Player</th>
                 <th>Rnd</th>
-                <th>Projected value</th>
+                <th>2026 Ranking</th>
                 <th>Round value gain</th>
               </tr>
             </thead>
