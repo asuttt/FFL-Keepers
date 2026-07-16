@@ -79,7 +79,6 @@ export function buildNormalizedRankings(players, sourceDate) {
     const pos = normalizePosition(player.player_position_id);
     const nextPosRank = (positionalCounts.get(pos) ?? 0) + 1;
     positionalCounts.set(pos, nextPosRank);
-
     return {
       keeper_rank: String(index + 1),
       source_rank: String(Number(player.rank_ecr ?? index + 1)),
@@ -89,8 +88,6 @@ export function buildNormalizedRankings(players, sourceDate) {
       pos_rank: String(player.pos_rank ?? `${pos}${nextPosRank}`),
       source_date: sourceDate,
       player_id: player.player_id ?? null,
-      player_square_image_url: player.player_square_image_url ?? null,
-      player_image_url: player.player_image_url ?? null,
       player_page_url: player.player_page_url ?? null,
       player_bye_week: player.player_bye_week ?? null,
       player_owned_avg: player.player_owned_avg ?? null,
@@ -212,8 +209,6 @@ export function toCsv(rows) {
     'pos',
     'pos_rank',
     'player_id',
-    'player_square_image_url',
-    'player_image_url',
     'player_page_url',
     'player_bye_week',
     'player_owned_avg',
@@ -244,8 +239,6 @@ export function toSourceCsv(rows) {
     'pos_rank',
     'pointsPpr',
     'player_id',
-    'player_square_image_url',
-    'player_image_url',
     'player_page_url',
     'player_bye_week',
     'player_owned_avg',

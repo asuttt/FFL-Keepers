@@ -31,6 +31,10 @@ type RankingEntry = {
   pos: Position;
   pos_rank: string;
   source_date: string;
+  player_id?: number | null;
+  player_square_image_url?: string | null;
+  player_image_url?: string | null;
+  player_page_url?: string | null;
 };
 
 type TeamSummary = {
@@ -126,6 +130,17 @@ const teamColors: Record<string, string> = {
   'levittown girth & tonnage': 'orange',
   'Stairway to Evans': 'indigo',
 };
+
+function FootballIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <g transform="rotate(-42 12 12)">
+        <ellipse cx="12" cy="12" rx="5.5" ry="9" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <path d="M10 10.3h4M10 12h4M10 13.7h4M12 9.6v4.8" fill="none" stroke="currentColor" strokeWidth="1.15" strokeLinecap="round" />
+      </g>
+    </svg>
+  );
+}
 
 const DraftDataContext = createContext<DraftDataState | undefined>(undefined);
 
@@ -230,6 +245,12 @@ function normalizePlayerName(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
+function playerImageUrl(row: SourceRow) {
+  return row.player_square_image_url
+    ?? row.player_image_url
+    ?? (row.player_id ? `https://images.fantasypros.com/images/players/nfl/${row.player_id}/headshot/210x210.png` : null);
+}
+
 function rankingLookup(rankings: RankingEntry[] | null) {
   return new Map((rankings ?? []).map((entry) => [normalizePlayerName(entry.player), entry]));
 }
@@ -272,10 +293,8 @@ function normalizeSourceRows(rankings: RankingEntry[], pointsPprByPlayer: Map<st
   return rankings.map((entry) => ({
     ...entry,
     pointsPpr: pointsPprByPlayer.get(normalizePlayerName(entry.player)) ?? null,
-    player_id: null,
-    player_square_image_url: null,
-    player_image_url: null,
-    player_page_url: null,
+    player_id: entry.player_id ?? null,
+    player_page_url: entry.player_page_url ?? null,
     player_bye_week: null,
     player_owned_avg: null,
     player_owned_espn: null,
@@ -550,9 +569,9 @@ function AppShell({ children }: { children: ReactNode }) {
     <div className="app-shell">
       <header className="topbar">
         <Link to="/" className="brand-lockup">
-          <span className="brand-mark">FFL</span>
+          <span className="brand-mark"><FootballIcon /></span>
           <span>
-            <strong>Classy Bois 2026 Keepers</strong>
+            <strong>2026 Classy Bois Keepers</strong>
           </span>
         </Link>
 
@@ -787,10 +806,10 @@ function PlayerPreviewTrigger({ row, children }: { row: SourceRow; children: Rea
           <div className="player-preview-popover__inner">
             <div className="player-preview-popover__head">
               <div className="player-preview-popover__head-left">
-                {row.player_square_image_url || row.player_image_url ? (
+                {playerImageUrl(row) ? (
                   <img
                     className="player-preview-popover__image"
-                    src={row.player_square_image_url ?? row.player_image_url ?? undefined}
+                    src={playerImageUrl(row) ?? undefined}
                     alt=""
                   />
                 ) : (
@@ -1300,7 +1319,7 @@ function AppRoutes() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
-    document.title = 'Classy Bois 2026 Keepers';
+    document.title = '2026 Classy Bois Keepers';
   }, [location.pathname]);
 
   return (
