@@ -68,12 +68,8 @@ type DraftDataState = {
 type KeeperEvaluation = DraftPick & {
   ranking: RankingEntry | null;
   sourceRank: number | null;
-  sourceTier: number | null;
+  valueGain: number | null;
   keeperScore: number;
-  keeperCost: number;
-  keeperValue: number | null;
-  keeperCostValue: number;
-  sourceValue: number | null;
   why: string;
 };
 
@@ -326,8 +322,8 @@ function normalizeSourceRows(rankings: RankingEntry[], pointsPprByPlayer: Map<st
   }));
 }
 
-function formatPreviewValue(value: number | null, digits = 1) {
-  if (value === null || Number.isNaN(value)) {
+function formatPreviewValue(value: number | null | undefined, digits = 1) {
+  if (value === null || value === undefined || Number.isNaN(value)) {
     return '-';
   }
 
@@ -426,85 +422,44 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSour
       ...pick,
       ranking: null,
       sourceRank: null,
-      sourceTier: null,
+      valueGain: null,
       keeperScore: 1,
-      keeperValue: null,
-      keeperCostValue: draftValueScore(pick.round),
-      keeperCost: pick.round,
-      sourceValue: null,
       why: `Not found in the 2026 ${rankingSource} rankings, so not recommended as a keeper`,
     };
   }
 
   const sourceRank = Number(ranking.source_rank);
-  const sourceTier = Math.ceil(sourceRank / 10);
-  const sourceValue = rankValueScore(sourceRank);
-  const keeperCostValue = draftValueScore(pick.round);
-  const positionValue = scarcityValue(ranking.pos, ranking.pos_rank);
-  const positionRank = parsePositionRank(ranking.pos_rank) ?? 999;
-  let keeperScore = sourceValue * 0.45 + keeperCostValue * 0.35 + positionValue * 0.2;
-
-  if (sourceRank <= 10) {
-    keeperScore += 1.1;
-  } else if (sourceRank <= 20) {
-    keeperScore += 0.6;
-  }
-
-  if (ranking.pos === 'QB' && positionRank > 5) {
-    keeperScore = Math.min(keeperScore, 3.5);
-  }
-  if (ranking.pos === 'TE' && positionRank > 5) {
-    keeperScore = Math.min(keeperScore, 5.8);
-  }
-  if (ranking.pos === 'K' || ranking.pos === 'D/ST') {
-    keeperScore = Math.min(keeperScore, 2.5);
-  }
-
-  keeperScore = clampScore(keeperScore);
+  const valueGain = pick.pick - sourceRank;
   return {
     ...pick,
     ranking,
     sourceRank,
-    sourceTier,
-    keeperScore,
-    keeperCost: pick.round,
-    keeperValue: sourceValue,
-    keeperCostValue,
-    sourceValue,
-    why: `Round ${pick.round} cost versus #${sourceRank} overall rank`,
+    valueGain,
+    keeperScore: keeperStrength(valueGain, sourceRank, ranking.pos, ranking.pos_rank, pick.round),
+    why: `Pick #${pick.pick} (Round ${pick.round}) versus #${sourceRank} overall rank`,
   };
 }
 
-function clampScore(value: number) {
-  return Math.min(10, Math.max(1, Math.round(value * 10) / 10));
-}
+function keeperStrength(valueGain: number, overallRank: number, pos: Position, posRank: string, round: number) {
+  if (valueGain <= 0) return 1;
 
-function rankValueScore(sourceRank: number) {
-  return 10 - ((sourceRank - 1) / 159) * 9;
-}
+  const gainScore = 4 + valueGain / 20;
+  const rankAdjustment = overallRank <= 10 ? 1.5 : overallRank <= 25 ? 1 : overallRank <= 50 ? 0.5 : overallRank <= 100 ? 0 : -0.75;
+  let score = gainScore + rankAdjustment;
 
-function draftValueScore(round: number) {
-  return ((round - 1) / 14) * 9 + 1;
-}
-
-function scarcityValue(pos: Position, posRank: string) {
-  const positionRank = parsePositionRank(posRank) ?? 999;
-  switch (pos) {
-    case 'RB':
-      return positionRank <= 12 ? 9.6 : positionRank <= 24 ? 9.1 : 8.4;
-    case 'WR':
-      return positionRank <= 12 ? 9.0 : positionRank <= 24 ? 8.4 : 7.7;
-    case 'TE':
-      return positionRank <= 5 ? 9.4 : positionRank <= 10 ? 8.1 : 6.6;
-    case 'QB':
-      return positionRank <= 5 ? 8.6 : 4.0;
-    case 'K':
-      return 2.1;
-    case 'D/ST':
-      return 2.0;
-    default:
-      return 6.0;
+  if (pos === 'TE') {
+    score -= overallRank <= 25 ? 0.5 : 1.25;
+    if (round >= 10) score += 0.5;
+    if (overallRank > 25) score = Math.min(score, 6);
+  } else if (pos === 'QB') {
+    score -= overallRank <= 10 ? 1 : 3;
+    if (overallRank > 25) score = Math.min(score, 4.5);
+  } else if (pos === 'K' || pos === 'D/ST') {
+    score -= 4;
   }
+
+  if (valueGain < 10) score = Math.min(score, 4.9);
+  return Math.min(10, Math.max(1, Math.round(score * 10) / 10));
 }
 
 function positionTone(pos: Position) {
@@ -648,12 +603,32 @@ function PositionPill({ pos, compact = false }: { pos: Position; compact?: boole
   return <span className={cn('pill', `pill--${positionTone(pos)}`, compact && 'pill--compact')}>{pos}</span>;
 }
 
-function ScorePill({ score }: { score: number | null }) {
+function keeperScoreTone(score: number) {
+  if (score >= 8) return 'green';
+  if (score >= 7) return 'lime';
+  if (score >= 6) return 'amber';
+  return 'low';
+}
+
+function KeeperScoreBar({ score, compact = false }: { score: number | null; compact?: boolean }) {
+  if (score === null) return <span className="keeper-score-bar keeper-score-bar--blank">NR</span>;
+
   return (
-    <span className={cn('pill', `pill--${scoreToneFromValue(score)}`)}>
-      {score === null ? 'NR' : `${score > 0 ? '+' : ''}${Math.trunc(score)}`}
-    </span>
+    <div className={cn('keeper-score-bar', compact && 'keeper-score-bar--compact')}>
+      <span className="keeper-score-bar__track">
+        <span
+          className={cn('keeper-score-bar__fill', `keeper-score-bar__fill--${keeperScoreTone(score)}`)}
+          style={{ width: `${score * 10}%` }}
+        />
+      </span>
+      <strong>{score.toFixed(1)}</strong>
+    </div>
   );
+}
+
+function ValueGainPill({ value }: { value: number | null }) {
+  const tone = value === null ? 'pass' : value >= 50 ? 'elite' : value >= 25 ? 'strong' : value > 0 ? 'viable' : 'pass';
+  return <span className={cn('pill', `pill--${tone}`)}>{value === null ? 'NR' : `${value > 0 ? '+' : ''}${value}`}</span>;
 }
 
 function ValuePill({ value }: { value: number | null }) {
@@ -901,7 +876,7 @@ function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, Ra
   return picks
     .filter((pick) => pick.team === team)
     .map((pick) => evaluatePick(pick, rankings.get(normalizePlayerName(pick.player)) ?? null, rankingSource))
-    .sort((a, b) => b.keeperScore - a.keeperScore || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
+    .sort((a, b) => b.keeperScore - a.keeperScore || (b.valueGain ?? -9999) - (a.valueGain ?? -9999) || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
 }
 
 function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
@@ -927,9 +902,10 @@ function DashboardTable({
           <tr>
             <th>Team</th>
             <th>Keeper rec</th>
-            <th>2025 round</th>
+            <th>2025 selection</th>
             <th>2026 ranking</th>
-            <th>Round value gain</th>
+            <th>Value gain</th>
+            <th>Keeper score</th>
           </tr>
         </thead>
         <tbody>
@@ -943,12 +919,15 @@ function DashboardTable({
                   </Link>
                 </td>
                 <td className="keeper-table__rec">{<RecommendationCell rec={rec} sourceRow={sourceRowLookup.get(normalizePlayerName(rec.player)) ?? null} />}</td>
-                <td className="keeper-table__round">R{rec.round}</td>
+                <td className="keeper-table__round">#{rec.pick} <span>(R{rec.round})</span></td>
                 <td className="keeper-table__value">
                   <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
                 </td>
                 <td className="keeper-table__score">
-                  <ScorePill score={rec.keeperScore} />
+                  <ValueGainPill value={rec.valueGain} />
+                </td>
+                <td className="keeper-table__score">
+                  <KeeperScoreBar score={rec.keeperScore} compact />
                 </td>
               </tr>
             );
@@ -1005,6 +984,7 @@ function DashboardPage() {
 
   const rankingMap = rankingLookup(rankings);
   const sourceLabel = rankingSource ?? 'current rankings';
+  const snapshotDate = formatSnapshotDate(sourceRows?.[0]?.source_date);
   const recs = data.teams
     .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceLabel))
     .filter(Boolean) as KeeperEvaluation[];
@@ -1013,7 +993,7 @@ function DashboardPage() {
     <div className="page-stack">
       <SectionIntro
         title="Team-by-Team Keeper Recs"
-        description={`Top picks, ranked by current value versus last year's draft slot. Select team for full breakdown`}
+        description={`Select team for full breakdown. FantasyPros data as of ${snapshotDate}`}
       />
       <DashboardTable rows={recs} sourceRows={sourceRows} />
     </div>
@@ -1076,16 +1056,10 @@ function TeamPage() {
         </div>
         <div className="meter-card">
           <div className="meter-card__head">
-            <div className="meter-card__label">Round value gain</div>
-            <ScorePill score={recommendation?.keeperScore ?? null} />
+          <div className="meter-card__label">Keeper score</div>
+            <KeeperScoreBar score={recommendation?.keeperScore ?? null} />
           </div>
-          <div className="meter">
-            <span
-              className={cn('meter__fill', recommendation && `meter__fill--${scoreTone(recommendation.keeperScore)}`)}
-              style={{ width: meterWidth(recommendation?.keeperScore ?? null) }}
-            />
-          </div>
-          <small>Weighted from {sourceLabel} rank, keeper cost, and positional scarcity</small>
+          <small>Adjusted for overall tier and positional replacement value</small>
         </div>
       </section>
 
@@ -1094,7 +1068,7 @@ function TeamPage() {
           <div>
             <div className="team-card__eyebrow">Keeper Rankings</div>
           </div>
-          <span className="status-chip status-chip--soft">Sorted by round value gain</span>
+          <span className="status-chip status-chip--soft">Sorted by keeper score</span>
         </div>
 
         <div className="table-shell">
@@ -1102,9 +1076,10 @@ function TeamPage() {
             <thead>
               <tr>
                 <th>Player</th>
-                <th>Rnd</th>
+                <th>2025 Selection</th>
                 <th>2026 Ranking</th>
-                <th>Round value gain</th>
+                <th>Value gain</th>
+                <th>Keeper score</th>
               </tr>
             </thead>
             <tbody>
@@ -1118,12 +1093,15 @@ function TeamPage() {
                         compact
                       />
                     </td>
-                    <td className="keeper-table__round">R{rec.round}</td>
+                    <td className="keeper-table__round">#{rec.pick} <span>(R{rec.round})</span></td>
                     <td className="keeper-table__value">
                       <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
                     </td>
                     <td className="keeper-table__score">
-                      <ScorePill score={rec.keeperScore} />
+                      <ValueGainPill value={rec.valueGain} />
+                    </td>
+                    <td className="keeper-table__score">
+                      <KeeperScoreBar score={rec.keeperScore} compact />
                     </td>
                   </tr>
                 );
@@ -1155,6 +1133,58 @@ function ErrorPanel({ message }: { message: string }) {
 
 function DraftBoardPage() {
   const { data, rankings, rankingSource, loading, error } = useDraftData();
+  const boardShellRef = useRef<HTMLDivElement>(null);
+  const boardHeaderAnchorRef = useRef<HTMLDivElement>(null);
+  const boardHeaderRef = useRef<HTMLDivElement>(null);
+  const boardHeaderPinnedRef = useRef(false);
+
+  useEffect(() => {
+    const updateBoardHeader = () => {
+      const shell = boardShellRef.current;
+      const anchor = boardHeaderAnchorRef.current;
+      const header = boardHeaderRef.current;
+      const nav = document.querySelector<HTMLElement>('.topbar');
+      if (!shell || !anchor || !header || !nav) return;
+
+      const desktop = window.matchMedia('(min-width: 980px)').matches;
+      const shellRect = shell.getBoundingClientRect();
+      const anchorRect = anchor.getBoundingClientRect();
+      const navRect = nav.getBoundingClientRect();
+      const headerHeight = header.offsetHeight;
+      const shouldPin = desktop && anchorRect.top <= navRect.bottom + 8 && shellRect.bottom > navRect.bottom + headerHeight;
+
+      if (shouldPin) {
+        header.style.position = 'fixed';
+        header.style.top = `${navRect.bottom + 8}px`;
+        header.style.left = `${shellRect.left}px`;
+        header.style.width = `${shell.clientWidth}px`;
+        header.style.transform = `translateX(${-shell.scrollLeft}px)`;
+        anchor.style.height = `${headerHeight + 14}px`;
+      } else {
+        header.style.position = 'relative';
+        header.style.top = '';
+        header.style.left = '';
+        header.style.width = '';
+        header.style.transform = '';
+        anchor.style.height = '';
+      }
+
+      if (boardHeaderPinnedRef.current !== shouldPin) {
+        boardHeaderPinnedRef.current = shouldPin;
+      }
+    };
+
+    updateBoardHeader();
+    window.addEventListener('scroll', updateBoardHeader, { passive: true });
+    window.addEventListener('resize', updateBoardHeader);
+    const shell = boardShellRef.current;
+    shell?.addEventListener('scroll', updateBoardHeader, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', updateBoardHeader);
+      window.removeEventListener('resize', updateBoardHeader);
+      shell?.removeEventListener('scroll', updateBoardHeader);
+    };
+  }, []);
 
   if (loading) {
     return <LoadingPanel title="Loading draft board..." />;
@@ -1181,7 +1211,7 @@ function DraftBoardPage() {
     <div className="page-stack">
       <SectionIntro
         title="2025 Draft Board"
-        description="Last season's draft, used as the keeper cost baseline"
+        description="Used as the baseline cost for each keeper recommendation"
       />
 
       <section className="panel board-panel">
@@ -1190,15 +1220,20 @@ function DraftBoardPage() {
           <span className="status-chip status-chip--soft">PPR; Snake format</span>
         </div>
 
-        <div className="board-shell">
+        <div className="board-shell" ref={boardShellRef}>
           <div className="board-grid" role="table" aria-label="Draft board snake view">
-            <div className="board-header" role="row">
-              {draftOrderTeams.map((pick, index) => (
-                <div className="board-header__team" key={pick.pick} role="columnheader">
-                  <span className="board-header__slot">{index + 1}</span>
-                  <strong>{pick.team}</strong>
-                </div>
-              ))}
+            <div
+              className="board-header-anchor"
+              ref={boardHeaderAnchorRef}
+            >
+              <div className="board-header" ref={boardHeaderRef} role="row">
+                {draftOrderTeams.map((pick, index) => (
+                  <div className="board-header__team" key={pick.pick} role="columnheader">
+                    <span className="board-header__slot">{index + 1}</span>
+                    <strong>{pick.team}</strong>
+                  </div>
+                ))}
+              </div>
             </div>
             {snakeRows.map((roundPicks, index) => (
               <div className="board-row" role="row" key={index}>
@@ -1324,13 +1359,15 @@ function AppRoutes() {
 
   return (
     <AppShell>
-      <Routes>
-        <Route path="/" element={<DashboardPage />} />
-        <Route path="/teams/:teamId" element={<TeamPage />} />
-        <Route path="/draft-board" element={<DraftBoardPage />} />
-        <Route path="/source-data" element={<SourceDataPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <div className="route-transition" key={location.pathname}>
+        <Routes>
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/teams/:teamId" element={<TeamPage />} />
+          <Route path="/draft-board" element={<DraftBoardPage />} />
+          <Route path="/source-data" element={<SourceDataPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
     </AppShell>
   );
 }
