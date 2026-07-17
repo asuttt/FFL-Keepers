@@ -7,6 +7,7 @@ import {
   ChevronRight,
   Copyright,
   Grid2X2,
+  ChevronUp,
   Search,
   Shield,
   Sparkles,
@@ -510,7 +511,15 @@ function NavLink({
   const location = useLocation();
   const active = location.pathname === to || (to === '/' && location.pathname === '/');
   return (
-    <Link className={cn('nav-link', active && 'nav-link-active')} to={to}>
+    <Link
+      className={cn('nav-link', active && 'nav-link-active')}
+      to={to}
+      onClick={() => {
+        if (active) {
+          window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        }
+      }}
+    >
       <Icon size={16} />
       <span>{label}</span>
     </Link>
@@ -519,6 +528,8 @@ function NavLink({
 
 function AppShell({ children }: { children: ReactNode }) {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const scrollTopEnabled = location.pathname === '/draft-board' || location.pathname === '/source-data' || location.pathname.startsWith('/teams/');
 
   return (
     <div className="app-shell">
@@ -539,6 +550,8 @@ function AppShell({ children }: { children: ReactNode }) {
 
       <main className="page-shell">{children}</main>
 
+      <ScrollTopControl enabled={scrollTopEnabled} />
+
       <footer className="site-footer" aria-label="Site footer">
         <div className="site-footer__inner">
           <p className="site-footer__copy">
@@ -556,6 +569,41 @@ function AppShell({ children }: { children: ReactNode }) {
         </div>
       </footer>
     </div>
+  );
+}
+
+function ScrollTopControl({ enabled }: { enabled: boolean }) {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (!enabled) {
+      setVisible(false);
+      return;
+    }
+
+    const update = () => setVisible(window.scrollY > window.innerHeight * 0.45);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
+  }, [enabled]);
+
+  if (!enabled) {
+    return null;
+  }
+
+  return (
+    <button
+      className={cn('scroll-top-control', visible && 'scroll-top-control--visible')}
+      type="button"
+      onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+      aria-label="Back to top"
+    >
+      <ChevronUp aria-hidden="true" />
+    </button>
   );
 }
 
@@ -639,15 +687,17 @@ function RankBadge({ rank }: { rank: string }) {
   return <span className="source-rank-badge" aria-hidden="true">{rank}</span>;
 }
 
-function RankValueCell({ sourceRank, posRank }: { sourceRank: number | null; posRank: string | null }) {
+function RankValueCell({ sourceRank, teamCount }: { sourceRank: number | null; teamCount: number }) {
   if (sourceRank === null) {
     return <div className="rank-value-cell rank-value-cell--blank">-</div>;
   }
 
+  const roundGrade = Math.ceil(sourceRank / teamCount);
+
   return (
-    <div className="rank-value-cell">
-      <strong>{sourceRank}</strong>
-      <span>{posRank ? `(${posRank})` : '-'}</span>
+    <div className="rank-value-cell rank-value-cell--current">
+      <strong>{`Round ${roundGrade}`}</strong>
+      <span>{`(#${sourceRank})`}</span>
     </div>
   );
 }
@@ -886,9 +936,11 @@ function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<strin
 function DashboardTable({
   rows,
   sourceRows,
+  teamCount,
 }: {
   rows: KeeperEvaluation[];
   sourceRows: SourceRow[] | null;
+  teamCount: number;
 }) {
   const sourceRowLookup = useMemo(
     () => new Map((sourceRows ?? []).map((row) => [normalizePlayerName(row.player), row])),
@@ -901,9 +953,9 @@ function DashboardTable({
         <thead>
           <tr>
             <th>Team</th>
-            <th>Keeper rec</th>
-            <th>2025 selection</th>
-            <th>2026 ranking</th>
+            <th>Keeper</th>
+            <th>2025 cost</th>
+            <th>2026 value</th>
             <th>Value gain</th>
             <th>Keeper score</th>
           </tr>
@@ -919,9 +971,9 @@ function DashboardTable({
                   </Link>
                 </td>
                 <td className="keeper-table__rec">{<RecommendationCell rec={rec} sourceRow={sourceRowLookup.get(normalizePlayerName(rec.player)) ?? null} />}</td>
-                <td className="keeper-table__round">#{rec.pick} <span>(R{rec.round})</span></td>
+                <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
                 <td className="keeper-table__value">
-                  <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
+                  <RankValueCell sourceRank={rec.sourceRank} teamCount={teamCount} />
                 </td>
                 <td className="keeper-table__score">
                   <ValueGainPill value={rec.valueGain} />
@@ -995,7 +1047,7 @@ function DashboardPage() {
         title="Team-by-Team Keeper Recs"
         description={`Select team for full breakdown. FantasyPros data as of ${snapshotDate}`}
       />
-      <DashboardTable rows={recs} sourceRows={sourceRows} />
+      <DashboardTable rows={recs} sourceRows={sourceRows} teamCount={data.teams.length} />
     </div>
   );
 }
@@ -1076,8 +1128,8 @@ function TeamPage() {
             <thead>
               <tr>
                 <th>Player</th>
-                <th>2025 Selection</th>
-                <th>2026 Ranking</th>
+                <th>2025 Cost</th>
+                <th>2026 Value</th>
                 <th>Value gain</th>
                 <th>Keeper score</th>
               </tr>
@@ -1093,9 +1145,9 @@ function TeamPage() {
                         compact
                       />
                     </td>
-                    <td className="keeper-table__round">#{rec.pick} <span>(R{rec.round})</span></td>
+                    <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
                     <td className="keeper-table__value">
-                      <RankValueCell sourceRank={rec.sourceRank} posRank={rec.ranking?.pos_rank ?? null} />
+                      <RankValueCell sourceRank={rec.sourceRank} teamCount={data.teams.length} />
                     </td>
                     <td className="keeper-table__score">
                       <ValueGainPill value={rec.valueGain} />
@@ -1154,6 +1206,7 @@ function DraftBoardPage() {
       const shouldPin = desktop && anchorRect.top <= navRect.bottom + 8 && shellRect.bottom > navRect.bottom + headerHeight;
 
       if (shouldPin) {
+        header.classList.add('board-header--pinned');
         header.style.position = 'fixed';
         header.style.top = `${navRect.bottom + 8}px`;
         header.style.left = `${shellRect.left}px`;
@@ -1161,6 +1214,7 @@ function DraftBoardPage() {
         header.style.transform = `translateX(${-shell.scrollLeft}px)`;
         anchor.style.height = `${headerHeight + 14}px`;
       } else {
+        header.classList.remove('board-header--pinned');
         header.style.position = 'relative';
         header.style.top = '';
         header.style.left = '';
@@ -1184,7 +1238,7 @@ function DraftBoardPage() {
       window.removeEventListener('resize', updateBoardHeader);
       shell?.removeEventListener('scroll', updateBoardHeader);
     };
-  }, []);
+  }, [data, loading]);
 
   if (loading) {
     return <LoadingPanel title="Loading draft board..." />;

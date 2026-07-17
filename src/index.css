@@ -109,6 +109,53 @@ a {
   box-shadow: var(--shadow);
 }
 
+.scroll-top-control {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 30;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid hsl(var(--accent) / 0.52);
+  border-radius: 50%;
+  color: hsl(var(--accent));
+  background: #20272e;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 220ms ease, transform 220ms ease, visibility 0s linear 220ms, border-color 160ms ease, background-color 160ms ease;
+  cursor: pointer;
+}
+
+.scroll-top-control--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.scroll-top-control:hover,
+.scroll-top-control:focus-visible {
+  border-color: hsl(var(--accent));
+  background: hsl(var(--primary));
+  outline: none;
+}
+
+.scroll-top-control svg {
+  width: 19px;
+  height: 19px;
+  stroke-width: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-top-control {
+    transition: none;
+  }
+}
+
 .brand-lockup {
   display: inline-flex;
   align-items: center;
@@ -195,11 +242,9 @@ a {
 @keyframes route-crossfade {
   from {
     opacity: 0;
-    transform: translateY(4px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -986,11 +1031,12 @@ a {
 
 .keeper-table__round {
   color: hsl(var(--muted-foreground));
+  font-size: 0.84rem;
 }
 
 .keeper-table__round span {
   color: hsl(var(--muted-foreground));
-  font-size: 0.84em;
+  font-size: 0.78rem;
   font-weight: 700;
 }
 
@@ -1005,7 +1051,7 @@ a {
   gap: 4px;
   width: 100%;
   white-space: nowrap;
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: -0.01em;
 }
@@ -1016,8 +1062,12 @@ a {
 
 .rank-value-cell span {
   color: hsl(var(--muted-foreground));
-  font-size: 0.84em;
+  font-size: 0.78rem;
   font-weight: 700;
+}
+
+.rank-value-cell--current span {
+  color: hsl(var(--foreground) / 0.72);
 }
 
 .rank-value-cell--blank {
@@ -1549,6 +1599,10 @@ a {
   display: grid;
   grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 0;
+}
+
+.board-header--pinned {
+  z-index: 21;
 }
 
 .board-header-anchor {
