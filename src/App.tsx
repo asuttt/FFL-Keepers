@@ -248,6 +248,17 @@ function playerImageUrl(row: SourceRow) {
     ?? (row.player_id ? `https://images.fantasypros.com/images/players/nfl/${row.player_id}/headshot/210x210.png` : null);
 }
 
+function teamLogoUrlForAbbreviation(team: string) {
+  const normalizedTeam = team.trim().toLowerCase();
+  if (!normalizedTeam) return null;
+  if (normalizedTeam === 'fa') return 'https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png';
+  return `https://a.espncdn.com/i/teamlogos/nfl/500/${normalizedTeam}.png`;
+}
+
+function teamLogoUrl(row: SourceRow) {
+  return teamLogoUrlForAbbreviation(row.team);
+}
+
 function rankingLookup(rankings: RankingEntry[] | null) {
   return new Map((rankings ?? []).map((entry) => [normalizePlayerName(entry.player), entry]));
 }
@@ -728,7 +739,7 @@ function PlayerWithSuffix({
   );
 }
 
-function PlayerPreviewTrigger({ row, children }: { row: SourceRow; children: ReactNode }) {
+function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(row) }: { row: SourceRow; children: ReactNode; previewImageUrl?: string | null }) {
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const popoverRef = useRef<HTMLDivElement | null>(null);
   const closeTimerRef = useRef<number | null>(null);
@@ -830,10 +841,10 @@ function PlayerPreviewTrigger({ row, children }: { row: SourceRow; children: Rea
           <div className="player-preview-popover__inner">
             <div className="player-preview-popover__head">
               <div className="player-preview-popover__head-left">
-                {playerImageUrl(row) ? (
+                {previewImageUrl ? (
                   <img
-                    className="player-preview-popover__image"
-                    src={playerImageUrl(row) ?? undefined}
+                    className={cn('player-preview-popover__image', previewImageUrl === teamLogoUrl(row) && 'player-preview-popover__image--logo')}
+                    src={previewImageUrl}
                     alt=""
                   />
                 ) : (
@@ -916,10 +927,10 @@ function RecommendationCell({ rec, sourceRow }: { rec: KeeperEvaluation; sourceR
     return display;
   }
 
-  return <PlayerPreviewTrigger row={sourceRow}>{display}</PlayerPreviewTrigger>;
+  return <PlayerPreviewTrigger row={sourceRow} previewImageUrl={teamLogoUrl(sourceRow)}>{display}</PlayerPreviewTrigger>;
 }
 
-function PlayerPreviewName({ row, compact = false, showHeadshot = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean }) {
+function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean }) {
   if (!row) {
     return null;
   }
@@ -931,7 +942,7 @@ function PlayerPreviewName({ row, compact = false, showHeadshot = false }: { row
       <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact={compact} />
     </div>
   );
-  return <PlayerPreviewTrigger row={row}>{content}</PlayerPreviewTrigger>;
+  return <PlayerPreviewTrigger row={row} previewImageUrl={showTeamLogo ? teamLogoUrl(row) : playerImageUrl(row)}>{content}</PlayerPreviewTrigger>;
 }
 
 function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
@@ -1112,7 +1123,7 @@ function TeamPage() {
         <div className="spotlight-copy">
           <div className="team-card__eyebrow spotlight-copy__eyebrow">Top keeper anchor</div>
           {recommendation ? (
-            <PlayerPreviewName row={sourceRowLookup.get(normalizePlayerName(recommendation.player)) ?? null} compact showHeadshot />
+            <PlayerPreviewName row={sourceRowLookup.get(normalizePlayerName(recommendation.player)) ?? null} compact showHeadshot showTeamLogo />
           ) : (
             <h2>No ranked keeper yet</h2>
           )}
@@ -1156,6 +1167,7 @@ function TeamPage() {
                         row={sourceRows?.find((sourceRow) => normalizePlayerName(sourceRow.player) === normalizePlayerName(rec.player)) ?? null}
                         compact
                         showHeadshot
+                        showTeamLogo
                       />
                     </td>
                     <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
@@ -1313,6 +1325,13 @@ function DraftBoardPage() {
                       key={pick.pick}
                       role="cell"
                     >
+                      <img
+                        className="board-card__team-logo"
+                        src={teamLogoUrlForAbbreviation(pick.nflTeam) ?? undefined}
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
                       <div className="board-card__top">
                         <span className="board-card__pick">{`${index + 1}.${selection}`}</span>
                       </div>
@@ -1420,7 +1439,7 @@ function SourceDataPage() {
                       <tr key={`${row.keeper_rank}-${row.player}`} className="keeper-table__row">
                         <td className="keeper-table__player source-player-cell">
                           <RankBadge rank={row.keeper_rank} />
-                          <PlayerPreviewName row={row} compact />
+                          <PlayerPreviewName row={row} compact showTeamLogo={row.pos === 'D/ST'} />
                         </td>
                         <td className="keeper-table__points">
                           <ValuePill value={row.pointsPpr} />
