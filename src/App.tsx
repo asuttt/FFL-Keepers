@@ -721,7 +721,6 @@ function PlayerWithSuffix({
     <div className={cn('player-line', compact && 'player-line--compact')}>
       <div className="player-line__name">
         <span className="player-line__player">{player}</span>
-        <span className="player-line__comma">,</span>
         <span className="player-line__team">{nflTeam.toUpperCase()}</span>
       </div>
       <PositionPill pos={pos} />
@@ -905,20 +904,33 @@ function PlayerPreviewTrigger({ row, children }: { row: SourceRow; children: Rea
 
 function RecommendationCell({ rec, sourceRow }: { rec: KeeperEvaluation; sourceRow: SourceRow | null }) {
   const content = <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
+  const imageUrl = sourceRow ? playerImageUrl(sourceRow) : null;
+  const display = (
+    <div className="keeper-rec-content">
+      {imageUrl ? <img className="keeper-rec__headshot" src={imageUrl} alt="" loading="lazy" /> : null}
+      {content}
+    </div>
+  );
 
   if (!sourceRow) {
-    return content;
+    return display;
   }
 
-  return <PlayerPreviewTrigger row={sourceRow}>{content}</PlayerPreviewTrigger>;
+  return <PlayerPreviewTrigger row={sourceRow}>{display}</PlayerPreviewTrigger>;
 }
 
-function PlayerPreviewName({ row, compact = false }: { row: SourceRow | null; compact?: boolean }) {
+function PlayerPreviewName({ row, compact = false, showHeadshot = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean }) {
   if (!row) {
     return null;
   }
 
-  const content = <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact={compact} />;
+  const imageUrl = showHeadshot ? playerImageUrl(row) : null;
+  const content = (
+    <div className={cn(showHeadshot && 'keeper-rec-content')}>
+      {imageUrl ? <img className="keeper-rec__headshot" src={imageUrl} alt="" loading="lazy" /> : null}
+      <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact={compact} />
+    </div>
+  );
   return <PlayerPreviewTrigger row={row}>{content}</PlayerPreviewTrigger>;
 }
 
@@ -1100,7 +1112,7 @@ function TeamPage() {
         <div className="spotlight-copy">
           <div className="team-card__eyebrow spotlight-copy__eyebrow">Top keeper anchor</div>
           {recommendation ? (
-            <PlayerPreviewName row={sourceRowLookup.get(normalizePlayerName(recommendation.player)) ?? null} compact />
+            <PlayerPreviewName row={sourceRowLookup.get(normalizePlayerName(recommendation.player)) ?? null} compact showHeadshot />
           ) : (
             <h2>No ranked keeper yet</h2>
           )}
@@ -1143,6 +1155,7 @@ function TeamPage() {
                       <PlayerPreviewName
                         row={sourceRows?.find((sourceRow) => normalizePlayerName(sourceRow.player) === normalizePlayerName(rec.player)) ?? null}
                         compact
+                        showHeadshot
                       />
                     </td>
                     <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
@@ -1323,6 +1336,8 @@ function DraftBoardPage() {
 function SourceDataPage() {
   const { sourceRows, sourceSource, loading, error } = useDraftData();
   const [search, setSearch] = useState('');
+  const [positionFilter, setPositionFilter] = useState<Position | 'all'>('all');
+  const [teamFilter, setTeamFilter] = useState('all');
 
   if (loading) {
     return <LoadingPanel title="Loading source data..." />;
@@ -1334,15 +1349,17 @@ function SourceDataPage() {
 
   const sourceLabel = sourceSource ?? 'FantasyPros';
   const snapshotDate = formatSnapshotDate(sourceRows[0]?.source_date);
-  const visibleRows = sourceRows
-    .slice(0, 300)
-    .filter((row) => {
-      const query = search.trim().toLowerCase();
-      if (!query) return true;
-      return [row.player, row.team, row.pos, row.pos_rank].some((value) => value.toLowerCase().includes(query));
-    });
-  const columnSize = Math.ceil(visibleRows.length / 3);
-  const sourceColumns = Array.from({ length: 3 }, (_, index) => visibleRows.slice(index * columnSize, (index + 1) * columnSize));
+  const rankedRows = sourceRows.slice(0, 300);
+  const teamOptions = Array.from(new Set(rankedRows.map((row) => row.team))).sort((a, b) => a.localeCompare(b));
+  const query = search.trim().toLowerCase();
+  const matchesFilters = (row: SourceRow) => {
+    const matchesPlayer = !query || row.player.toLowerCase().includes(query);
+    const matchesPosition = positionFilter === 'all' || row.pos === positionFilter;
+    const matchesTeam = teamFilter === 'all' || row.team === teamFilter;
+    return matchesPlayer && matchesPosition && matchesTeam;
+  };
+  const sourceColumns = Array.from({ length: 3 }, (_, index) => rankedRows.slice(index * 100, (index + 1) * 100).filter(matchesFilters));
+  const maxColumnRows = Math.max(...sourceColumns.map((rows) => rows.length), 0);
 
   return (
     <div className="page-stack">
@@ -1359,16 +1376,35 @@ function SourceDataPage() {
           <span className="status-chip status-chip--soft">{sourceLabel} PPR</span>
         </div>
 
-        <label className="search-field search-field--table">
-          <Search size={16} />
-          <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search players, teams, or positions..." />
-        </label>
+        <div className="source-filter-row">
+          <label className="search-field search-field--table">
+            <Search size={16} />
+            <span className="sr-only">Search players</span>
+            <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search players..." />
+          </label>
+          <label className="filter-select">
+            <span className="sr-only">Filter by position</span>
+            <select value={positionFilter} onChange={(event) => setPositionFilter(event.target.value as Position | 'all')}>
+              <option value="all">All positions</option>
+              {(['QB', 'RB', 'WR', 'TE', 'K', 'D/ST'] as Position[]).map((position) => (
+                <option key={position} value={position}>{position}</option>
+              ))}
+            </select>
+          </label>
+          <label className="filter-select">
+            <span className="sr-only">Filter by team</span>
+            <select value={teamFilter} onChange={(event) => setTeamFilter(event.target.value)}>
+              <option value="all">All teams</option>
+              {teamOptions.map((team) => <option key={team} value={team}>{team}</option>)}
+            </select>
+          </label>
+        </div>
 
         <div className="source-columns">
           {sourceColumns.map((rows, columnIndex) => (
             <section className="source-column" key={columnIndex}>
               <div className="source-column__head">
-                <strong>Ranks {columnIndex * columnSize + 1}-{columnIndex * columnSize + rows.length}</strong>
+                <strong>Ranks {columnIndex * 100 + 1}-{Math.min((columnIndex + 1) * 100, rankedRows.length)}</strong>
               </div>
               <div className="table-shell table-shell--source">
                 <table className="keeper-table keeper-table--source">
@@ -1390,6 +1426,11 @@ function SourceDataPage() {
                           <ValuePill value={row.pointsPpr} />
                         </td>
                         <td className="keeper-table__pos-rank">{row.pos_rank}</td>
+                      </tr>
+                    ))}
+                    {Array.from({ length: maxColumnRows - rows.length }, (_, blankIndex) => (
+                      <tr key={`blank-${columnIndex}-${blankIndex}`} className="source-blank-row" aria-hidden="true">
+                        <td colSpan={3}>&nbsp;</td>
                       </tr>
                     ))}
                   </tbody>
