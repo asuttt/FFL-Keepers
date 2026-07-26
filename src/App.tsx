@@ -528,6 +528,10 @@ function NavLink({
       onClick={() => {
         if (active) {
           window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
+          if (to === '/draft-board' && window.matchMedia('(max-width: 679px)').matches) {
+            document.querySelector<HTMLElement>('.board-shell')?.scrollTo({ left: 0, behavior: 'smooth' });
+          }
         }
       }}
     >
@@ -540,24 +544,32 @@ function NavLink({
 function AppShell({ children }: { children: ReactNode }) {
   const currentYear = new Date().getFullYear();
   const location = useLocation();
-  const scrollTopEnabled = location.pathname === '/draft-board' || location.pathname === '/source-data' || location.pathname.startsWith('/teams/');
+  const scrollTopEnabled = location.pathname === '/' || location.pathname === '/draft-board' || location.pathname === '/source-data' || location.pathname.startsWith('/teams/');
 
   return (
     <div className="app-shell">
-      <header className="topbar">
-        <Link to="/" className="brand-lockup">
+      <div className="app-header">
+        <Link to="/" className="brand-lockup mobile-brand-lockup">
           <span className="brand-mark"><FootballIcon /></span>
           <span>
             <strong>2026 Classy Bois Keepers</strong>
           </span>
         </Link>
+        <header className="topbar">
+          <Link to="/" className="brand-lockup desktop-brand-lockup">
+            <span className="brand-mark"><FootballIcon /></span>
+            <span>
+              <strong>2026 Classy Bois Keepers</strong>
+            </span>
+          </Link>
 
-        <nav className="nav-pills" aria-label="Primary navigation">
-          <NavLink to="/" icon={Grid2X2} label="Keepers" />
-          <NavLink to="/draft-board" icon={CalendarDays} label="2025 Draft" />
-          <NavLink to="/source-data" icon={Search} label="Data" />
-        </nav>
-      </header>
+          <nav className="nav-pills" aria-label="Primary navigation">
+            <NavLink to="/" icon={Grid2X2} label="Keepers" />
+            <NavLink to="/draft-board" icon={CalendarDays} label="2025 Draft" />
+            <NavLink to="/source-data" icon={Search} label="Data" />
+          </nav>
+        </header>
+      </div>
 
       <main className="page-shell">{children}</main>
 
@@ -642,15 +654,20 @@ function SectionIntro({
   title,
   description,
   meta,
+  mobileLeading,
 }: {
   title: string;
   description: string;
   meta?: ReactNode;
+  mobileLeading?: ReactNode;
 }) {
   return (
     <section className="section-intro">
       <div className="section-intro__copy">
-        <h1>{title}</h1>
+        <h1>
+          {mobileLeading ? <span className="section-intro__mobile-leading">{mobileLeading}</span> : null}
+          {title}
+        </h1>
         <p>{description}</p>
       </div>
       {meta ? <div className="section-intro__meta">{meta}</div> : null}
@@ -930,6 +947,17 @@ function RecommendationCell({ rec, sourceRow }: { rec: KeeperEvaluation; sourceR
   return <PlayerPreviewTrigger row={sourceRow} previewImageUrl={teamLogoUrl(sourceRow)}>{display}</PlayerPreviewTrigger>;
 }
 
+function MobileKeeperStats({ rec, teamCount }: { rec: KeeperEvaluation; teamCount: number }) {
+  return (
+    <div className="mobile-keeper-row__stats">
+      <div><span>2025 cost</span><strong>Round {rec.round} <small>(#{rec.pick})</small></strong></div>
+      <div><span>2026 value</span><RankValueCell sourceRank={rec.sourceRank} teamCount={teamCount} /></div>
+      <div><span>Value gain</span><ValueGainPill value={rec.valueGain} /></div>
+      <div><span>Keeper score</span><KeeperScoreBar score={rec.keeperScore} compact /></div>
+    </div>
+  );
+}
+
 function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean }) {
   if (!row) {
     return null;
@@ -971,8 +999,9 @@ function DashboardTable({
   );
 
   return (
-    <div className="table-shell">
-      <table className="keeper-table keeper-table--league">
+    <>
+      <div className="table-shell table-shell--keeper">
+        <table className="keeper-table keeper-table--league">
         <thead>
           <tr>
             <th>Team</th>
@@ -1008,8 +1037,23 @@ function DashboardTable({
             );
           })}
         </tbody>
-      </table>
-    </div>
+        </table>
+      </div>
+      <div className="mobile-keeper-list">
+      {rows.map((rec) => (
+        <article className="mobile-keeper-row" key={rec.team}>
+          <Link className="mobile-keeper-row__team" to={`/teams/${slugify(rec.team)}`}>
+            <strong>{rec.team}</strong>
+            <ChevronRight size={16} />
+          </Link>
+          <div className="mobile-keeper-row__player">
+            <RecommendationCell rec={rec} sourceRow={sourceRowLookup.get(normalizePlayerName(rec.player)) ?? null} />
+          </div>
+          <MobileKeeperStats rec={rec} teamCount={teamCount} />
+        </article>
+      ))}
+      </div>
+    </>
   );
 }
 
@@ -1067,8 +1111,8 @@ function DashboardPage() {
   return (
     <div className="page-stack">
       <SectionIntro
-        title="Team-by-Team Keeper Recs"
-        description={`Select team for full breakdown. FantasyPros data as of ${snapshotDate}`}
+        title="2026 Keeper Recs"
+        description={`Select team for full breakdown. Data as of ${snapshotDate}`}
       />
       <DashboardTable rows={recs} sourceRows={sourceRows} teamCount={data.teams.length} />
     </div>
@@ -1108,10 +1152,15 @@ function TeamPage() {
     <div className="page-stack">
       <SectionIntro
         title={team.name}
-        description="Last year's roster, sorted by keeper value"
+        description="Last year's roster sorted by keeper value"
+        mobileLeading={
+          <button className="team-back-link team-back-link--mobile" type="button" onClick={() => navigate('/')} aria-label="Back to keeper recommendations">
+            <ArrowLeft size={18} />
+          </button>
+        }
         meta={
           <>
-            <button className="text-link" type="button" onClick={() => navigate('/')}>
+            <button className="text-link team-back-link team-back-link--desktop" type="button" onClick={() => navigate('/')}>
               <ArrowLeft size={16} />
               Back
             </button>
@@ -1146,7 +1195,7 @@ function TeamPage() {
           <span className="status-chip status-chip--soft">Sorted by keeper score</span>
         </div>
 
-        <div className="table-shell">
+        <div className="table-shell table-shell--keeper">
           <table className="keeper-table keeper-table--drilldown">
             <thead>
               <tr>
@@ -1185,6 +1234,24 @@ function TeamPage() {
               })}
             </tbody>
           </table>
+        </div>
+        <div className="mobile-keeper-list mobile-keeper-list--drilldown">
+          {rankedPicks.map((rec) => {
+            const isRecommendation = recommendation?.pick === rec.pick;
+            return (
+              <article className={cn('mobile-keeper-row', isRecommendation && 'mobile-keeper-row--highlight')} key={rec.pick}>
+                <div className="mobile-keeper-row__player">
+                  <PlayerPreviewName
+                    row={sourceRows?.find((sourceRow) => normalizePlayerName(sourceRow.player) === normalizePlayerName(rec.player)) ?? null}
+                    compact
+                    showHeadshot
+                    showTeamLogo
+                  />
+                </div>
+                <MobileKeeperStats rec={rec} teamCount={data.teams.length} />
+              </article>
+            );
+          })}
         </div>
       </section>
     </div>
@@ -1290,7 +1357,7 @@ function DraftBoardPage() {
     <div className="page-stack">
       <SectionIntro
         title="2025 Draft Board"
-        description="Used as the baseline cost for each keeper recommendation"
+        description="Baseline cost for each keeper recommendation"
       />
 
       <section className="panel board-panel">
@@ -1383,7 +1450,7 @@ function SourceDataPage() {
   return (
     <div className="page-stack">
       <SectionIntro
-        title="FantasyPros Source Data"
+        title="FantasyPros Data"
         description={`Projected PPR Points and Rankings as of ${snapshotDate}`}
       />
 
@@ -1467,7 +1534,7 @@ function AppRoutes() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0 });
+    window.scrollTo(0, 0);
     document.title = '2026 Classy Bois Keepers';
   }, [location.pathname]);
 
