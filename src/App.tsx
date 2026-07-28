@@ -242,6 +242,14 @@ function normalizePlayerName(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
+function normalizeTeamAbbreviation(value: string) {
+  return value.trim().toUpperCase();
+}
+
+function lookupKey(player: string, pos: Position, team: string) {
+  return pos === 'D/ST' ? `dst:${normalizeTeamAbbreviation(team)}` : normalizePlayerName(player);
+}
+
 function playerImageUrl(row: SourceRow) {
   return row.player_square_image_url
     ?? row.player_image_url
@@ -260,7 +268,25 @@ function teamLogoUrl(row: SourceRow) {
 }
 
 function rankingLookup(rankings: RankingEntry[] | null) {
-  return new Map((rankings ?? []).map((entry) => [normalizePlayerName(entry.player), entry]));
+  const lookup = new Map<string, RankingEntry>();
+  for (const entry of rankings ?? []) {
+    lookup.set(normalizePlayerName(entry.player), entry);
+    lookup.set(lookupKey(entry.player, entry.pos, entry.team), entry);
+  }
+  return lookup;
+}
+
+function sourceRowLookup(sourceRows: SourceRow[] | null) {
+  const lookup = new Map<string, SourceRow>();
+  for (const row of sourceRows ?? []) {
+    lookup.set(normalizePlayerName(row.player), row);
+    lookup.set(lookupKey(row.player, row.pos, row.team), row);
+  }
+  return lookup;
+}
+
+function sourceRowForPick(lookup: Map<string, SourceRow>, pick: DraftPick) {
+  return lookup.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null;
 }
 
 type RankingSnapshot = {
@@ -932,7 +958,7 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
 
 function RecommendationCell({ rec, sourceRow }: { rec: KeeperEvaluation; sourceRow: SourceRow | null }) {
   const content = <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
-  const imageUrl = sourceRow ? playerImageUrl(sourceRow) : null;
+  const imageUrl = sourceRow ? (rec.pos === 'D/ST' ? teamLogoUrl(sourceRow) : playerImageUrl(sourceRow)) : null;
   const display = (
     <div className="keeper-rec-content">
       {imageUrl ? <img className="keeper-rec__headshot" src={imageUrl} alt="" loading="lazy" /> : null}
@@ -958,16 +984,16 @@ function MobileKeeperStats({ rec, teamCount }: { rec: KeeperEvaluation; teamCoun
   );
 }
 
-function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean }) {
+function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false, displayPlayer }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean; displayPlayer?: string }) {
   if (!row) {
     return null;
   }
 
-  const imageUrl = showHeadshot ? playerImageUrl(row) : null;
+  const imageUrl = showHeadshot ? (row.pos === 'D/ST' ? teamLogoUrl(row) : playerImageUrl(row)) : null;
   const content = (
     <div className={cn(showHeadshot && 'keeper-rec-content')}>
       {imageUrl ? <img className="keeper-rec__headshot" src={imageUrl} alt="" loading="lazy" /> : null}
-      <PlayerWithSuffix player={row.player} nflTeam={row.team} pos={row.pos} compact={compact} />
+      <PlayerWithSuffix player={displayPlayer ?? row.player} nflTeam={row.team} pos={row.pos} compact={compact} />
     </div>
   );
   return <PlayerPreviewTrigger row={row} previewImageUrl={showTeamLogo ? teamLogoUrl(row) : playerImageUrl(row)}>{content}</PlayerPreviewTrigger>;
@@ -976,7 +1002,7 @@ function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTea
 function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
   return picks
     .filter((pick) => pick.team === team)
-    .map((pick) => evaluatePick(pick, rankings.get(normalizePlayerName(pick.player)) ?? null, rankingSource))
+    .map((pick) => evaluatePick(pick, rankings.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null, rankingSource))
     .sort((a, b) => b.keeperScore - a.keeperScore || (b.valueGain ?? -9999) - (a.valueGain ?? -9999) || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
 }
 
@@ -993,10 +1019,7 @@ function DashboardTable({
   sourceRows: SourceRow[] | null;
   teamCount: number;
 }) {
-  const sourceRowLookup = useMemo(
-    () => new Map((sourceRows ?? []).map((row) => [normalizePlayerName(row.player), row])),
-    [sourceRows],
-  );
+  const sourceRowsByPick = useMemo(() => sourceRowLookup(sourceRows), [sourceRows]);
 
   return (
     <>
@@ -1022,7 +1045,7 @@ function DashboardTable({
                     <ChevronRight size={16} />
                   </Link>
                 </td>
-                <td className="keeper-table__rec">{<RecommendationCell rec={rec} sourceRow={sourceRowLookup.get(normalizePlayerName(rec.player)) ?? null} />}</td>
+                <td className="keeper-table__rec">{<RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />}</td>
                 <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
                 <td className="keeper-table__value">
                   <RankValueCell sourceRank={rec.sourceRank} teamCount={teamCount} />
@@ -1047,7 +1070,7 @@ function DashboardTable({
             <ChevronRight size={16} />
           </Link>
           <div className="mobile-keeper-row__player">
-            <RecommendationCell rec={rec} sourceRow={sourceRowLookup.get(normalizePlayerName(rec.player)) ?? null} />
+            <RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />
           </div>
           <MobileKeeperStats rec={rec} teamCount={teamCount} />
         </article>
@@ -1143,10 +1166,7 @@ function TeamPage() {
   const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceLabel);
   const recommendation = rankedPicks[0] ?? null;
   const anchorOpener = recommendation ? keeperAnchorOpener(team.name) : null;
-  const sourceRowLookup = useMemo(
-    () => new Map((sourceRows ?? []).map((row) => [normalizePlayerName(row.player), row])),
-    [sourceRows],
-  );
+  const sourceRowsByPick = useMemo(() => sourceRowLookup(sourceRows), [sourceRows]);
 
   return (
     <div className="page-stack">
@@ -1172,7 +1192,7 @@ function TeamPage() {
         <div className="spotlight-copy">
           <div className="team-card__eyebrow spotlight-copy__eyebrow">Top keeper anchor</div>
           {recommendation ? (
-            <PlayerPreviewName row={sourceRowLookup.get(normalizePlayerName(recommendation.player)) ?? null} compact showHeadshot showTeamLogo />
+            <PlayerPreviewName row={sourceRowForPick(sourceRowsByPick, recommendation)} compact showHeadshot showTeamLogo displayPlayer={recommendation.pos === 'D/ST' ? recommendation.player : undefined} />
           ) : (
             <h2>No ranked keeper yet</h2>
           )}
@@ -1213,10 +1233,11 @@ function TeamPage() {
                   <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
                     <td className="keeper-table__player">
                       <PlayerPreviewName
-                        row={sourceRows?.find((sourceRow) => normalizePlayerName(sourceRow.player) === normalizePlayerName(rec.player)) ?? null}
+                        row={sourceRowForPick(sourceRowsByPick, rec)}
                         compact
                         showHeadshot
                         showTeamLogo
+                        displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
                       />
                     </td>
                     <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
@@ -1242,10 +1263,11 @@ function TeamPage() {
               <article className={cn('mobile-keeper-row', isRecommendation && 'mobile-keeper-row--highlight')} key={rec.pick}>
                 <div className="mobile-keeper-row__player">
                   <PlayerPreviewName
-                    row={sourceRows?.find((sourceRow) => normalizePlayerName(sourceRow.player) === normalizePlayerName(rec.player)) ?? null}
+                    row={sourceRowForPick(sourceRowsByPick, rec)}
                     compact
                     showHeadshot
                     showTeamLogo
+                    displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
                   />
                 </div>
                 <MobileKeeperStats rec={rec} teamCount={data.teams.length} />

@@ -1063,8 +1063,14 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 0.98rem;
   font-weight: 800;
   letter-spacing: -0.01em;
+  color: hsl(var(--accent));
+}
+
+.keeper-table__team-link svg {
+  color: hsl(var(--accent));
 }
 
 .keeper-cell {
@@ -2218,7 +2224,7 @@ a {
 
   .keeper-table__team-name,
   .player-line__player {
-    font-size: 0.92rem;
+    font-size: 0.98rem;
   }
 
   .rank-value-cell {
@@ -2440,7 +2446,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
     border-bottom: 1px solid hsl(var(--border) / 0.65);
     color: hsl(var(--foreground));
   }
@@ -2449,12 +2455,15 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 0.92rem;
+    font-size: 1.05rem;
+    font-weight: 850;
+    letter-spacing: 0.01em;
+    color: hsl(var(--accent));
   }
 
   .mobile-keeper-row__team svg {
     flex: none;
-    color: hsl(var(--muted-foreground));
+    color: hsl(var(--accent));
   }
 
   .mobile-keeper-row__player {
