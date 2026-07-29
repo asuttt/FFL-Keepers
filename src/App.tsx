@@ -76,6 +76,7 @@ type KeeperEvaluation = DraftPick & {
 
 type SourceRow = RankingEntry & {
   pointsPpr: number | null;
+  isFallback?: boolean;
   player_id?: number | null;
   player_square_image_url?: string | null;
   player_image_url?: string | null;
@@ -256,6 +257,15 @@ function playerImageUrl(row: SourceRow) {
     ?? (row.player_id ? `https://images.fantasypros.com/images/players/nfl/${row.player_id}/headshot/210x210.png` : null);
 }
 
+const fallbackEspnPlayerIds: Record<string, number> = {
+  [normalizePlayerName('AJ Dillon')]: 4045163,
+};
+
+function fallbackPlayerImageUrl(pick: DraftPick) {
+  const playerId = fallbackEspnPlayerIds[normalizePlayerName(pick.player)];
+  return playerId ? `https://a.espncdn.com/i/headshots/nfl/players/full/${playerId}.png` : null;
+}
+
 function teamLogoUrlForAbbreviation(team: string) {
   const normalizedTeam = team.trim().toLowerCase();
   if (!normalizedTeam) return null;
@@ -287,6 +297,25 @@ function sourceRowLookup(sourceRows: SourceRow[] | null) {
 
 function sourceRowForPick(lookup: Map<string, SourceRow>, pick: DraftPick) {
   return lookup.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null;
+}
+
+function fallbackSourceRow(pick: DraftPick): SourceRow {
+  return {
+    keeper_rank: '',
+    source_rank: '',
+    player: pick.player,
+    team: pick.nflTeam.toUpperCase(),
+    pos: pick.pos,
+    pos_rank: '',
+    source_date: '',
+    pointsPpr: null,
+    player_image_url: fallbackPlayerImageUrl(pick),
+    isFallback: true,
+  };
+}
+
+function previewRowForPick(lookup: Map<string, SourceRow>, pick: DraftPick) {
+  return sourceRowForPick(lookup, pick) ?? fallbackSourceRow(pick);
 }
 
 type RankingSnapshot = {
@@ -765,16 +794,18 @@ function PlayerWithSuffix({
   nflTeam,
   pos,
   compact = false,
+  unranked = false,
 }: {
   player: string;
   nflTeam: string;
   pos: Position;
   compact?: boolean;
+  unranked?: boolean;
 }) {
   return (
     <div className={cn('player-line', compact && 'player-line--compact')}>
       <div className="player-line__name">
-        <span className="player-line__player">{player}</span>
+        <span className="player-line__player">{player}{unranked ? '*' : ''}</span>
         <span className="player-line__team">{nflTeam.toUpperCase()}</span>
       </div>
       <PositionPill pos={pos} />
@@ -907,17 +938,17 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
                   </div>
                 </div>
               </div>
-              <span className="player-preview-popover__tag">Projected</span>
+              <span className="player-preview-popover__tag">{row.isFallback ? 'NR for 2026' : 'Projected'}</span>
             </div>
             <div className="player-preview-popover__metric">
               <span>PPR points</span>
-              <strong>{row.pointsPpr === null ? '-' : row.pointsPpr.toFixed(1)}</strong>
+              <strong>{row.isFallback ? 'N/A' : row.pointsPpr === null ? '-' : row.pointsPpr.toFixed(1)}</strong>
             </div>
             <div className="player-preview-popover__grid" role="list" aria-label={`${row.player} projections`}>
               {getPreviewStats(row).map((stat) => (
                 <div className="player-preview-popover__stat" role="listitem" key={stat.label}>
                   <span>{stat.label}</span>
-                  <strong>{stat.value}</strong>
+                  <strong>{row.isFallback && stat.value === '-' ? 'N/A' : stat.value}</strong>
                 </div>
               ))}
             </div>
@@ -984,30 +1015,37 @@ function MobileKeeperStats({ rec, teamCount }: { rec: KeeperEvaluation; teamCoun
   );
 }
 
-function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false, displayPlayer }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean; displayPlayer?: string }) {
+function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false, displayPlayer, unranked = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean; displayPlayer?: string; unranked?: boolean }) {
   if (!row) {
     return null;
   }
 
-  const imageUrl = showHeadshot ? (row.pos === 'D/ST' ? teamLogoUrl(row) : playerImageUrl(row)) : null;
+  const imageUrl = showHeadshot
+    ? (row.isFallback ? (playerImageUrl(row) ?? teamLogoUrl(row)) : row.pos === 'D/ST' ? teamLogoUrl(row) : playerImageUrl(row))
+    : null;
+  const previewImageUrl = row.isFallback && row.pos !== 'D/ST' && playerImageUrl(row)
+    ? playerImageUrl(row)
+    : showTeamLogo
+      ? teamLogoUrl(row)
+      : playerImageUrl(row);
   const content = (
     <div className={cn(showHeadshot && 'keeper-rec-content')}>
       {imageUrl ? <img className="keeper-rec__headshot" src={imageUrl} alt="" loading="lazy" /> : null}
-      <PlayerWithSuffix player={displayPlayer ?? row.player} nflTeam={row.team} pos={row.pos} compact={compact} />
+      <PlayerWithSuffix player={displayPlayer ?? row.player} nflTeam={row.team} pos={row.pos} compact={compact} unranked={unranked} />
     </div>
   );
-  return <PlayerPreviewTrigger row={row} previewImageUrl={showTeamLogo ? teamLogoUrl(row) : playerImageUrl(row)}>{content}</PlayerPreviewTrigger>;
+  return <PlayerPreviewTrigger row={row} previewImageUrl={previewImageUrl}>{content}</PlayerPreviewTrigger>;
 }
 
 function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
   return picks
     .filter((pick) => pick.team === team)
     .map((pick) => evaluatePick(pick, rankings.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null, rankingSource))
-    .sort((a, b) => b.keeperScore - a.keeperScore || (b.valueGain ?? -9999) - (a.valueGain ?? -9999) || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
+    .sort((a, b) => Number(a.ranking === null) - Number(b.ranking === null) || b.keeperScore - a.keeperScore || (b.valueGain ?? -9999) - (a.valueGain ?? -9999) || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
 }
 
 function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
-  return evaluateTeam(team, picks, rankings, rankingSource)[0] ?? null;
+  return evaluateTeam(team, picks, rankings, rankingSource).find((pick) => pick.ranking !== null) ?? null;
 }
 
 function DashboardTable({
@@ -1146,6 +1184,7 @@ function TeamPage() {
   const { data, rankings, rankingSource, sourceRows, loading, error } = useDraftData();
   const params = useParams();
   const navigate = useNavigate();
+  const sourceRowsByPick = useMemo(() => sourceRowLookup(sourceRows), [sourceRows]);
 
   if (loading) {
     return <LoadingPanel title="Loading team drilldown..." />;
@@ -1164,9 +1203,8 @@ function TeamPage() {
   const rankingMap = rankingLookup(rankings);
   const sourceLabel = rankingSource ?? 'current rankings';
   const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceLabel);
-  const recommendation = rankedPicks[0] ?? null;
+  const recommendation = rankedPicks.find((pick) => pick.ranking !== null) ?? null;
   const anchorOpener = recommendation ? keeperAnchorOpener(team.name) : null;
-  const sourceRowsByPick = useMemo(() => sourceRowLookup(sourceRows), [sourceRows]);
 
   return (
     <div className="page-stack">
@@ -1233,11 +1271,12 @@ function TeamPage() {
                   <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
                     <td className="keeper-table__player">
                       <PlayerPreviewName
-                        row={sourceRowForPick(sourceRowsByPick, rec)}
+                        row={previewRowForPick(sourceRowsByPick, rec)}
                         compact
                         showHeadshot
                         showTeamLogo
                         displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
+                        unranked={rec.ranking === null}
                       />
                     </td>
                     <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
@@ -1263,11 +1302,12 @@ function TeamPage() {
               <article className={cn('mobile-keeper-row', isRecommendation && 'mobile-keeper-row--highlight')} key={rec.pick}>
                 <div className="mobile-keeper-row__player">
                   <PlayerPreviewName
-                    row={sourceRowForPick(sourceRowsByPick, rec)}
+                    row={previewRowForPick(sourceRowsByPick, rec)}
                     compact
                     showHeadshot
                     showTeamLogo
                     displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
+                    unranked={rec.ranking === null}
                   />
                 </div>
                 <MobileKeeperStats rec={rec} teamCount={data.teams.length} />
@@ -1276,6 +1316,9 @@ function TeamPage() {
           })}
         </div>
       </section>
+      {rankedPicks.some((rec) => rec.ranking === null) ? (
+        <p className="keeper-table__note">*Player not included in current FantasyPros rankings. Keeper score defaults to 1.0; value gain is NR</p>
+      ) : null}
     </div>
   );
 }

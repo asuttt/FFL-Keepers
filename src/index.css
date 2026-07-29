@@ -909,6 +909,13 @@ a {
   margin-top: 12px;
 }
 
+.keeper-table__note {
+  margin: -12px 4px 0;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
 .table-shell {
   position: relative;
   overflow: hidden;
