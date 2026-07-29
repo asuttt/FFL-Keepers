@@ -638,7 +638,7 @@ function AppShell({ children }: { children: ReactNode }) {
               <span> {currentYear}</span>
             </span>
             <span className="site-footer__credit">
-              <a className="site-footer__link" href="https://shipyard.vercel.app" target="_blank" rel="noreferrer">
+              <a className="site-footer__link" href="https://shipyard.vercel.app" target="_blank" rel="noopener">
                 Arseni Sutton
               </a>
               <span>. All rights reserved</span>
