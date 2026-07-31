@@ -1254,6 +1254,10 @@ a {
   background: transparent;
   cursor: pointer;
   text-align: left;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
 }
 
 .player-preview-trigger:hover .player-line__player,
@@ -1438,6 +1442,17 @@ a {
   color: hsl(var(--foreground));
   font-size: 0.95rem;
   font-weight: 800;
+}
+
+@media (max-width: 820px) {
+  .player-preview-popover {
+    max-height: calc(100dvh - 24px);
+  }
+
+  .player-preview-popover__inner {
+    max-height: calc(100dvh - 24px);
+    overflow-y: auto;
+  }
 }
 
 .keeper-table--league th:nth-child(1),

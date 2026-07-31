@@ -820,6 +820,8 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
   const [open, setOpen] = useState(false);
   const [popoverStyle, setPopoverStyle] = useState<CSSProperties>({});
 
+  const isMobileViewport = () => window.matchMedia('(max-width: 820px)').matches;
+
   const clearCloseTimer = () => {
     if (closeTimerRef.current) {
       window.clearTimeout(closeTimerRef.current);
@@ -862,6 +864,24 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
     clearCloseTimer();
     positionPopover();
     setOpen(true);
+
+    if (isMobileViewport()) {
+      const trigger = triggerRef.current;
+      if (!trigger) return;
+
+      const rect = trigger.getBoundingClientRect();
+      const estimatedHeight = 236;
+      const margin = 16;
+      const availableBottom = window.innerHeight - margin;
+      const desiredBottom = rect.bottom + 12 + estimatedHeight;
+
+      if (desiredBottom > availableBottom) {
+        window.scrollBy({
+          top: desiredBottom - availableBottom,
+          behavior: 'smooth',
+        });
+      }
+    }
   };
 
   const scheduleClose = () => {
@@ -886,7 +906,13 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
       setOpen(false);
     };
 
-    const handleScrollOrResize = () => setOpen(false);
+    const handleScrollOrResize = () => {
+      if (isMobileViewport()) {
+        positionPopover();
+      } else {
+        setOpen(false);
+      }
+    };
 
     document.addEventListener('pointerdown', handlePointerDown);
     window.addEventListener('scroll', handleScrollOrResize, true);
@@ -967,10 +993,15 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
         aria-label={`View projections for ${row.player}`}
         aria-haspopup="dialog"
         aria-expanded={open}
-        onPointerEnter={openPopover}
-        onPointerLeave={scheduleClose}
-        onFocus={openPopover}
-        onBlur={scheduleClose}
+        onPointerEnter={(event) => {
+          if (event.pointerType === 'mouse') openPopover();
+        }}
+        onPointerLeave={(event) => {
+          if (event.pointerType === 'mouse') scheduleClose();
+        }}
+        onFocus={(event) => {
+          if (event.currentTarget.matches(':focus-visible')) openPopover();
+        }}
         onClick={(event) => {
           event.preventDefault();
           if (open) {
