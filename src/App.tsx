@@ -111,6 +111,13 @@ type SourceRow = RankingEntry & {
   projectionDefRetd?: number | null;
 };
 
+type ProjectionReplacementLevel = {
+  topPpr: number | null;
+  replacementPpr: number | null;
+};
+
+type ProjectionReplacementLevels = Record<Position, ProjectionReplacementLevel>;
+
 type PreviewStat = {
   label: string;
   value: string;
@@ -299,6 +306,29 @@ function sourceRowForPick(lookup: Map<string, SourceRow>, pick: DraftPick) {
   return lookup.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null;
 }
 
+function projectionReplacementLevels(sourceRows: SourceRow[] | null): ProjectionReplacementLevels {
+  const replacementRanks: Record<Position, number> = {
+    QB: 12,
+    RB: 36,
+    WR: 48,
+    TE: 12,
+    K: 10,
+    'D/ST': 10,
+  };
+  const levels = {} as ProjectionReplacementLevels;
+
+  for (const pos of Object.keys(replacementRanks) as Position[]) {
+    const rows = (sourceRows ?? [])
+      .filter((row) => row.pos === pos && row.pointsPpr !== null)
+      .sort((a, b) => (parsePositionRank(a.pos_rank) ?? 999) - (parsePositionRank(b.pos_rank) ?? 999));
+    const replacement = rows[replacementRanks[pos] - 1]?.pointsPpr ?? null;
+    const top = rows[0]?.pointsPpr ?? null;
+    levels[pos] = { topPpr: top, replacementPpr: replacement };
+  }
+
+  return levels;
+}
+
 function fallbackSourceRow(pick: DraftPick): SourceRow {
   return {
     keeper_rank: '',
@@ -483,7 +513,13 @@ function keeperAnchorOpener(teamName: string) {
   return openers[hashString(teamName) % openers.length];
 }
 
-function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSource: string): KeeperEvaluation {
+function evaluatePick(
+  pick: DraftPick,
+  ranking: RankingEntry | null,
+  sourceRow: SourceRow | null,
+  replacementLevels: ProjectionReplacementLevels,
+  rankingSource: string,
+): KeeperEvaluation {
   if (!ranking) {
     return {
       ...pick,
@@ -502,31 +538,69 @@ function evaluatePick(pick: DraftPick, ranking: RankingEntry | null, rankingSour
     ranking,
     sourceRank,
     valueGain,
-    keeperScore: keeperStrength(valueGain, sourceRank, ranking.pos, ranking.pos_rank, pick.round),
+    keeperScore: keeperStrength(valueGain, sourceRank, ranking.pos, sourceRow?.pointsPpr ?? null, replacementLevels),
     why: `Pick #${pick.pick} (Round ${pick.round}) versus #${sourceRank} overall rank`,
   };
 }
 
-function keeperStrength(valueGain: number, overallRank: number, pos: Position, posRank: string, round: number) {
+function keeperStrength(
+  valueGain: number,
+  overallRank: number,
+  pos: Position,
+  pointsPpr: number | null,
+  replacementLevels: ProjectionReplacementLevels,
+) {
   if (valueGain <= 0) return 1;
 
-  const gainScore = 4 + valueGain / 20;
-  const rankAdjustment = overallRank <= 10 ? 1.5 : overallRank <= 25 ? 1 : overallRank <= 50 ? 0.5 : overallRank <= 100 ? 0 : -0.75;
-  let score = gainScore + rankAdjustment;
+  const surplusScore = 10 * (1 - Math.exp(-valueGain / 50));
+  const assetQualityScore = rankQualityScore(overallRank);
+  const scarcityScore = projectionScarcityScore(pos, pointsPpr, replacementLevels);
+  let score = surplusScore * keeperScoreWeights.surplus
+    + assetQualityScore * keeperScoreWeights.quality
+    + scarcityScore * keeperScoreWeights.scarcity;
 
-  if (pos === 'TE') {
-    score -= overallRank <= 25 ? 0.5 : 1.25;
-    if (round >= 10) score += 0.5;
-    if (overallRank > 25) score = Math.min(score, 6);
-  } else if (pos === 'QB') {
-    score -= overallRank <= 10 ? 1 : 3;
-    if (overallRank > 25) score = Math.min(score, 4.5);
-  } else if (pos === 'K' || pos === 'D/ST') {
-    score -= 4;
+  if (overallRank <= 10 && valueGain >= 10) {
+    score = Math.max(score, 7.5);
   }
 
-  if (valueGain < 10) score = Math.min(score, 4.9);
+  if (pos === 'QB' && scarcityScore === 0) {
+    score = Math.min(score, 4.5);
+  }
+
   return Math.min(10, Math.max(1, Math.round(score * 10) / 10));
+}
+
+const keeperScoreWeights = {
+  surplus: 0.4,
+  quality: 0.4,
+  scarcity: 0.2,
+} as const;
+
+function rankQualityScore(overallRank: number) {
+  if (overallRank <= 5) return 10;
+  if (overallRank <= 10) return 9.5 + ((10 - overallRank) / 5) * 0.5;
+  if (overallRank <= 25) return 8.8 + ((25 - overallRank) / 15) * 0.7;
+  if (overallRank <= 50) return 7.8 + ((50 - overallRank) / 25) * 1;
+  if (overallRank <= 100) return 6.5 + ((100 - overallRank) / 50) * 1.3;
+  if (overallRank <= 150) return 5.5 + ((150 - overallRank) / 50) * 1;
+  return 4.2;
+}
+
+function projectionScarcityScore(pos: Position, pointsPpr: number | null, replacementLevels: ProjectionReplacementLevels) {
+  const replacementLevel = replacementLevels[pos];
+  if (pointsPpr === null || replacementLevel.topPpr === null || replacementLevel.replacementPpr === null || pos === 'K' || pos === 'D/ST') {
+    return 0;
+  }
+
+  const replacementGap = pointsPpr - replacementLevel.replacementPpr;
+  const maxReplacementGap = Math.max(
+    ...Object.entries(replacementLevels)
+      .filter(([position]) => position !== 'K' && position !== 'D/ST')
+      .map(([, level]) => (level.topPpr ?? 0) - (level.replacementPpr ?? 0)),
+  );
+  if (replacementGap <= 0 || maxReplacementGap <= 0) return 0;
+
+  return Math.min(10, (replacementGap / maxReplacementGap) * 10);
 }
 
 function positionTone(pos: Position) {
@@ -1068,15 +1142,35 @@ function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTea
   return <PlayerPreviewTrigger row={row} previewImageUrl={previewImageUrl}>{content}</PlayerPreviewTrigger>;
 }
 
-function evaluateTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
+function evaluateTeam(
+  team: string,
+  picks: DraftPick[],
+  rankings: Map<string, RankingEntry>,
+  sourceRowsByPick: Map<string, SourceRow>,
+  replacementLevels: ProjectionReplacementLevels,
+  rankingSource: string,
+) {
   return picks
     .filter((pick) => pick.team === team)
-    .map((pick) => evaluatePick(pick, rankings.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null, rankingSource))
+    .map((pick) => evaluatePick(
+      pick,
+      rankings.get(lookupKey(pick.player, pick.pos, pick.nflTeam)) ?? null,
+      sourceRowForPick(sourceRowsByPick, pick),
+      replacementLevels,
+      rankingSource,
+    ))
     .sort((a, b) => Number(a.ranking === null) - Number(b.ranking === null) || b.keeperScore - a.keeperScore || (b.valueGain ?? -9999) - (a.valueGain ?? -9999) || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
 }
 
-function bestKeeperForTeam(team: string, picks: DraftPick[], rankings: Map<string, RankingEntry>, rankingSource: string) {
-  return evaluateTeam(team, picks, rankings, rankingSource).find((pick) => pick.ranking !== null) ?? null;
+function bestKeeperForTeam(
+  team: string,
+  picks: DraftPick[],
+  rankings: Map<string, RankingEntry>,
+  sourceRowsByPick: Map<string, SourceRow>,
+  replacementLevels: ProjectionReplacementLevels,
+  rankingSource: string,
+) {
+  return evaluateTeam(team, picks, rankings, sourceRowsByPick, replacementLevels, rankingSource).find((pick) => pick.ranking !== null) ?? null;
 }
 
 function DashboardTable({
@@ -1194,10 +1288,12 @@ function DashboardPage() {
   }
 
   const rankingMap = rankingLookup(rankings);
+  const sourceRowsByPick = sourceRowLookup(sourceRows);
+  const replacementLevels = projectionReplacementLevels(sourceRows);
   const sourceLabel = rankingSource ?? 'current rankings';
   const snapshotDate = formatSnapshotDate(sourceRows?.[0]?.source_date);
   const recs = data.teams
-    .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceLabel))
+    .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceRowsByPick, replacementLevels, sourceLabel))
     .filter(Boolean) as KeeperEvaluation[];
 
   return (
@@ -1232,8 +1328,9 @@ function TeamPage() {
   }
 
   const rankingMap = rankingLookup(rankings);
+  const replacementLevels = projectionReplacementLevels(sourceRows);
   const sourceLabel = rankingSource ?? 'current rankings';
-  const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceLabel);
+  const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceRowsByPick, replacementLevels, sourceLabel);
   const recommendation = rankedPicks.find((pick) => pick.ranking !== null) ?? null;
   const anchorOpener = recommendation ? keeperAnchorOpener(team.name) : null;
 
@@ -1372,7 +1469,7 @@ function ErrorPanel({ message }: { message: string }) {
 }
 
 function DraftBoardPage() {
-  const { data, rankings, rankingSource, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, sourceRows, loading, error } = useDraftData();
   const boardShellRef = useRef<HTMLDivElement>(null);
   const boardHeaderAnchorRef = useRef<HTMLDivElement>(null);
   const boardHeaderRef = useRef<HTMLDivElement>(null);
@@ -1442,10 +1539,12 @@ function DraftBoardPage() {
   const snakeRows = byRound.map((roundPicks, index) => (index % 2 === 0 ? roundPicks : [...roundPicks].reverse()));
   const draftOrderTeams = [...byRound[0]].sort((a, b) => a.pick - b.pick);
   const rankingMap = rankingLookup(rankings);
+  const sourceRowsByPick = sourceRowLookup(sourceRows);
+  const replacementLevels = projectionReplacementLevels(sourceRows);
   const sourceLabel = rankingSource ?? 'current rankings';
   const recs = new Set(
     data.teams
-      .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceLabel)?.pick)
+      .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceRowsByPick, replacementLevels, sourceLabel)?.pick)
       .filter((pick): pick is number => typeof pick === 'number'),
   );
 
