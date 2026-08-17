@@ -1,523 +1,504 @@
 keeper_rank,source_rank,player,team,pos,pos_rank,pointsPpr,player_id,player_page_url,player_bye_week,player_owned_avg,player_owned_espn,player_owned_yahoo,player_ecr_delta,rank_ave,rank_min,rank_max,rank_std,tier,projectionPassYds,projectionPassTds,projectionRushAtt,projectionRushYds,projectionRushTds,projectionRecRec,projectionRecYds,projectionRecTds,projectionFga,projectionFg,projectionXpt,projectionDefSack,projectionDefInt,projectionDefTd,projectionDefSafety,projectionDefFf,projectionDefFr,projectionDefRetd,source_date
-1,1,Ja'Marr Chase,CIN,WR,WR1,336.08,19788,https://www.fantasypros.com/nfl/players/jamarr-chase.php,6,99.4,99.8,100,,1.79,1,4,1.04,1,,,,,,121.48,1512.02,10.56,,,,,,,,,,,2026-08-10
-2,2,Puka Nacua,LAR,WR,WR2,339.8,23180,https://www.fantasypros.com/nfl/players/puka-nacua.php,11,99.7,99.8,100,,3.04,1,7,1.21,1,,,,,,117,1539,9,,,,,,,,,,,2026-08-10
-3,3,Jahmyr Gibbs,DET,RB,RB1,372.6,22968,https://www.fantasypros.com/nfl/players/jahmyr-gibbs.php,6,99.5,99.9,100,,3.16,1,7,1.73,1,,,274.4,1381.36,13.83,70.92,580.45,4.13,,,,,,,,,,,2026-08-10
-4,4,Bijan Robinson,ATL,RB,RB2,372.06,23133,https://www.fantasypros.com/nfl/players/bijan-robinson.php,11,99.4,99.8,100,,3.46,1,7,1.57,1,,,289.56,1428.03,9.48,79.56,736.37,3.79,,,,,,,,,,,2026-08-10
-5,5,Jaxon Smith-Njigba,SEA,WR,WR3,324.09,23070,https://www.fantasypros.com/nfl/players/jaxon-smith-njigba.php,11,99.7,99.8,100,,4.60,1,9,1.46,1,,,,,,110.92,1568.73,9.18,,,,,,,,,,,2026-08-10
-6,6,Amon-Ra St. Brown,DET,WR,WR4,319.4,19799,https://www.fantasypros.com/nfl/players/amonra-stbrown.php,6,99.4,99.8,100,,5.67,4,8,1.20,1,,,,,,117,1389.62,10.47,,,,,,,,,,,2026-08-10
-7,7,Christian McCaffrey,SF,RB,RB3,334.81,16393,https://www.fantasypros.com/nfl/players/christian-mccaffrey.php,8,99.5,99.8,100,,8.65,2,31,4.62,2,,,269.4,1093.62,8.72,78.36,694.08,4.59,,,,,,,,,,,2026-08-10
-8,8,CeeDee Lamb,DAL,WR,WR5,273.22,19202,https://www.fantasypros.com/nfl/players/ceedee-lamb.php,14,99.4,99.8,100,,8.76,6,17,1.81,2,,,,,,97.63,1296.63,7.52,,,,,,,,,,,2026-08-10
-9,9,Justin Jefferson,MIN,WR,WR6,269.64,19236,https://www.fantasypros.com/nfl/players/justin-jefferson.php,6,99.4,99.8,100,,9.44,6,20,2.42,2,,,,,,98.58,1302.53,6.79,,,,,,,,,,,2026-08-10
-10,10,Jonathan Taylor,IND,RB,RB4,312.46,19217,https://www.fantasypros.com/nfl/players/jonathan-taylor.php,13,99.4,99.8,100,,12.16,7,33,5.24,2,,,327.72,1509.78,12.87,45.1,338.16,1.47,,,,,,,,,,,2026-08-10
-11,11,Drake London,ATL,WR,WR7,289.14,23163,https://www.fantasypros.com/nfl/players/drake-london.php,11,99.1,99.5,100,,12.74,8,28,4.12,2,,,,,,101.65,1328.21,9.43,,,,,,,,,,,2026-08-10
-12,12,A.J. Brown,NE,WR,WR8,257.38,18218,https://www.fantasypros.com/nfl/players/aj-brown.php,11,99.3,99.3,100,,14.99,8,36,5.44,3,,,,,,88.66,1234.36,7.64,,,,,,,,,,,2026-08-10
-13,13,Nico Collins,HOU,WR,WR9,248.39,20130,https://www.fantasypros.com/nfl/players/nico-collins.php,8,99.3,99.4,100,,16.57,11,38,4.48,3,,,,,,82.48,1211.54,7.24,,,,,,,,,,,2026-08-10
-14,14,Ashton Jeanty,LV,RB,RB5,276.85,25989,https://www.fantasypros.com/nfl/players/ashton-jeanty.php,13,99.2,99.6,100,,16.92,7,39,6.21,3,,,281.35,1107.48,8.04,58.65,414.2,3.34,,,,,,,,,,,2026-08-10
-15,15,Chase Brown,CIN,RB,RB6,279.12,25324,https://www.fantasypros.com/nfl/players/chase-brown.php,6,98.6,98.7,100,,18.45,9,39,5.88,3,,,239.44,1040.12,7.8,64.05,427.86,3.94,,,,,,,,,,,2026-08-10
-16,16,James Cook III,BUF,RB,RB7,270.19,22958,https://www.fantasypros.com/nfl/players/james-cook.php,7,99.5,99.8,100,,18.69,7,34,6.65,3,,,287.3,1403.19,10.32,33.31,281.7,1.87,,,,,,,,,,,2026-08-10
-17,17,Trey McBride,ARI,TE,TE1,254.3,22936,https://www.fantasypros.com/nfl/players/trey-mcbride.php,14,99.4,99.8,100,,19.16,15,32,5.25,3,,,,,,108.95,1050.98,6.79,,,,,,,,,,,2026-08-10
-18,18,George Pickens,DAL,WR,WR10,252.18,22963,https://www.fantasypros.com/nfl/players/george-pickens.php,14,99.3,99.6,100,,19.57,12,40,5.43,3,,,,,,82.64,1201.37,8.38,,,,,,,,,,,2026-08-10
-19,19,Brock Bowers,LV,TE,TE2,243.76,22955,https://www.fantasypros.com/nfl/players/brock-bowers.php,13,99.3,99.8,100,,20.33,11,32,3.20,3,,,,,,96.48,1025.31,7.52,,,,,,,,,,,2026-08-10
-20,20,Rashee Rice,KC,WR,WR11,273.38,23113,https://www.fantasypros.com/nfl/players/rashee-rice.php,5,98.2,99.1,99,,20.89,8,45,8.57,3,,,,,,98.76,1099.31,9.68,,,,,,,,,,,2026-08-10
-21,21,Chris Olave,NO,WR,WR12,257.81,20111,https://www.fantasypros.com/nfl/players/chris-olave.php,8,98,98.3,99,,21.05,11,44,7.18,3,,,,,,94.5,1170.55,7.81,,,,,,,,,,,2026-08-10
-22,22,De'Von Achane,MIA,RB,RB8,291.96,23136,https://www.fantasypros.com/nfl/players/devon-achane.php,6,99.2,99.7,100,,21.13,10,33,6.45,3,,,237.89,1197.21,5.99,65.27,490.93,3.99,,,,,,,,,,,2026-08-10
-23,23,DeVonta Smith,PHI,WR,WR13,236.79,19222,https://www.fantasypros.com/nfl/players/devonta-smith.php,10,97.9,98.7,99,,24.58,11,45,7.85,3,,,,,,87.78,1135.44,6.01,,,,,,,,,,,2026-08-10
-24,24,Omarion Hampton,LAC,RB,RB9,263.54,25395,https://www.fantasypros.com/nfl/players/omarion-hampton.php,7,98.8,99.1,100,,25.04,11,47,7.80,4,,,249.12,1072.55,9.95,51.64,352.81,1.97,,,,,,,,,,,2026-08-10
-25,25,Josh Allen,BUF,QB,QB1,372.23,17298,https://www.fantasypros.com/nfl/players/josh-allen-qb.php,7,99.5,99.8,100,,25.78,21,36,2.26,4,3815.58,27.41,118.12,585.15,11.81,,,,,,,,,,,,,,2026-08-10
-26,26,Saquon Barkley,PHI,RB,RB10,266.14,17240,https://www.fantasypros.com/nfl/players/saquon-barkley.php,10,99.4,99.7,100,,26.04,10,43,7.55,4,,,295.55,1310.67,8.24,42.04,330.36,2.1,,,,,,,,,,,2026-08-10
-27,27,Zay Flowers,BAL,WR,WR14,242.12,22916,https://www.fantasypros.com/nfl/players/zay-flowers.php,13,97.1,97.8,98,,29.93,12,51,9.28,4,,,,,,81.25,1160.64,6.5,,,,,,,,,,,2026-08-10
-28,28,Kenneth Walker III,KC,RB,RB11,251.23,23021,https://www.fantasypros.com/nfl/players/kenneth-walker-rb.php,5,99.2,99.3,100,,30.08,14,56,9.03,4,,,255.69,1158.78,8.35,45.09,347.13,1.23,,,,,,,,,,,2026-08-10
-29,29,Garrett Wilson,NYJ,WR,WR15,242.23,23072,https://www.fantasypros.com/nfl/players/garrett-wilson.php,13,96.6,98.2,97,-2,31.12,14,52,7.78,4,,,,,,96.35,1091.18,6.37,,,,,,,,,,,2026-08-10
-30,30,Malik Nabers,NYG,WR,WR16,238.68,25409,https://www.fantasypros.com/nfl/players/malik-nabers.php,8,98.1,98.1,99,2,31.13,11,73,12.73,4,,,,,,80.53,1070.73,8.45,,,,,,,,,,,2026-08-10
-31,31,Lamar Jackson,BAL,QB,QB2,324.98,17233,https://www.fantasypros.com/nfl/players/lamar-jackson.php,13,99.2,99.6,100,,32.39,25,63,9.20,4,3654.9,28.32,118.72,640.26,3.23,,,,,,,,,,,,,,2026-08-10
-32,32,Tetairoa McMillan,CAR,WR,WR17,227.88,25417,https://www.fantasypros.com/nfl/players/tetairoa-mcmillan.php,5,97.5,98.1,98,,33.56,14,51,8.11,4,,,,,,78.46,1126.43,6.43,,,,,,,,,,,2026-08-10
-33,33,Tee Higgins,CIN,WR,WR18,221.52,19211,https://www.fantasypros.com/nfl/players/tee-higgins.php,6,97,95.8,99,,35.37,19,52,7.61,4,,,,,,70.7,966.07,9.11,,,,,,,,,,,2026-08-10
-34,34,Ladd McConkey,LAC,WR,WR19,212.54,26122,https://www.fantasypros.com/nfl/players/ladd-mcconkey.php,7,95.9,95.3,97,,35.48,13,51,7.83,4,,,,,,76.87,976.98,6.42,,,,,,,,,,,2026-08-10
-35,35,Emeka Egbuka,TB,WR,WR20,228.4,23062,https://www.fantasypros.com/nfl/players/emeka-egbuka.php,10,96.5,97.1,97,,36.96,14,55,8.81,4,,,,,,73.22,1098.45,7.5,,,,,,,,,,,2026-08-10
-36,36,Derrick Henry,BAL,RB,RB12,272.96,15514,https://www.fantasypros.com/nfl/players/derrick-henry.php,13,99.2,99.6,100,,37.30,10,50,8.62,4,,,314,1569.02,13.37,17.8,171.06,0.73,,,,,,,,,,,2026-08-10
-37,37,Jaylen Waddle,DEN,WR,WR21,209.73,19790,https://www.fantasypros.com/nfl/players/jaylen-waddle.php,10,95.6,94.7,98,,37.69,18,62,8.60,5,,,,,,74.55,984.4,6,,,,,,,,,,,2026-08-10
-38,38,Colston Loveland,CHI,TE,TE3,209.43,26006,https://www.fantasypros.com/nfl/players/colston-loveland.php,10,99.1,99.1,100,,37.77,22,87,13.30,5,,,,,,78.07,917.63,6.67,,,,,,,,,,,2026-08-10
-39,39,Jeremiyah Love,ARI,RB,RB13,255.31,25403,https://www.fantasypros.com/nfl/players/jeremiyah-love.php,14,98.3,98.9,99,,38.23,22,65,7.62,5,,,238.26,1074.69,7.22,54.39,419.26,2.08,,,,,,,,,,,2026-08-10
-40,40,Drake Maye,NE,QB,QB3,326.9,23046,https://www.fantasypros.com/nfl/players/drake-maye.php,11,98.7,99,99,,38.40,26,79,12.79,5,4062.74,28.32,100.35,505.53,3.68,,,,,,,,,,,,,,2026-08-10
-41,41,Breece Hall,NYJ,RB,RB14,253.52,22982,https://www.fantasypros.com/nfl/players/breece-hall.php,13,97,98,98,,41.06,32,72,6.28,5,,,259.33,1159.03,6.52,47.38,411.63,2.23,,,,,,,,,,,2026-08-10
-42,42,Kyren Williams,LAR,RB,RB15,239.83,23059,https://www.fantasypros.com/nfl/players/kyren-williams.php,11,97.8,97.5,99,,42.22,23,56,7.19,5,,,240.18,1118.42,10.06,33.47,239.61,2.21,,,,,,,,,,,2026-08-10
-43,43,Josh Jacobs,GB,RB,RB16,256.97,18269,https://www.fantasypros.com/nfl/players/josh-jacobs.php,11,98.3,99.1,99,,44.24,24,65,7.69,5,,,288.77,1161.59,12.02,35.67,283.88,1.21,,,,,,,,,,,2026-08-10
-44,44,Terry McLaurin,WAS,WR,WR22,210.65,18466,https://www.fantasypros.com/nfl/players/terry-mclaurin.php,7,94,94.4,96,,44.49,26,68,6.58,5,,,,,,69.35,977.02,7.36,,,,,,,,,,,2026-08-10
-45,45,Luther Burden III,CHI,WR,WR23,206.08,27016,https://www.fantasypros.com/nfl/players/luther-burden-iii.php,10,93.1,90.3,95,,45.72,28,69,6.52,5,,,,,,71.69,962.87,5.69,,,,,,,,,,,2026-08-10
-46,46,Javonte Williams,DAL,RB,RB17,233.9,22739,https://www.fantasypros.com/nfl/players/javonte-williams.php,14,96.6,97.6,98,,45.79,24,58,6.53,5,,,255.49,1157.11,10.36,33.02,191.79,1.17,,,,,,,,,,,2026-08-10
-47,47,Joe Burrow,CIN,QB,QB4,310.96,19196,https://www.fantasypros.com/nfl/players/joe-burrow.php,6,97.8,96.1,100,,46.66,27,98,13.17,5,4175.05,33.34,48.26,179.06,1.36,,,,,,,,,,,,,,2026-08-10
-48,48,Davante Adams,LAR,WR,WR24,222.04,12123,https://www.fantasypros.com/nfl/players/davante-adams.php,11,96.1,97.9,96,,49.24,34,81,7.12,5,,,,,,68.52,926.07,10.21,,,,,,,,,,,2026-08-10
-49,49,Travis Etienne Jr.,NO,RB,RB18,232.01,19231,https://www.fantasypros.com/nfl/players/travis-etienne.php,8,95.8,95.9,97,,49.40,24,75,8.79,5,,,244.63,1036.66,5.36,44.87,351.5,3.02,,,,,,,,,,,2026-08-10
-50,50,Jayden Daniels,WAS,QB,QB5,322.94,22902,https://www.fantasypros.com/nfl/players/jayden-daniels.php,7,97.5,98.5,99,,51.39,27,92,14.55,5,3681.3,23.79,129.99,685.92,4.71,,,,,,,,,,,,,,2026-08-10
-51,51,Mike Evans,SF,WR,WR25,203.83,12119,https://www.fantasypros.com/nfl/players/mike-evans.php,8,90.9,87.7,94,,52.43,28,96,11.14,5,,,,,,67.36,950.98,6.96,,,,,,,,,,,2026-08-10
-52,52,DJ Moore,BUF,WR,WR26,208.01,17265,https://www.fantasypros.com/nfl/players/dj-moore-wr.php,7,92.5,91.8,94,,53.35,19,100,13.61,5,,,,,,69.38,899.9,7.01,,,,,,,,,,,2026-08-10
-53,53,Tyler Warren,IND,TE,TE4,202.14,26434,https://www.fantasypros.com/nfl/players/tyler-warren.php,13,98.5,99,99,,53.94,22,73,9.70,5,,,,,,82.99,871.24,5.44,,,,,,,,,,,2026-08-10
-54,54,Cam Skattebo,NYG,RB,RB19,244.39,27166,https://www.fantasypros.com/nfl/players/cam-skattebo.php,8,96.8,98,97,,54.15,38,80,8.48,5,,,243.44,1016,8.09,45.74,364.28,2.54,,,,,,,,,,,2026-08-10
-55,55,Jameson Williams,DET,WR,WR27,217.21,23677,https://www.fantasypros.com/nfl/players/jameson-williams.php,6,93.5,93.4,95,,54.73,38,88,8.02,6,,,,,,64.38,1064.63,6.57,,,,,,,,,,,2026-08-10
-56,56,Christian Watson,GB,WR,WR28,190.85,23886,https://www.fantasypros.com/nfl/players/christian-watson.php,11,89.1,85.1,94,,56.97,40,115,12.07,6,,,,,,55.98,901.6,7.36,,,,,,,,,,,2026-08-10
-57,57,Jalen Hurts,PHI,QB,QB6,320.66,19275,https://www.fantasypros.com/nfl/players/jalen-hurts.php,10,97.1,97.1,99,,57.25,27,79,11.87,6,3572.76,24.19,111.77,461.07,8.39,,,,,,,,,,,,,,2026-08-10
-58,58,Rome Odunze,CHI,WR,WR29,210.03,25411,https://www.fantasypros.com/nfl/players/rome-odunze.php,10,91.8,91.6,94,,59.01,38,100,9.63,6,,,,,,63.45,981.82,8.15,,,,,,,,,,,2026-08-10
-59,59,Bucky Irving,TB,RB,RB20,223.98,25981,https://www.fantasypros.com/nfl/players/bucky-irving.php,10,95,94.8,95,,59.41,33,80,9.09,6,,,256.49,1021.2,6.11,39.94,336.82,2.25,,,,,,,,,,,2026-08-10
-60,60,D'Andre Swift,CHI,RB,RB21,222.77,19210,https://www.fantasypros.com/nfl/players/dandre-swift.php,10,92.7,90.9,96,,60.64,46,77,7.19,6,,,233.14,1052.8,8.05,34.81,300.52,1.04,,,,,,,,,,,2026-08-10
-61,61,Quinshon Judkins,CLE,RB,RB22,209.98,25391,https://www.fantasypros.com/nfl/players/quinshon-judkins.php,11,93.6,94.5,95,,60.67,43,80,8.22,6,,,287.76,1094.14,7.74,30.94,214.25,0.58,,,,,,,,,,,2026-08-10
-62,62,David Montgomery,HOU,RB,RB23,191.98,18239,https://www.fantasypros.com/nfl/players/david-montgomery.php,8,92.6,90.6,95,,62.99,42,102,10.55,6,,,225.8,936.98,7.33,30.49,226.23,0.54,,,,,,,,,,,2026-08-10
-63,63,TreVeyon Henderson,NE,RB,RB24,201.58,23065,https://www.fantasypros.com/nfl/players/treveyon-henderson.php,11,92.9,91.7,94,,63.64,39,99,10.11,6,,,190.09,885.94,7.27,37.72,261.55,1.2,,,,,,,,,,,2026-08-10
-64,64,Carnell Tate,TEN,WR,WR30,181.35,26009,https://www.fantasypros.com/nfl/players/carnell-tate.php,9,92,93.2,91,,65.81,41,192,22.22,6,,,,,,66.3,902.66,4.55,,,,,,,,,,,2026-08-10
-65,65,Caleb Williams,CHI,QB,QB7,298.68,23084,https://www.fantasypros.com/nfl/players/caleb-williams.php,10,93.1,88.9,97,,68.60,29,101,13.30,6,3829.62,27.11,79.37,398.01,2.1,,,,,,,,,,,,,,2026-08-10
-66,66,Justin Herbert,LAC,QB,QB8,300.12,18635,https://www.fantasypros.com/nfl/players/justin-herbert.php,7,91.5,86.1,98,,69.55,30,108,14.12,6,3855.97,26.17,78.44,458.63,2.11,,,,,,,,,,,,,,2026-08-10
-67,67,Bhayshul Tuten,JAC,RB,RB25,208.45,27297,https://www.fantasypros.com/nfl/players/bhayshul-tuten.php,7,90.1,88.5,93,,69.70,46,127,12.58,6,,,242.99,992.49,8.23,29.24,221.63,2.14,,,,,,,,,,,2026-08-10
-68,68,Marvin Harrison Jr.,ARI,WR,WR31,197.27,23064,https://www.fantasypros.com/nfl/players/marvin-harrison-jr.php,14,88.3,88,91,,70.25,45,107,13.32,6,,,,,,67.26,944.86,6.02,,,,,,,,,,,2026-08-10
-69,69,Harold Fannin Jr.,CLE,TE,TE5,188.19,27050,https://www.fantasypros.com/nfl/players/harold-fannin-jr.php,11,94,92.1,97,,73.65,32,106,11.42,6,,,,,,77.32,801.09,5.4,,,,,,,,,,,2026-08-10
-70,70,Jaylen Warren,PIT,RB,RB26,194.67,24209,https://www.fantasypros.com/nfl/players/jaylen-warren.php,9,87.9,85.4,91,,74.93,56,99,7.17,6,,,187.99,826.2,4.82,42.02,320.97,1.82,,,,,,,,,,,2026-08-10
-71,71,Tucker Kraft,GB,TE,TE6,175.32,25298,https://www.fantasypros.com/nfl/players/tucker-kraft.php,11,92.6,86.4,98,,75.39,32,111,13.17,6,,,,,,60.24,770.72,6.4,,,,,,,,,,,2026-08-10
-72,72,Jadarian Price,SEA,RB,RB27,187.58,27329,https://www.fantasypros.com/nfl/players/jadarian-price.php,11,89.3,89.6,92,,75.73,43,117,10.19,6,,,215.2,912.51,7.63,26.02,220.13,1.08,,,,,,,,,,,2026-08-10
-73,73,Parker Washington,JAC,WR,WR32,178.68,23106,https://www.fantasypros.com/nfl/players/parker-washington.php,7,85.7,83.8,89,,76.48,48,123,18.83,7,,,,,,60.91,843.6,5.38,,,,,,,,,,,2026-08-10
-74,74,DK Metcalf,PIT,WR,WR33,194.78,18219,https://www.fantasypros.com/nfl/players/dk-metcalf.php,9,89.7,89.6,91,,76.49,49,109,12.60,7,,,,,,64.23,923.77,6.05,,,,,,,,,,,2026-08-10
-75,75,Brian Thomas Jr.,JAC,WR,WR34,180.4,23000,https://www.fantasypros.com/nfl/players/brian-thomas-jr.php,7,87.5,84.5,90,,77.32,49,116,13.09,7,,,,,,57.69,868.32,5.34,,,,,,,,,,,2026-08-10
-76,76,Trevor Lawrence,JAC,QB,QB9,303.94,19780,https://www.fantasypros.com/nfl/players/trevor-lawrence.php,7,88.9,86.6,93,,78.79,58,108,12.52,7,3892.75,26.59,72.48,321.11,4.93,,,,,,,,,,,,,,2026-08-10
-77,77,Dak Prescott,DAL,QB,QB10,306.18,15600,https://www.fantasypros.com/nfl/players/dak-prescott.php,14,92.1,89.2,96,,79.72,54,108,12.02,7,4293.36,30.92,49.06,173.64,1.72,,,,,,,,,,,,,,2026-08-10
-78,78,Kyle Pitts Sr.,ATL,TE,TE7,195.68,20164,https://www.fantasypros.com/nfl/players/kyle-pitts.php,11,95.1,94.9,97,,81.00,65,111,10.13,7,,,,,,79.45,881.29,4.73,,,,,,,,,,,2026-08-10
-79,79,Chris Godwin Jr.,TB,WR,WR35,175.83,16406,https://www.fantasypros.com/nfl/players/chris-godwin.php,10,80.6,74.1,88,,81.11,42,128,12.96,7,,,,,,67.8,774.16,5.19,,,,,,,,,,,2026-08-10
-80,80,Michael Pittman Jr.,PIT,WR,WR36,189.95,19278,https://www.fantasypros.com/nfl/players/michael-pittman.php,9,83.3,88.2,83,,82.73,40,118,13.99,7,,,,,,80.45,803.7,4.96,,,,,,,,,,,2026-08-10
-81,81,Rhamondre Stevenson,NE,RB,RB28,185.86,22726,https://www.fantasypros.com/nfl/players/rhamondre-stevenson.php,11,85.9,82.9,90,,82.77,65,118,9.41,7,,,168.82,733.57,6.53,36.76,309.8,1.62,,,,,,,,,,,2026-08-10
-82,82,Tony Pollard,TEN,RB,RB29,191.03,18705,https://www.fantasypros.com/nfl/players/tony-pollard.php,9,86.6,86.9,90,,83.28,65,117,9.52,7,,,238.75,1044.66,5.86,31.9,207.64,0.5,,,,,,,,,,,2026-08-10
-83,83,Courtland Sutton,DEN,WR,WR37,204.42,17253,https://www.fantasypros.com/nfl/players/courtland-sutton.php,10,87.3,88.8,88,,83.52,51,116,14.91,7,,,,,,69.42,903.23,7.53,,,,,,,,,,,2026-08-10
-84,84,Alec Pierce,IND,WR,WR38,207.39,23791,https://www.fantasypros.com/nfl/players/alec-pierce.php,13,85.4,85.5,90,,83.57,44,128,16.91,7,,,,,,63.81,1049.68,6.53,,,,,,,,,,,2026-08-10
-85,85,Sam LaPorta,DET,TE,TE8,183.38,22978,https://www.fantasypros.com/nfl/players/sam-laporta.php,6,95.1,94.2,98,,84.26,57,106,10.55,7,,,,,,70.08,809.38,5.46,,,,,,,,,,,2026-08-10
-86,86,Chuba Hubbard,CAR,RB,RB30,186.44,19792,https://www.fantasypros.com/nfl/players/chuba-hubbard.php,5,87.4,85,91,,85.66,64,130,12.77,7,,,207.35,834.18,5.41,36.38,260.68,1.83,,,,,,,,,,,2026-08-10
-87,87,Josh Downs,IND,WR,WR39,174.29,24706,https://www.fantasypros.com/nfl/players/josh-downs.php,13,78,76.9,83,,87.19,51,126,16.44,7,,,,,,75.94,736.37,4.29,,,,,,,,,,,2026-08-10
-88,88,Wan'Dale Robinson,TEN,WR,WR40,188.82,22985,https://www.fantasypros.com/nfl/players/wandale-robinson.php,9,71.3,81.6,56,,87.73,45,136,15.50,7,,,,,,82.94,833.76,3.64,,,,,,,,,,,2026-08-10
-89,89,Jordyn Tyson,NO,WR,WR41,172.56,26035,https://www.fantasypros.com/nfl/players/jordyn-tyson.php,8,86.2,84.9,87,,88.02,51,241,26.98,7,,,,,,63.17,857.21,4.34,,,,,,,,,,,2026-08-10
-90,90,Rico Dowdle,PIT,RB,RB31,187.78,19647,https://www.fantasypros.com/nfl/players/rico-dowdle.php,9,86.2,84.8,90,,89.41,66,127,11.80,7,,,206.94,899.74,6.16,32.07,225.67,1.36,,,,,,,,,,,2026-08-10
-91,91,Michael Wilson,ARI,WR,WR42,176.67,25333,https://www.fantasypros.com/nfl/players/michael-wilson.php,14,84,83.2,85,,90.46,62,130,13.49,7,,,,,,67.54,826.59,4.47,,,,,,,,,,,2026-08-10
-92,92,Jaxson Dart,NYG,QB,QB11,311.77,23160,https://www.fantasypros.com/nfl/players/jaxson-dart.php,8,93.3,93.2,95,,91.92,54,114,14.17,7,3595.13,22.63,100.93,549.39,6.54,,,,,,,,,,,,,,2026-08-10
-93,93,RJ Harvey,DEN,RB,RB32,177.94,27142,https://www.fantasypros.com/nfl/players/rj-harvey.php,10,84.6,79.5,87,,92.79,50,145,19.04,7,,,130.45,495.73,4.62,46.6,344.26,3.52,,,,,,,,,,,2026-08-10
-94,94,Brock Purdy,SF,QB,QB12,307.39,19797,https://www.fantasypros.com/nfl/players/brock-purdy.php,8,86.7,85.5,91,,95.95,63,125,10.29,7,4153.92,27.69,70.47,304.09,3.84,,,,,,,,,,,,,,2026-08-10
-95,95,Travis Kelce,KC,TE,TE9,181.82,11594,https://www.fantasypros.com/nfl/players/travis-kelce.php,5,88.9,88.2,93,,98.91,66,138,13.62,7,,,,,,74.92,784.52,4.83,,,,,,,,,,,2026-08-10
-96,96,Jakobi Meyers,JAC,WR,WR43,183.67,18598,https://www.fantasypros.com/nfl/players/jakobi-meyers.php,7,76.2,81.7,67,,100.05,62,149,17.62,7,,,,,,70.6,814.42,5.06,,,,,,,,,,,2026-08-10
-97,97,Quentin Johnston,LAC,WR,WR44,169.73,23123,https://www.fantasypros.com/nfl/players/quentin-johnston.php,7,77.6,72.9,84,,100.51,62,133,15.38,7,,,,,,53.59,755.59,6.87,,,,,,,,,,,2026-08-10
-98,98,Kenny Gainwell,TB,RB,RB33,168.3,23310,https://www.fantasypros.com/nfl/players/kenneth-gainwell.php,10,79.4,81,82,,101.00,75,146,15.00,7,,,113.62,498.49,3.87,49.71,352.16,2.02,,,,,,,,,,,2026-08-10
-99,99,Patrick Mahomes II,KC,QB,QB13,303.66,16413,https://www.fantasypros.com/nfl/players/patrick-mahomes.php,5,88.1,86,91,,101.88,63,125,9.89,7,3833.54,27.38,60.36,359.14,3.41,,,,,,,,,,,,,,2026-08-10
-100,100,Makai Lemon,PHI,WR,WR45,160.76,25420,https://www.fantasypros.com/nfl/players/makai-lemon.php,10,83.9,82.6,84,,102.13,71,232,23.48,8,,,,,,56.28,786.66,4.62,,,,,,,,,,,2026-08-10
-101,101,Bo Nix,DEN,QB,QB14,297.88,22910,https://www.fantasypros.com/nfl/players/bo-nix.php,10,87.3,87,90,,102.43,74,125,7.81,8,3745.05,26.8,79.09,341.2,3.65,,,,,,,,,,,,,,2026-08-10
-102,102,J.K. Dobbins,DEN,RB,RB34,170.64,19245,https://www.fantasypros.com/nfl/players/jk-dobbins.php,10,82.9,81.3,87,,102.98,72,143,15.68,8,,,218.24,1021.11,6.59,17.7,94.26,0.55,,,,,,,,,,,2026-08-10
-103,103,Matthew Stafford,LAR,QB,QB15,293.98,9451,https://www.fantasypros.com/nfl/players/matthew-stafford.php,11,91.1,92.4,92,,103.13,54,134,13.67,8,4190.95,33.98,23.68,33.14,0.2,,,,,,,,,,,,,,2026-08-10
-104,104,Kyle Monangai,CHI,RB,RB35,155.97,27131,https://www.fantasypros.com/nfl/players/kyle-monangai.php,10,82.7,79.1,87,,104.04,78,135,12.78,8,,,191,816.94,5.16,22.89,193.05,0.43,,,,,,,,,,,2026-08-10
-105,105,Jared Goff,DET,QB,QB16,287.66,15501,https://www.fantasypros.com/nfl/players/jared-goff.php,6,74.5,60.6,85,,107.16,62,125,11.75,8,4303.2,31.7,23.74,47.85,0.23,,,,,,,,,,,,,,2026-08-10
-106,106,Rachaad White,WAS,RB,RB36,166.61,23891,https://www.fantasypros.com/nfl/players/rachaad-white.php,7,74.7,79.1,77,,107.20,72,146,15.32,8,,,140.23,618.9,5.36,37.95,262.73,1.66,,,,,,,,,,,2026-08-10
-107,107,Jordan Addison,MIN,WR,WR46,168.87,23107,https://www.fantasypros.com/nfl/players/jordan-addison.php,6,79.8,79.4,81,,107.74,69,170,14.71,8,,,,,,55.16,758.08,5.4,,,,,,,,,,,2026-08-10
-108,108,George Kittle,SF,TE,TE10,170.99,16499,https://www.fantasypros.com/nfl/players/george-kittle.php,8,89.8,89,94,,107.96,73,181,19.20,8,,,,,,64.91,740.23,5.4,,,,,,,,,,,2026-08-10
-109,109,Jayden Reed,GB,WR,WR47,176.43,23020,https://www.fantasypros.com/nfl/players/jayden-reed.php,11,75.3,69.7,81,,108.59,80,149,13.77,8,,,,,,63.15,757.91,4.8,,,,,,,,,,,2026-08-10
-110,110,Blake Corum,LAR,RB,RB37,136.56,23013,https://www.fantasypros.com/nfl/players/blake-corum.php,11,80.5,75.5,87,,109.65,84,146,13.54,8,,,167.65,801.51,6.11,11.9,80.36,0.2,,,,,,,,,,,2026-08-10
-111,111,Jake Ferguson,DAL,TE,TE11,167.59,22718,https://www.fantasypros.com/nfl/players/jake-ferguson.php,14,85.7,86,86,,111.49,73,157,15.46,8,,,,,,74.06,606.7,5.95,,,,,,,,,,,2026-08-10
-112,112,Aaron Jones Sr.,MIN,RB,RB38,168.11,16673,https://www.fantasypros.com/nfl/players/aaron-jones.php,6,77.8,81.9,76,,111.80,77,143,15.01,8,,,160.03,682.82,3.57,41,303.41,1.69,,,,,,,,,,,2026-08-10
-113,113,Kyler Murray,MIN,QB,QB17,280.31,18600,https://www.fantasypros.com/nfl/players/kyler-murray.php,6,65.7,52.3,81,,113.41,74,147,10.95,8,3498.03,23.49,79.64,476.26,3.38,,,,,,,,,,,,,,2026-08-10
-114,114,Dalton Kincaid,BUF,TE,TE12,159.73,25247,https://www.fantasypros.com/nfl/players/dalton-kincaid.php,7,79.4,61.5,90,,113.49,95,158,15.06,8,,,,,,57.09,701.88,5.48,,,,,,,,,,,2026-08-10
-115,115,Jonathon Brooks,CAR,RB,RB39,144.64,26148,https://www.fantasypros.com/nfl/players/jonathon-brooks.php,5,74,74.9,81,,115.02,67,347,39.88,8,,,167.87,678.53,4.33,26.54,204.64,1.11,,,,,,,,,,,2026-08-10
-116,116,Baker Mayfield,TB,QB,QB18,282.48,17237,https://www.fantasypros.com/nfl/players/baker-mayfield.php,10,58.2,44,59,,117.60,92,139,9.03,8,3843.25,25.91,57.69,362.52,1.47,,,,,,,,,,,,,,2026-08-10
-117,117,Jordan Love,GB,QB,QB19,267.71,19246,https://www.fantasypros.com/nfl/players/jordan-love.php,11,53.9,25.6,65,,119.68,98,145,8.88,8,3843.95,26.71,46.46,194.66,0.64,,,,,,,,,,,,,,2026-08-10
-118,118,Jacory Croskey-Merritt,WAS,RB,RB40,143.16,27316,https://www.fantasypros.com/nfl/players/jacory-croskeymerritt.php,7,73.5,69.7,77,,120.90,78,148,13.34,8,,,182.64,821.41,7.48,10.68,79.28,0.17,,,,,,,,,,,2026-08-10
-119,119,Khalil Shakir,BUF,WR,WR48,171.84,23748,https://www.fantasypros.com/nfl/players/khalil-shakir.php,7,59.7,73.7,37,,121.11,82,163,15.99,8,,,,,,72.36,748.71,4.23,,,,,,,,,,,2026-08-10
-120,120,Jayden Higgins,HOU,WR,WR49,137.87,27077,https://www.fantasypros.com/nfl/players/jayden-higgins.php,8,46.8,37,37,,121.82,90,165,13.53,8,,,,,,49.26,607.77,4.72,,,,,,,,,,,2026-08-10
-121,121,Isaiah Likely,NYG,TE,TE13,165.27,23781,https://www.fantasypros.com/nfl/players/isaiah-likely.php,8,82.2,79.6,88,,122.11,85,254,33.11,8,,,,,,62.9,746.4,5.04,,,,,,,,,,,2026-08-10
-122,122,Tyler Shough,NO,QB,QB20,286.38,23096,https://www.fantasypros.com/nfl/players/tyler-shough.php,8,49.2,42.1,44,,122.12,98,169,11.73,8,3981.03,22.14,78.2,329.57,4.1,,,,,,,,,,,,,,2026-08-10
-123,123,Dallas Goedert,PHI,TE,TE14,179.32,17270,https://www.fantasypros.com/nfl/players/dallas-goedert.php,10,85.4,88.3,90,,123.08,87,196,21.37,8,,,,,,65.49,689.16,7.55,,,,,,,,,,,2026-08-10
-124,124,Xavier Worthy,KC,WR,WR50,167.28,23019,https://www.fantasypros.com/nfl/players/xavier-worthy.php,5,68.4,74.6,61,,124.19,90,176,13.48,8,,,,,,55.17,721.61,4.2,,,,,,,,,,,2026-08-10
-125,125,Jordan Mason,MIN,RB,RB41,138.5,22969,https://www.fantasypros.com/nfl/players/jordan-mason.php,6,66,51.5,76,,125.01,89,164,13.95,8,,,181.99,828.77,5.81,14.47,75.79,0.11,,,,,,,,,,,2026-08-10
-126,126,Mark Andrews,BAL,TE,TE15,162.12,17269,https://www.fantasypros.com/nfl/players/mark-andrews.php,13,81.8,80.1,87,,127.38,95,203,20.68,8,,,,,,57.99,604.37,7.37,,,,,,,,,,,2026-08-10
-127,127,Jalen Coker,CAR,WR,WR51,153.38,26403,https://www.fantasypros.com/nfl/players/jalen-coker.php,5,45.7,38.9,34,,127.73,96,166,13.73,8,,,,,,57.62,698.46,4.59,,,,,,,,,,,2026-08-10
-128,128,Romeo Doubs,NE,WR,WR52,160.88,23794,https://www.fantasypros.com/nfl/players/romeo-doubs.php,11,59.7,64.4,43,,129.34,94,174,14.87,8,,,,,,56.67,735.14,5.21,,,,,,,,,,,2026-08-10
-129,129,Malik Willis,MIA,QB,QB21,269.62,23499,https://www.fantasypros.com/nfl/players/malik-willis.php,6,37.6,12.6,44,,130.28,92,242,22.06,8,3368.41,17.68,124.53,641.07,4.12,,,,,,,,,,,,,,2026-08-10
-130,130,KC Concepcion,CLE,WR,WR53,142.66,27331,https://www.fantasypros.com/nfl/players/kevin-concepcion.php,11,59.8,67.1,42,,132.31,82,298,33.44,8,,,,,,54.64,690.27,3.14,,,,,,,,,,,2026-08-10
-131,131,Tyrone Tracy Jr.,NYG,RB,RB42,119.63,22980,https://www.fantasypros.com/nfl/players/tyrone-tracy-jr.php,8,39.2,14.3,43,,133.47,109,162,9.35,8,,,122.77,521.85,2.54,26.33,203.58,1.18,,,,,,,,,,,2026-08-10
-132,132,Matthew Golden,GB,WR,WR54,157.05,26024,https://www.fantasypros.com/nfl/players/matthew-golden.php,11,68,82.9,53,,135.32,91,195,17.12,8,,,,,,55.39,745.94,3.87,,,,,,,,,,,2026-08-10
-133,133,Woody Marks,HOU,RB,RB43,124.34,27520,https://www.fantasypros.com/nfl/players/woody-marks.php,8,51.2,62.5,32,,138.56,99,182,13.99,9,,,142.65,555.73,2.65,24.05,197.67,1.78,,,,,,,,,,,2026-08-10
-134,134,Sam Darnold,SEA,QB,QB22,266.47,17236,https://www.fantasypros.com/nfl/players/sam-darnold.php,11,36.4,16.1,36,,140.09,113,194,11.84,9,4088.48,27.35,44.02,131.86,0.62,,,,,,,,,,,,,,2026-08-10
-135,135,Tyler Allgeier,ARI,RB,RB44,95.29,24172,https://www.fantasypros.com/nfl/players/tyler-allgeier.php,14,39.7,17.2,40,,140.34,102,201,15.87,9,,,111.71,425.06,4.16,17.05,108.44,0.2,,,,,,,,,,,2026-08-10
-136,136,C.J. Stroud,HOU,QB,QB23,260.62,23071,https://www.fantasypros.com/nfl/players/cj-stroud.php,8,31.9,14.9,30,,141.98,113,214,15.74,9,3876.92,23.46,54.02,238.65,1.02,,,,,,,,,,,,,,2026-08-10
-137,137,Tyjae Spears,TEN,RB,RB45,136.36,25323,https://www.fantasypros.com/nfl/players/tyjae-spears.php,9,38.4,36.5,26,,144.23,103,228,17.37,9,,,92.09,367.64,2.9,45.85,305.48,1.2,,,,,,,,,,,2026-08-10
-138,138,Chris Rodriguez Jr.,JAC,RB,RB46,92.75,22986,https://www.fantasypros.com/nfl/players/chris-rodriguez-jr.php,7,40.2,16.9,45,,145.01,116,234,19.63,9,,,133.8,553.1,4.8,5.37,42.48,0.05,,,,,,,,,,,2026-08-10
-139,139,Alvin Kamara,NO,RB,RB47,131.42,16421,https://www.fantasypros.com/nfl/players/alvin-kamara.php,8,46.2,51.7,33,,146.19,99,215,18.23,9,,,127.88,492.21,2.76,35.09,243.17,1.31,,,,,,,,,,,2026-08-10
-140,140,Rashid Shaheed,SEA,WR,WR55,156.71,24687,https://www.fantasypros.com/nfl/players/rashid-shaheed.php,11,43.7,38,35,,146.24,116,178,13.48,9,,,,,,49.93,754.79,3.75,,,,,,,,,,,2026-08-10
-141,141,Juwan Johnson,NO,TE,TE16,154.1,19562,https://www.fantasypros.com/nfl/players/juwan-johnson.php,8,40.1,24.1,37,,146.30,97,203,23.28,9,,,,,,64.5,727.01,3.25,,,,,,,,,,,2026-08-10
-142,142,Zach Charbonnet,SEA,RB,RB48,123.06,23152,https://www.fantasypros.com/nfl/players/zach-charbonnet.php,11,63.1,62.7,62,,145.07,86,245,23.76,9,,,130.53,533.02,5.62,19.78,147.02,0.48,,,,,,,,,,,2026-08-10
-143,143,Dylan Sampson,CLE,RB,RB49,106.28,27102,https://www.fantasypros.com/nfl/players/dylan-sampson.php,11,22.7,5.9,16,,148.23,117,222,15.47,9,,,72.84,250.83,1.35,35.18,278.88,2.07,,,,,,,,,,,2026-08-10
-144,144,Stefon Diggs,WAS,WR,WR56,166.93,13981,https://www.fantasypros.com/nfl/players/stefon-diggs.php,7,66.1,52.6,69,14,128.99,62,272,45.28,9,,,,,,67.37,750.96,4.15,,,,,,,,,,,2026-08-10
-145,145,Chig Okonkwo,WAS,TE,TE17,123.18,23982,https://www.fantasypros.com/nfl/players/chigoziem-okonkwo.php,7,38.6,8.9,51,,152.92,106,261,28.35,9,,,,,,51.44,553.24,2.78,,,,,,,,,,,2026-08-10
-146,146,Cam Ward,TEN,QB,QB24,232.14,24755,https://www.fantasypros.com/nfl/players/cam-ward.php,9,27.2,10.4,21,,153.37,125,242,20.35,9,3587.82,19.81,44.18,185.13,2.01,,,,,,,,,,,,,,2026-08-10
-147,147,Deebo Samuel Sr.,SF,WR,WR57,174.01,18244,https://www.fantasypros.com/nfl/players/deebo-samuel.php,8,57.6,61.2,49,,142.34,76,239,34.40,9,,,,,,60.05,692.32,4.66,,,,,,,,,,,2026-08-10
-148,148,Brenton Strange,JAC,TE,TE18,151.38,25345,https://www.fantasypros.com/nfl/players/brenton-strange.php,7,43.6,14,50,,153.92,106,236,25.54,9,,,,,,60.02,658.01,4.33,,,,,,,,,,,2026-08-10
-149,149,Daniel Jones,IND,QB,QB25,274.52,18232,https://www.fantasypros.com/nfl/players/daniel-jones.php,13,33.1,27.3,27,,154.61,113,242,25.52,9,3759.33,23.53,66.01,251.12,3.97,,,,,,,,,,,,,,2026-08-10
-150,150,Isiah Pacheco,DET,RB,RB50,115.94,24333,https://www.fantasypros.com/nfl/players/isiah-pacheco.php,6,44.3,49.7,33,,152.59,118,219,15.94,9,,,139.19,581.69,3.51,21.05,136.12,0.6,,,,,,,,,,,2026-08-10
-151,151,Jauan Jennings,MIN,WR,WR58,134.01,19590,https://www.fantasypros.com/nfl/players/jauan-jennings.php,6,27.8,9.8,19,,153.34,91,270,27.26,9,,,,,,48.74,557.15,5.17,,,,,,,,,,,2026-08-10
-152,152,Jerry Jeudy,CLE,WR,WR59,141.63,19201,https://www.fantasypros.com/nfl/players/jerry-jeudy.php,11,28.1,28.2,13,,158.21,116,247,22.19,9,,,,,,53.18,725.77,2.86,,,,,,,,,,,2026-08-10
-153,153,Keaton Mitchell,LAC,RB,RB51,70.65,25360,https://www.fantasypros.com/nfl/players/keaton-mitchell.php,7,27.8,6.2,29,,157.09,117,243,25.09,9,,,85.2,394.86,1.9,11.52,82.31,0.23,,,,,,,,,,,2026-08-10
-154,154,Denzel Boston,CLE,WR,WR60,123.7,27339,https://www.fantasypros.com/nfl/players/denzel-boston.php,11,30.8,15.4,21,,161.91,116,309,35.28,9,,,,,,47.8,596.54,2.88,,,,,,,,,,,2026-08-10
-155,155,Hunter Henry,NE,TE,TE19,153.63,15561,https://www.fantasypros.com/nfl/players/hunter-henry.php,11,63,53,60,,165.48,124,230,23.44,9,,,,,,56.25,651.71,5.41,,,,,,,,,,,2026-08-10
-156,156,Bryce Young,CAR,QB,QB26,248.93,22900,https://www.fantasypros.com/nfl/players/bryce-young.php,5,24,7.5,19,,165.84,134,276,22.76,9,3369.61,22.11,58.27,257.49,3.05,,,,,,,,,,,,,,2026-08-10
-157,157,Omar Cooper Jr.,NYJ,WR,WR61,120.47,28127,https://www.fantasypros.com/nfl/players/omar-cooper-jr.php,13,30.6,19.4,18,,165.25,126,301,33.77,9,,,,,,46.33,550.93,3.32,,,,,,,,,,,2026-08-10
-158,158,Adonai Mitchell,NYJ,WR,WR62,124.53,24357,https://www.fantasypros.com/nfl/players/adonai-mitchell.php,13,17.7,7.2,11,,169.08,126,284,27.28,9,,,,,,41.53,610.83,3.52,,,,,,,,,,,2026-08-10
-159,159,Jonah Coleman,DEN,RB,RB52,32.68,27320,https://www.fantasypros.com/nfl/players/jonah-coleman.php,10,26.5,3.6,23,,165.47,120,352,37.22,9,,,28.28,117.94,0.89,8.05,58.56,0.3,,,,,,,,,,,2026-08-10
-160,160,Tank Bigsby,PHI,RB,RB53,67.27,22908,https://www.fantasypros.com/nfl/players/tank-bigsby.php,10,25.8,14.1,20,,171.71,133,256,24.24,9,,,85.63,419.12,3.19,3.31,29.34,0.07,,,,,,,,,,,2026-08-10
-161,161,Brian Robinson Jr.,ATL,RB,RB54,93.13,20094,https://www.fantasypros.com/nfl/players/brian-robinson-jr.php,11,32.9,14.4,20,,171.90,135,242,20.10,9,,,129.83,565.1,4.35,6.87,43.05,0.15,,,,,,,,,,,2026-08-10
-162,162,Jalen McMillan,TB,WR,WR63,133.92,23179,https://www.fantasypros.com/nfl/players/jalen-mcmillan.php,10,28,19.1,20,,169.49,126,293,27.26,9,,,,,,46.65,607.13,3.94,,,,,,,,,,,2026-08-10
-163,163,Houston Texans,HOU,D/ST,DST1,121.2,8120,https://www.fantasypros.com/nfl/players/houston-defense.php,8,96.4,96,99,,153.52,146,183,6.19,9,,,,,,,,,,,,49.57,14.77,2.81,1,18.33,11.61,1,2026-08-10
-164,164,Oronde Gadsden II,LAC,TE,TE20,118.79,25997,https://www.fantasypros.com/nfl/players/oronde-gadsden-ii.php,7,46.5,9.3,51,,172.75,97,254,37.41,9,,,,,,44.2,549.88,3.49,,,,,,,,,,,2026-08-10
-165,165,Tre Tucker,LV,WR,WR64,141.99,25337,https://www.fantasypros.com/nfl/players/tre-tucker.php,13,20.9,13.5,12,,173.31,88,287,29.69,9,,,,,,50.11,633.73,3.76,,,,,,,,,,,2026-08-10
-166,166,Travis Hunter,JAC,WR,WR65,111.64,26034,https://www.fantasypros.com/nfl/players/travis-hunter.php,7,66.5,72.6,27,,169.44,96,292,32.50,9,,,,,,41.61,496.09,3.3,,,,,,,,,,,2026-08-10
-167,167,Dalton Schultz,HOU,TE,TE21,148.59,17349,https://www.fantasypros.com/nfl/players/dalton-schultz.php,8,28.1,10.8,18,,177.92,97,236,25.79,9,,,,,,65.82,629.49,3.36,,,,,,,,,,,2026-08-10
-168,168,Tre' Harris,LAC,WR,WR66,89.4,26215,https://www.fantasypros.com/nfl/players/tre-harris.php,7,14.4,3.4,5,,183.33,136,296,29.73,10,,,,,,34.51,408.31,2.46,,,,,,,,,,,2026-08-10
-169,169,Braelon Allen,NYJ,RB,RB55,85.96,24346,https://www.fantasypros.com/nfl/players/braelon-allen.php,13,18.5,6,12,,179.93,132,278,31.57,10,,,97.27,391.32,3.95,12.86,93.76,0.71,,,,,,,,,,,2026-08-10
-170,170,Denver Broncos,DEN,D/ST,DST2,118.14,8090,https://www.fantasypros.com/nfl/players/denver-defense.php,10,94.8,97.7,99,,163.13,150,201,6.80,10,,,,,,,,,,,,59.62,13.31,2.39,0.5,12.25,8.27,1,2026-08-10
-171,171,De'Zhaun Stribling,SF,WR,WR67,128.86,28138,https://www.fantasypros.com/nfl/players/dezhaun-stribling.php,8,21.8,9.5,13,,187.71,121,312,47.24,10,,,,,,45.07,635.16,3.67,,,,,,,,,,,2026-08-10
-172,172,Ryan Flournoy,DAL,WR,WR68,89.37,26398,https://www.fantasypros.com/nfl/players/ryan-flournoy.php,14,13.9,3.3,7,,184.39,147,316,26.05,10,,,,,,33.94,383.77,2.66,,,,,,,,,,,2026-08-10
-173,173,Jacoby Brissett,ARI,QB,QB27,232.37,15642,https://www.fantasypros.com/nfl/players/jacoby-brissett.php,14,16.6,3.1,10,,189.24,129,285,37.04,10,3592.02,19.68,48.73,214.1,1.44,,,,,,,,,,,,,,2026-08-10
-174,174,Seattle Seahawks,SEA,D/ST,DST3,110.89,8260,https://www.fantasypros.com/nfl/players/seattle-defense.php,11,95.9,92.3,99,,167.70,151,189,4.93,10,,,,,,,,,,,,46.5,13.6,3.23,0.5,13.58,8.42,1,2026-08-10
-175,175,Los Angeles Rams,LAR,D/ST,DST4,107.46,8280,https://www.fantasypros.com/nfl/players/los-angeles-rams-defense.php,11,86.6,67,98,,168.39,149,190,7.33,10,,,,,,,,,,,,46.5,13.42,2.36,0.5,14.48,9.47,1,2026-08-10
-176,176,T.J. Hockenson,MIN,TE,TE22,140.64,18290,https://www.fantasypros.com/nfl/players/tj-hockenson.php,6,49.9,69.6,25,,191.77,138,246,22.96,10,,,,,,63.9,574.47,3.27,,,,,,,,,,,2026-08-10
-177,177,Philadelphia Eagles,PHI,D/ST,DST5,102.77,8230,https://www.fantasypros.com/nfl/players/philadelphia-defense.php,10,85.3,71.5,95,,174.56,161,235,9.01,10,,,,,,,,,,,,42.43,12.97,2.4,0,14.39,10,1,2026-08-10
-178,178,Kayshon Boutte,NE,WR,WR69,105.47,22989,https://www.fantasypros.com/nfl/players/kayshon-boutte.php,11,14.6,3.2,6,,189.78,133,270,26.39,10,,,,,,31.96,486.22,4.19,,,,,,,,,,,2026-08-10
-179,179,Kimani Vidal,LAC,RB,RB56,61.05,26355,https://www.fantasypros.com/nfl/players/kimani-vidal.php,7,12.8,2,4,,194.77,148,284,33.09,10,,,62.22,251.01,1.61,11.92,104.34,0.69,,,,,,,,,,,2026-08-10
-180,180,Sean Tucker,TB,RB,RB57,35.17,23679,https://www.fantasypros.com/nfl/players/sean-tucker.php,10,11.1,0.8,4,,195.74,130,362,36.68,10,,,38.83,163.83,2.72,1.5,10.21,0.04,,,,,,,,,,,2026-08-10
-181,181,Emmett Johnson,KC,RB,RB58,34.54,28107,https://www.fantasypros.com/nfl/players/emmett-johnson.php,5,18.6,2.3,7,,196.74,151,363,40.86,10,,,39.73,165.65,1.29,5.2,41.09,0.2,,,,,,,,,,,2026-08-10
-182,182,James Conner,ARI,RB,RB59,61.45,16447,https://www.fantasypros.com/nfl/players/james-conner.php,14,20,7,9,,187.53,99,326,43.10,10,,,42.5,153.5,1.5,18,131,1,,,,,,,,,,,2026-08-10
-183,183,Jalen Nailor,LV,WR,WR70,130.25,24177,https://www.fantasypros.com/nfl/players/jalen-nailor.php,13,26.1,7.7,19,,197.47,110,305,44.27,10,,,,,,43.58,589.87,4.51,,,,,,,,,,,2026-08-10
-184,184,Brandon Aubrey,DAL,K,K1,152.98,26068,https://www.fantasypros.com/nfl/players/brandon-aubrey.php,14,98.7,99.7,100,,186.46,166,193,2.90,10,,,,,,,,,39.88,35.16,47.5,,,,,,,,2026-08-10
-185,185,Ray Davis,BUF,RB,RB60,35.84,26191,https://www.fantasypros.com/nfl/players/ray-davis.php,7,14.7,6.2,8,,199.24,145,311,33.72,10,,,32.3,137.77,1.06,7.75,59.95,0.39,,,,,,,,,,,2026-08-10
-186,186,Calvin Ridley,TEN,WR,WR71,152.43,17258,https://www.fantasypros.com/nfl/players/calvin-ridley.php,9,17.7,22,5,,201.77,137,316,34.52,10,,,,,,48.11,785.29,3.29,,,,,,,,,,,2026-08-10
-187,187,Troy Franklin,DEN,WR,WR72,100.12,23092,https://www.fantasypros.com/nfl/players/troy-franklin.php,10,11.2,1.9,3,,195.32,109,319,38.27,10,,,,,,37.01,396.42,3.89,,,,,,,,,,,2026-08-10
-188,188,Dontayvion Wicks,PHI,WR,WR73,65.46,24354,https://www.fantasypros.com/nfl/players/dontayvion-wicks.php,10,8.4,1.9,3,,202.97,137,268,25.81,10,,,,,,24.26,310.01,1.79,,,,,,,,,,,2026-08-10
-189,189,Malik Washington,MIA,WR,WR74,107.05,26314,https://www.fantasypros.com/nfl/players/malik-washington.php,6,15.6,4.2,8,,201.45,128,291,38.60,10,,,,,,43.52,390.53,2.29,,,,,,,,,,,2026-08-10
-190,190,AJ Barner,SEA,TE,TE23,124.35,26335,https://www.fantasypros.com/nfl/players/aj-barner.php,11,25.6,5.7,18,,208.24,138,256,24.08,10,,,,,,48.57,469.57,4.88,,,,,,,,,,,2026-08-10
-191,191,Jaylin Noel,HOU,WR,WR75,74.21,27122,https://www.fantasypros.com/nfl/players/jaylin-noel.php,8,9,2,4,,197.59,137,298,32.74,10,,,,,,28.75,322.6,1.81,,,,,,,,,,,2026-08-10
-192,192,Pittsburgh Steelers,PIT,D/ST,DST6,113.36,8240,https://www.fantasypros.com/nfl/players/pittsburgh-defense.php,9,66.9,74.8,73,,187.67,167,240,7.81,10,,,,,,,,,,,,45.94,13.58,2.43,0,18.82,12.84,1,2026-08-10
-193,193,Minnesota Vikings,MIN,D/ST,DST7,112.61,8170,https://www.fantasypros.com/nfl/players/minnesota-defense.php,6,62.8,44.8,84,,185.91,171,255,10.86,10,,,,,,,,,,,,49.26,12.55,2.35,0,18.11,12.08,1,2026-08-10
-194,194,New England Patriots,NE,D/ST,DST8,98.16,8180,https://www.fantasypros.com/nfl/players/new-england-defense.php,11,80.9,88.7,86,,186.33,167,279,12.63,10,,,,,,,,,,,,40.73,11.6,2.56,0.5,12.47,8.94,2,2026-08-10
-195,195,Jacksonville Jaguars,JAC,D/ST,DST9,99.03,8140,https://www.fantasypros.com/nfl/players/jacksonville-defense.php,7,68.2,70,78,,189.51,171,279,14.29,10,,,,,,,,,,,,37.12,13.86,2.61,0,13.72,9.26,0,2026-08-10
-196,196,Los Angeles Chargers,LAC,D/ST,DST10,107.67,8250,https://www.fantasypros.com/nfl/players/los-angeles-chargers-defense.php,7,45.3,39.3,64,,191.86,172,279,13.10,10,,,,,,,,,,,,48.57,15.27,1.98,0,12.64,8.33,0,2026-08-10
-197,197,Kenyon Sadiq,NYJ,TE,TE24,130.06,26055,https://www.fantasypros.com/nfl/players/kenyon-sadiq.php,13,57.7,70.6,32,,212.53,138,390,40.71,10,,,,,,51.08,558.39,4.1,,,,,,,,,,,2026-08-10
-198,198,Darnell Mooney,NYG,WR,WR76,103.55,19810,https://www.fantasypros.com/nfl/players/darnell-mooney.php,8,11.4,7.4,3,,206.46,142,297,25.34,10,,,,,,35.33,517.22,2.66,,,,,,,,,,,2026-08-10
-199,199,Pat Bryant,DEN,WR,WR77,72.46,27211,https://www.fantasypros.com/nfl/players/pat-bryant.php,10,10,1.7,2,,209.05,163,291,27.34,10,,,,,,28.42,319.64,2.11,,,,,,,,,,,2026-08-10
-200,200,Ka'imi Fairbairn,HOU,K,K2,144.46,15756,https://www.fantasypros.com/nfl/players/kaimi-fairbairn.php,8,91.3,92,97,,192.33,181,204,2.87,10,,,,,,,,,40.46,36.3,35.56,,,,,,,,2026-08-10
-201,201,Cameron Dicker,LAC,K,K3,144.12,23901,https://www.fantasypros.com/nfl/players/cameron-dicker.php,7,97.2,99.1,98,,195.00,186,253,7.60,10,,,,,,,,,38.27,34.65,40.17,,,,,,,,2026-08-10
-202,202,Isaac TeSlaa,DET,WR,WR78,85.02,27446,https://www.fantasypros.com/nfl/players/isaac-teslaa.php,6,17.3,4.7,12,,204.77,161,278,26.31,10,,,,,,25.37,352,4.12,,,,,,,,,,,2026-08-10
-203,203,Emanuel Wilson,SEA,RB,RB61,51.22,25885,https://www.fantasypros.com/nfl/players/emanuel-wilson.php,11,11.2,1.2,5,,208.36,141,299,36.19,10,,,69.71,289.99,1.71,7.68,52.13,0.03,,,,,,,,,,,2026-08-10
-204,204,Cam Little,JAC,K,K4,129.88,26475,https://www.fantasypros.com/nfl/players/cam-little.php,7,88.4,87.9,97,,199.11,182,282,11.19,10,,,,,,,,,32.45,28.78,43.55,,,,,,,,2026-08-10
-205,205,Gunnar Helm,TEN,TE,TE25,111.43,27109,https://www.fantasypros.com/nfl/players/gunnar-helm.php,9,15.1,4,4,,219.58,148,334,30.49,10,,,,,,48.91,443.04,3.1,,,,,,,,,,,2026-08-10
-206,206,Mike Washington Jr.,LV,RB,RB62,77.71,28108,https://www.fantasypros.com/nfl/players/mike-washington-jr.php,13,17.5,7,7,,208.80,143,366,38.31,10,,,92.81,352.52,2.12,15.18,121.43,0.64,,,,,,,,,,,2026-08-10
-207,207,Baltimore Ravens,BAL,D/ST,DST11,102.53,8020,https://www.fantasypros.com/nfl/players/baltimore-defense.php,13,54.3,43.4,48,,199.33,161,280,17.31,10,,,,,,,,,,,,45.96,13.12,1.96,0,14.05,9.29,1,2026-08-10
-208,208,Jason Myers,SEA,K,K5,150.4,14003,https://www.fantasypros.com/nfl/players/jason-myers.php,11,92.6,97.3,95,,200.49,188,253,8.20,10,,,,,,,,,39.62,34.7,46.31,,,,,,,,2026-08-10
-209,209,Rashod Bateman,BAL,WR,WR79,141.16,19794,https://www.fantasypros.com/nfl/players/rashod-bateman.php,13,8,5.3,2,,221.15,154,296,27.42,10,,,,,,40.35,622.46,6.48,,,,,,,,,,,2026-08-10
-210,210,Nicholas Singleton,TEN,RB,RB63,19.68,24343,https://www.fantasypros.com/nfl/players/nick-singleton.php,9,17.1,2.5,7,,216.39,143,348,43.48,11,,,20.27,83.43,0.55,4.29,29.9,0.16,,,,,,,,,,,2026-08-10
-211,211,Antonio Williams,WAS,WR,WR80,104.58,25418,https://www.fantasypros.com/nfl/players/antonio-williams-wr.php,7,19.3,6.6,9,,209.67,123,328,45.99,11,,,,,,35.47,501.32,3.14,,,,,,,,,,,2026-08-10
-212,212,Eddy Pineiro,SF,K,K6,132.62,17575,https://www.fantasypros.com/nfl/players/eddy-pineiro.php,8,60.6,80.6,58,,207.63,195,250,7.94,11,,,,,,,,,34.69,31.04,39.5,,,,,,,,2026-08-10
-213,213,Tyler Loop,BAL,K,K7,132,27534,https://www.fantasypros.com/nfl/players/tyler-loop.php,13,54,49.4,79,,208.51,187,260,11.39,11,,,,,,,,,32.48,28.43,46.72,,,,,,,,2026-08-10
-214,214,Cooper Kupp,SEA,WR,WR81,125.15,16433,https://www.fantasypros.com/nfl/players/cooper-kupp.php,11,12.6,8.5,5,,220.62,140,298,31.43,11,,,,,,47.43,584.36,3.41,,,,,,,,,,,2026-08-10
-215,215,Tank Dell,HOU,WR,WR82,141.25,25361,https://www.fantasypros.com/nfl/players/nathaniel-dell.php,8,19.7,13.8,7,,218.65,165,312,28.54,11,,,,,,49.98,631.97,3.83,,,,,,,,,,,2026-08-10
-216,216,Green Bay Packers,GB,D/ST,DST12,95.33,8110,https://www.fantasypros.com/nfl/players/green-bay-defense.php,11,30,49.8,22,,202.33,179,280,22.11,11,,,,,,,,,,,,40.45,11.93,1.93,0,13.54,9.73,1,2026-08-10
-217,217,Geno Smith,NYJ,QB,QB28,234.57,11687,https://www.fantasypros.com/nfl/players/geno-smith.php,13,14.3,2.9,6,,229.45,147,309,30.91,11,3457.36,22.11,57.34,209.63,1.01,,,,,,,,,,,,,,2026-08-10
-218,218,Aaron Rodgers,PIT,QB,QB29,224.46,9001,https://www.fantasypros.com/nfl/players/aaron-rodgers.php,9,17.2,4.9,11,,222.34,129,343,43.66,11,3480.9,22.02,26.04,82.52,0.63,,,,,,,,,,,,,,2026-08-10
-219,219,Kansas City Chiefs,KC,D/ST,DST13,93.26,8150,https://www.fantasypros.com/nfl/players/kansas-city-defense.php,5,23,33.5,14,,211.62,179,279,18.26,11,,,,,,,,,,,,42.06,12.03,1.87,0,12.29,7.96,0,2026-08-10
-220,220,Cairo Santos,CHI,K,K8,132.85,13731,https://www.fantasypros.com/nfl/players/cairo-santos.php,10,26.2,32.2,29,,215.56,197,282,11.41,11,,,,,,,,,34.49,29.99,42.88,,,,,,,,2026-08-10
-221,221,Detroit Lions,DET,D/ST,DST14,107.45,8100,https://www.fantasypros.com/nfl/players/detroit-defense.php,6,57,75.5,44,,218.87,185,280,20.26,11,,,,,,,,,,,,48,13.43,2.15,0.5,14.42,9.33,1,2026-08-10
-222,222,Evan McPherson,CIN,K,K9,128.73,23297,https://www.fantasypros.com/nfl/players/evan-mcpherson.php,6,41.6,12.9,62,,214.66,187,261,13.24,11,,,,,,,,,32.15,27.67,45.71,,,,,,,,2026-08-10
-223,223,Jake Bates,DET,K,K10,135.91,26075,https://www.fantasypros.com/nfl/players/jake-bates.php,6,63.9,71.9,68,,224.16,192,258,15.39,11,,,,,,,,,33.81,28.28,51.08,,,,,,,,2026-08-10
-224,224,MarShawn Lloyd,GB,RB,RB64,43.21,23118,https://www.fantasypros.com/nfl/players/marshawn-lloyd.php,11,9.6,3,7,,230.58,148,330,49.40,11,,,50.62,211.69,1.55,6.53,48.53,0.28,,,,,,,,,,,2026-08-10
-225,225,Andy Borregales,NE,K,K11,121.33,27291,https://www.fantasypros.com/nfl/players/andres-borregales.php,11,28.6,3.6,37,,219.17,183,283,15.73,11,,,,,,,,,31.21,26.13,42.95,,,,,,,,2026-08-10
-226,226,Zachariah Branch,ATL,WR,WR83,98.61,25419,https://www.fantasypros.com/nfl/players/zachariah-branch.php,11,17.3,5.2,5,,230.34,142,313,35.27,11,,,,,,38.34,471.32,2.32,,,,,,,,,,,2026-08-10
-227,227,Kaytron Allen,WAS,RB,RB65,21.47,24362,https://www.fantasypros.com/nfl/players/kaytron-allen.php,7,13,1.7,5,,224.99,155,324,36.65,11,,,23.63,110.83,0.72,3.03,25.69,0.1,,,,,,,,,,,2026-08-10
-228,228,Jaydon Blue,DAL,RB,RB66,46.5,24344,https://www.fantasypros.com/nfl/players/jaydon-blue.php,14,10.6,2.4,6,,231.93,135,319,47.78,11,,,48.65,205.04,1.53,8.76,61.81,0.39,,,,,,,,,,,2026-08-10
-229,229,Jaylen Wright,MIA,RB,RB67,50.55,25987,https://www.fantasypros.com/nfl/players/jaylen-wright.php,6,8.6,1.3,2,,228.21,158,301,25.39,11,,,79.92,308.03,1.54,7.24,51.98,0.1,,,,,,,,,,,2026-08-10
-230,230,Pat Freiermuth,PIT,TE,TE26,133.9,20163,https://www.fantasypros.com/nfl/players/pat-freiermuth.php,9,15.1,8.9,7,,240.77,155,306,24.88,11,,,,,,52.96,558.28,4.26,,,,,,,,,,,2026-08-10
-231,231,Cade Otton,TB,TE,TE27,129.31,23181,https://www.fantasypros.com/nfl/players/cade-otton.php,10,15.3,2.8,4,,243.24,196,290,20.80,11,,,,,,55.19,557.94,3.1,,,,,,,,,,,2026-08-10
-232,232,Terrance Ferguson,LAR,TE,TE28,114.84,23091,https://www.fantasypros.com/nfl/players/terrance-ferguson.php,11,18.8,13.2,9,,235.65,155,320,25.83,11,,,,,,36.32,500.36,4.8,,,,,,,,,,,2026-08-10
-233,233,Chimere Dike,TEN,WR,WR84,74.79,27315,https://www.fantasypros.com/nfl/players/chimere-dike.php,9,9.5,1.6,3,,228.24,142,312,38.79,11,,,,,,26.05,252.85,3.26,,,,,,,,,,,2026-08-10
-234,234,Germie Bernard,PIT,WR,WR85,118.06,26039,https://www.fantasypros.com/nfl/players/germie-bernard.php,9,13.3,9,3,,233.20,173,319,34.33,11,,,,,,44.56,550.82,3.1,,,,,,,,,,,2026-08-10
-235,235,Cleveland Browns,CLE,D/ST,DST15,101.56,8070,https://www.fantasypros.com/nfl/players/cleveland-defense.php,11,22,50.9,7,,215.22,167,356,34.87,11,,,,,,,,,,,,46.55,12.13,2.25,0,12.81,8.63,0,2026-08-10
-236,236,Chase McLaughlin,TB,K,K12,132.94,19058,https://www.fantasypros.com/nfl/players/chase-mclaughlin.php,10,17.3,17.1,14,,225.48,196,287,17.94,11,,,,,,,,,36.49,31.52,38.37,,,,,,,,2026-08-10
-237,237,Harrison Mevis,LAR,K,K13,136.88,26638,https://www.fantasypros.com/nfl/players/harrison-mevis.php,11,67.5,91.6,48,,230.68,196,282,21.11,11,,,,,,,,,30.15,27.32,54.93,,,,,,,,2026-08-10
-238,238,Buffalo Bills,BUF,D/ST,DST16,106.73,8030,https://www.fantasypros.com/nfl/players/buffalo-defense.php,7,29.2,63.5,15,,227.13,189,280,18.95,11,,,,,,,,,,,,42.81,14.59,2.43,0.5,12.71,9.59,0,2026-08-10
-239,239,Ollie Gordon II,MIA,RB,RB68,34.64,25984,https://www.fantasypros.com/nfl/players/ollie-gordon.php,6,3.7,1.2,2,,240.59,169,301,24.66,11,,,49.39,202.79,1.21,3.94,27.76,0.12,,,,,,,,,,,2026-08-10
-240,240,Jack Bech,LV,WR,WR86,82.48,27224,https://www.fantasypros.com/nfl/players/jack-bech.php,13,7.5,2.5,2,,240.33,149,331,30.04,11,,,,,,34.52,397.78,1.48,,,,,,,,,,,2026-08-10
-241,241,Greg Dulcich,MIA,TE,TE29,133.53,23153,https://www.fantasypros.com/nfl/players/greg-dulcich.php,6,14.8,3.3,12,,204.68,131,306,40.31,11,,,,,,54.59,620.33,3.21,,,,,,,,,,,2026-08-10
-242,242,Elic Ayomanor,TEN,WR,WR87,75.46,27059,https://www.fantasypros.com/nfl/players/elic-ayomanor.php,9,7.5,0.4,1,,239.30,165,346,36.78,11,,,,,,23.95,323.45,3.21,,,,,,,,,,,2026-08-10
-243,243,David Njoku,LAC,TE,TE30,90.44,16399,https://www.fantasypros.com/nfl/players/david-njoku.php,7,15.9,4,7,,245.24,173,299,23.80,11,,,,,,34.66,323.89,3.93,,,,,,,,,,,2026-08-10
-244,244,Justice Hill,BAL,RB,RB69,115.88,18256,https://www.fantasypros.com/nfl/players/justice-hill.php,13,7.3,5.3,2,,237.78,145,310,41.12,11,,,56.39,274.1,2.18,34.73,300.79,1.84,,,,,,,,,,,2026-08-10
-245,245,Keon Coleman,BUF,WR,WR88,59.12,26019,https://www.fantasypros.com/nfl/players/keon-coleman.php,7,7.7,2.2,2,,240.95,136,331,34.62,11,,,,,,19.4,265.95,2.25,,,,,,,,,,,2026-08-10
-246,246,Harrison Butker,KC,K,K14,131.76,16712,https://www.fantasypros.com/nfl/players/harrison-butker.php,5,40.8,73.4,18,,240.64,187,313,23.60,11,,,,,,,,,36.56,31.28,37.93,,,,,,,,2026-08-10
-247,247,Evan Engram,DEN,TE,TE31,116.74,16411,https://www.fantasypros.com/nfl/players/evan-engram.php,10,8.3,3.2,3,,255.32,196,300,20.71,11,,,,,,53.44,472.16,2.73,,,,,,,,,,,2026-08-10
-248,248,Fernando Mendoza,LV,QB,QB30,193.08,28013,https://www.fantasypros.com/nfl/players/fernando-mendoza.php,13,26.1,12.5,13,,254.29,159,345,38.34,11,2888.48,16.06,50.37,227.09,1.3,,,,,,,,,,,,,,2026-08-10
-249,249,Chris Boswell,PIT,K,K15,118.24,13029,https://www.fantasypros.com/nfl/players/chris-boswell.php,9,34.8,38.3,32,,241.89,198,253,15.66,11,,,,,,,,,32.37,28.12,33.87,,,,,,,,2026-08-10
-250,250,Isaiah Davis,NYJ,RB,RB70,43.3,25977,https://www.fantasypros.com/nfl/players/isaiah-davis.php,13,2.9,0.5,1,,247.17,171,322,30.56,11,,,35.05,174.58,1.16,9.94,78.19,0.21,,,,,,,,,,,2026-08-10
-251,251,Colby Parkinson,LAR,TE,TE32,91.9,19372,https://www.fantasypros.com/nfl/players/colby-parkinson.php,11,11.6,1.8,2,,257.55,181,353,23.30,11,,,,,,34.34,354.37,3.89,,,,,,,,,,,2026-08-10
-252,252,Tua Tagovailoa,ATL,QB,QB31,164.54,19198,https://www.fantasypros.com/nfl/players/tua-tagovailoa.php,11,13.5,2.1,5,,265.09,153,346,33.66,11,2724.29,15.81,19.63,46.64,0.09,,,,,,,,,,,,,,2026-08-10
-253,253,Tory Horton,SEA,WR,WR89,93.92,26022,https://www.fantasypros.com/nfl/players/tory-horton.php,11,9.6,1.7,2,,252.16,184,334,25.83,11,,,,,,29.81,401.01,4.16,,,,,,,,,,,2026-08-10
-254,254,George Holani,SEA,RB,RB71,41.13,22915,https://www.fantasypros.com/nfl/players/george-holani.php,11,5.3,3.6,2,,253.48,160,364,41.88,11,,,38.86,164.19,1.53,8.01,62.21,0.28,,,,,,,,,,,2026-08-10
-255,255,Ty Johnson,BUF,RB,RB72,96.29,18406,https://www.fantasypros.com/nfl/players/ty-johnson.php,7,2.9,1.1,1,,251.56,156,385,36.02,11,,,51.58,218.39,2.04,24.88,251,2.1,,,,,,,,,,,2026-08-10
-256,256,Demond Claiborne,MIN,RB,RB73,23.9,28084,https://www.fantasypros.com/nfl/players/demond-claiborne.php,6,9.9,1.3,3,,251.71,157,367,40.71,11,,,26.32,110.13,0.78,4.5,29.44,0.17,,,,,,,,,,,2026-08-10
-257,257,Malachi Fields,NYG,WR,WR90,34.02,27994,https://www.fantasypros.com/nfl/players/malachi-fields.php,8,9.6,1.2,3,,254.40,196,379,34.90,12,,,,,,13.21,157.46,0.89,,,,,,,,,,,2026-08-10
-258,258,Chris Bell,MIA,WR,WR91,88.38,26038,https://www.fantasypros.com/nfl/players/chris-bell.php,6,13.1,3.8,6,,246.34,150,311,36.41,12,,,,,,34.23,448.86,1.66,,,,,,,,,,,2026-08-10
-259,259,Elijah Sarratt,BAL,WR,WR92,50.6,27463,https://www.fantasypros.com/nfl/players/elijah-sarratt.php,13,8.8,0.8,2,,254.82,198,334,24.46,12,,,,,,16.73,250.9,1.52,,,,,,,,,,,2026-08-10
-260,260,Christian Kirk,SF,WR,WR93,94.95,17268,https://www.fantasypros.com/nfl/players/christian-kirk.php,8,7.2,2.2,2,,251.93,178,324,29.15,12,,,,,,36.11,428,2.7,,,,,,,,,,,2026-08-10
-261,261,Jordan James,SF,RB,RB74,91.73,27310,https://www.fantasypros.com/nfl/players/jordan-james.php,8,9.1,3.2,4,,266.71,160,401,41.56,12,,,100.09,407.1,3.08,16.09,148.02,0.67,,,,,,,,,,,2026-08-10
-262,262,Mason Taylor,NYJ,TE,TE33,97.7,26005,https://www.fantasypros.com/nfl/players/mason-taylor.php,13,9.5,0.5,2,,268.58,196,336,29.09,12,,,,,,44.53,390.86,2.38,,,,,,,,,,,2026-08-10
-263,263,DJ Giddens,IND,RB,RB75,35.89,27097,https://www.fantasypros.com/nfl/players/dj-giddens.php,13,2.4,0.6,1,,265.80,177,329,27.05,12,,,33.56,141.46,1.01,8.54,56.83,0.3,,,,,,,,,,,2026-08-10
-264,264,Eli Stowers,PHI,TE,TE34,53.87,23144,https://www.fantasypros.com/nfl/players/eli-stowers.php,10,14,1.4,4,,269.29,158,372,35.57,12,,,,,,22.66,232.45,1.52,,,,,,,,,,,2026-08-10
-265,265,Ted Hurst III,TB,WR,WR94,82.74,28130,https://www.fantasypros.com/nfl/players/ted-hurst.php,10,9.4,1,2,-13,255.23,197,340,31.49,12,,,,,,28.9,390.02,2.57,,,,,,,,,,,2026-08-10
-266,266,Darius Slayton,NYG,WR,WR95,98.92,18706,https://www.fantasypros.com/nfl/players/darius-slayton.php,8,3.9,1.6,1,,263.30,178,371,29.96,12,,,,,,34.26,504.09,2.42,,,,,,,,,,,2026-08-10
-267,267,Tyquan Thornton,KC,WR,WR96,92.69,22913,https://www.fantasypros.com/nfl/players/tyquan-thornton.php,5,3.5,0.7,1,,265.32,170,338,31.71,12,,,,,,25.4,466.31,3.48,,,,,,,,,,,2026-08-10
-268,268,Chris Brooks,GB,RB,RB76,66.89,25823,https://www.fantasypros.com/nfl/players/christopher-brooks.php,11,4.5,0.7,3,,263.65,157,318,31.20,12,,,72.71,323.26,1.31,15.37,107.48,0.29,,,,,,,,,,,2026-08-10
-269,269,Marvin Mims Jr.,DEN,WR,WR97,66.73,23080,https://www.fantasypros.com/nfl/players/marvin-mims.php,10,6.5,0.8,2,,258.22,204,397,28.27,12,,,,,,24.16,272.43,1.61,,,,,,,,,,,2026-08-10
-270,270,Xavier Legette,CAR,WR,WR98,111.65,26136,https://www.fantasypros.com/nfl/players/xavier-legette.php,5,3,2.5,1,,257.30,178,326,33.64,12,,,,,,41.72,500.5,3.21,,,,,,,,,,,2026-08-10
-271,271,Wil Lutz,DEN,K,K16,128.41,16026,https://www.fantasypros.com/nfl/players/wil-lutz.php,10,7.1,4.5,7,,267.34,204,333,29.51,12,,,,,,,,,33.67,28.99,41.45,,,,,,,,2026-08-10
-272,272,Samaje Perine,CIN,RB,RB77,96.25,16423,https://www.fantasypros.com/nfl/players/samaje-perine.php,6,4,2.4,2,,269.28,156,414,44.11,12,,,98.92,443.51,3.68,17.88,135.65,0.37,,,,,,,,,,,2026-08-10
-273,273,Theo Johnson,NYG,TE,TE35,75.97,23104,https://www.fantasypros.com/nfl/players/theo-johnson.php,8,8.9,0.9,1,,273.16,181,357,28.55,12,,,,,,27.52,313.87,2.87,,,,,,,,,,,2026-08-10
-274,274,LeQuint Allen Jr.,JAC,RB,RB78,45.76,27285,https://www.fantasypros.com/nfl/players/lequint-allen-jr.php,7,4,0.7,1,,265.44,160,338,31.66,12,,,8.03,33.91,0.19,21.67,147.99,0.84,,,,,,,,,,,2026-08-10
-275,275,Will Reichard,MIN,K,K17,130.71,26341,https://www.fantasypros.com/nfl/players/will-reichard.php,6,29,29.9,15,,259.49,193,333,34.53,12,,,,,,,,,34.17,30.9,38.02,,,,,,,,2026-08-10
-276,276,Brandon Aiyuk,SF,WR,WR99,,19252,https://www.fantasypros.com/nfl/players/brandon-aiyuk.php,8,14.4,5,9,,232.56,128,385,56.39,12,,,,,,,,,,,,,,,,,,,2026-08-10
-277,277,Devaughn Vele,NO,WR,WR100,94.24,26409,https://www.fantasypros.com/nfl/players/devaughn-vele.php,8,5.6,1.3,1,,267.89,210,315,23.22,12,,,,,,35.08,423.34,2.84,,,,,,,,,,,2026-08-10
-278,278,Michael Penix Jr.,ATL,QB,QB32,83.6,22973,https://www.fantasypros.com/nfl/players/michael-penix-jr.php,11,10.9,1,4,,285.38,218,347,24.59,12,1350.43,7.18,13.45,46.95,0.3,,,,,,,,,,,,,,2026-08-10
-279,279,San Francisco 49ers,SF,D/ST,DST17,88.12,8270,https://www.fantasypros.com/nfl/players/san-francisco-defense.php,8,20.4,29.4,11,,258.95,167,356,36.52,12,,,,,,,,,,,,35.98,11.08,1.9,0,15.32,9.29,0,2026-08-10
-280,280,Kaleb Johnson,PIT,RB,RB79,4.84,27165,https://www.fantasypros.com/nfl/players/kaleb-johnson-rb.php,9,6.6,0.7,2,,264.10,146,362,37.78,12,,,8.57,35.83,0.22,0,0,0,,,,,,,,,,,2026-08-10
-281,281,Trey Benson,ARI,RB,RB80,0,25388,https://www.fantasypros.com/nfl/players/trey-benson.php,14,10.1,0.7,1,,264.39,127,364,47.82,12,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-10
-282,282,Kaelon Black,SF,RB,RB81,72.96,28401,https://www.fantasypros.com/nfl/players/kaelon-black.php,8,8.6,2.4,4,,267.91,159,337,48.17,12,,,93.69,369.78,3.02,8.54,79.71,0.59,,,,,,,,,,,2026-08-10
-283,283,Malik Davis,DAL,RB,RB82,65.69,24205,https://www.fantasypros.com/nfl/players/malik-davis.php,14,2.8,0.6,1,,277.46,175,343,31.62,12,,,79.62,373.11,2.71,6.57,52.28,0.08,,,,,,,,,,,2026-08-10
-284,284,Atlanta Falcons,ATL,D/ST,DST18,102.35,8010,https://www.fantasypros.com/nfl/players/atlanta-defense.php,11,10.4,22.6,4,,264.12,186,356,31.99,12,,,,,,,,,,,,46.03,12.63,2.28,0.5,12.81,8.18,0,2026-08-10
-285,285,Devin Neal,NO,RB,RB83,19.25,23682,https://www.fantasypros.com/nfl/players/devin-neal.php,8,5.3,0.2,1,,269.35,175,377,35.53,12,,,22.5,90,1,2.5,17.5,0,,,,,,,,,,,2026-08-10
-286,286,Hollywood Brown,PHI,WR,WR101,89.63,18226,https://www.fantasypros.com/nfl/players/marquise-brown.php,10,2.9,0.7,1,,277.50,199,347,26.84,12,,,,,,31.3,389.56,3.26,,,,,,,,,,,2026-08-10
-287,287,Oscar Delp,NO,TE,TE36,18.72,25430,https://www.fantasypros.com/nfl/players/oscar-delp.php,8,3.3,0.3,1,,302.25,229,375,35.55,12,,,,,,7.46,75.75,0.62,,,,,,,,,,,2026-08-10
-288,288,Kirk Cousins,LV,QB,QB33,47.23,11177,https://www.fantasypros.com/nfl/players/kirk-cousins.php,13,9.9,1.8,4,,289.32,159,349,34.69,12,783.54,5.05,5.24,9.03,0.09,,,,,,,,,,,,,,2026-08-10
-289,289,Emari Demercado,KC,RB,RB84,82.56,25654,https://www.fantasypros.com/nfl/players/emari-demercado.php,5,2.1,0.7,1,,283.88,145,381,42.64,12,,,76.79,426.37,1.7,16.35,118.95,0.81,,,,,,,,,,,2026-08-10
-290,290,Deshaun Watson,CLE,QB,QB34,107.97,16398,https://www.fantasypros.com/nfl/players/deshaun-watson.php,11,9.5,1.5,3,,289.40,217,348,26.58,12,1623.73,7.79,35.67,159.36,0.99,,,,,,,,,,,,,,2026-08-10
-291,291,Shedeur Sanders,CLE,QB,QB35,131.75,25968,https://www.fantasypros.com/nfl/players/shedeur-sanders.php,11,12.9,2.8,4,,292.67,212,350,30.04,12,1924.76,10.72,30.06,178.76,1.21,,,,,,,,,,,,,,2026-08-10
-292,292,Keenan Allen,LAC,WR,WR102,,11616,https://www.fantasypros.com/nfl/players/keenan-allen.php,7,6.6,0.7,2,,266.47,178,298,27.60,12,,,,,,,,,,,,,,,,,,,2026-08-10
-293,293,Mack Hollins,NE,WR,WR103,28,16489,https://www.fantasypros.com/nfl/players/mack-hollins.php,11,2,0.3,1,,267.75,170,376,38.19,12,,,,,,10.77,126.69,0.79,,,,,,,,,,,2026-08-10
-294,294,Ja'Kobi Lane,BAL,WR,WR104,113.51,27337,https://www.fantasypros.com/nfl/players/jakobi-lane.php,13,14.4,4.6,3,,268.06,150,339,38.52,12,,,,,,34.28,542.69,4.24,,,,,,,,,,,2026-08-10
-295,295,Devin Singletary,NYG,RB,RB85,19.84,18280,https://www.fantasypros.com/nfl/players/devin-singletary.php,8,1.3,0.6,1,,287.76,169,330,25.72,12,,,22.26,89.15,0.62,4.21,26.33,0.09,,,,,,,,,,,2026-08-10
-296,296,Brashard Smith,KC,RB,RB86,32.55,27259,https://www.fantasypros.com/nfl/players/brashard-smith.php,5,4.2,0.4,1,,279.32,234,355,26.33,12,,,25,89.5,0.5,10.5,71,0.5,,,,,,,,,,,2026-08-10
-297,297,Kyle Williams,NE,WR,WR105,22.05,27487,https://www.fantasypros.com/nfl/players/kyle-williams-wr-2025.php,11,4.7,0.4,1,,268.48,195,376,32.73,12,,,,,,6.43,91.47,0.55,,,,,,,,,,,2026-08-10
-298,298,Kendre Miller,NO,RB,RB87,7.22,24360,https://www.fantasypros.com/nfl/players/kendre-miller.php,8,3.4,0.3,1,,279.38,166,368,39.67,12,,,12.9,54.77,0.3,0,0,0,,,,,,,,,,,2026-08-10
-299,299,Mike Gesicki,CIN,TE,TE37,113.18,17272,https://www.fantasypros.com/nfl/players/mike-gesicki.php,6,9,2.4,2,,269.93,229,346,24.37,12,,,,,,44.05,461.5,3.87,,,,,,,,,,,2026-08-10
-300,300,Tyreek Hill,FA,WR,WR106,,15802,https://www.fantasypros.com/nfl/players/tyreek-hill.php,,18.7,10.5,10,,246.86,137,392,49.57,12,,,,,,,,,,,,,,,,,,,2026-08-10
-301,301,Jerome Ford,WAS,RB,RB88,19,22921,https://www.fantasypros.com/nfl/players/jerome-ford.php,7,1.6,0.2,1,,284.67,177,322,29.96,12,,,17.5,97,0.5,4,23,0,,,,,,,,,,,2026-08-10
-302,302,Skyler Bell,BUF,WR,WR107,42.57,28126,https://www.fantasypros.com/nfl/players/skyler-bell.php,7,6.9,0.8,1,,283.62,195,384,37.12,12,,,,,,15.06,205.47,1.21,,,,,,,,,,,2026-08-10
-303,303,Adam Randall,BAL,RB,RB89,62.36,24367,https://www.fantasypros.com/nfl/players/adam-randall.php,13,3.2,0.8,1,,290.46,205,338,31.54,12,,,55.13,281.61,1.96,9.81,101.88,0.6,,,,,,,,,,,2026-08-10
-304,304,Isaiah Bond,CLE,WR,WR108,30.39,24371,https://www.fantasypros.com/nfl/players/isaiah-bond.php,11,2,0.3,1,,287.43,215,388,28.89,12,,,,,,9.91,130.05,0.78,,,,,,,,,,,2026-08-10
-305,305,Najee Harris,LAC,RB,RB90,22.4,19302,https://www.fantasypros.com/nfl/players/najee-harris-rb.php,7,5.2,0.3,1,,283.27,215,337,28.53,12,,,28,126,1,2,18,0,,,,,,,,,,,2026-08-10
-306,306,Tahj Brooks,CIN,RB,RB91,18.34,26212,https://www.fantasypros.com/nfl/players/tahj-brooks.php,6,1.2,0.4,1,,299.06,189,358,32.11,12,,,30.55,129.41,0.94,0,0,0,,,,,,,,,,,2026-08-10
-307,307,Seth McGowan,IND,RB,RB92,23.18,23079,https://www.fantasypros.com/nfl/players/seth-mcgowan.php,13,3.1,0.5,0,,296.25,237,343,26.14,12,,,22.29,97.06,1.2,3.18,26.94,0.08,,,,,,,,,,,2026-08-10
-308,308,Charlie Smyth,NO,K,K18,122.91,26444,https://www.fantasypros.com/nfl/players/charlie-smyth.php,8,2.9,1.8,2,,284.47,192,364,40.66,12,,,,,,,,,35.01,29.55,34.27,,,,,,,,2026-08-10
-309,309,New Orleans Saints,NO,D/ST,DST19,101.27,8190,https://www.fantasypros.com/nfl/players/new-orleans-defense.php,8,19.1,48.8,2,,268.91,172,356,43.16,12,,,,,,,,,,,,44.83,12.52,2.31,0,12.83,8.76,0,2026-08-10
-310,310,Jake Tonges,SF,TE,TE38,41.46,24778,https://www.fantasypros.com/nfl/players/jake-tonges.php,8,12,3.4,3,,283.52,226,349,29.18,12,,,,,,16.74,167.32,1.35,,,,,,,,,,,2026-08-10
-311,311,Jaleel McLaughlin,DEN,RB,RB93,,25876,https://www.fantasypros.com/nfl/players/jaleel-mclaughlin.php,10,0.6,0.1,0,,290.14,177,358,26.92,12,,,,,,,,,,,,,,,,,,,2026-08-10
-312,312,Isaac Guerendo,SF,RB,RB94,14.85,26392,https://www.fantasypros.com/nfl/players/isaac-guerendo.php,8,1.7,0.3,3,,302.78,231,383,26.54,12,,,16.5,80,0.5,2,18.5,0,,,,,,,,,,,2026-08-10
-313,313,Trevor Etienne,CAR,RB,RB95,14.88,25393,https://www.fantasypros.com/nfl/players/trevor-etienne.php,5,1.2,0.7,1,,308.83,263,365,17.60,12,,,12.32,52.46,0.3,4.11,29.65,0.15,,,,,,,,,,,2026-08-10
-314,314,Jarquez Hunter,LAR,RB,RB96,23.2,24335,https://www.fantasypros.com/nfl/players/jarquez-hunter.php,11,3.1,0.1,0,,302.43,256,360,20.74,12,,,33,148,1,1,14,0,,,,,,,,,,,2026-08-10
-315,315,Andrei Iosivas,CIN,WR,WR109,89.08,25335,https://www.fantasypros.com/nfl/players/andrei-iosivas.php,6,3.8,0.7,1,,270.94,170,361,34.94,12,,,,,,31.15,394.23,2.9,,,,,,,,,,,2026-08-10
-316,316,Indianapolis Colts,IND,D/ST,DST20,94.38,8130,https://www.fantasypros.com/nfl/players/indianapolis-defense.php,13,16.3,38.9,3,,279.52,204,357,31.66,13,,,,,,,,,,,,39.45,12.94,1.93,0,12.25,8.72,0,2026-08-10
-317,317,Chicago Bears,CHI,D/ST,DST21,102.26,8050,https://www.fantasypros.com/nfl/players/chicago-defense.php,10,13.8,20.9,8,,270.10,185,345,44.88,13,,,,,,,,,,,,39.81,14.02,2.1,0,16.48,10.91,1,2026-08-10
-318,318,Caleb Douglas,MIA,WR,WR110,87.81,28135,https://www.fantasypros.com/nfl/players/caleb-douglas.php,6,3.3,1.2,1,,273.81,180,390,50.14,13,,,,,,33.11,419.45,2.26,,,,,,,,,,,2026-08-10
-319,319,Audric Estime,NO,RB,RB97,23.6,23054,https://www.fantasypros.com/nfl/players/audric-estime.php,8,3.3,0.1,0,,303.86,238,370,21.61,13,,,30,122,1,3,24,0,,,,,,,,,,,2026-08-10
-320,320,Darnell Washington,PIT,TE,TE39,73.95,22967,https://www.fantasypros.com/nfl/players/darnell-washington.php,9,7.3,1.8,2,,292.57,206,389,31.55,13,,,,,,30.65,328.06,1.96,,,,,,,,,,,2026-08-10
-321,321,Cyrus Allen,KC,WR,WR111,43.73,28424,https://www.fantasypros.com/nfl/players/cyrus-allen.php,5,7.9,2.7,3,12,261.32,154,439,62.64,13,,,,,,16.17,202.77,1.27,,,,,,,,,,,2026-08-10
-322,322,Chris Brazzell II,CAR,WR,WR112,,28047,https://www.fantasypros.com/nfl/players/chris-brazzell-ii.php,5,5.6,0.6,1,,284.36,238,374,34.72,13,,,,,,,,,,,,,,,,,,,2026-08-10
-323,323,Jalen Tolbert,MIA,WR,WR113,89.49,23770,https://www.fantasypros.com/nfl/players/jalen-tolbert.php,6,2.9,1.1,1,,287.64,175,388,52.80,13,,,,,,35.42,441.65,1.76,,,,,,,,,,,2026-08-10
-324,324,Will Shipley,PHI,RB,RB98,27.52,22930,https://www.fantasypros.com/nfl/players/will-shipley.php,10,1.1,0.5,1,,316.78,257,360,21.36,13,,,9.25,39.62,0.3,11.29,83.45,0.39,,,,,,,,,,,2026-08-10
-325,325,Kareem Hunt,FA,RB,RB99,,16425,https://www.fantasypros.com/nfl/players/kareem-hunt.php,,0.9,0.3,1,,311.88,162,422,31.95,13,,,,,,,,,,,,,,,,,,,2026-08-10
-326,326,Cedric Tillman,CLE,WR,WR114,52.85,25287,https://www.fantasypros.com/nfl/players/cedric-tillman.php,11,0.7,0.2,0,,303.37,240,378,27.90,13,,,,,,17.99,223.58,2.09,,,,,,,,,,,2026-08-10
-327,327,Luke McCaffrey,WAS,WR,WR115,50.65,26328,https://www.fantasypros.com/nfl/players/luke-mccaffrey.php,7,1.2,0.4,1,,308.78,239,414,27.83,13,,,,,,14.86,223.65,2.25,,,,,,,,,,,2026-08-10
-328,328,Tez Johnson,TB,WR,WR116,21.45,27147,https://www.fantasypros.com/nfl/players/tez-johnson.php,10,2,0.3,1,,298.44,174,371,36.04,13,,,,,,6.66,77.62,0.61,,,,,,,,,,,2026-08-10
-329,329,Joe Mixon,FA,RB,RB100,,16420,https://www.fantasypros.com/nfl/players/joe-mixon.php,,5.7,0.4,1,,305.14,177,354,37.32,13,,,,,,,,,,,,,,,,,,,2026-08-10
-330,330,J.J. McCarthy,MIN,QB,QB36,22.48,23018,https://www.fantasypros.com/nfl/players/jj-mccarthy.php,6,8.9,1.3,2,,319.43,276,359,20.69,13,340.27,1.78,5.95,26.95,0.21,,,,,,,,,,,,,,2026-08-10
-331,331,Konata Mumpfield,LAR,WR,WR117,29.25,27449,https://www.fantasypros.com/nfl/players/konata-mumpfield.php,11,1,0.2,0,,295.63,239,369,30.59,13,,,,,,9.88,126.68,1.15,,,,,,,,,,,2026-08-10
-332,332,Max Klare,LAR,TE,TE40,19.82,27993,https://www.fantasypros.com/nfl/players/max-klare.php,11,5.7,0.3,1,,313.91,269,370,26.59,13,,,,,,7.52,82.58,0.68,,,,,,,,,,,2026-08-10
-333,333,Calvin Austin III,NYG,WR,WR118,58.87,23739,https://www.fantasypros.com/nfl/players/calvin-austin.php,8,1.4,0.3,1,,307.98,229,411,38.76,13,,,,,,19.58,262.25,2.19,,,,,,,,,,,2026-08-10
-334,334,Jahan Dotson,ATL,WR,WR119,75.22,23101,https://www.fantasypros.com/nfl/players/jahan-dotson.php,11,2.4,0.5,1,,292.75,197,375,43.42,13,,,,,,28.72,358.19,1.85,,,,,,,,,,,2026-08-10
-335,335,Elijah Arroyo,SEA,TE,TE41,58.38,23004,https://www.fantasypros.com/nfl/players/elijah-arroyo.php,11,4.5,0.6,1,,311.36,259,369,25.70,13,,,,,,23.55,240.12,1.86,,,,,,,,,,,2026-08-10
-336,336,Jalen Royals,KC,WR,WR120,18.26,27076,https://www.fantasypros.com/nfl/players/jalen-royals.php,5,1.6,0.2,0,,311.80,259,376,25.94,13,,,,,,6.82,77.97,0.63,,,,,,,,,,,2026-08-10
-337,337,Michael Mayer,LV,TE,TE42,90.07,23056,https://www.fantasypros.com/nfl/players/michael-mayer.php,13,6.4,0.8,1,,311.98,261,370,29.06,13,,,,,,39.96,377.36,2.1,,,,,,,,,,,2026-08-10
-338,338,Olamide Zaccheaus,ATL,WR,WR121,69.54,18864,https://www.fantasypros.com/nfl/players/olamide-zaccheaus.php,11,2.6,0.2,0,,305.11,201,371,37.85,13,,,,,,30.14,277.11,1.82,,,,,,,,,,,2026-08-10
-339,339,DeMario Douglas,NE,WR,WR122,61.3,25304,https://www.fantasypros.com/nfl/players/demario-douglas.php,11,3.2,0.5,1,,313.33,194,424,49.50,13,,,,,,22.73,271.06,1.5,,,,,,,,,,,2026-08-10
-340,340,Tyler Higbee,LAR,TE,TE43,71.18,15623,https://www.fantasypros.com/nfl/players/tyler-higbee.php,11,1.7,0.5,1,,312.37,229,367,32.42,13,,,,,,26.1,306.46,2.42,,,,,,,,,,,2026-08-10
-341,341,Cole Kmet,CHI,TE,TE44,66.3,19229,https://www.fantasypros.com/nfl/players/cole-kmet.php,10,4.1,0.9,1,,319.38,259,382,26.60,13,,,,,,25.9,271.76,2.23,,,,,,,,,,,2026-08-10
-342,342,Bam Knight,ARI,RB,RB101,0,24901,https://www.fantasypros.com/nfl/players/zonovan-bam-knight.php,14,0.7,0.2,0,,300.03,201,358,33.18,13,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-10
-343,343,Ja'Tavion Sanders,CAR,TE,TE45,68.07,24334,https://www.fantasypros.com/nfl/players/jatavion-sanders.php,5,2.9,0.6,1,,316.36,244,400,34.68,13,,,,,,29.69,264.6,2.03,,,,,,,,,,,2026-08-10
-344,344,Noah Gray,KC,TE,TE46,50.85,19539,https://www.fantasypros.com/nfl/players/noah-gray.php,5,3.6,0.4,0,,323.74,281,367,22.99,13,,,,,,21.04,211.23,1.47,,,,,,,,,,,2026-08-10
-345,345,Treylon Burks,WAS,WR,WR123,44.75,22905,https://www.fantasypros.com/nfl/players/treylon-burks.php,7,1.8,0.3,0,,309.70,199,396,44.99,13,,,,,,15.04,217.87,1.36,,,,,,,,,,,2026-08-10
-346,346,Joshua Palmer,BUF,WR,WR124,69.28,22845,https://www.fantasypros.com/nfl/players/josh-palmer.php,7,1,0.3,0,,296.52,195,373,47.81,13,,,,,,25.94,337.74,1.62,,,,,,,,,,,2026-08-10
-347,347,Mac Jones,SF,QB,QB37,10.54,20156,https://www.fantasypros.com/nfl/players/mac-jones.php,8,6.7,0.4,1,,335.37,298,444,27.02,13,160.23,0.98,2.65,8.41,0,,,,,,,,,,,,,,2026-08-10
-348,348,Carson Beck,ARI,QB,QB38,23.09,22953,https://www.fantasypros.com/nfl/players/carson-beck.php,14,7.3,1.5,2,,325.53,280,368,22.34,13,337.46,2.17,5.18,20.08,0.09,,,,,,,,,,,,,,2026-08-10
-349,349,Dawson Knox,BUF,TE,TE47,78.97,18631,https://www.fantasypros.com/nfl/players/dawson-knox.php,7,4.2,0.9,1,,325.78,258,416,33.75,13,,,,,,28.65,329.02,2.92,,,,,,,,,,,2026-08-10
-350,350,Carolina Panthers,CAR,D/ST,DST22,86.37,8040,https://www.fantasypros.com/nfl/players/carolina-defense.php,5,4.2,6.1,2,,290.88,185,367,51.30,13,,,,,,,,,,,,38.05,11.59,1.82,0,10.6,7.11,0,2026-08-10
-351,351,Kendrick Bourne,ARI,WR,WR125,50.27,17066,https://www.fantasypros.com/nfl/players/kendrick-bourne.php,14,1.7,0.2,1,,293.68,217,447,58.03,13,,,,,,22.77,239.37,0.67,,,,,,,,,,,2026-08-10
-352,352,Dallas Cowboys,DAL,D/ST,DST23,90.89,8080,https://www.fantasypros.com/nfl/players/dallas-defense.php,14,18.2,28.2,13,,256.21,151,366,65.51,13,,,,,,,,,,,,41.86,10.4,1.87,0,13.31,8.52,1,2026-08-10
-353,353,Eli Heidenreich,PIT,RB,RB102,,28297,https://www.fantasypros.com/nfl/players/eli-heidenreich.php,9,1.2,0.3,1,,310.07,248,373,34.12,13,,,,,,,,,,,,,,,,,,,2026-08-10
-354,354,Michael Carter,TEN,RB,RB103,,22728,https://www.fantasypros.com/nfl/players/michael-carter-rb.php,9,0.6,0.1,0,,318.33,168,416,43.80,13,,,,,,,,,,,,,,,,,,,2026-08-10
-355,355,Erick All Jr.,CIN,TE,TE48,59.09,23837,https://www.fantasypros.com/nfl/players/erick-all.php,6,1.2,0.2,0,,324.78,267,411,33.03,13,,,,,,26.63,228.86,1.62,,,,,,,,,,,2026-08-10
-356,356,Bryce Lance,NO,WR,WR126,42.1,28129,https://www.fantasypros.com/nfl/players/bryce-lance.php,8,2.2,0.3,0,,315.69,218,386,37.65,13,,,,,,16.36,204.39,0.94,,,,,,,,,,,2026-08-10
-357,357,Ty Simpson,LAR,QB,QB39,23.39,25368,https://www.fantasypros.com/nfl/players/ty-simpson.php,11,8.4,0.7,1,,337.51,285,390,26.92,13,298.19,2.6,4.05,18.42,0.03,,,,,,,,,,,,,,2026-08-10
-358,358,Brenen Thompson,LAC,WR,WR127,27.39,28133,https://www.fantasypros.com/nfl/players/brenen-thompson.php,7,2.2,0.3,1,,301.13,244,389,40.70,13,,,,,,9.54,121,0.71,,,,,,,,,,,2026-08-10
-359,359,Jake Elliott,PHI,K,K19,119.85,16540,https://www.fantasypros.com/nfl/players/jake-elliott.php,10,8.8,7.6,9,,287.19,197,383,49.21,13,,,,,,,,,31.83,26.05,41.71,,,,,,,,2026-08-10
-360,360,Eli Raridon,NE,TE,TE49,46.52,28154,https://www.fantasypros.com/nfl/players/eli-raridon.php,11,3.6,0.4,1,,331.00,268,448,39.93,13,,,,,,18.78,195.81,1.55,,,,,,,,,,,2026-08-10
-361,361,Justin Joly,DEN,TE,TE50,19.02,28079,https://www.fantasypros.com/nfl/players/justin-joly.php,10,5.1,0.2,0,,335.39,264,382,31.52,13,,,,,,8.01,71.37,0.65,,,,,,,,,,,2026-08-10
-362,362,Justin Fields,KC,QB,QB40,12.04,19781,https://www.fantasypros.com/nfl/players/justin-fields.php,5,6.7,0.7,2,,343.79,301,390,21.68,13,175.07,0.97,3.59,18.43,0.05,,,,,,,,,,,,,,2026-08-10
-363,363,Raheim Sanders,CLE,RB,RB104,,24351,https://www.fantasypros.com/nfl/players/raheim-sanders.php,11,0.6,0.1,0,,311.00,233,384,37.24,14,,,,,,,,,,,,,,,,,,,2026-08-10
-364,364,Dont'e Thornton Jr.,LV,WR,WR128,32.25,27288,https://www.fantasypros.com/nfl/players/donte-thornton-jr.php,13,1.1,0.2,0,,312.09,269,371,32.74,14,,,,,,12.13,167.55,0.6,,,,,,,,,,,2026-08-10
-365,365,New York Giants,NYG,D/ST,DST24,92.07,8200,https://www.fantasypros.com/nfl/players/new-york-giants-defense.php,8,18.3,32.9,5,,266.80,171,387,63.05,14,,,,,,,,,,,,40.74,10.81,2.02,0,12.91,8.79,1,2026-08-10
-366,366,John Metchie III,CAR,WR,WR129,160.9,22895,https://www.fantasypros.com/nfl/players/john-metchie.php,5,1.3,0.1,0,,319.48,244,417,39.35,14,,,,,,65,619,6,,,,,,,,,,,2026-08-10
-367,367,Nick Chubb,FA,RB,RB105,,17246,https://www.fantasypros.com/nfl/players/nick-chubb.php,,0.8,0.3,1,,321.17,190,402,44.69,14,,,,,,,,,,,,,,,,,,,2026-08-10
-368,368,Tampa Bay Buccaneers,TB,D/ST,DST25,97.19,8290,https://www.fantasypros.com/nfl/players/tampa-bay-defense.php,10,16.7,36.6,2,,274.67,188,365,57.76,14,,,,,,,,,,,,41.03,11.69,1.95,0.5,13.44,10.04,0,2026-08-10
-369,369,Noah Fant,NO,TE,TE51,66.13,17527,https://www.fantasypros.com/nfl/players/noah-fant.php,8,1.3,0.2,0,,335.69,263,392,31.97,14,,,,,,30.76,285.66,1.66,,,,,,,,,,,2026-08-10
-370,370,Xavier Hutchinson,HOU,WR,WR130,64.01,25332,https://www.fantasypros.com/nfl/players/xavier-hutchinson.php,8,0.8,0.2,0,,325.57,253,378,32.70,14,,,,,,23.23,280.54,1.87,,,,,,,,,,,2026-08-10
-371,371,Jaylin Lane,WAS,WR,WR131,34.62,27454,https://www.fantasypros.com/nfl/players/jaylin-lane.php,7,1.3,0.2,0,,337.50,275,381,30.95,14,,,,,,12.44,159.55,1.08,,,,,,,,,,,2026-08-10
-372,372,Jawhar Jordan,HOU,RB,RB106,50.21,26329,https://www.fantasypros.com/nfl/players/jawhar-jordan.php,8,0.6,0.2,0,,320.76,193,409,49.91,14,,,51.31,218.48,1.13,11,86.5,0.5,,,,,,,,,,,2026-08-10
-373,373,J'Mari Taylor,JAC,RB,RB107,,28109,https://www.fantasypros.com/nfl/players/jmari-taylor.php,7,2.3,0,0,,325.18,292,376,21.30,14,,,,,,,,,,,,,,,,,,,2026-08-10
-374,374,Tutu Atwell,MIA,WR,WR132,53.35,20126,https://www.fantasypros.com/nfl/players/tutu-atwell.php,6,1.5,0.3,0,,321.10,230,425,52.27,14,,,,,,20.37,291.66,0.45,,,,,,,,,,,2026-08-10
-375,375,Anthony Richardson Sr.,IND,QB,QB41,10.36,24347,https://www.fantasypros.com/nfl/players/anthony-richardson.php,13,6,0.3,1,,343.24,306,381,19.47,14,109,1,5,20,0,,,,,,,,,,,,,,2026-08-10
-376,376,Tyler Bass,BUF,K,K20,123.53,19760,https://www.fantasypros.com/nfl/players/tyler-bass.php,7,7.6,2.9,7,,286.71,223,410,46.70,14,,,,,,,,,30.53,25.61,46.7,,,,,,,,2026-08-10
-377,377,Savion Williams,GB,WR,WR133,68.98,27144,https://www.fantasypros.com/nfl/players/savion-williams.php,11,1.1,0.6,0,,341.61,290,445,32.10,14,,,,,,23.91,271.46,1.99,,,,,,,,,,,2026-08-10
-378,378,Kevin Coleman Jr.,MIA,WR,WR134,51.76,28067,https://www.fantasypros.com/nfl/players/kevin-coleman-jr.php,6,1.1,0.2,0,,323.67,255,421,46.83,14,,,,,,21.13,270.51,0.67,,,,,,,,,,,2026-08-10
-379,379,Nick Folk,ATL,K,K21,129.11,9491,https://www.fantasypros.com/nfl/players/nick-folk.php,11,4.4,4.2,4,,248.60,183,366,52.66,14,,,,,,,,,32.82,30.01,39.08,,,,,,,,2026-08-10
-380,380,Tennessee Titans,TEN,D/ST,DST26,95.7,8300,https://www.fantasypros.com/nfl/players/tennessee-defense.php,9,8.9,11.9,5,,233.44,161,356,61.33,14,,,,,,,,,,,,44.91,10.03,2.12,0.5,13.02,8.51,1,2026-08-10
-381,381,Phil Mafah,DAL,RB,RB108,33.6,22928,https://www.fantasypros.com/nfl/players/phil-mafah.php,14,0.6,0.1,0,,309.40,206,400,52.57,14,,,32,142,2,4,34,0,,,,,,,,,,,2026-08-10
-382,382,KaVontae Turpin,DAL,WR,WR135,63.6,18520,https://www.fantasypros.com/nfl/players/kavontae-turpin.php,14,3.4,0.9,2,,310.93,223,434,54.00,14,,,,,,18.2,229.9,1.72,,,,,,,,,,,2026-08-10
-383,383,Kalif Raymond,CHI,WR,WR136,46.48,16081,https://www.fantasypros.com/nfl/players/kalif-raymond.php,10,0.8,0.3,0,,310.07,232,380,36.84,14,,,,,,19.18,186.97,0.9,,,,,,,,,,,2026-08-10
-384,384,Zane Gonzalez,MIA,K,K22,115.43,16548,https://www.fantasypros.com/nfl/players/zane-gonzalez.php,6,1.7,0.5,1,,302.71,193,408,60.09,14,,,,,,,,,32.61,28.3,30.53,,,,,,,,2026-08-10
-385,385,Luke Musgrave,GB,TE,TE52,49.88,25282,https://www.fantasypros.com/nfl/players/luke-musgrave.php,11,3,0.2,0,,347.87,293,384,23.30,14,,,,,,21.74,211.57,1.18,,,,,,,,,,,2026-08-10
-386,386,Kyle Juszczyk,SF,RB,RB109,54.83,11798,https://www.fantasypros.com/nfl/players/kyle-juszczyk.php,8,0.9,0.6,0,,295.75,203,364,61.18,14,,,4.21,10.3,0.08,23.71,209.19,1.48,,,,,,,,,,,2026-08-10
-387,387,Nick Westbrook-Ikhine,IND,WR,WR137,60.12,19747,https://www.fantasypros.com/nfl/players/nick-westbrook.php,13,0.8,0.4,0,,320.47,255,377,42.19,14,,,,,,21.64,269.55,1.98,,,,,,,,,,,2026-08-10
-388,388,Tommy Tremble,CAR,TE,TE53,63.6,22795,https://www.fantasypros.com/nfl/players/tommy-tremble.php,5,0.8,0.3,0,,338.94,281,403,31.97,14,,,,,,26.58,254.01,1.97,,,,,,,,,,,2026-08-10
-389,389,Washington Commanders,WAS,D/ST,DST27,94.61,8310,https://www.fantasypros.com/nfl/players/washington-defense.php,7,10,13.8,2,,273.33,161,403,83.65,14,,,,,,,,,,,,43.79,9.74,2.08,0.5,13.54,8.93,1,2026-08-10
-390,390,Cincinnati Bengals,CIN,D/ST,DST28,99.82,8060,https://www.fantasypros.com/nfl/players/cincinnati-defense.php,6,3.6,3.5,3,,273.56,212,356,59.92,14,,,,,,,,,,,,41.24,13.09,2.14,0,13.37,9.78,1,2026-08-10
-391,391,Devontez Walker,BAL,WR,WR138,26.19,26011,https://www.fantasypros.com/nfl/players/devontez-walker.php,13,0.7,0.2,0,,323.38,244,452,54.90,14,,,,,,8.68,124.05,0.88,,,,,,,,,,,2026-08-10
-392,392,Joe Flacco,CIN,QB,QB42,10.33,9300,https://www.fantasypros.com/nfl/players/joe-flacco.php,6,3.6,0.4,1,,348.67,302,388,26.47,14,169.23,1.16,2.2,8.59,0.01,,,,,,,,,,,,,,2026-08-10
-393,393,Ben Sinnott,WAS,TE,TE54,30.95,26310,https://www.fantasypros.com/nfl/players/ben-sinnott.php,7,1.3,0.1,0,,348.18,321,386,20.21,14,,,,,,11.07,115.39,1.41,,,,,,,,,,,2026-08-10
-394,394,Ryan Fitzgerald,CAR,K,K23,106.95,27261,https://www.fantasypros.com/nfl/players/ryan-fitzgerald.php,5,1.7,0.8,1,,274.63,184,409,77.76,14,,,,,,,,,30.16,25.51,30.43,,,,,,,,2026-08-10
-395,395,Ashton Dulin,IND,WR,WR139,78.47,18656,https://www.fantasypros.com/nfl/players/ashton-dulin.php,13,0.7,0.1,0,,316.73,287,372,24.09,14,,,,,,24.14,399.93,1.57,,,,,,,,,,,2026-08-10
-396,396,Miami Dolphins,MIA,D/ST,DST29,90.73,8160,https://www.fantasypros.com/nfl/players/miami-defense.php,6,6.6,14.5,1,,295.56,186,393,72.47,14,,,,,,,,,,,,42.46,10.14,1.63,0,13.83,9.09,0,2026-08-10
-397,397,Blake Grupe,IND,K,K24,133.44,25533,https://www.fantasypros.com/nfl/players/blake-grupe.php,13,1.5,1.1,1,,261.71,199,354,54.81,14,,,,,,,,,36.48,30.18,42.89,,,,,,,,2026-08-10
-398,398,Trey Smack,GB,K,K25,125.44,28507,https://www.fantasypros.com/nfl/players/trey-smack.php,11,4.2,5.3,2,,282.88,215,373,51.73,14,,,,,,,,,34.13,28.59,39.66,,,,,,,,2026-08-10
-399,399,John Bates,WAS,TE,TE55,43.05,22833,https://www.fantasypros.com/nfl/players/john-bates.php,7,0.7,0.1,0,,322.55,274,430,39.45,14,,,,,,17.57,171.43,1.58,,,,,,,,,,,2026-08-10
-400,400,Austin Ekeler,FA,RB,RB110,33.1,16483,https://www.fantasypros.com/nfl/players/austin-ekeler.php,,0.6,0.1,0,,349.00,275,392,31.75,14,,,35,150,1,6,61,0,,,,,,,,,,,2026-08-10
-401,401,Jordan Whittington,LAR,WR,WR140,41.13,23135,https://www.fantasypros.com/nfl/players/jordan-whittington.php,11,0.7,0.2,0,,335.58,265,443,47.60,14,,,,,,15.03,171.94,1.22,,,,,,,,,,,2026-08-10
-402,402,Ben Sauls,NYG,K,K26,58.5,27798,https://www.fantasypros.com/nfl/players/ben-sauls.php,8,0.8,0.4,0,,298.00,212,454,77.42,14,,,,,,,,,18.67,15.33,12.5,,,,,,,,2026-08-10
-403,403,Daniel Bellinger,TEN,TE,TE56,51.94,24238,https://www.fantasypros.com/nfl/players/daniel-bellinger.php,9,1.5,0.1,0,,347.64,306,397,28.83,14,,,,,,19.33,222.32,1.75,,,,,,,,,,,2026-08-10
-404,404,Zavion Thomas,CHI,WR,WR141,34.89,28132,https://www.fantasypros.com/nfl/players/zavion-thomas.php,10,2.8,0.4,1,,339.75,266,442,50.04,14,,,,,,12.47,153.61,1.22,,,,,,,,,,,2026-08-10
-405,405,Deion Burks,IND,WR,WR142,,27093,https://www.fantasypros.com/nfl/players/deion-burks.php,13,1.1,0.1,0,,342.42,283,455,47.24,14,,,,,,,,,,,,,,,,,,,2026-08-10
-406,406,Jam Miller,NE,RB,RB111,26.1,27326,https://www.fantasypros.com/nfl/players/jam-miller.php,11,1.3,0.1,0,,333.91,260,387,43.38,14,,,34,156,1,2,25,0,,,,,,,,,,,2026-08-10
-407,407,Mitchell Evans,CAR,TE,TE57,37.68,27138,https://www.fantasypros.com/nfl/players/mitchell-evans.php,5,0.6,0.1,0,,360.94,319,390,19.76,14,,,,,,15.02,139.11,1.48,,,,,,,,,,,2026-08-10
-408,408,Rasheen Ali,BAL,RB,RB112,0,25983,https://www.fantasypros.com/nfl/players/rasheen-ali.php,13,1.2,0.2,0,,328.10,260,366,31.30,14,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-10
-409,409,Dameon Pierce,PHI,RB,RB113,22.1,22947,https://www.fantasypros.com/nfl/players/dameon-pierce.php,10,0.8,0.1,0,,337.55,311,381,21.85,14,,,35,161,1,0,0,0,,,,,,,,,,,2026-08-10
-410,410,CJ Daniels,LAR,WR,WR143,9.61,28125,https://www.fantasypros.com/nfl/players/cj-daniels.php,11,1.3,0.2,0,,351.23,303,419,31.46,14,,,,,,3.35,42.81,0.34,,,,,,,,,,,2026-08-10
-411,411,Austin Hooper,ATL,TE,TE58,55.7,15581,https://www.fantasypros.com/nfl/players/austin-hooper.php,11,0.9,0.2,0,,345.92,306,395,27.20,14,,,,,,22.51,236.68,1.61,,,,,,,,,,,2026-08-10
-412,412,Sione Vaki,DET,RB,RB114,,26309,https://www.fantasypros.com/nfl/players/sione-vaki.php,6,0.6,0.1,0,,322.22,286,393,29.71,14,,,,,,,,,,,,,,,,,,,2026-08-10
-413,413,Charlie Kolar,LAC,TE,TE59,55.36,22756,https://www.fantasypros.com/nfl/players/charlie-kolar.php,7,1.4,0.1,0,11,341.45,258,392,43.92,14,,,,,,20.22,230,2.04,,,,,,,,,,,2026-08-10
-414,414,Greg Dortch,DET,WR,WR144,14.13,18585,https://www.fantasypros.com/nfl/players/greg-dortch.php,6,0.6,0.2,0,,326.44,271,396,45.73,14,,,,,,4.1,39.72,0.27,,,,,,,,,,,2026-08-10
-415,415,Dyami Brown,WAS,WR,WR145,46.68,20113,https://www.fantasypros.com/nfl/players/dyami-brown.php,7,0.8,0.5,0,,348.36,300,456,45.63,14,,,,,,15.86,217.02,1.58,,,,,,,,,,,2026-08-10
-416,416,Marcus Mariota,WAS,QB,QB43,18.01,13890,https://www.fantasypros.com/nfl/players/marcus-mariota.php,7,3.3,0.2,1,,351.08,323,398,25.99,14,254.1,1.98,1.38,7.9,0.03,,,,,,,,,,,,,,2026-08-10
-417,417,Jameis Winston,NYG,QB,QB44,11.72,13891,https://www.fantasypros.com/nfl/players/jameis-winston.php,8,4.5,0.4,0,,357.54,322,398,24.30,14,194.8,1.31,2.58,10.89,0.01,,,,,,,,,,,,,,2026-08-10
-418,418,Joe Milton III,DAL,QB,QB45,8.54,25967,https://www.fantasypros.com/nfl/players/joe-milton.php,14,2.3,0.3,0,,351.64,317,388,23.10,14,119.33,0.67,3,14.33,0,,,,,,,,,,,,,,2026-08-10
-419,419,Chad Ryland,ARI,K,K27,111.71,25354,https://www.fantasypros.com/nfl/players/chad-ryland.php,14,1.2,0.5,1,,305.83,192,394,76.84,14,,,,,,,,,33.09,26.63,31.82,,,,,,,,2026-08-10
-420,420,Roschon Johnson,CHI,RB,RB115,34.2,25322,https://www.fantasypros.com/nfl/players/roschon-johnson.php,10,0.6,0.2,0,,350.80,314,391,26.86,14,,,34,115,3,3,17,0,,,,,,,,,,,2026-08-10
-421,421,Zach Ertz,FA,TE,TE60,24.5,11689,https://www.fantasypros.com/nfl/players/zach-ertz.php,,1.5,0.2,1,,343.89,252,402,42.46,14,,,,,,9,95,1,,,,,,,,,,,2026-08-10
-422,422,Darren Waller,FA,TE,TE61,,14104,https://www.fantasypros.com/nfl/players/darren-waller.php,,1.6,0.1,1,,344.56,324,379,15.70,14,,,,,,,,,,,,,,,,,,,2026-08-10
-423,423,Jeremy McNichols,WAS,RB,RB116,27.1,16445,https://www.fantasypros.com/nfl/players/jeremy-mcnichols.php,7,0.6,0.1,0,,310.17,243,389,54.26,14,,,17,88,1,7,53,0,,,,,,,,,,,2026-08-10
-424,424,Terrell Jennings,NE,RB,RB117,,26964,https://www.fantasypros.com/nfl/players/terrell-jennings.php,11,0.6,0.1,0,,337.75,284,407,37.44,14,,,,,,,,,,,,,,,,,,,2026-08-10
-425,425,Joey Slye,TEN,K,K28,114.28,19028,https://www.fantasypros.com/nfl/players/joey-slye.php,9,1.3,0.5,1,,314.83,205,404,70.88,14,,,,,,,,,33.13,27.41,32.05,,,,,,,,2026-08-10
-426,426,Brandon McManus,FA,K,K29,0,13274,https://www.fantasypros.com/nfl/players/brandon-mcmanus.php,,0.7,0.2,0,,296.60,210,395,73.24,14,,,,,,,,,0,0,0,,,,,,,,2026-08-10
-427,427,Jake Moody,WAS,K,K30,116.4,24009,https://www.fantasypros.com/nfl/players/jake-moody.php,7,1.6,0.8,1,,297.20,248,341,34.88,14,,,,,,,,,33.73,27.37,34.29,,,,,,,,2026-08-10
-428,428,Malik Benson,LV,WR,WR146,15.75,26012,https://www.fantasypros.com/nfl/players/malik-benson.php,13,1.3,0.2,0,,336.29,247,436,59.46,14,,,,,,6.4,79.27,0.26,,,,,,,,,,,2026-08-10
-429,429,Daniel Carlson,LV,K,K31,,17420,https://www.fantasypros.com/nfl/players/daniel-carlson.php,13,0.7,0.1,0,,302.60,209,405,70.28,14,,,,,,,,,,,,,,,,,,,2026-08-10
-430,430,Spencer Shrader,IND,K,K32,0,26763,https://www.fantasypros.com/nfl/players/spencer-shrader.php,13,1.2,0.2,1,,277.50,247,329,32.61,14,,,,,,,,,0,0,0,,,,,,,,2026-08-10
-431,431,Hunter Luepke,DAL,RB,RB118,24.97,25941,https://www.fantasypros.com/nfl/players/hunter-luepke.php,14,0.7,0.2,0,,308.20,259,381,44.08,14,,,13.27,56.07,0.44,8.61,61.69,0.35,,,,,,,,,,,2026-08-10
-432,432,Roman Wilson,PIT,WR,WR147,,28896,https://www.fantasypros.com/nfl/players/roman-wilson-wr.php,9,1.5,0.3,0,,330.67,300,362,19.64,15,,,,,,,,,,,,,,,,,,,2026-08-10
-433,433,Tommy Myers,FA,TE,TE62,,25167,https://www.fantasypros.com/nfl/players/tommy-myers.php,,0,0,0,,315.20,256,426,62.69,15,,,,,,,,,,,,,,,,,,,2026-08-10
-434,434,Las Vegas Raiders,LV,D/ST,DST30,90.5,8220,https://www.fantasypros.com/nfl/players/las-vegas-defense.php,13,7.7,12.6,3,,288.75,161,361,80.23,15,,,,,,,,,,,,40.67,10.24,1.82,0.5,14,8.71,0,2026-08-10
-435,435,Jonnu Smith,FA,TE,TE63,,16460,https://www.fantasypros.com/nfl/players/jonnu-smith.php,,1.6,0.1,0,,346.71,281,429,47.35,15,,,,,,,,,,,,,,,,,,,2026-08-10
-436,436,Demarcus Robinson,SF,WR,WR148,53.04,15665,https://www.fantasypros.com/nfl/players/demarcus-robinson.php,8,0.8,0.1,0,,351.43,305,415,43.08,15,,,,,,17.64,252.57,1.66,,,,,,,,,,,2026-08-10
-437,437,Mitch Tinsley,CIN,WR,WR149,19.46,24370,https://www.fantasypros.com/nfl/players/mitchell-tinsley.php,6,0.6,0.1,0,,326.80,286,374,39.29,15,,,,,,6.57,84.08,0.77,,,,,,,,,,,2026-08-10
-438,438,Dylan Laube,LV,RB,RB119,0,26194,https://www.fantasypros.com/nfl/players/dylan-laube.php,13,0.6,0.1,0,,305.25,252,326,30.90,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-10
-439,439,Antonio Gibson,FA,RB,RB120,,19624,https://www.fantasypros.com/nfl/players/antonio-gibson.php,,1.3,0,0,,331.40,250,435,70.17,15,,,,,,,,,,,,,,,,,,,2026-08-10
-440,440,Jaret Patterson,LAC,RB,RB121,,20155,https://www.fantasypros.com/nfl/players/jaret-patterson.php,7,1.1,0,0,,307.50,248,366,52.90,15,,,,,,,,,,,,,,,,,,,2026-08-10
-441,441,Will Kacmarek,MIA,TE,TE64,61.8,28403,https://www.fantasypros.com/nfl/players/will-kacmarek.php,6,2.7,0.1,0,10,308.25,293,318,9.91,15,,,,,,26.56,250.82,1.88,,,,,,,,,,,2026-08-10
-442,442,Marlin Klein,HOU,TE,TE65,44.47,28157,https://www.fantasypros.com/nfl/players/marlin-klein.php,8,0.6,0.1,0,,330.60,289,353,22.84,15,,,,,,19.48,193.63,1.11,,,,,,,,,,,2026-08-10
-443,443,Cash Jones,ATL,RB,RB122,,28124,https://www.fantasypros.com/nfl/players/cash-jones.php,11,0,0,0,,311.50,272,335,23.73,15,,,,,,,,,,,,,,,,,,,2026-08-10
-444,444,Damien Martinez,GB,RB,RB123,,25976,https://www.fantasypros.com/nfl/players/damien-martinez.php,11,1.3,0,0,,347.17,315,412,32.35,15,,,,,,,,,,,,,,,,,,,2026-08-10
-445,445,Jahdae Walker,CHI,WR,WR150,56.07,27810,https://www.fantasypros.com/nfl/players/jahdae-walker.php,10,0.9,0.2,0,,335.40,305,384,26.99,15,,,,,,17.09,226.78,2.67,,,,,,,,,,,2026-08-10
-446,446,Ty Chandler,NO,RB,RB124,37.6,19471,https://www.fantasypros.com/nfl/players/ty-chandler.php,8,0.7,0.1,0,,315.25,271,364,32.96,15,,,51,138,1,12,58,0,,,,,,,,,,,2026-08-10
-447,447,Zavier Scott,MIN,RB,RB125,0,25748,https://www.fantasypros.com/nfl/players/zavier-scott.php,6,0.6,0.1,0,,350.83,317,380,24.23,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-10
-448,448,Scotty Miller,CHI,WR,WR151,,18714,https://www.fantasypros.com/nfl/players/scott-miller.php,10,0.1,0.1,0,,317.50,253,375,48.19,15,,,,,,,,,,,,,,,,,,,2026-08-10
-449,449,Adam Trautman,DEN,TE,TE66,47.63,19423,https://www.fantasypros.com/nfl/players/adam-trautman.php,10,0.6,0.1,0,,369.38,336,415,23.60,15,,,,,,19.36,194.5,1.49,,,,,,,,,,,2026-08-10
-450,450,Elijah Higgins,ARI,TE,TE67,45.45,23119,https://www.fantasypros.com/nfl/players/elijah-higgins.php,14,1.1,0.2,0,,371.25,345,428,24.02,15,,,,,,21.96,196.1,0.84,,,,,,,,,,,2026-08-10
-451,451,Marquez Valdes-Scantling,DAL,WR,WR152,,17528,https://www.fantasypros.com/nfl/players/marquez-valdesscantling.php,14,0.7,0.1,0,,345.60,223,431,71.07,15,,,,,,,,,,,,,,,,,,,2026-08-10
-452,452,Cade Klubnik,NYJ,QB,QB46,9.38,24361,https://www.fantasypros.com/nfl/players/cade-klubnik.php,13,4.6,0.2,0,,325.50,309,346,13.35,15,136.78,0.92,1.83,8.22,0.03,,,,,,,,,,,,,,2026-08-10
-453,453,Khalil Herbert,SF,RB,RB126,,22763,https://www.fantasypros.com/nfl/players/khalil-herbert.php,8,1.4,0.1,0,,326.50,260,383,46.34,15,,,,,,,,,,,,,,,,,,,2026-08-10
-454,454,Xavier Smith,LAR,WR,WR153,9.93,25627,https://www.fantasypros.com/nfl/players/xavier-smith.php,11,0.6,0.1,0,,299.00,289,307,7.48,15,,,,,,3.59,44.4,0.33,,,,,,,,,,,2026-08-10
-455,455,Tai Felton,MIN,WR,WR154,8.79,27182,https://www.fantasypros.com/nfl/players/tai-felton.php,6,0.6,0.2,0,,340.25,244,457,76.95,15,,,,,,3.72,37.06,0.24,,,,,,,,,,,2026-08-10
-456,456,Tanner Koziol,JAC,TE,TE68,18.05,27499,https://www.fantasypros.com/nfl/players/tanner-koziol.php,7,0.8,0.1,0,14,348.20,292,371,28.98,15,,,,,,6.96,72.82,0.64,,,,,,,,,,,2026-08-10
-457,457,Colbie Young,CIN,WR,WR155,9.72,26037,https://www.fantasypros.com/nfl/players/colbie-young.php,6,0.9,0.2,0,,348.60,304,380,26.15,15,,,,,,3.5,43.21,0.33,,,,,,,,,,,2026-08-10
-458,458,Robert Henry Jr.,WAS,RB,RB127,,28404,https://www.fantasypros.com/nfl/players/robert-henry-jr.php,7,0,0,0,,350.40,276,399,43.78,15,,,,,,,,,,,,,,,,,,,2026-08-10
-459,459,Mo Alie-Cox,IND,TE,TE69,27.05,16579,https://www.fantasypros.com/nfl/players/mo-alie-cox.php,13,0.6,0.1,0,-7,350.60,298,382,28.37,15,,,,,,10.79,110.99,0.89,,,,,,,,,,,2026-08-10
-460,460,Tyler Lockett,LV,WR,WR156,,13971,https://www.fantasypros.com/nfl/players/tyler-lockett.php,13,0.6,0.1,0,,308.00,197,413,88.28,15,,,,,,,,,,,,,,,,,,,2026-08-10
-461,461,Quinn Ewers,MIA,QB,QB47,11.55,23680,https://www.fantasypros.com/nfl/players/quinn-ewers.php,6,3.2,0.2,0,,336.00,303,382,31.52,15,167.63,1.19,2.99,11.67,0.01,,,,,,,,,,,,,,2026-08-10
-462,462,Tyler Goodson,ATL,RB,RB128,,22976,https://www.fantasypros.com/nfl/players/tyler-goodson.php,11,1.2,0,0,,336.75,263,394,47.93,15,,,,,,,,,,,,,,,,,,,2026-08-10
-463,463,Josh Oliver,MIN,TE,TE70,52.08,18487,https://www.fantasypros.com/nfl/players/josh-oliver.php,6,0.6,0.2,0,,354.40,344,363,6.92,15,,,,,,18.55,193.94,2.38,,,,,,,,,,,2026-08-10
-464,464,Ronnie Rivers,LAR,RB,RB129,,23986,https://www.fantasypros.com/nfl/players/ronnie-rivers.php,11,0.6,0.1,0,,312.67,280,329,23.10,15,,,,,,,,,,,,,,,,,,,2026-08-10
-465,465,Jake Bobo,SEA,WR,WR157,,25339,https://www.fantasypros.com/nfl/players/jake-bobo.php,11,0.6,0.2,0,,262.00,244,280,18.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-466,466,Jakobie Keeney-James,PIT,WR,WR158,,27705,https://www.fantasypros.com/nfl/players/jakobie-keeney-james.php,9,0,0,0,,262.00,251,273,11.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-467,467,Riley Leonard,IND,QB,QB48,12.44,25373,https://www.fantasypros.com/nfl/players/riley-leonard.php,13,2.3,0.1,0,,357.60,307,386,29.51,15,193.04,1.28,2.75,11.47,0.03,,,,,,,,,,,,,,2026-08-10
-468,468,Kevin Austin Jr.,NO,WR,WR159,,23049,https://www.fantasypros.com/nfl/players/kevin-austin.php,8,1,0,0,,267.50,245,290,22.50,15,,,,,,,,,,,,,,,,,,,2026-08-10
-469,469,Myles Montgomery,NE,RB,RB130,,28450,https://www.fantasypros.com/nfl/players/myles-montgomery.php,11,0,0,0,,343.50,288,405,41.51,15,,,,,,,,,,,,,,,,,,,2026-08-10
-470,470,Odell Beckham Jr.,NYG,WR,WR160,32.28,12127,https://www.fantasypros.com/nfl/players/odell-beckham.php,8,3.7,3.4,1,,323.67,305,351,19.75,15,,,,,,12.37,152.1,0.82,,,,,,,,,,,2026-08-10
-471,471,Jacob Saylors,DET,RB,RB131,0,25693,https://www.fantasypros.com/nfl/players/jacob-saylors.php,6,0.1,0.1,0,,325.00,279,370,37.16,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-10
-472,472,Roman Hemby,LV,RB,RB132,,25387,https://www.fantasypros.com/nfl/players/roman-hemby.php,13,0,0,0,,326.33,285,368,33.89,15,,,,,,,,,,,,,,,,,,,2026-08-10
-473,473,Tim Patrick,NYJ,WR,WR161,,16556,https://www.fantasypros.com/nfl/players/tim-patrick.php,13,1,0.1,0,,326.67,253,412,65.43,15,,,,,,,,,,,,,,,,,,,2026-08-10
-474,474,Jaydn Ott,KC,RB,RB133,,25394,https://www.fantasypros.com/nfl/players/jaydn-ott.php,5,1,0,0,,326.67,264,365,44.68,15,,,,,,,,,,,,,,,,,,,2026-08-10
-475,475,New York Jets,NYJ,D/ST,DST31,85.97,8210,https://www.fantasypros.com/nfl/players/new-york-jets-defense.php,13,4.9,8,1,,355.50,277,432,54.95,15,,,,,,,,,,,,37.43,10.33,1.92,0.5,12.2,7.68,1,2026-08-10
-476,476,Luke Schoonmaker,DAL,TE,TE71,30.98,25267,https://www.fantasypros.com/nfl/players/luke-schoonmaker.php,14,0.9,0.2,0,,368.80,345,382,13.54,15,,,,,,13.21,121.61,0.95,,,,,,,,,,,2026-08-10
-477,477,Elijah Tau-Tolliver,BAL,RB,RB134,,28757,https://www.fantasypros.com/nfl/players/elijah-tau-tolliver.php,13,0,0,0,,336.33,283,394,45.42,15,,,,,,,,,,,,,,,,,,,2026-08-10
-478,478,Jordan Waters,LAR,RB,RB135,,26395,https://www.fantasypros.com/nfl/players/jordan-waters.php,11,0,0,0,,297.00,251,343,46.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-479,479,Nate Boerkircher,JAC,TE,TE72,37.06,28427,https://www.fantasypros.com/nfl/players/nate-boerkircher.php,7,0.9,0.1,0,,338.67,295,363,30.94,15,,,,,,14.91,155.25,1.28,,,,,,,,,,,2026-08-10
-480,480,Miles Sanders,FA,RB,RB136,,18283,https://www.fantasypros.com/nfl/players/miles-sanders.php,,1,0,0,,348.33,281,446,70.69,15,,,,,,,,,,,,,,,,,,,2026-08-10
-481,481,Donovan Edwards,MIA,RB,RB137,22.9,23014,https://www.fantasypros.com/nfl/players/donovan-edwards.php,6,1,0,0,,339.33,284,389,43.05,15,,,31,130,1,2,19,0,,,,,,,,,,,2026-08-10
-482,482,Frank Gore Jr.,BUF,RB,RB138,35,25980,https://www.fantasypros.com/nfl/players/frank-gore-jr.php,7,0.6,0.1,0,,340.00,268,387,51.70,15,,,37,174,2,3,26,0,,,,,,,,,,,2026-08-10
-483,483,Elijah Mitchell,PHI,RB,RB139,,22813,https://www.fantasypros.com/nfl/players/elijah-mitchell-rb.php,10,0.7,0.1,0,,354.00,266,460,80.22,15,,,,,,,,,,,,,,,,,,,2026-08-10
-484,484,Raheem Mostert,LV,RB,RB140,,14338,https://www.fantasypros.com/nfl/players/raheem-mostert.php,13,0.6,0.1,0,,305.50,297,314,8.50,15,,,,,,,,,,,,,,,,,,,2026-08-10
-485,485,Xavier Restrepo,TEN,WR,WR162,,27066,https://www.fantasypros.com/nfl/players/xavier-restrepo.php,9,1.1,0,0,,309.00,288,330,21.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-486,486,Jackson Hawes,BUF,TE,TE73,30.64,27469,https://www.fantasypros.com/nfl/players/jackson-hawes.php,7,0.6,0.1,0,,374.60,366,383,7.12,15,,,,,,10.55,115.08,1.45,,,,,,,,,,,2026-08-10
-487,487,Kendric Pryor,CIN,WR,WR163,,24839,https://www.fantasypros.com/nfl/players/kendric-pryor.php,6,1,0,0,,312.00,291,333,21.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-488,488,Derius Davis,LAC,WR,WR164,10.24,25334,https://www.fantasypros.com/nfl/players/derius-davis.php,7,0.6,0.1,0,,317.00,255,379,62.00,15,,,,,,3.49,37.88,0.27,,,,,,,,,,,2026-08-10
-489,489,Anthony Gould,IND,WR,WR165,16.25,26404,https://www.fantasypros.com/nfl/players/anthony-gould.php,13,0.6,0.1,0,,317.00,311,323,6.00,15,,,,,,6.96,74.46,0.33,,,,,,,,,,,2026-08-10
-490,490,Drew Sample,CIN,TE,TE74,33.78,18561,https://www.fantasypros.com/nfl/players/drew-sample.php,6,0.6,0.1,0,,352.67,342,371,13.02,15,,,,,,15.14,123.13,1.08,,,,,,,,,,,2026-08-10
-491,491,Reggie Gilliam,NE,RB,RB141,7.95,19844,https://www.fantasypros.com/nfl/players/reggie-gilliam.php,11,0.1,0.1,0,,323.00,288,358,35.00,15,,,0,0,0,4.11,29.79,0.15,,,,,,,,,,,2026-08-10
-492,492,Taysom Hill,FA,TE,TE75,,17115,https://www.fantasypros.com/nfl/players/taysom-hill.php,,0.7,0.1,0,9,367.67,309,440,54.35,15,,,,,,,,,,,,,,,,,,,2026-08-10
-493,493,Reggie Virgil,ARI,WR,WR166,8.07,28141,https://www.fantasypros.com/nfl/players/reggie-virgil.php,14,0.7,0.1,0,,336.00,298,374,38.00,15,,,,,,3.36,39.27,0.14,,,,,,,,,,,2026-08-10
-494,494,Theo Wease Jr.,MIA,WR,WR167,145.4,27222,https://www.fantasypros.com/nfl/players/theo-wease-jr.php,6,2,0,0,,337.50,255,420,82.50,15,,,,,,48,686,5,,,,,,,,,,,2026-08-10
-495,495,Jeshaun Jones,MIN,WR,WR168,0,26423,https://www.fantasypros.com/nfl/players/jeshaun-jones.php,6,0,0,0,,337.50,279,396,58.50,15,,,,,,0,0,0,,,,,,,,,,,2026-08-10
-496,496,Van Jefferson,WAS,WR,WR169,,19483,https://www.fantasypros.com/nfl/players/van-jefferson.php,7,0.9,0.2,0,,338.50,303,374,35.50,15,,,,,,,,,,,,,,,,,,,2026-08-10
-497,497,Jacardia Wright,SEA,RB,RB142,,27781,https://www.fantasypros.com/nfl/players/jacardia-wright.php,11,0,0,0,,342.50,304,381,38.50,15,,,,,,,,,,,,,,,,,,,2026-08-10
-498,498,Michael Woods II,DEN,WR,WR170,,23893,https://www.fantasypros.com/nfl/players/michael-woods.php,10,1,0,0,,344.00,280,408,64.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-499,499,Kendrick Law,DET,WR,WR171,,26044,https://www.fantasypros.com/nfl/players/kendrick-law.php,6,1.5,0,0,,347.00,305,389,42.00,15,,,,,,,,,,,,,,,,,,,2026-08-10
-500,500,Tanner Hudson,CIN,TE,TE76,29.24,17826,https://www.fantasypros.com/nfl/players/tanner-hudson.php,6,1.2,0.1,0,,349.50,337,362,12.50,15,,,,,,13.06,110.24,0.89,,,,,,,,,,,2026-08-10
-501,501,Gardner Minshew II,ARI,QB,QB49,9.72,18562,https://www.fantasypros.com/nfl/players/gardner-minshew.php,14,1.6,0.1,0,,351.00,339,363,12.00,16,147.91,0.82,2.45,9.28,0.02,,,,,,,,,,,,,,2026-08-10
-502,502,DeAndre Hopkins,BAL,WR,WR172,,11606,https://www.fantasypros.com/nfl/players/deandre-hopkins.php,13,0.6,0.1,0,,388.00,322,451,52.71,16,,,,,,,,,,,,,,,,,,,2026-08-10
-503,503,David Sills V,TB,WR,WR173,,18566,https://www.fantasypros.com/nfl/players/david-sills.php,10,0,0,0,,357.00,329,385,28.00,16,,,,,,,,,,,,,,,,,,,2026-08-10
-504,504,Jordan Watkins,SF,WR,WR174,,27486,https://www.fantasypros.com/nfl/players/jordan-watkins.php,8,1,0,0,,357.00,334,380,23.00,16,,,,,,,,,,,,,,,,,,,2026-08-10
-505,505,Durham Smythe,BAL,TE,TE77,23.51,17508,https://www.fantasypros.com/nfl/players/durham-smythe.php,13,0.6,0.1,0,,357.00,355,359,2.00,16,,,,,,9.83,93.95,0.73,,,,,,,,,,,2026-08-10
-506,506,Jalen Milroe,SEA,QB,QB50,9,22884,https://www.fantasypros.com/nfl/players/jalen-milroe.php,11,2.8,0.3,1,,358.00,358,358,0.00,16,90,1,5,14,0,,,,,,,,,,,,,,2026-08-10
-507,507,Sam Roush,CHI,TE,TE78,8.65,28161,https://www.fantasypros.com/nfl/players/sam-roush.php,10,0.7,0.2,0,,362.00,361,363,1.00,16,,,,,,3.65,33.8,0.28,,,,,,,,,,,2026-08-10
-508,508,Jared Wiley,KC,TE,TE79,,26343,https://www.fantasypros.com/nfl/players/jared-wiley.php,5,1,0,0,,362.50,358,367,4.50,16,,,,,,,,,,,,,,,,,,,2026-08-10
-509,509,Jason Sanders,NYJ,K,K33,117.49,17533,https://www.fantasypros.com/nfl/players/jason-sanders.php,13,1.5,1.4,0,,382.00,366,406,17.28,16,,,,,,,,,33.2,28.71,31.37,,,,,,,,2026-08-10
-510,510,Jimmy Horn Jr.,CAR,WR,WR175,21.4,27294,https://www.fantasypros.com/nfl/players/jimmy-horn-jr.php,5,0.8,0.2,0,,365.50,350,381,15.50,16,,,,,,6.64,76.63,0.44,,,,,,,,,,,2026-08-10
-511,511,Brock Wright,DET,TE,TE80,50.69,23341,https://www.fantasypros.com/nfl/players/brock-wright.php,6,0.7,0.2,0,,367.00,354,380,13.00,16,,,,,,19.36,175.12,2.31,,,,,,,,,,,2026-08-10
-512,512,Miles Davis,CAR,RB,RB143,,28906,https://www.fantasypros.com/nfl/players/miles-davis.php,5,0,0,0,,367.50,342,393,25.50,16,,,,,,,,,,,,,,,,,,,2026-08-10
-513,513,Tyler Conklin,DET,TE,TE81,8.92,17598,https://www.fantasypros.com/nfl/players/tyler-conklin.php,6,0.6,0.1,0,,370.50,365,376,5.50,16,,,,,,3.68,37.95,0.25,,,,,,,,,,,2026-08-10
-514,514,Tyrod Taylor,GB,QB,QB51,10.88,10007,https://www.fantasypros.com/nfl/players/tyrod-taylor.php,11,1.1,0.2,0,,373.00,323,423,50.00,16,173.55,0.93,2.13,10.68,0.04,,,,,,,,,,,,,,2026-08-10
-515,515,Jermaine Burton,FA,WR,WR176,,22956,https://www.fantasypros.com/nfl/players/jermaine-burton.php,,1.1,0,0,,391.00,324,458,67.00,16,,,,,,,,,,,,,,,,,,,2026-08-10
-516,516,Moliki Matavao,NO,TE,TE82,,23093,https://www.fantasypros.com/nfl/players/moliki-matavao.php,8,1,0,0,,376.50,357,396,19.50,16,,,,,,,,,,,,,,,,,,,2026-08-10
-517,517,Trey Lance,LAC,QB,QB52,10.42,20082,https://www.fantasypros.com/nfl/players/trey-lance.php,7,1,0.1,0,,377.50,377,378,0.50,16,148.17,0.99,2.75,13.41,0.02,,,,,,,,,,,,,,2026-08-10
-518,518,JuJu Smith-Schuster,NYG,WR,WR177,0,16427,https://www.fantasypros.com/nfl/players/juju-smith-schuster.php,8,1.1,0.2,0,20,379.00,351,407,28.00,16,,,,,,0,0,0,,,,,,,,,,,2026-08-10
-519,519,Thomas Fidone II,NYG,TE,TE83,26.2,23039,https://www.fantasypros.com/nfl/players/thomas-fidone.php,8,1,0,0,,396.50,352,441,44.50,16,,,,,,10,102,1,,,,,,,,,,,2026-08-10
-520,520,Michael Trigg,DAL,TE,TE84,,23167,https://www.fantasypros.com/nfl/players/michael-trigg.php,14,5.2,0.1,0,-15,394.00,355,433,39.00,16,,,,,,,,,,,,,,,,,,,2026-08-10
-521,521,Will Dissly,FA,TE,TE85,,18049,https://www.fantasypros.com/nfl/players/will-dissly.php,,1,0,0,,393.50,360,427,33.50,16,,,,,,,,,,,,,,,,,,,2026-08-10
-522,522,Jacob Cowing,SF,WR,WR178,0,25289,https://www.fantasypros.com/nfl/players/jacob-cowing.php,8,0.6,0.1,0,,416.00,382,450,34.00,16,,,,,,0,0,0,,,,,,,,,,,2026-08-10
+1,1,Ja'Marr Chase,CIN,WR,WR1,336.04,19788,https://www.fantasypros.com/nfl/players/jamarr-chase.php,6,99.6,99.9,100,,1.51,1,4,0.88,1,,,,,,121.24,1511.61,10.6,,,,,,,,,,,2026-08-18
+2,2,Jahmyr Gibbs,DET,RB,RB1,372.92,22968,https://www.fantasypros.com/nfl/players/jahmyr-gibbs.php,6,99.5,99.9,100,,2.88,1,7,1.58,1,,,274.69,1381.53,13.82,71.27,580.98,4.13,,,,,,,,,,,2026-08-18
+3,3,Puka Nacua,LAR,WR,WR2,339.8,23180,https://www.fantasypros.com/nfl/players/puka-nacua.php,11,99.7,99.9,100,,3.40,1,9,1.51,1,,,,,,117,1539,9,,,,,,,,,,,2026-08-18
+4,4,Bijan Robinson,ATL,RB,RB2,369.51,23133,https://www.fantasypros.com/nfl/players/bijan-robinson.php,11,99.4,99.9,100,,3.62,1,5,1.50,1,,,289.5,1426.46,9.48,79.26,735.88,3.46,,,,,,,,,,,2026-08-18
+5,5,Jaxon Smith-Njigba,SEA,WR,WR3,324.15,23070,https://www.fantasypros.com/nfl/players/jaxon-smith-njigba.php,11,99.7,99.9,100,,4.83,3,9,1.37,1,,,,,,110.91,1569.36,9.18,,,,,,,,,,,2026-08-18
+6,6,Amon-Ra St. Brown,DET,WR,WR4,319.84,19799,https://www.fantasypros.com/nfl/players/amonra-stbrown.php,6,99.5,99.9,100,,5.52,3,8,1.29,1,,,,,,117.37,1390.9,10.46,,,,,,,,,,,2026-08-18
+7,7,CeeDee Lamb,DAL,WR,WR5,272.99,19202,https://www.fantasypros.com/nfl/players/ceedee-lamb.php,14,99.4,99.8,100,,8.74,4,17,2.04,2,,,,,,97.45,1295.83,7.52,,,,,,,,,,,2026-08-18
+8,8,Justin Jefferson,MIN,WR,WR6,272.82,19236,https://www.fantasypros.com/nfl/players/justin-jefferson.php,6,99.4,99.8,100,,9.47,4,20,2.50,2,,,,,,98.92,1310.9,7.12,,,,,,,,,,,2026-08-18
+9,9,Christian McCaffrey,SF,RB,RB3,334.81,16393,https://www.fantasypros.com/nfl/players/christian-mccaffrey.php,8,99.5,99.8,100,,10.10,5,31,5.32,2,,,269.4,1093.64,8.72,78.38,693.99,4.59,,,,,,,,,,,2026-08-18
+10,10,Drake London,ATL,WR,WR7,287.09,23163,https://www.fantasypros.com/nfl/players/drake-london.php,11,99.1,99.6,100,,12.10,8,26,3.04,2,,,,,,101.7,1327.56,9.09,,,,,,,,,,,2026-08-18
+11,11,Jonathan Taylor,IND,RB,RB4,310.14,19217,https://www.fantasypros.com/nfl/players/jonathan-taylor.php,13,99.4,99.8,100,,12.72,6,33,6.17,2,,,326.62,1504.59,12.86,42.9,341.47,1.49,,,,,,,,,,,2026-08-18
+12,12,A.J. Brown,NE,WR,WR8,255.18,18218,https://www.fantasypros.com/nfl/players/aj-brown.php,11,99.3,99.4,100,,14.37,6,35,5.42,3,,,,,,87.68,1221.72,7.65,,,,,,,,,,,2026-08-18
+13,13,Ashton Jeanty,LV,RB,RB5,276.71,25989,https://www.fantasypros.com/nfl/players/ashton-jeanty.php,13,99.4,99.6,100,,16.37,7,33,5.61,3,,,281.03,1105.24,8.03,58.75,414.61,3.34,,,,,,,,,,,2026-08-18
+14,14,Nico Collins,HOU,WR,WR9,248.36,20130,https://www.fantasypros.com/nfl/players/nico-collins.php,8,99.3,99.4,100,,17.04,11,29,4.22,3,,,,,,82.5,1210.21,7.25,,,,,,,,,,,2026-08-18
+15,15,James Cook III,BUF,RB,RB6,270.58,22958,https://www.fantasypros.com/nfl/players/james-cook.php,7,99.5,99.8,100,,17.65,7,31,7.25,3,,,287.68,1405.06,10.33,33.31,283.69,1.87,,,,,,,,,,,2026-08-18
+16,16,Chase Brown,CIN,RB,RB7,278.53,25324,https://www.fantasypros.com/nfl/players/chase-brown.php,6,98.7,98.9,100,,17.90,8,32,5.61,3,,,238.5,1036.78,7.8,63.76,427.64,3.95,,,,,,,,,,,2026-08-18
+17,17,Brock Bowers,LV,TE,TE1,244.08,22955,https://www.fantasypros.com/nfl/players/brock-bowers.php,13,99.5,99.8,100,1,18.25,10,32,3.50,3,,,,,,96.62,1026.86,7.52,,,,,,,,,,,2026-08-18
+18,18,George Pickens,DAL,WR,WR10,251.99,22963,https://www.fantasypros.com/nfl/players/george-pickens.php,14,99.3,99.6,100,,19.61,11,40,5.62,3,,,,,,82.51,1200.51,8.39,,,,,,,,,,,2026-08-18
+19,19,Chris Olave,NO,WR,WR11,259.47,20111,https://www.fantasypros.com/nfl/players/chris-olave.php,8,98,98.4,99,,19.76,11,38,6.31,3,,,,,,94.43,1183.37,7.89,,,,,,,,,,,2026-08-18
+20,20,Trey McBride,ARI,TE,TE2,254.28,22936,https://www.fantasypros.com/nfl/players/trey-mcbride.php,14,99.4,99.8,100,-1,21.09,16,33,4.78,3,,,,,,108.94,1051.08,6.78,,,,,,,,,,,2026-08-18
+21,21,De'Von Achane,MIA,RB,RB8,292.36,23136,https://www.fantasypros.com/nfl/players/devon-achane.php,6,99.3,99.8,100,,21.89,5,39,7.59,3,,,238.32,1199.83,6.01,65.25,491.06,3.99,,,,,,,,,,,2026-08-18
+22,22,Rashee Rice,KC,WR,WR12,274.08,23113,https://www.fantasypros.com/nfl/players/rashee-rice.php,5,98.6,99.2,99,,22.16,9,45,8.32,3,,,,,,99.12,1100.99,9.71,,,,,,,,,,,2026-08-18
+23,23,DeVonta Smith,PHI,WR,WR13,236.87,19222,https://www.fantasypros.com/nfl/players/devonta-smith.php,10,98.1,98.7,99,,23.89,12,45,7.05,4,,,,,,87.85,1134.95,6.02,,,,,,,,,,,2026-08-18
+24,24,Saquon Barkley,PHI,RB,RB9,264.67,17240,https://www.fantasypros.com/nfl/players/saquon-barkley.php,10,99.4,99.7,100,,24.91,10,41,6.55,4,,,295.82,1299.13,8.23,41.74,330.38,2.1,,,,,,,,,,,2026-08-18
+25,25,Omarion Hampton,LAC,RB,RB10,254.21,25395,https://www.fantasypros.com/nfl/players/omarion-hampton.php,7,99,99,100,,24.96,10,43,7.45,4,,,243.66,1035.14,9.46,50.21,342.77,1.92,,,,,,,,,,,2026-08-18
+26,26,Malik Nabers,NYG,WR,WR14,240.29,25409,https://www.fantasypros.com/nfl/players/malik-nabers.php,8,98.4,98.3,99,,25.47,11,47,9.15,4,,,,,,81.03,1082.92,8.43,,,,,,,,,,,2026-08-18
+27,27,Josh Allen,BUF,QB,QB1,372.46,17298,https://www.fantasypros.com/nfl/players/josh-allen-qb.php,7,99.6,99.8,100,,26.09,21,40,3.13,4,3816.47,27.42,118.13,585.97,11.82,,,,,,,,,,,,,,2026-08-18
+28,28,Kenneth Walker III,KC,RB,RB11,257.97,23021,https://www.fantasypros.com/nfl/players/kenneth-walker-rb.php,5,99.2,99.3,100,,28.67,13,50,8.16,4,,,262.54,1191.38,8.71,45.77,353.15,1.23,,,,,,,,,,,2026-08-18
+29,29,Zay Flowers,BAL,WR,WR15,241.77,22916,https://www.fantasypros.com/nfl/players/zay-flowers.php,13,97.7,97.9,99,,30.12,14,48,8.18,4,,,,,,81.24,1157.19,6.5,,,,,,,,,,,2026-08-18
+30,30,Garrett Wilson,NYJ,WR,WR16,242.92,23072,https://www.fantasypros.com/nfl/players/garrett-wilson.php,13,96.6,98.2,97,,30.65,14,46,6.61,4,,,,,,96.31,1095.77,6.42,,,,,,,,,,,2026-08-18
+31,31,Lamar Jackson,BAL,QB,QB2,324.91,17233,https://www.fantasypros.com/nfl/players/lamar-jackson.php,13,99.2,99.6,100,,33.37,25,70,11.10,4,3651.9,28.34,118.39,639.75,3.23,,,,,,,,,,,,,,2026-08-18
+32,32,Tetairoa McMillan,CAR,WR,WR17,233.74,25417,https://www.fantasypros.com/nfl/players/tetairoa-mcmillan.php,5,97.6,97.9,98,,34.03,15,51,8.08,4,,,,,,81.21,1146.04,6.62,,,,,,,,,,,2026-08-18
+33,33,Ladd McConkey,LAC,WR,WR18,220.27,26122,https://www.fantasypros.com/nfl/players/ladd-mcconkey.php,7,96.2,95.5,97,,34.97,15,48,7.26,4,,,,,,79.21,1010.14,6.77,,,,,,,,,,,2026-08-18
+34,34,Jaylen Waddle,DEN,WR,WR19,210.22,19790,https://www.fantasypros.com/nfl/players/jaylen-waddle.php,10,95.7,94.4,98,2,35.82,18,49,7.06,4,,,,,,74.19,992.18,6.01,,,,,,,,,,,2026-08-18
+35,35,Tee Higgins,CIN,WR,WR20,221.71,19211,https://www.fantasypros.com/nfl/players/tee-higgins.php,6,96.9,95.4,99,,36.06,19,55,7.28,4,,,,,,70.75,965.37,9.14,,,,,,,,,,,2026-08-18
+36,36,Drake Maye,NE,QB,QB3,322.96,23046,https://www.fantasypros.com/nfl/players/drake-maye.php,11,98.8,99,99,,37.72,26,119,15.40,5,4027.04,28,99.35,492.97,3.68,,,,,,,,,,,,,,2026-08-18
+37,37,Colston Loveland,CHI,TE,TE3,211.39,26006,https://www.fantasypros.com/nfl/players/colston-loveland.php,10,99.2,99.2,100,,37.81,22,85,12.49,5,,,,,,79.06,927.48,6.67,,,,,,,,,,,2026-08-18
+38,38,Derrick Henry,BAL,RB,RB12,273.74,15514,https://www.fantasypros.com/nfl/players/derrick-henry.php,13,99.2,99.6,100,,38.07,17,50,8.32,5,,,314.04,1568.84,13.38,18.13,175.12,0.73,,,,,,,,,,,2026-08-18
+39,39,Emeka Egbuka,TB,WR,WR21,228.33,23062,https://www.fantasypros.com/nfl/players/emeka-egbuka.php,10,97.1,97.3,98,,39.02,14,60,7.92,5,,,,,,73.21,1098.47,7.49,,,,,,,,,,,2026-08-18
+40,40,Jeremiyah Love,ARI,RB,RB13,255.39,25403,https://www.fantasypros.com/nfl/players/jeremiyah-love.php,14,98.4,99.2,99,,39.07,25,65,7.43,5,,,237.21,1068.92,7.22,54.72,423.12,2.08,,,,,,,,,,,2026-08-18
+41,41,Breece Hall,NYJ,RB,RB14,245.4,22982,https://www.fantasypros.com/nfl/players/breece-hall.php,13,97.4,98.2,99,,40.58,31,56,5.82,5,,,249.04,1113.16,6.19,46.35,404.58,2.25,,,,,,,,,,,2026-08-18
+42,42,Kyren Williams,LAR,RB,RB15,240.15,23059,https://www.fantasypros.com/nfl/players/kyren-williams.php,11,97.8,97.4,99,,42.26,23,56,6.58,5,,,240.17,1118.4,10.06,33.8,239.63,2.21,,,,,,,,,,,2026-08-18
+43,43,Joe Burrow,CIN,QB,QB4,310.9,19196,https://www.fantasypros.com/nfl/players/joe-burrow.php,6,97.8,96.2,100,,45.24,27,92,13.82,5,4175.01,33.34,48.22,178.6,1.36,,,,,,,,,,,,,,2026-08-18
+44,44,Josh Jacobs,GB,RB,RB16,248.62,18269,https://www.fantasypros.com/nfl/players/josh-jacobs.php,11,98.3,99,99,,45.29,31,61,6.69,5,,,273.89,1101.57,11.73,35.32,279.97,1.21,,,,,,,,,,,2026-08-18
+45,45,Javonte Williams,DAL,RB,RB17,234.08,22739,https://www.fantasypros.com/nfl/players/javonte-williams.php,14,97.2,97.7,98,,45.38,31,61,6.29,5,,,256.18,1160.04,10.35,32.96,192.03,1.17,,,,,,,,,,,2026-08-18
+46,46,Terry McLaurin,WAS,WR,WR22,209.87,18466,https://www.fantasypros.com/nfl/players/terry-mclaurin.php,7,93.9,94,96,,46.19,29,64,6.06,5,,,,,,69.01,972.47,7.37,,,,,,,,,,,2026-08-18
+47,47,Luther Burden III,CHI,WR,WR23,208.06,27016,https://www.fantasypros.com/nfl/players/luther-burden-iii.php,10,92.8,90.1,95,,46.83,26,68,8.81,5,,,,,,72.68,973.08,5.69,,,,,,,,,,,2026-08-18
+48,48,Travis Etienne Jr.,NO,RB,RB18,232.59,19231,https://www.fantasypros.com/nfl/players/travis-etienne.php,8,95.9,95.9,97,,50.80,34,72,8.18,5,,,245.29,1040.04,5.38,44.77,353.44,3.03,,,,,,,,,,,2026-08-18
+49,49,Davante Adams,LAR,WR,WR24,222.28,12123,https://www.fantasypros.com/nfl/players/davante-adams.php,11,96.1,97.8,96,,51.63,36,71,6.56,5,,,,,,68.84,926.16,10.2,,,,,,,,,,,2026-08-18
+50,50,DJ Moore,BUF,WR,WR25,208.46,17265,https://www.fantasypros.com/nfl/players/dj-moore-wr.php,7,93.1,91.8,95,,53.20,19,100,11.52,6,,,,,,69.39,905.11,6.99,,,,,,,,,,,2026-08-18
+51,51,Mike Evans,SF,WR,WR26,203.83,12119,https://www.fantasypros.com/nfl/players/mike-evans.php,8,90.5,86.6,94,,53.66,42,82,9.18,6,,,,,,67.38,950.76,6.96,,,,,,,,,,,2026-08-18
+52,52,Tyler Warren,IND,TE,TE4,199.2,26434,https://www.fantasypros.com/nfl/players/tyler-warren.php,13,98.6,99,99,,53.88,22,85,11.44,6,,,,,,78.99,878.15,5.5,,,,,,,,,,,2026-08-18
+53,53,Cam Skattebo,NYG,RB,RB19,239.23,27166,https://www.fantasypros.com/nfl/players/cam-skattebo.php,8,97.1,98,97,,54.43,39,77,9.08,6,,,240.02,1000.12,8.08,43.96,349.96,2.49,,,,,,,,,,,2026-08-18
+54,54,Jameson Williams,DET,WR,WR27,217.3,23677,https://www.fantasypros.com/nfl/players/jameson-williams.php,6,93.1,93,94,,54.82,40,88,9.07,6,,,,,,64.4,1065.74,6.56,,,,,,,,,,,2026-08-18
+55,55,Jayden Daniels,WAS,QB,QB5,322.56,22902,https://www.fantasypros.com/nfl/players/jayden-daniels.php,7,97.7,98.5,99,,56.09,30,108,17.24,6,3681.29,23.79,130,685.66,4.7,,,,,,,,,,,,,,2026-08-18
+56,56,Christian Watson,GB,WR,WR28,195.25,23886,https://www.fantasypros.com/nfl/players/christian-watson.php,11,88.7,84,94,,57.35,44,88,9.39,6,,,,,,57.62,930.38,7.34,,,,,,,,,,,2026-08-18
+57,57,Rome Odunze,CHI,WR,WR29,205.14,25411,https://www.fantasypros.com/nfl/players/rome-odunze.php,10,92.1,91.6,94,,57.64,40,83,8.54,6,,,,,,62.44,963.36,7.81,,,,,,,,,,,2026-08-18
+58,58,D'Andre Swift,CHI,RB,RB20,223.41,19210,https://www.fantasypros.com/nfl/players/dandre-swift.php,10,92.7,90.9,96,,57.97,43,77,8.22,6,,,233.11,1053.43,8.05,35.14,303.46,1.04,,,,,,,,,,,2026-08-18
+59,59,Jalen Hurts,PHI,QB,QB6,320.47,19275,https://www.fantasypros.com/nfl/players/jalen-hurts.php,10,97.1,97.3,99,,58.36,30,98,12.07,6,3570.24,24.17,111.76,461.27,8.38,,,,,,,,,,,,,,2026-08-18
+60,60,Bucky Irving,TB,RB,RB21,223.73,25981,https://www.fantasypros.com/nfl/players/bucky-irving.php,10,95.1,94.6,95,,59.54,41,86,9.27,6,,,256.08,1019.74,6.1,39.94,336.69,2.25,,,,,,,,,,,2026-08-18
+61,61,David Montgomery,HOU,RB,RB22,195.93,18239,https://www.fantasypros.com/nfl/players/david-montgomery.php,8,92.6,90.4,95,,61.18,40,86,8.94,6,,,231.53,959.67,7.68,30.82,228.68,0.54,,,,,,,,,,,2026-08-18
+62,62,Quinshon Judkins,CLE,RB,RB23,214.07,25391,https://www.fantasypros.com/nfl/players/quinshon-judkins.php,11,93.9,94.5,95,,62.01,41,80,9.41,6,,,289.24,1105.34,8.1,31.28,218.8,0.58,,,,,,,,,,,2026-08-18
+63,63,Carnell Tate,TEN,WR,WR30,178.44,26009,https://www.fantasypros.com/nfl/players/carnell-tate.php,9,91.3,92.3,90,,65.35,45,126,17.12,6,,,,,,65.18,887.56,4.49,,,,,,,,,,,2026-08-18
+64,64,Parker Washington,JAC,WR,WR31,184.32,23106,https://www.fantasypros.com/nfl/players/parker-washington.php,7,85.8,83.1,90,,65.81,45,121,16.19,6,,,,,,62.59,862.53,5.73,,,,,,,,,,,2026-08-18
+65,65,Caleb Williams,CHI,QB,QB7,301.44,23084,https://www.fantasypros.com/nfl/players/caleb-williams.php,10,93.1,88.3,97,,66.45,31,104,12.95,6,3867.69,27.42,79.03,398.26,2.09,,,,,,,,,,,,,,2026-08-18
+66,66,TreVeyon Henderson,NE,RB,RB24,193.28,23065,https://www.fantasypros.com/nfl/players/treveyon-henderson.php,11,92.4,90.8,93,,66.76,41,89,9.19,6,,,187.08,858.9,6.89,35.95,249.06,1.14,,,,,,,,,,,2026-08-18
+67,67,Bhayshul Tuten,JAC,RB,RB25,207.31,27297,https://www.fantasypros.com/nfl/players/bhayshul-tuten.php,7,90.1,88.3,93,,67.79,48,89,10.06,6,,,239.39,979.58,8.24,29.24,222.09,2.14,,,,,,,,,,,2026-08-18
+68,68,Marvin Harrison Jr.,ARI,WR,WR32,197.23,23064,https://www.fantasypros.com/nfl/players/marvin-harrison-jr.php,14,88.2,87.3,91,,69.47,45,110,12.10,6,,,,,,67.25,945.02,6.01,,,,,,,,,,,2026-08-18
+69,69,Justin Herbert,LAC,QB,QB8,299.64,18635,https://www.fantasypros.com/nfl/players/justin-herbert.php,7,91,85.7,97,,70.52,37,114,13.25,6,3858.64,26.21,78.44,450.49,2.12,,,,,,,,,,,,,,2026-08-18
+70,70,Jadarian Price,SEA,RB,RB26,189.64,27329,https://www.fantasypros.com/nfl/players/jadarian-price.php,11,89.2,89.1,92,,75.10,46,118,10.40,7,,,215.53,913.16,7.97,26.02,220.13,1.08,,,,,,,,,,,2026-08-18
+71,71,Tucker Kraft,GB,TE,TE5,178.39,25298,https://www.fantasypros.com/nfl/players/tucker-kraft.php,11,92.5,86.3,98,,75.25,32,106,13.35,7,,,,,,61.46,785.81,6.47,,,,,,,,,,,2026-08-18
+72,72,Harold Fannin Jr.,CLE,TE,TE6,191.15,27050,https://www.fantasypros.com/nfl/players/harold-fannin-jr.php,11,94.2,92,97,-1,75.57,32,112,12.49,7,,,,,,78.68,816.33,5.41,,,,,,,,,,,2026-08-18
+73,73,Jaylen Warren,PIT,RB,RB27,197.23,24209,https://www.fantasypros.com/nfl/players/jaylen-warren.php,9,87.6,84.5,91,,76.18,58,93,7.09,7,,,188.05,826.8,5.16,42.37,321.74,1.82,,,,,,,,,,,2026-08-18
+74,74,Brian Thomas Jr.,JAC,WR,WR33,181.16,23000,https://www.fantasypros.com/nfl/players/brian-thomas-jr.php,7,86.7,83.1,89,,76.47,49,116,13.56,7,,,,,,58.04,872.23,5.35,,,,,,,,,,,2026-08-18
+75,75,Trevor Lawrence,JAC,QB,QB9,306.2,19780,https://www.fantasypros.com/nfl/players/trevor-lawrence.php,7,89,86.1,93,,77.35,37,106,14.61,7,3908.51,26.97,72.49,321.94,4.94,,,,,,,,,,,,,,2026-08-18
+76,76,Chris Godwin Jr.,TB,WR,WR34,175.74,16406,https://www.fantasypros.com/nfl/players/chris-godwin.php,10,78.5,68.8,87,,78.97,45,110,13.56,7,,,,,,67.79,773.92,5.18,,,,,,,,,,,2026-08-18
+77,77,Rhamondre Stevenson,NE,RB,RB28,187.52,22726,https://www.fantasypros.com/nfl/players/rhamondre-stevenson.php,11,85.9,82.7,90,,79.56,58,117,9.35,7,,,168.57,723.09,6.59,37.86,318.86,1.69,,,,,,,,,,,2026-08-18
+78,78,Kyle Pitts Sr.,ATL,TE,TE7,195.65,20164,https://www.fantasypros.com/nfl/players/kyle-pitts.php,11,95.3,95,97,,80.20,57,97,9.52,7,,,,,,79.49,880.85,4.73,,,,,,,,,,,2026-08-18
+79,79,DK Metcalf,PIT,WR,WR35,195.22,18219,https://www.fantasypros.com/nfl/players/dk-metcalf.php,9,89.2,89,90,,80.29,55,116,12.85,7,,,,,,64.26,926.84,6.07,,,,,,,,,,,2026-08-18
+80,80,Dak Prescott,DAL,QB,QB10,306.18,15600,https://www.fantasypros.com/nfl/players/dak-prescott.php,14,92.1,89,96,,81.34,54,113,12.97,7,4291.85,30.94,49.09,173.45,1.71,,,,,,,,,,,,,,2026-08-18
+81,81,Sam LaPorta,DET,TE,TE8,184.15,22978,https://www.fantasypros.com/nfl/players/sam-laporta.php,6,95.5,94.6,99,,81.90,57,106,10.41,7,,,,,,70.44,813.86,5.45,,,,,,,,,,,2026-08-18
+82,82,Michael Pittman Jr.,PIT,WR,WR36,190.3,19278,https://www.fantasypros.com/nfl/players/michael-pittman.php,9,82.3,87.4,81,,83.38,45,127,14.46,7,,,,,,80.48,806.11,4.98,,,,,,,,,,,2026-08-18
+83,83,Tony Pollard,TEN,RB,RB29,187.77,18705,https://www.fantasypros.com/nfl/players/tony-pollard.php,9,85.8,85.5,89,,83.57,58,117,10.63,7,,,236.15,1033.74,5.48,31.9,208.21,0.5,,,,,,,,,,,2026-08-18
+84,84,Josh Downs,IND,WR,WR37,169.07,24706,https://www.fantasypros.com/nfl/players/josh-downs.php,13,78.1,76.3,84,,84.29,45,133,14.53,7,,,,,,71.49,731.61,4.23,,,,,,,,,,,2026-08-18
+85,85,Courtland Sutton,DEN,WR,WR38,198.61,17253,https://www.fantasypros.com/nfl/players/courtland-sutton.php,10,86.7,88.4,86,,85.19,55,116,13.98,7,,,,,,67.4,884.65,7.21,,,,,,,,,,,2026-08-18
+86,86,Wan'Dale Robinson,TEN,WR,WR39,181.12,22985,https://www.fantasypros.com/nfl/players/wandale-robinson.php,9,70.6,79.5,56,,85.81,45,133,15.97,7,,,,,,79.95,805.95,3.32,,,,,,,,,,,2026-08-18
+87,87,Rico Dowdle,PIT,RB,RB30,180.23,19647,https://www.fantasypros.com/nfl/players/rico-dowdle.php,9,85.5,83.6,89,,88.06,67,127,12.00,7,,,200.01,869.8,5.84,31.75,222.3,1.03,,,,,,,,,,,2026-08-18
+88,88,Michael Wilson,ARI,WR,WR40,176.61,25333,https://www.fantasypros.com/nfl/players/michael-wilson.php,14,83.4,82.1,84,,88.69,51,136,16.74,7,,,,,,67.53,826.43,4.47,,,,,,,,,,,2026-08-18
+89,89,RJ Harvey,DEN,RB,RB31,167.43,27142,https://www.fantasypros.com/nfl/players/rj-harvey.php,10,82.4,75.6,85,,95.29,53,141,16.00,7,,,115.94,439.31,4.29,45.91,341.62,3.19,,,,,,,,,,,2026-08-18
+90,90,Chuba Hubbard,CAR,RB,RB32,176.52,19792,https://www.fantasypros.com/nfl/players/chuba-hubbard.php,5,85.8,82.5,89,,95.60,67,141,15.10,7,,,186.51,761.55,4.95,36.09,256.03,1.8,,,,,,,,,,,2026-08-18
+91,91,Brock Purdy,SF,QB,QB11,307.5,19797,https://www.fantasypros.com/nfl/players/brock-purdy.php,8,85.7,83.6,90,,95.85,63,125,10.66,7,4156.93,27.69,70.47,304.09,3.84,,,,,,,,,,,,,,2026-08-18
+92,92,Jaxson Dart,NYG,QB,QB12,310.02,23160,https://www.fantasypros.com/nfl/players/jaxson-dart.php,8,92.6,92.9,93,,96.99,59,129,14.01,7,3591.47,22.26,100.92,549.14,6.53,,,,,,,,,,,,,,2026-08-18
+93,93,Alec Pierce,IND,WR,WR41,197.59,23791,https://www.fantasypros.com/nfl/players/alec-pierce.php,13,84.2,84,88,,97.27,69,163,18.29,8,,,,,,58.53,1010.59,6.42,,,,,,,,,,,2026-08-18
+94,94,Jonathon Brooks,CAR,RB,RB33,157.61,26148,https://www.fantasypros.com/nfl/players/jonathon-brooks.php,5,75,74.6,83,4,98.03,65,260,31.10,8,,,179.65,743.19,5.11,27.9,211.55,1.08,,,,,,,,,,,2026-08-18
+95,95,Travis Kelce,KC,TE,TE9,182.06,11594,https://www.fantasypros.com/nfl/players/travis-kelce.php,5,89.3,87.3,93,,98.90,66,138,13.43,8,,,,,,74.94,785.74,4.84,,,,,,,,,,,2026-08-18
+96,96,Kenny Gainwell,TB,RB,RB34,168.15,23310,https://www.fantasypros.com/nfl/players/kenneth-gainwell.php,10,77.7,79,79,,99.21,65,135,13.40,8,,,113.59,497.76,3.86,49.71,352.29,2.01,,,,,,,,,,,2026-08-18
+97,97,Quentin Johnston,LAC,WR,WR42,169.93,23123,https://www.fantasypros.com/nfl/players/quentin-johnston.php,7,76.4,70.3,83,,100.58,68,149,16.07,8,,,,,,53.6,757.29,6.88,,,,,,,,,,,2026-08-18
+98,98,Patrick Mahomes II,KC,QB,QB13,304.32,16413,https://www.fantasypros.com/nfl/players/patrick-mahomes.php,5,87.3,84.4,90,,101.12,70,130,11.91,8,3839.66,27.46,60.35,359.32,3.42,,,,,,,,,,,,,,2026-08-18
+99,99,Jordyn Tyson,NO,WR,WR43,125.17,26035,https://www.fantasypros.com/nfl/players/jordyn-tyson.php,8,84,81.4,84,,101.20,62,210,27.83,8,,,,,,45.52,613.75,3.23,,,,,,,,,,,2026-08-18
+100,100,Bo Nix,DEN,QB,QB14,298.19,22910,https://www.fantasypros.com/nfl/players/bo-nix.php,10,86.8,87.4,90,,101.25,70,125,9.72,8,3745.48,26.84,79.1,341.41,3.66,,,,,,,,,,,,,,2026-08-18
+101,101,Jakobi Meyers,JAC,WR,WR44,178.7,18598,https://www.fantasypros.com/nfl/players/jakobi-meyers.php,7,73.5,79.8,61,,101.83,62,163,17.30,8,,,,,,68.28,787.7,5.07,,,,,,,,,,,2026-08-18
+102,102,George Kittle,SF,TE,TE10,175.66,16499,https://www.fantasypros.com/nfl/players/george-kittle.php,8,89.4,87.8,94,,102.58,73,155,16.00,8,,,,,,66.26,753.42,5.73,,,,,,,,,,,2026-08-18
+103,103,J.K. Dobbins,DEN,RB,RB35,176.06,19245,https://www.fantasypros.com/nfl/players/jk-dobbins.php,10,81.9,79.2,86,,103.13,75,141,17.26,8,,,219.59,1027.46,6.87,19.45,104.47,0.61,,,,,,,,,,,2026-08-18
+104,104,Makai Lemon,PHI,WR,WR45,150.84,25420,https://www.fantasypros.com/nfl/players/makai-lemon.php,10,80,77,78,,104.70,70,137,15.77,8,,,,,,52.75,738.21,4.36,,,,,,,,,,,2026-08-18
+105,105,Matthew Stafford,LAR,QB,QB15,293.97,9451,https://www.fantasypros.com/nfl/players/matthew-stafford.php,11,90.5,92.3,91,,105.60,59,148,13.06,8,4190.91,33.98,23.68,33.14,0.2,,,,,,,,,,,,,,2026-08-18
+106,106,Jared Goff,DET,QB,QB16,287.8,15501,https://www.fantasypros.com/nfl/players/jared-goff.php,6,74.5,62.6,83,,106.54,63,147,12.40,8,4308.08,31.68,23.74,48.16,0.23,,,,,,,,,,,,,,2026-08-18
+107,107,Jordan Addison,MIN,WR,WR46,168.88,23107,https://www.fantasypros.com/nfl/players/jordan-addison.php,6,78.8,77.5,80,,106.89,69,163,16.13,8,,,,,,55.17,758.44,5.4,,,,,,,,,,,2026-08-18
+108,108,Rachaad White,WAS,RB,RB36,163.61,23891,https://www.fantasypros.com/nfl/players/rachaad-white.php,7,72.4,75.3,74,,107.34,75,143,16.16,8,,,140.33,618.97,5.36,36.45,251.27,1.6,,,,,,,,,,,2026-08-18
+109,109,Jayden Reed,GB,WR,WR47,176.35,23020,https://www.fantasypros.com/nfl/players/jayden-reed.php,11,74.4,67.8,79,,108.63,78,142,13.92,8,,,,,,63.12,757.74,4.79,,,,,,,,,,,2026-08-18
+110,110,Stefon Diggs,WAS,WR,WR48,166.27,13981,https://www.fantasypros.com/nfl/players/stefon-diggs.php,7,72.9,65.1,77,,102.31,60,225,36.36,8,,,,,,67.03,747.49,4.15,,,,,,,,,,,2026-08-18
+111,111,Kyle Monangai,CHI,RB,RB37,156.18,27131,https://www.fantasypros.com/nfl/players/kyle-monangai.php,10,80.2,76.3,84,,110.63,77,145,14.04,8,,,191.3,817.29,5.16,22.89,195,0.43,,,,,,,,,,,2026-08-18
+112,112,Blake Corum,LAR,RB,RB38,138.56,23013,https://www.fantasypros.com/nfl/players/blake-corum.php,11,78.3,72.2,85,,111.12,84,143,14.12,8,,,167.65,801.5,6.44,11.89,80.37,0.2,,,,,,,,,,,2026-08-18
+113,113,Kyler Murray,MIN,QB,QB17,280.23,18600,https://www.fantasypros.com/nfl/players/kyler-murray.php,6,65.8,54.5,79,,111.39,59,139,10.96,8,3499.14,23.49,79.64,476.26,3.36,,,,,,,,,,,,,,2026-08-18
+114,114,Aaron Jones Sr.,MIN,RB,RB39,161.12,16673,https://www.fantasypros.com/nfl/players/aaron-jones.php,6,74.7,78.5,70,,113.54,78,145,15.33,8,,,149.94,638.08,3.07,40.67,300.75,1.69,,,,,,,,,,,2026-08-18
+115,115,Dalton Kincaid,BUF,TE,TE11,160.18,25247,https://www.fantasypros.com/nfl/players/dalton-kincaid.php,7,81.2,65.3,90,,114.04,95,155,15.44,8,,,,,,57.09,706.8,5.48,,,,,,,,,,,2026-08-18
+116,116,Jake Ferguson,DAL,TE,TE12,167.43,22718,https://www.fantasypros.com/nfl/players/jake-ferguson.php,14,84.5,84.6,84,,115.37,73,172,17.82,8,,,,,,73.94,606.35,5.95,,,,,,,,,,,2026-08-18
+117,117,Isaiah Likely,NYG,TE,TE13,164.98,23781,https://www.fantasypros.com/nfl/players/isaiah-likely.php,8,81.1,77.5,87,2,116.28,85,229,23.51,8,,,,,,62.78,745.22,5.03,,,,,,,,,,,2026-08-18
+118,118,Baker Mayfield,TB,QB,QB18,281.87,17237,https://www.fantasypros.com/nfl/players/baker-mayfield.php,10,58,46.6,56,,118.25,92,171,10.70,8,3842.19,25.87,57.69,362.08,1.46,,,,,,,,,,,,,,2026-08-18
+119,119,Jacory Croskey-Merritt,WAS,RB,RB40,145.83,27316,https://www.fantasypros.com/nfl/players/jacory-croskeymerritt.php,7,73.1,68.3,78,,118.67,80,143,12.98,8,,,182.78,821.68,7.48,12.02,89.01,0.22,,,,,,,,,,,2026-08-18
+120,120,Jordan Love,GB,QB,QB19,267.67,19246,https://www.fantasypros.com/nfl/players/jordan-love.php,11,54.1,28,63,,120.18,98,170,10.35,8,3846.25,26.67,46.46,194.88,0.64,,,,,,,,,,,,,,2026-08-18
+121,121,Jordan Mason,MIN,RB,RB41,145.15,22969,https://www.fantasypros.com/nfl/players/jordan-mason.php,6,66.6,52.4,77,,120.21,77,182,16.17,8,,,192.78,878.03,6.13,14.47,75.8,0.11,,,,,,,,,,,2026-08-18
+122,122,Dallas Goedert,PHI,TE,TE14,179.42,17270,https://www.fantasypros.com/nfl/players/dallas-goedert.php,10,84.2,87.6,89,,120.22,95,186,17.25,8,,,,,,65.54,688.91,7.56,,,,,,,,,,,2026-08-18
+123,123,Jayden Higgins,HOU,WR,WR49,146.08,27077,https://www.fantasypros.com/nfl/players/jayden-higgins.php,8,46,37.8,38,,121.65,96,163,12.89,8,,,,,,51.77,634.13,5.23,,,,,,,,,,,2026-08-18
+124,124,Khalil Shakir,BUF,WR,WR50,164.91,23748,https://www.fantasypros.com/nfl/players/khalil-shakir.php,7,58.9,72.4,36,,121.97,90,175,16.32,8,,,,,,69.69,726.29,3.9,,,,,,,,,,,2026-08-18
+125,125,Tyler Shough,NO,QB,QB20,286.74,23096,https://www.fantasypros.com/nfl/players/tyler-shough.php,8,45.8,41.3,42,,123.45,79,198,15.16,8,3984.14,22.18,78.23,329.85,4.1,,,,,,,,,,,,,,2026-08-18
+126,126,KC Concepcion,CLE,WR,WR51,159.64,27331,https://www.fantasypros.com/nfl/players/kevin-concepcion.php,11,59.6,62.4,46,,124.60,83,210,22.62,8,,,,,,60.05,779.1,3.58,,,,,,,,,,,2026-08-18
+127,127,Jalen Coker,CAR,WR,WR52,157.71,26403,https://www.fantasypros.com/nfl/players/jalen-coker.php,5,44.6,37,37,,125.21,90,163,16.08,8,,,,,,60.7,717.51,4.48,,,,,,,,,,,2026-08-18
+128,128,Xavier Worthy,KC,WR,WR53,167.54,23019,https://www.fantasypros.com/nfl/players/xavier-worthy.php,5,63.8,71.5,54,,126.91,90,168,13.84,8,,,,,,55.19,722.74,4.21,,,,,,,,,,,2026-08-18
+129,129,Matthew Golden,GB,WR,WR54,165.47,26024,https://www.fantasypros.com/nfl/players/matthew-golden.php,11,68.7,81.9,58,,129.02,81,195,20.36,9,,,,,,56.84,787.05,4.34,,,,,,,,,,,2026-08-18
+130,130,Mark Andrews,BAL,TE,TE15,167.17,17269,https://www.fantasypros.com/nfl/players/mark-andrews.php,13,80.7,79.4,86,,129.26,87,229,24.44,9,,,,,,59.65,618.53,7.7,,,,,,,,,,,2026-08-18
+131,131,Romeo Doubs,NE,WR,WR55,156.46,23794,https://www.fantasypros.com/nfl/players/romeo-doubs.php,11,57.3,59.2,41,,130.76,96,178,16.22,9,,,,,,55.19,712.3,5.09,,,,,,,,,,,2026-08-18
+132,132,Malik Willis,MIA,QB,QB21,271.52,23499,https://www.fantasypros.com/nfl/players/malik-willis.php,6,38,14.8,43,,132.10,98,242,23.07,9,3371.39,18.07,124.87,642.43,4.14,,,,,,,,,,,,,,2026-08-18
+133,133,Tyrone Tracy Jr.,NYG,RB,RB42,120.04,22980,https://www.fantasypros.com/nfl/players/tyrone-tracy-jr.php,8,37.7,17.4,41,,135.49,102,181,13.69,9,,,119.73,506.79,2.53,27.29,210.75,1.23,,,,,,,,,,,2026-08-18
+134,134,Juwan Johnson,NO,TE,TE16,154.73,19562,https://www.fantasypros.com/nfl/players/juwan-johnson.php,8,41.7,25.8,40,,138.97,95,191,18.40,9,,,,,,64.69,730.36,3.27,,,,,,,,,,,2026-08-18
+135,135,Tyler Allgeier,ARI,RB,RB43,95.23,24172,https://www.fantasypros.com/nfl/players/tyler-allgeier.php,14,39.5,18.6,38,,140.42,109,178,12.33,9,,,111.68,424.83,4.16,17.05,108.38,0.2,,,,,,,,,,,2026-08-18
+136,136,Woody Marks,HOU,RB,RB44,124.37,27520,https://www.fantasypros.com/nfl/players/woody-marks.php,8,46.8,58.5,30,,140.52,99,177,13.57,9,,,142.69,555.84,2.66,24.05,197.44,1.78,,,,,,,,,,,2026-08-18
+137,137,Chris Rodriguez Jr.,JAC,RB,RB45,95.59,22986,https://www.fantasypros.com/nfl/players/chris-rodriguez-jr.php,7,39.9,17.7,48,,140.53,120,238,16.03,9,,,135.5,560.76,5.14,5.37,42.83,0.05,,,,,,,,,,,2026-08-18
+138,138,Tyjae Spears,TEN,RB,RB46,138.09,25323,https://www.fantasypros.com/nfl/players/tyjae-spears.php,9,36.4,32.5,24,,141.25,99,201,15.68,9,,,94.84,379.57,2.99,45.85,306.12,1.2,,,,,,,,,,,2026-08-18
+139,139,Sam Darnold,SEA,QB,QB22,266.56,17236,https://www.fantasypros.com/nfl/players/sam-darnold.php,11,37.1,19,35,,143.02,119,249,18.14,9,4090.72,27.35,44.02,131.86,0.62,,,,,,,,,,,,,,2026-08-18
+140,140,C.J. Stroud,HOU,QB,QB23,260.86,23071,https://www.fantasypros.com/nfl/players/cj-stroud.php,8,31.6,17,27,,143.96,108,237,19.30,9,3878.36,23.5,54.36,238.77,1.02,,,,,,,,,,,,,,2026-08-18
+141,141,Zach Charbonnet,SEA,RB,RB47,123.08,23152,https://www.fantasypros.com/nfl/players/zach-charbonnet.php,11,59.9,58.1,57,,146.76,99,245,22.67,9,,,130.54,533.05,5.62,19.78,147.01,0.48,,,,,,,,,,,2026-08-18
+142,142,Dylan Sampson,CLE,RB,RB48,107.93,27102,https://www.fantasypros.com/nfl/players/dylan-sampson.php,11,19.8,7.4,15,,149.63,102,237,19.42,9,,,73.53,254.13,1.35,35.86,285.06,2.07,,,,,,,,,,,2026-08-18
+143,143,Deebo Samuel Sr.,SF,WR,WR56,168.77,18244,https://www.fantasypros.com/nfl/players/deebo-samuel.php,8,58.6,66.1,47,,140.87,90,241,31.44,9,,,,,,58.25,666.21,4.52,,,,,,,,,,,2026-08-18
+144,144,Alvin Kamara,NO,RB,RB49,131.66,16421,https://www.fantasypros.com/nfl/players/alvin-kamara.php,8,45.6,48.1,35,,150.67,102,231,20.38,9,,,128.2,493.74,2.77,35,244.19,1.32,,,,,,,,,,,2026-08-18
+145,145,Rashid Shaheed,SEA,WR,WR57,156.75,24687,https://www.fantasypros.com/nfl/players/rashid-shaheed.php,11,42.5,37.1,35,,149.90,115,223,17.13,9,,,,,,49.92,755.27,3.75,,,,,,,,,,,2026-08-18
+146,146,Keaton Mitchell,LAC,RB,RB50,84.39,25360,https://www.fantasypros.com/nfl/players/keaton-mitchell.php,7,29.4,9.2,31,,150.08,103,248,24.96,9,,,95.64,432.78,2.21,15.53,114.48,0.39,,,,,,,,,,,2026-08-18
+147,147,Chig Okonkwo,WAS,TE,TE17,126.19,23982,https://www.fantasypros.com/nfl/players/chigoziem-okonkwo.php,7,38.4,8.4,51,,153.61,106,226,26.80,9,,,,,,52.77,569.81,2.78,,,,,,,,,,,2026-08-18
+148,148,Denzel Boston,CLE,WR,WR58,150.43,27339,https://www.fantasypros.com/nfl/players/denzel-boston.php,11,32.2,18.6,22,,154.45,110,305,29.65,9,,,,,,57.44,741.5,3.49,,,,,,,,,,,2026-08-18
+149,149,De'Zhaun Stribling,SF,WR,WR59,151.46,28138,https://www.fantasypros.com/nfl/players/dezhaun-stribling.php,8,31.7,21.4,31,9,155.11,75,290,42.31,9,,,,,,51.34,751.55,4.46,,,,,,,,,,,2026-08-18
+150,150,Daniel Jones,IND,QB,QB24,274.56,18232,https://www.fantasypros.com/nfl/players/daniel-jones.php,13,33.2,29.7,25,,155.51,113,321,35.43,9,3761.21,23.53,65.99,250.72,3.97,,,,,,,,,,,,,,2026-08-18
+151,151,Brenton Strange,JAC,TE,TE18,151.75,25345,https://www.fantasypros.com/nfl/players/brenton-strange.php,7,42.9,15.7,46,,157.25,111,226,23.43,9,,,,,,60.03,661.24,4.33,,,,,,,,,,,2026-08-18
+152,152,Cam Ward,TEN,QB,QB25,232.42,24755,https://www.fantasypros.com/nfl/players/cam-ward.php,9,22.5,10.5,19,,157.42,113,270,27.58,9,3587.95,19.87,44.19,185.28,2.01,,,,,,,,,,,,,,2026-08-18
+153,153,Isiah Pacheco,DET,RB,RB51,115.97,24333,https://www.fantasypros.com/nfl/players/isiah-pacheco.php,6,41.2,44.4,29,,158.22,118,237,21.00,9,,,139.5,581.78,3.51,21.06,136.41,0.6,,,,,,,,,,,2026-08-18
+154,154,Jonah Coleman,DEN,RB,RB52,49.41,27320,https://www.fantasypros.com/nfl/players/jonah-coleman.php,10,26.3,5.1,21,,157.28,118,322,28.16,9,,,48.76,203.2,1.56,10.22,74.82,0.4,,,,,,,,,,,2026-08-18
+155,155,Hunter Henry,NE,TE,TE19,150.35,15561,https://www.fantasypros.com/nfl/players/hunter-henry.php,11,64.2,57.6,59,,165.08,112,229,24.65,9,,,,,,55.6,645.24,5.08,,,,,,,,,,,2026-08-18
+156,156,Bryce Young,CAR,QB,QB26,254.38,22900,https://www.fantasypros.com/nfl/players/bryce-young.php,5,23.3,8.3,16,,169.57,134,328,27.40,10,3424.03,22.76,57.93,261.1,3.05,,,,,,,,,,,,,,2026-08-18
+157,157,Tank Bigsby,PHI,RB,RB53,82.17,22908,https://www.fantasypros.com/nfl/players/tank-bigsby.php,10,27.3,15.7,23,,169.58,135,234,22.43,10,,,104.61,510.9,4.18,3.82,31.84,0.07,,,,,,,,,,,2026-08-18
+158,158,Houston Texans,HOU,D/ST,DST1,120.27,8120,https://www.fantasypros.com/nfl/players/houston-defense.php,8,97.4,96,99,,153.53,144,177,6.08,10,,,,,,,,,,,,49.5,14.44,2.78,1,18.33,11.61,1,2026-08-18
+159,159,Jerry Jeudy,CLE,WR,WR60,145.44,19201,https://www.fantasypros.com/nfl/players/jerry-jeudy.php,11,27.9,28.5,12,,166.60,132,269,27.34,10,,,,,,54.71,747.41,2.88,,,,,,,,,,,2026-08-18
+160,160,Adonai Mitchell,NYJ,WR,WR61,113.88,24357,https://www.fantasypros.com/nfl/players/adonai-mitchell.php,13,15.1,9.7,11,,171.85,129,264,26.19,10,,,,,,39.74,549.26,3.31,,,,,,,,,,,2026-08-18
+161,161,Brian Robinson Jr.,ATL,RB,RB54,93.02,20094,https://www.fantasypros.com/nfl/players/brian-robinson-jr.php,11,33.6,17.4,19,,172.34,130,234,19.99,10,,,129.79,564.22,4.34,6.88,43.06,0.15,,,,,,,,,,,2026-08-18
+162,162,Tre Tucker,LV,WR,WR62,142.26,25337,https://www.fantasypros.com/nfl/players/tre-tucker.php,13,19.3,17,12,,172.70,116,289,26.31,10,,,,,,50.21,635.64,3.76,,,,,,,,,,,2026-08-18
+163,163,Jauan Jennings,MIN,WR,WR63,134.07,19590,https://www.fantasypros.com/nfl/players/jauan-jennings.php,6,26.4,9.7,15,,164.13,96,283,29.69,10,,,,,,48.74,557.67,5.17,,,,,,,,,,,2026-08-18
+164,164,Jalen McMillan,TB,WR,WR64,133.84,23179,https://www.fantasypros.com/nfl/players/jalen-mcmillan.php,10,23.9,18.7,18,,173.51,137,291,26.52,10,,,,,,46.64,607.33,3.93,,,,,,,,,,,2026-08-18
+165,165,Tre' Harris,LAC,WR,WR65,89.75,26215,https://www.fantasypros.com/nfl/players/tre-harris.php,7,11.5,3.9,5,,178.27,126,298,25.92,10,,,,,,34.52,410.54,2.48,,,,,,,,,,,2026-08-18
+166,166,Dalton Schultz,HOU,TE,TE20,148.56,17349,https://www.fantasypros.com/nfl/players/dalton-schultz.php,8,24.1,13.2,16,,180.64,131,236,24.40,10,,,,,,65.83,628.73,3.37,,,,,,,,,,,2026-08-18
+167,167,Omar Cooper Jr.,NYJ,WR,WR66,93.14,28127,https://www.fantasypros.com/nfl/players/omar-cooper-jr.php,13,27.5,14.3,14,,178.23,133,299,33.18,10,,,,,,34.6,410.84,2.86,,,,,,,,,,,2026-08-18
+168,168,Denver Broncos,DEN,D/ST,DST2,118.28,8090,https://www.fantasypros.com/nfl/players/denver-defense.php,10,96.4,97.7,99,,163.76,150,211,7.52,10,,,,,,,,,,,,59.76,13.31,2.39,0.5,12.25,8.27,1,2026-08-18
+169,169,Braelon Allen,NYJ,RB,RB55,96.48,24346,https://www.fantasypros.com/nfl/players/braelon-allen.php,13,17.7,8,14,,178.78,132,275,30.28,10,,,111.79,449.03,4.46,13.85,100.77,0.72,,,,,,,,,,,2026-08-18
+170,170,Travis Hunter,JAC,WR,WR67,111.79,26034,https://www.fantasypros.com/nfl/players/travis-hunter.php,7,65.8,72.5,25,,177.16,116,260,30.45,10,,,,,,41.59,496.62,3.32,,,,,,,,,,,2026-08-18
+171,171,Los Angeles Rams,LAR,D/ST,DST3,107.96,8280,https://www.fantasypros.com/nfl/players/los-angeles-rams-defense.php,11,86.9,67,99,,167.00,149,190,7.08,10,,,,,,,,,,,,46.54,13.75,2.33,0.5,14.48,9.47,1,2026-08-18
+172,172,Seattle Seahawks,SEA,D/ST,DST4,110.88,8260,https://www.fantasypros.com/nfl/players/seattle-defense.php,11,96.5,92.3,99,,167.27,151,195,5.28,10,,,,,,,,,,,,46.45,13.63,3.23,0.5,13.53,8.39,1,2026-08-18
+173,173,Oronde Gadsden II,LAC,TE,TE21,109.17,25997,https://www.fantasypros.com/nfl/players/oronde-gadsden-ii.php,7,40.6,7.3,39,,188.07,97,259,41.06,10,,,,,,40.42,509.23,3.18,,,,,,,,,,,2026-08-18
+174,174,Jalen Nailor,LV,WR,WR68,130.47,24177,https://www.fantasypros.com/nfl/players/jalen-nailor.php,13,27,9.6,20,,187.64,121,302,39.75,10,,,,,,43.67,591.2,4.51,,,,,,,,,,,2026-08-18
+175,175,T.J. Hockenson,MIN,TE,TE22,140.65,18290,https://www.fantasypros.com/nfl/players/tj-hockenson.php,6,49.7,70,24,,190.25,138,246,22.69,10,,,,,,63.9,574.48,3.27,,,,,,,,,,,2026-08-18
+176,176,Jacoby Brissett,ARI,QB,QB27,232.19,15642,https://www.fantasypros.com/nfl/players/jacoby-brissett.php,14,16.4,3.4,9,,193.58,129,340,40.57,10,3591.51,19.64,48.73,214.31,1.43,,,,,,,,,,,,,,2026-08-18
+177,177,Philadelphia Eagles,PHI,D/ST,DST5,102.6,8230,https://www.fantasypros.com/nfl/players/philadelphia-defense.php,10,85,71.5,94,,174.90,157,235,9.68,10,,,,,,,,,,,,42.46,12.97,2.37,0,14.39,10,1,2026-08-18
+178,178,Ryan Flournoy,DAL,WR,WR69,89.16,26398,https://www.fantasypros.com/nfl/players/ryan-flournoy.php,14,11.2,3.8,7,,184.59,135,327,28.73,10,,,,,,33.77,383.04,2.66,,,,,,,,,,,2026-08-18
+179,179,Dontayvion Wicks,PHI,WR,WR70,107.93,24354,https://www.fantasypros.com/nfl/players/dontayvion-wicks.php,10,9.7,3.9,5,,194.33,133,262,34.14,10,,,,,,39.51,517.75,2.92,,,,,,,,,,,2026-08-18
+180,180,Malik Washington,MIA,WR,WR71,112.09,26314,https://www.fantasypros.com/nfl/players/malik-washington.php,6,14.5,5.2,9,,192.26,126,313,36.85,10,,,,,,45.61,414.19,2.38,,,,,,,,,,,2026-08-18
+181,181,Ray Davis,BUF,RB,RB56,35.86,26191,https://www.fantasypros.com/nfl/players/ray-davis.php,7,12.1,7.9,8,,195.47,145,294,33.66,10,,,32.31,137.93,1.06,7.75,59.95,0.39,,,,,,,,,,,2026-08-18
+182,182,New England Patriots,NE,D/ST,DST6,99.62,8180,https://www.fantasypros.com/nfl/players/new-england-defense.php,11,83.2,88.7,87,,184.88,161,235,9.36,10,,,,,,,,,,,,41.12,11.93,2.63,0.5,12.97,8.94,2,2026-08-18
+183,183,Brandon Aubrey,DAL,K,K1,153.03,26068,https://www.fantasypros.com/nfl/players/brandon-aubrey.php,14,99.4,99.7,100,,185.71,140,192,6.13,10,,,,,,,,,39.55,35.16,47.55,,,,,,,,2026-08-18
+184,184,Minnesota Vikings,MIN,D/ST,DST7,112.84,8170,https://www.fantasypros.com/nfl/players/minnesota-defense.php,6,62.8,44.8,84,,186.75,167,253,12.92,10,,,,,,,,,,,,49.32,12.56,2.38,0,18.07,12.06,1,2026-08-18
+185,185,Pat Bryant,DEN,WR,WR72,72.58,27211,https://www.fantasypros.com/nfl/players/pat-bryant.php,10,8.5,2.2,3,,195.95,137,298,33.80,10,,,,,,28.39,320.5,2.12,,,,,,,,,,,2026-08-18
+186,186,Pittsburgh Steelers,PIT,D/ST,DST8,111.85,8240,https://www.fantasypros.com/nfl/players/pittsburgh-defense.php,9,67.2,74.8,74,,188.17,167,240,8.84,10,,,,,,,,,,,,46.04,13.25,2.4,0,18.74,12.47,1,2026-08-18
+187,187,Jacksonville Jaguars,JAC,D/ST,DST9,99.9,8140,https://www.fantasypros.com/nfl/players/jacksonville-defense.php,7,68.2,70,78,,188.84,151,279,14.76,10,,,,,,,,,,,,37.13,13.86,2.64,0,13.72,9.59,1,2026-08-18
+188,188,Emmett Johnson,KC,RB,RB57,35.13,28107,https://www.fantasypros.com/nfl/players/emmett-johnson.php,5,18.2,2.3,6,,197.57,148,322,40.21,10,,,39.77,166.15,1.3,5.7,41.18,0.2,,,,,,,,,,,2026-08-18
+189,189,MarShawn Lloyd,GB,RB,RB58,53.99,23118,https://www.fantasypros.com/nfl/players/marshawn-lloyd.php,11,12.6,5,12,7,203.00,122,330,55.11,10,,,62.29,259,1.92,8.53,62.85,0.37,,,,,,,,,,,2026-08-18
+190,190,Sean Tucker,TB,RB,RB59,32.11,23679,https://www.fantasypros.com/nfl/players/sean-tucker.php,10,10.8,0.8,3,,199.06,145,275,32.44,10,,,38.81,163.61,2.22,1.49,10.2,0.04,,,,,,,,,,,2026-08-18
+191,191,AJ Barner,SEA,TE,TE23,124.38,26335,https://www.fantasypros.com/nfl/players/aj-barner.php,11,22,6.3,17,,206.69,144,268,23.41,10,,,,,,48.57,469.89,4.88,,,,,,,,,,,2026-08-18
+192,192,Los Angeles Chargers,LAC,D/ST,DST10,108.65,8250,https://www.fantasypros.com/nfl/players/los-angeles-chargers-defense.php,7,44.3,39.3,61,,191.87,171,280,13.67,10,,,,,,,,,,,,48.88,15.27,1.98,0,12.64,8.66,1,2026-08-18
+193,193,Kimani Vidal,LAC,RB,RB60,59.04,26355,https://www.fantasypros.com/nfl/players/kimani-vidal.php,7,9.4,2.2,4,,200.15,152,284,33.21,10,,,60.16,234.18,1.55,11.92,104.52,0.69,,,,,,,,,,,2026-08-18
+194,194,Ka'imi Fairbairn,HOU,K,K2,144.06,15756,https://www.fantasypros.com/nfl/players/kaimi-fairbairn.php,8,91.5,91.4,98,,192.79,173,216,4.91,10,,,,,,,,,40.46,36.3,35.16,,,,,,,,2026-08-18
+195,195,Cameron Dicker,LAC,K,K3,143.72,23901,https://www.fantasypros.com/nfl/players/cameron-dicker.php,7,97.2,99.2,98,,195.63,170,333,16.03,10,,,,,,,,,38.27,34.65,39.77,,,,,,,,2026-08-18
+196,196,Kayshon Boutte,NE,WR,WR73,109.09,22989,https://www.fantasypros.com/nfl/players/kayshon-boutte.php,11,14.3,3.3,5,,199.05,163,262,24.78,10,,,,,,33.15,501.49,4.34,,,,,,,,,,,2026-08-18
+197,197,Cam Little,JAC,K,K4,131.47,26475,https://www.fantasypros.com/nfl/players/cam-little.php,7,90.3,86.9,96,,197.72,171,238,7.19,10,,,,,,,,,32.45,29.11,44.14,,,,,,,,2026-08-18
+198,198,Mike Washington Jr.,LV,RB,RB61,83.51,28108,https://www.fantasypros.com/nfl/players/mike-washington-jr.php,13,19.4,9.8,10,,204.85,146,311,37.89,11,,,101,379.61,2.62,15.69,127.49,0.64,,,,,,,,,,,2026-08-18
+199,199,Nicholas Singleton,TEN,RB,RB62,19.74,24343,https://www.fantasypros.com/nfl/players/nick-singleton.php,9,16.7,2.3,6,,210.07,145,323,40.67,11,,,20.29,83.72,0.55,4.29,30.16,0.16,,,,,,,,,,,2026-08-18
+200,200,James Conner,ARI,RB,RB63,61.5,16447,https://www.fantasypros.com/nfl/players/james-conner.php,14,18.9,5.6,7,,200.14,130,271,37.58,11,,,42.5,153.5,1.5,18,131.5,1,,,,,,,,,,,2026-08-18
+201,201,Calvin Ridley,TEN,WR,WR74,148.13,17258,https://www.fantasypros.com/nfl/players/calvin-ridley.php,9,14.4,20.7,5,,207.85,154,316,31.84,11,,,,,,46.68,762.42,3.19,,,,,,,,,,,2026-08-18
+202,202,Baltimore Ravens,BAL,D/ST,DST11,101.96,8020,https://www.fantasypros.com/nfl/players/baltimore-defense.php,13,55.3,43.4,51,,198.89,171,356,23.99,11,,,,,,,,,,,,46.06,12.78,1.96,0,14.05,9.29,1,2026-08-18
+203,203,Troy Franklin,DEN,WR,WR75,100.31,23092,https://www.fantasypros.com/nfl/players/troy-franklin.php,10,7.5,1.8,2,,205.60,137,297,34.02,11,,,,,,36.49,403.2,3.89,,,,,,,,,,,2026-08-18
+204,204,Jason Myers,SEA,K,K5,150.41,14003,https://www.fantasypros.com/nfl/players/jason-myers.php,11,95.3,97.4,96,,200.63,174,253,10.53,11,,,,,,,,,39.62,34.7,46.32,,,,,,,,2026-08-18
+205,205,Gunnar Helm,TEN,TE,TE24,111.58,27109,https://www.fantasypros.com/nfl/players/gunnar-helm.php,9,11.6,4.5,4,,218.29,153,290,28.45,11,,,,,,48.91,444.08,3.11,,,,,,,,,,,2026-08-18
+206,206,Jaylin Noel,HOU,WR,WR76,74.36,27122,https://www.fantasypros.com/nfl/players/jaylin-noel.php,8,6.6,1.9,3,,206.90,142,346,32.16,11,,,,,,28.74,322.97,1.83,,,,,,,,,,,2026-08-18
+207,207,Kenyon Sadiq,NYJ,TE,TE25,127.28,26055,https://www.fantasypros.com/nfl/players/kenyon-sadiq.php,13,55.5,68.9,27,,220.58,144,279,29.66,11,,,,,,49.73,546.61,4.05,,,,,,,,,,,2026-08-18
+208,208,Eddy Pineiro,SF,K,K6,132.62,17575,https://www.fantasypros.com/nfl/players/eddy-pineiro.php,8,62.4,79.7,62,,209.33,178,250,11.34,11,,,,,,,,,34.69,31.04,39.5,,,,,,,,2026-08-18
+209,209,Tyler Loop,BAL,K,K7,132.05,27534,https://www.fantasypros.com/nfl/players/tyler-loop.php,13,53.6,49.1,80,,209.69,184,258,13.00,11,,,,,,,,,32.48,28.43,46.77,,,,,,,,2026-08-18
+210,210,Kansas City Chiefs,KC,D/ST,DST12,93.19,8150,https://www.fantasypros.com/nfl/players/kansas-city-defense.php,5,22.3,33.5,13,,210.30,151,280,20.49,11,,,,,,,,,,,,42.03,12.03,1.87,0,12.23,7.93,0,2026-08-18
+211,211,Isaac TeSlaa,DET,WR,WR77,85.07,27446,https://www.fantasypros.com/nfl/players/isaac-teslaa.php,6,14.1,4.5,11,,210.37,168,269,22.50,11,,,,,,25.38,352.36,4.12,,,,,,,,,,,2026-08-18
+212,212,Tank Dell,HOU,WR,WR78,141.17,25361,https://www.fantasypros.com/nfl/players/nathaniel-dell.php,8,20.2,15.4,7,,213.44,137,286,30.38,11,,,,,,49.99,630.72,3.84,,,,,,,,,,,2026-08-18
+213,213,Emanuel Wilson,SEA,RB,RB64,51.27,25885,https://www.fantasypros.com/nfl/players/emanuel-wilson.php,11,7,0.9,3,,216.15,132,290,34.94,11,,,70.21,290.48,1.71,7.68,52.13,0.03,,,,,,,,,,,2026-08-18
+214,214,Aaron Rodgers,PIT,QB,QB28,223.47,9001,https://www.fantasypros.com/nfl/players/aaron-rodgers.php,9,14.1,5.4,10,,219.56,139,343,44.39,11,3484.53,21.73,26.04,82.58,0.63,,,,,,,,,,,,,,2026-08-18
+215,215,Green Bay Packers,GB,D/ST,DST13,95.32,8110,https://www.fantasypros.com/nfl/players/green-bay-defense.php,11,30.1,49.8,22,,202.65,182,280,20.94,11,,,,,,,,,,,,40.45,11.92,1.93,0,13.54,9.73,1,2026-08-18
+216,216,Darnell Mooney,NYG,WR,WR79,63.59,19810,https://www.fantasypros.com/nfl/players/darnell-mooney.php,8,10.4,5.5,2,,215.83,149,300,25.12,11,,,,,,21.44,308.58,1.67,,,,,,,,,,,2026-08-18
+217,217,Rashod Bateman,BAL,WR,WR80,134.27,19794,https://www.fantasypros.com/nfl/players/rashod-bateman.php,13,7.1,6.7,2,,218.84,154,296,29.45,11,,,,,,38.84,598.64,5.98,,,,,,,,,,,2026-08-18
+218,218,Kaytron Allen,WAS,RB,RB65,21.48,24362,https://www.fantasypros.com/nfl/players/kaytron-allen.php,7,12.8,1.9,4,,224.09,146,324,36.53,11,,,23.64,110.88,0.72,3.03,25.69,0.1,,,,,,,,,,,2026-08-18
+219,219,Geno Smith,NYJ,QB,QB29,234.86,11687,https://www.fantasypros.com/nfl/players/geno-smith.php,13,10.5,2.9,5,,226.75,147,344,36.03,11,3459.77,22.14,57.35,210.71,1.01,,,,,,,,,,,,,,2026-08-18
+220,220,Terrance Ferguson,LAR,TE,TE26,117.42,23091,https://www.fantasypros.com/nfl/players/terrance-ferguson.php,11,17.2,17.3,9,,222.43,155,290,33.08,11,,,,,,37.31,516.75,4.79,,,,,,,,,,,2026-08-18
+221,221,Jaydon Blue,DAL,RB,RB66,54.58,24344,https://www.fantasypros.com/nfl/players/jaydon-blue.php,14,9.3,2.7,7,,219.19,143,328,46.81,11,,,62.36,263,1.94,8.71,61.73,0.39,,,,,,,,,,,2026-08-18
+222,222,Zachariah Branch,ATL,WR,WR81,80.28,25419,https://www.fantasypros.com/nfl/players/zachariah-branch.php,11,17.4,5.6,5,,222.69,150,316,36.64,11,,,,,,31.41,381.69,1.89,,,,,,,,,,,2026-08-18
+223,223,Jake Bates,DET,K,K8,135.86,26075,https://www.fantasypros.com/nfl/players/jake-bates.php,6,65.3,70.4,67,,223.02,183,282,16.38,11,,,,,,,,,33.81,28.28,51.03,,,,,,,,2026-08-18
+224,224,Cairo Santos,CHI,K,K9,133.31,13731,https://www.fantasypros.com/nfl/players/cairo-santos.php,10,27.1,32,32,,216.28,196,282,13.43,11,,,,,,,,,34.49,29.99,43.34,,,,,,,,2026-08-18
+225,225,Antonio Williams,WAS,WR,WR82,104.17,25418,https://www.fantasypros.com/nfl/players/antonio-williams-wr.php,7,17.7,4.7,6,,223.40,137,314,40.01,11,,,,,,35.47,497.23,3.14,,,,,,,,,,,2026-08-18
+226,226,Andy Borregales,NE,K,K10,119.38,27291,https://www.fantasypros.com/nfl/players/andres-borregales.php,11,26.7,3.3,25,,221.80,188,287,19.83,11,,,,,,,,,30.88,25.79,42,,,,,,,,2026-08-18
+227,227,Pat Freiermuth,PIT,TE,TE27,134.13,20163,https://www.fantasypros.com/nfl/players/pat-freiermuth.php,9,13.1,10.8,7,,235.60,131,332,32.50,11,,,,,,52.98,560.02,4.27,,,,,,,,,,,2026-08-18
+228,228,Cooper Kupp,SEA,WR,WR83,125.19,16433,https://www.fantasypros.com/nfl/players/cooper-kupp.php,11,13.6,9.6,7,,226.93,168,298,27.08,11,,,,,,47.43,584.85,3.41,,,,,,,,,,,2026-08-18
+229,229,Evan McPherson,CIN,K,K11,128.73,23297,https://www.fantasypros.com/nfl/players/evan-mcpherson.php,6,40.2,14.4,60,,215.67,176,264,15.50,11,,,,,,,,,32.15,27.67,45.71,,,,,,,,2026-08-18
+230,230,Chase McLaughlin,TB,K,K12,132.86,19058,https://www.fantasypros.com/nfl/players/chase-mclaughlin.php,10,16.6,16.2,13,,225.15,185,282,17.76,11,,,,,,,,,36.49,31.52,38.29,,,,,,,,2026-08-18
+231,231,Cade Otton,TB,TE,TE28,128.91,23181,https://www.fantasypros.com/nfl/players/cade-otton.php,10,15.3,2.8,4,,241.05,168,290,20.96,11,,,,,,54.85,557.76,3.09,,,,,,,,,,,2026-08-18
+232,232,Harrison Mevis,LAR,K,K13,136.88,26638,https://www.fantasypros.com/nfl/players/harrison-mevis.php,11,69.6,92,54,,227.38,196,282,18.69,11,,,,,,,,,30.15,27.32,54.93,,,,,,,,2026-08-18
+233,233,Detroit Lions,DET,D/ST,DST14,106.81,8100,https://www.fantasypros.com/nfl/players/detroit-defense.php,6,59.5,75.5,44,,224.67,185,330,26.54,11,,,,,,,,,,,,48.03,13.43,2.15,0.5,13.92,9,1,2026-08-18
+234,234,Buffalo Bills,BUF,D/ST,DST15,106.64,8030,https://www.fantasypros.com/nfl/players/buffalo-defense.php,7,30.2,63.5,16,,227.10,189,342,22.69,11,,,,,,,,,,,,42.71,14.58,2.43,0.5,12.73,9.6,0,2026-08-18
+235,235,Germie Bernard,PIT,WR,WR84,109.19,26039,https://www.fantasypros.com/nfl/players/germie-bernard.php,9,13.5,9.7,3,,234.14,168,319,33.44,11,,,,,,41.22,507.7,2.89,,,,,,,,,,,2026-08-18
+236,236,Jaylen Wright,MIA,RB,RB67,50.74,25987,https://www.fantasypros.com/nfl/players/jaylen-wright.php,6,6.4,1.6,2,,234.38,151,301,28.66,11,,,79.95,308.92,1.55,7.24,52.46,0.1,,,,,,,,,,,2026-08-18
+237,237,Greg Dulcich,MIA,TE,TE29,133.53,23153,https://www.fantasypros.com/nfl/players/greg-dulcich.php,6,14.8,3.4,12,,203.42,131,289,41.71,11,,,,,,54.58,620,3.22,,,,,,,,,,,2026-08-18
+238,238,George Holani,SEA,RB,RB68,41.13,22915,https://www.fantasypros.com/nfl/players/george-holani.php,11,5.5,3.3,3,,242.31,157,337,42.84,11,,,38.85,164.14,1.53,8.01,62.22,0.28,,,,,,,,,,,2026-08-18
+239,239,Cleveland Browns,CLE,D/ST,DST16,101.14,8070,https://www.fantasypros.com/nfl/players/cleveland-defense.php,11,21,50.9,6,,220.76,182,356,35.19,11,,,,,,,,,,,,46.33,12.13,2.21,0,12.81,8.63,0,2026-08-18
+240,240,Ollie Gordon II,MIA,RB,RB69,34.82,25984,https://www.fantasypros.com/nfl/players/ollie-gordon.php,6,2.8,1.3,2,,242.33,156,309,26.60,11,,,49.44,203.47,1.23,3.94,27.74,0.12,,,,,,,,,,,2026-08-18
+241,241,Chris Boswell,PIT,K,K14,118.34,13029,https://www.fantasypros.com/nfl/players/chris-boswell.php,9,33.4,38.2,28,,238.90,187,282,19.25,11,,,,,,,,,32.37,28.12,33.97,,,,,,,,2026-08-18
+242,242,Justice Hill,BAL,RB,RB70,112.1,18256,https://www.fantasypros.com/nfl/players/justice-hill.php,13,7.7,6.3,2,,239.74,145,310,34.76,11,,,56.4,273.71,2.18,32.72,283.44,1.84,,,,,,,,,,,2026-08-18
+243,243,Jack Bech,LV,WR,WR85,65.82,27224,https://www.fantasypros.com/nfl/players/jack-bech.php,13,5.6,2.3,2,,242.23,163,347,31.88,11,,,,,,27.74,315.02,1.19,,,,,,,,,,,2026-08-18
+244,244,Chimere Dike,TEN,WR,WR86,79.19,27315,https://www.fantasypros.com/nfl/players/chimere-dike.php,9,6.7,1.4,3,,238.58,154,331,37.69,11,,,,,,27.82,271.62,3.39,,,,,,,,,,,2026-08-18
+245,245,Fernando Mendoza,LV,QB,QB30,192.9,28013,https://www.fantasypros.com/nfl/players/fernando-mendoza.php,13,26,12.2,13,,257.08,176,368,39.99,11,2891.98,16.06,50.36,227.37,1.31,,,,,,,,,,,,,,2026-08-18
+246,246,Evan Engram,DEN,TE,TE30,117.11,16411,https://www.fantasypros.com/nfl/players/evan-engram.php,10,8.3,3.2,3,,255.32,181,306,25.63,11,,,,,,53.42,475.92,2.73,,,,,,,,,,,2026-08-18
+247,247,Demond Claiborne,MIN,RB,RB71,20.05,28084,https://www.fantasypros.com/nfl/players/demond-claiborne.php,6,9.5,1.2,2,,243.31,152,321,35.78,11,,,21.59,96.15,0.71,3.25,25.22,0.09,,,,,,,,,,,2026-08-18
+248,248,Harrison Butker,KC,K,K15,131.94,16712,https://www.fantasypros.com/nfl/players/harrison-butker.php,5,41.4,74.3,19,,243.09,189,313,23.42,12,,,,,,,,,36.56,31.28,38.11,,,,,,,,2026-08-18
+249,249,Elic Ayomanor,TEN,WR,WR87,79.47,27059,https://www.fantasypros.com/nfl/players/elic-ayomanor.php,9,5,0.3,1,,246.00,176,341,36.73,12,,,,,,25.42,342.78,3.31,,,,,,,,,,,2026-08-18
+250,250,Keon Coleman,BUF,WR,WR88,74.64,26019,https://www.fantasypros.com/nfl/players/keon-coleman.php,7,6.3,2.5,2,,244.58,170,299,28.08,12,,,,,,24.43,337.73,2.82,,,,,,,,,,,2026-08-18
+251,251,Isaiah Davis,NYJ,RB,RB72,43.39,25977,https://www.fantasypros.com/nfl/players/isaiah-davis.php,13,2.6,0.7,1,,251.20,162,322,33.19,12,,,35.06,174.69,1.16,9.94,78.73,0.21,,,,,,,,,,,2026-08-18
+252,252,David Njoku,LAC,TE,TE31,100.08,16399,https://www.fantasypros.com/nfl/players/david-njoku.php,7,15.6,4.1,6,,251.78,173,345,26.61,12,,,,,,38.29,363.25,4.29,,,,,,,,,,,2026-08-18
+253,253,Malachi Fields,NYG,WR,WR89,59.71,27994,https://www.fantasypros.com/nfl/players/malachi-fields.php,8,9.7,1.7,3,,248.52,170,355,35.30,12,,,,,,23,279.47,1.54,,,,,,,,,,,2026-08-18
+254,254,Ted Hurst III,TB,WR,WR90,83.2,28130,https://www.fantasypros.com/nfl/players/ted-hurst.php,10,9.4,1.1,2,,244.78,154,351,38.95,12,,,,,,29.4,389.86,2.57,,,,,,,,,,,2026-08-18
+255,255,Keenan Allen,IND,WR,WR91,159.5,11616,https://www.fantasypros.com/nfl/players/keenan-allen.php,13,6.4,3.8,4,,238.12,109,298,57.02,12,,,,,,62,675,5,,,,,,,,,,,2026-08-18
+256,256,Chris Bell,MIA,WR,WR92,94.77,26038,https://www.fantasypros.com/nfl/players/chris-bell.php,6,12.5,3.1,5,,250.77,168,368,32.20,12,,,,,,35.39,445.92,2.58,,,,,,,,,,,2026-08-18
+257,257,Tua Tagovailoa,ATL,QB,QB31,164.47,19198,https://www.fantasypros.com/nfl/players/tua-tagovailoa.php,11,13.1,1.9,4,,267.17,139,346,35.73,12,2722.58,15.81,19.63,46.64,0.09,,,,,,,,,,,,,,2026-08-18
+258,258,Tory Horton,SEA,WR,WR93,94.47,26022,https://www.fantasypros.com/nfl/players/tory-horton.php,11,6.8,1.6,2,,254.13,196,339,25.31,12,,,,,,30.31,401.5,4.16,,,,,,,,,,,2026-08-18
+259,259,Ja'Kobi Lane,BAL,WR,WR94,125.67,27337,https://www.fantasypros.com/nfl/players/jakobi-lane.php,13,18.8,13.7,7,,241.86,150,339,45.42,12,,,,,,37.77,569.34,5.24,,,,,,,,,,,2026-08-18
+260,260,Colby Parkinson,LAR,TE,TE32,92.51,19372,https://www.fantasypros.com/nfl/players/colby-parkinson.php,11,11.5,1.6,2,,263.22,210,353,21.72,12,,,,,,34.33,352.51,4.04,,,,,,,,,,,2026-08-18
+261,261,Jordan James,SF,RB,RB73,91.78,27310,https://www.fantasypros.com/nfl/players/jordan-james.php,8,6.7,3.6,3,,260.39,160,401,39.44,12,,,100.09,407.1,3.08,16.09,148.46,0.67,,,,,,,,,,,2026-08-18
+262,262,Christian Kirk,SF,WR,WR95,90.43,17268,https://www.fantasypros.com/nfl/players/christian-kirk.php,8,6.7,1.7,1,,253.57,170,324,31.18,12,,,,,,34.53,406.36,2.57,,,,,,,,,,,2026-08-18
+263,263,Kaelon Black,SF,RB,RB74,72.91,28401,https://www.fantasypros.com/nfl/players/kaelon-black.php,8,8.6,2.4,4,,257.47,160,337,42.32,12,,,93.69,369.79,3.02,8.54,79.18,0.59,,,,,,,,,,,2026-08-18
+264,264,LeQuint Allen Jr.,JAC,RB,RB75,43.83,27285,https://www.fantasypros.com/nfl/players/lequint-allen-jr.php,7,3.1,0.7,1,,262.11,182,327,27.49,12,,,32.02,126,0.6,15.34,99.13,0.43,,,,,,,,,,,2026-08-18
+265,265,Elijah Sarratt,BAL,WR,WR96,33.55,27463,https://www.fantasypros.com/nfl/players/elijah-sarratt.php,13,8.4,0.7,1,,258.44,195,350,28.22,12,,,,,,11.13,165.82,1.01,,,,,,,,,,,2026-08-18
+266,266,Devaughn Vele,NO,WR,WR97,125.78,26409,https://www.fantasypros.com/nfl/players/devaughn-vele.php,8,5.9,2.2,1,,264.67,168,344,32.79,12,,,,,,47.26,567.87,3.69,,,,,,,,,,,2026-08-18
+267,267,Ty Johnson,BUF,RB,RB76,96.49,18406,https://www.fantasypros.com/nfl/players/ty-johnson.php,7,2.2,1.2,1,,260.96,172,385,32.05,12,,,51.93,218.81,2.04,24.88,252.65,2.1,,,,,,,,,,,2026-08-18
+268,268,Samaje Perine,CIN,RB,RB77,96.13,16423,https://www.fantasypros.com/nfl/players/samaje-perine.php,6,4.1,2.7,2,,267.30,162,414,40.62,12,,,98.53,441.81,3.68,17.9,135.69,0.37,,,,,,,,,,,2026-08-18
+269,269,Chris Brooks,GB,RB,RB78,63.19,25823,https://www.fantasypros.com/nfl/players/christopher-brooks.php,11,3.1,0.6,2,,268.63,182,321,29.61,12,,,72.7,324.15,1.31,13.4,93.27,0.22,,,,,,,,,,,2026-08-18
+270,270,DJ Giddens,IND,RB,RB79,35.84,27097,https://www.fantasypros.com/nfl/players/dj-giddens.php,13,2,0.7,1,,266.73,189,329,24.75,12,,,33.32,140.47,1,8.44,58.3,0.31,,,,,,,,,,,2026-08-18
+271,271,Tyquan Thornton,KC,WR,WR98,92.89,22913,https://www.fantasypros.com/nfl/players/tyquan-thornton.php,5,3.6,0.8,1,,267.17,166,370,35.52,12,,,,,,25.42,467.65,3.49,,,,,,,,,,,2026-08-18
+272,272,Wil Lutz,DEN,K,K16,128.5,16026,https://www.fantasypros.com/nfl/players/wil-lutz.php,10,7.8,4.9,10,,267.31,185,333,31.42,12,,,,,,,,,33.67,28.99,41.54,,,,,,,,2026-08-18
+273,273,Caleb Douglas,MIA,WR,WR99,105.39,28135,https://www.fantasypros.com/nfl/players/caleb-douglas.php,6,5.2,5,3,,233.86,94,390,64.01,12,,,,,,39.64,511.41,2.59,,,,,,,,,,,2026-08-18
+274,274,Will Reichard,MIN,K,K17,130.71,26341,https://www.fantasypros.com/nfl/players/will-reichard.php,6,35.2,29.7,26,,257.08,192,333,34.85,12,,,,,,,,,34.17,30.9,38.02,,,,,,,,2026-08-18
+275,275,Eli Stowers,PHI,TE,TE33,49.57,23144,https://www.fantasypros.com/nfl/players/eli-stowers.php,10,13.6,1.1,3,,275.20,207,357,31.64,12,,,,,,20.88,214.45,1.39,,,,,,,,,,,2026-08-18
+276,276,Darius Slayton,NYG,WR,WR100,100.15,18706,https://www.fantasypros.com/nfl/players/darius-slayton.php,8,2.9,1.3,1,,268.48,215,374,28.34,12,,,,,,35.75,526.11,2.01,,,,,,,,,,,2026-08-18
+277,277,Xavier Legette,CAR,WR,WR101,93.77,26136,https://www.fantasypros.com/nfl/players/xavier-legette.php,5,2.6,2.9,1,,263.65,199,367,32.05,12,,,,,,35.86,417.55,2.57,,,,,,,,,,,2026-08-18
+278,278,Marvin Mims Jr.,DEN,WR,WR102,66.83,23080,https://www.fantasypros.com/nfl/players/marvin-mims.php,10,6.5,0.9,2,,262.52,205,371,27.08,12,,,,,,24.12,273.11,1.61,,,,,,,,,,,2026-08-18
+279,279,Mason Taylor,NYJ,TE,TE34,100.63,26005,https://www.fantasypros.com/nfl/players/mason-taylor.php,13,6.2,0.5,1,,274.34,203,353,28.99,12,,,,,,45.82,403.5,2.45,,,,,,,,,,,2026-08-18
+280,280,Theo Johnson,NYG,TE,TE35,75.88,23104,https://www.fantasypros.com/nfl/players/theo-johnson.php,8,6.2,0.9,1,,278.22,196,357,26.76,12,,,,,,27.47,313.66,2.86,,,,,,,,,,,2026-08-18
+281,281,San Francisco 49ers,SF,D/ST,DST17,88.09,8270,https://www.fantasypros.com/nfl/players/san-francisco-defense.php,8,18.1,29.4,10,,255.14,194,345,27.56,12,,,,,,,,,,,,35.94,11.08,1.9,0,15.32,9.29,0,2026-08-18
+282,282,Trey Benson,ARI,RB,RB80,0,25388,https://www.fantasypros.com/nfl/players/trey-benson.php,14,6.4,0.5,1,,266.97,152,360,39.69,12,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-18
+283,283,Michael Penix Jr.,ATL,QB,QB32,83.47,22973,https://www.fantasypros.com/nfl/players/michael-penix-jr.php,11,7.6,0.9,3,,289.72,213,347,25.61,12,1349.47,7.16,13.45,46.92,0.3,,,,,,,,,,,,,,2026-08-18
+284,284,Malik Davis,DAL,RB,RB81,46.9,24205,https://www.fantasypros.com/nfl/players/malik-davis.php,14,2,0.5,1,,279.92,184,329,26.47,12,,,57.5,276.5,2,4.5,37.5,0,,,,,,,,,,,2026-08-18
+285,285,Kirk Cousins,LV,QB,QB33,47.17,11177,https://www.fantasypros.com/nfl/players/kirk-cousins.php,13,7.6,2,4,,290.88,191,349,28.66,12,784.47,5.03,5.23,8.99,0.09,,,,,,,,,,,,,,2026-08-18
+286,286,Oscar Delp,NO,TE,TE36,17.99,25430,https://www.fantasypros.com/nfl/players/oscar-delp.php,8,3.3,0.3,1,,302.39,229,373,35.16,12,,,,,,7.79,74.15,0.48,,,,,,,,,,,2026-08-18
+287,287,Deshaun Watson,CLE,QB,QB34,150.71,16398,https://www.fantasypros.com/nfl/players/deshaun-watson.php,11,9.5,1.6,3,,292.49,241,348,25.36,12,2245.81,11.78,49.67,218.62,1.32,,,,,,,,,,,,,,2026-08-18
+288,288,Shedeur Sanders,CLE,QB,QB35,90.7,25968,https://www.fantasypros.com/nfl/players/shedeur-sanders.php,11,9.3,2.6,4,,297.06,214,350,26.90,12,1364.17,7.13,21.06,122.29,0.55,,,,,,,,,,,,,,2026-08-18
+289,289,Devin Neal,NO,RB,RB82,19.25,23682,https://www.fantasypros.com/nfl/players/devin-neal.php,8,3.8,0.2,1,,273.19,182,365,37.76,12,,,22.5,90,1,2.5,17.5,0,,,,,,,,,,,2026-08-18
+290,290,Atlanta Falcons,ATL,D/ST,DST18,101.58,8010,https://www.fantasypros.com/nfl/players/atlanta-defense.php,11,10.4,22.6,4,,269.15,186,356,34.41,12,,,,,,,,,,,,46.02,12.29,2.28,0.5,12.71,8.14,0,2026-08-18
+291,291,Cyrus Allen,KC,WR,WR103,43.82,28424,https://www.fantasypros.com/nfl/players/cyrus-allen.php,5,9,4,5,,232.63,136,439,62.84,12,,,,,,16.16,203.22,1.28,,,,,,,,,,,2026-08-18
+292,292,Brashard Smith,KC,RB,RB83,32.5,27259,https://www.fantasypros.com/nfl/players/brashard-smith.php,5,2.8,0.4,1,,278.26,156,319,24.96,12,,,25,89,0.5,10.5,71,0.5,,,,,,,,,,,2026-08-18
+293,293,Emari Demercado,KC,RB,RB84,82.72,25654,https://www.fantasypros.com/nfl/players/emari-demercado.php,5,1.9,0.8,1,,289.19,169,381,29.87,12,,,76.84,426.95,1.7,16.35,119.65,0.81,,,,,,,,,,,2026-08-18
+294,294,Kyle Williams,NE,WR,WR104,22.06,27487,https://www.fantasypros.com/nfl/players/kyle-williams-wr-2025.php,11,3.6,0.4,1,,277.78,210,375,34.81,12,,,,,,6.44,91.41,0.55,,,,,,,,,,,2026-08-18
+295,295,New Orleans Saints,NO,D/ST,DST19,100.89,8190,https://www.fantasypros.com/nfl/players/new-orleans-defense.php,8,18.2,48.8,2,,269.05,183,356,38.91,12,,,,,,,,,,,,45.1,12.2,2.31,0,12.83,8.76,0,2026-08-18
+296,296,Devin Singletary,NYG,RB,RB85,19.78,18280,https://www.fantasypros.com/nfl/players/devin-singletary.php,8,1,0.6,1,,290.63,225,338,21.09,12,,,22.24,88.92,0.62,4.18,26.25,0.09,,,,,,,,,,,2026-08-18
+297,297,Kaleb Johnson,PIT,RB,RB86,4.85,27165,https://www.fantasypros.com/nfl/players/kaleb-johnson-rb.php,9,4.5,0.6,1,,279.41,189,358,29.16,12,,,8.58,35.91,0.22,0,0,0,,,,,,,,,,,2026-08-18
+298,298,Adam Randall,BAL,RB,RB87,66.97,24367,https://www.fantasypros.com/nfl/players/adam-randall.php,13,3.2,0.9,1,,289.56,204,338,26.44,12,,,55.14,281.17,1.96,10.81,108.4,1.1,,,,,,,,,,,2026-08-18
+299,299,Hollywood Brown,PHI,WR,WR105,81.08,18226,https://www.fantasypros.com/nfl/players/marquise-brown.php,10,2.9,0.7,1,,287.40,218,375,26.65,12,,,,,,28.22,349.38,3.01,,,,,,,,,,,2026-08-18
+300,300,Seth McGowan,IND,RB,RB88,23.13,23079,https://www.fantasypros.com/nfl/players/seth-mcgowan.php,13,2.3,0.4,1,,288.51,207,337,29.15,12,,,22.25,96.37,1.2,3.15,27.31,0.08,,,,,,,,,,,2026-08-18
+301,301,Mack Hollins,NE,WR,WR106,28,16489,https://www.fantasypros.com/nfl/players/mack-hollins.php,11,2.5,0.3,0,,276.85,205,377,31.86,12,,,,,,10.78,126.6,0.79,,,,,,,,,,,2026-08-18
+302,302,Brandon Aiyuk,SF,WR,WR107,,19252,https://www.fantasypros.com/nfl/players/brandon-aiyuk.php,8,12.9,3.6,6,,266.61,150,378,49.19,12,,,,,,,,,,,,,,,,,,,2026-08-18
+303,303,Mike Gesicki,CIN,TE,TE37,106.08,17272,https://www.fantasypros.com/nfl/players/mike-gesicki.php,6,6.5,2.2,2,,275.73,236,351,23.44,12,,,,,,41.39,434.29,3.57,,,,,,,,,,,2026-08-18
+304,304,Isaiah Bond,CLE,WR,WR108,30.41,24371,https://www.fantasypros.com/nfl/players/isaiah-bond.php,11,2,0.3,0,,292.60,239,397,31.03,13,,,,,,9.9,130.31,0.78,,,,,,,,,,,2026-08-18
+305,305,Skyler Bell,BUF,WR,WR109,28.35,28126,https://www.fantasypros.com/nfl/players/skyler-bell.php,7,6.9,0.6,1,,287.28,200,389,32.88,13,,,,,,10.1,136.51,0.8,,,,,,,,,,,2026-08-18
+306,306,Kendre Miller,NO,RB,RB89,7.27,24360,https://www.fantasypros.com/nfl/players/kendre-miller.php,8,3.4,0.3,1,,290.55,189,383,32.99,13,,,12.99,55.27,0.3,0,0,0,,,,,,,,,,,2026-08-18
+307,307,Jerome Ford,WAS,RB,RB90,0,22921,https://www.fantasypros.com/nfl/players/jerome-ford.php,7,1.9,0.1,0,,291.30,219,330,25.90,13,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-18
+308,308,Trevor Etienne,CAR,RB,RB91,14.79,25393,https://www.fantasypros.com/nfl/players/trevor-etienne.php,5,1.1,0.7,1,,304.53,219,358,22.94,13,,,12.32,52.39,0.3,4.12,29.26,0.14,,,,,,,,,,,2026-08-18
+309,309,Indianapolis Colts,IND,D/ST,DST20,94.14,8130,https://www.fantasypros.com/nfl/players/indianapolis-defense.php,13,15.9,38.9,2,,273.92,171,357,42.20,13,,,,,,,,,,,,39.42,12.93,1.9,0,12.25,8.73,0,2026-08-18
+310,310,Charlie Smyth,NO,K,K18,123,26444,https://www.fantasypros.com/nfl/players/charlie-smyth.php,8,2.5,2,2,,282.50,207,364,38.08,13,,,,,,,,,35.01,29.55,34.36,,,,,,,,2026-08-18
+311,311,Jake Tonges,SF,TE,TE38,48.04,24778,https://www.fantasypros.com/nfl/players/jake-tonges.php,8,8.2,3.3,2,,282.64,173,345,29.59,13,,,,,,19.11,199.86,1.52,,,,,,,,,,,2026-08-18
+312,312,Najee Harris,NYG,RB,RB92,69.8,19302,https://www.fantasypros.com/nfl/players/najee-harris-rb.php,8,3.9,0.3,1,,285.96,211,343,31.78,13,,,80,353,3,9,75,0,,,,,,,,,,,2026-08-18
+313,313,Andrei Iosivas,CIN,WR,WR110,79.52,25335,https://www.fantasypros.com/nfl/players/andrei-iosivas.php,6,3.1,0.7,1,,281.07,197,351,30.98,13,,,,,,27.76,352.42,2.56,,,,,,,,,,,2026-08-18
+314,314,Isaac Guerendo,SF,RB,RB93,14.85,26392,https://www.fantasypros.com/nfl/players/isaac-guerendo.php,8,1.6,0.3,3,,303.10,232,381,25.32,13,,,16.5,80,0.5,2,18.5,0,,,,,,,,,,,2026-08-18
+315,315,Tyreek Hill,FA,WR,WR111,,15802,https://www.fantasypros.com/nfl/players/tyreek-hill.php,,16.5,6.9,7,,275.25,163,350,42.44,13,,,,,,,,,,,,,,,,,,,2026-08-18
+316,316,Jarquez Hunter,LAR,RB,RB94,,24335,https://www.fantasypros.com/nfl/players/jarquez-hunter.php,11,2.1,0.1,0,,305.53,252,379,22.95,13,,,,,,,,,,,,,,,,,,,2026-08-18
+317,317,Tahj Brooks,CIN,RB,RB95,18.24,26212,https://www.fantasypros.com/nfl/players/tahj-brooks.php,6,1,0.3,1,,300.35,231,343,20.87,13,,,30.32,128.42,0.94,0,0,0,,,,,,,,,,,2026-08-18
+318,318,Audric Estime,NO,RB,RB96,23.6,23054,https://www.fantasypros.com/nfl/players/audric-estime.php,8,2.3,0.1,0,,306.53,248,370,24.56,13,,,30,122,1,3,24,0,,,,,,,,,,,2026-08-18
+319,319,Jaleel McLaughlin,DEN,RB,RB97,,25876,https://www.fantasypros.com/nfl/players/jaleel-mclaughlin.php,10,0.6,0.1,0,,302.65,231,381,32.53,13,,,,,,,,,,,,,,,,,,,2026-08-18
+320,320,Darnell Washington,PIT,TE,TE39,74.1,22967,https://www.fantasypros.com/nfl/players/darnell-washington.php,9,7.3,1.9,2,,299.10,225,397,28.96,13,,,,,,30.66,329.11,1.97,,,,,,,,,,,2026-08-18
+321,321,Will Shipley,PHI,RB,RB98,27.59,22930,https://www.fantasypros.com/nfl/players/will-shipley.php,10,1,0.5,0,,312.44,240,363,25.48,13,,,9.25,39.57,0.3,11.31,83.46,0.4,,,,,,,,,,,2026-08-18
+322,322,Chicago Bears,CHI,D/ST,DST21,100.96,8050,https://www.fantasypros.com/nfl/players/chicago-defense.php,10,13.3,20.9,8,,263.97,185,355,49.29,13,,,,,,,,,,,,39.05,14.05,2.1,0,16.57,10.61,1,2026-08-18
+323,323,Michael Mayer,LV,TE,TE40,90.18,23056,https://www.fantasypros.com/nfl/players/michael-mayer.php,13,6.5,1,1,,306.58,254,373,30.38,13,,,,,,40.01,377.98,2.1,,,,,,,,,,,2026-08-18
+324,324,Elijah Arroyo,SEA,TE,TE41,58.38,23004,https://www.fantasypros.com/nfl/players/elijah-arroyo.php,11,3.3,0.6,1,,309.10,226,369,29.89,13,,,,,,23.55,240.11,1.86,,,,,,,,,,,2026-08-18
+325,325,Jahan Dotson,ATL,WR,WR112,92.48,23101,https://www.fantasypros.com/nfl/players/jahan-dotson.php,11,2.5,0.6,1,,295.30,170,384,48.54,13,,,,,,35.15,443.3,2.25,,,,,,,,,,,2026-08-18
+326,326,Jalen Tolbert,MIA,WR,WR113,85.44,23770,https://www.fantasypros.com/nfl/players/jalen-tolbert.php,6,2.9,1,1,,293.47,163,388,49.19,13,,,,,,33.85,420.33,1.7,,,,,,,,,,,2026-08-18
+327,327,Tez Johnson,TB,WR,WR114,21.38,27147,https://www.fantasypros.com/nfl/players/tez-johnson.php,10,1.4,0.3,0,,308.13,225,371,29.70,13,,,,,,6.66,77.53,0.6,,,,,,,,,,,2026-08-18
+328,328,Carson Beck,ARI,QB,QB36,23.24,22953,https://www.fantasypros.com/nfl/players/carson-beck.php,14,7.3,1.4,2,,321.66,284,372,20.19,13,338.51,2.19,5.19,20.14,0.1,,,,,,,,,,,,,,2026-08-18
+329,329,Dallas Cowboys,DAL,D/ST,DST22,91.56,8080,https://www.fantasypros.com/nfl/players/dallas-defense.php,14,20.2,28.2,15,,242.96,180,366,54.78,13,,,,,,,,,,,,42.06,10.73,1.87,0,13.09,8.42,1,2026-08-18
+330,330,Darren Waller,CAR,TE,TE42,102.47,14104,https://www.fantasypros.com/nfl/players/darren-waller.php,5,5.4,1.7,1,9,273.31,202,361,45.14,13,,,,,,37.36,392.82,4.34,,,,,,,,,,,2026-08-18
+331,331,Kareem Hunt,FA,RB,RB99,,16425,https://www.fantasypros.com/nfl/players/kareem-hunt.php,,0.9,0.2,1,,311.85,231,422,31.75,13,,,,,,,,,,,,,,,,,,,2026-08-18
+332,332,J.J. McCarthy,MIN,QB,QB37,22.47,23018,https://www.fantasypros.com/nfl/players/jj-mccarthy.php,6,6,1.2,2,,324.11,281,360,16.28,13,340.59,1.78,5.95,26.95,0.21,,,,,,,,,,,,,,2026-08-18
+333,333,Cedric Tillman,CLE,WR,WR115,54.56,25287,https://www.fantasypros.com/nfl/players/cedric-tillman.php,11,0.6,0.2,0,,314.47,254,391,33.46,13,,,,,,18.49,235.62,2.09,,,,,,,,,,,2026-08-18
+334,334,DeMario Douglas,NE,WR,WR116,61.35,25304,https://www.fantasypros.com/nfl/players/demario-douglas.php,11,3.2,0.5,1,,306.31,225,424,47.10,13,,,,,,22.74,270.87,1.51,,,,,,,,,,,2026-08-18
+335,335,Konata Mumpfield,LAR,WR,WR117,29.18,27449,https://www.fantasypros.com/nfl/players/konata-mumpfield.php,11,0.7,0.1,0,,301.85,258,378,26.99,13,,,,,,9.87,126.72,1.14,,,,,,,,,,,2026-08-18
+336,336,Calvin Austin III,NYG,WR,WR118,58.76,23739,https://www.fantasypros.com/nfl/players/calvin-austin.php,8,1.5,0.2,0,,311.69,252,411,38.46,13,,,,,,19.56,261.67,2.19,,,,,,,,,,,2026-08-18
+337,337,Tyler Higbee,LAR,TE,TE43,71.16,15623,https://www.fantasypros.com/nfl/players/tyler-higbee.php,11,1.7,0.5,1,,320.00,259,376,27.24,13,,,,,,26.09,306.48,2.42,,,,,,,,,,,2026-08-18
+338,338,Jalen Royals,KC,WR,WR119,18.28,27076,https://www.fantasypros.com/nfl/players/jalen-royals.php,5,1.1,0.2,0,,313.49,259,366,26.66,13,,,,,,6.82,78.15,0.63,,,,,,,,,,,2026-08-18
+339,339,Max Klare,LAR,TE,TE44,20.32,27993,https://www.fantasypros.com/nfl/players/max-klare.php,11,8.1,0.3,0,,323.34,271,380,26.91,13,,,,,,8.01,82.58,0.68,,,,,,,,,,,2026-08-18
+340,340,Bryce Lance,NO,WR,WR120,39.47,28129,https://www.fantasypros.com/nfl/players/bryce-lance.php,8,2.2,0.3,0,,305.16,209,386,44.87,13,,,,,,15.1,193.34,0.89,,,,,,,,,,,2026-08-18
+341,341,Luke McCaffrey,WAS,WR,WR121,49.9,26328,https://www.fantasypros.com/nfl/players/luke-mccaffrey.php,7,0.8,0.4,1,,319.68,269,404,34.01,13,,,,,,14.36,221.14,2.25,,,,,,,,,,,2026-08-18
+342,342,Joe Mixon,FA,RB,RB100,,16420,https://www.fantasypros.com/nfl/players/joe-mixon.php,,5.7,0.3,1,,308.27,251,354,24.35,13,,,,,,,,,,,,,,,,,,,2026-08-18
+343,343,Cole Kmet,CHI,TE,TE45,66.85,19229,https://www.fantasypros.com/nfl/players/cole-kmet.php,10,4.1,0.8,1,,325.20,281,382,23.61,14,,,,,,26.23,274.05,2.22,,,,,,,,,,,2026-08-18
+344,344,Olamide Zaccheaus,ATL,WR,WR122,69.49,18864,https://www.fantasypros.com/nfl/players/olamide-zaccheaus.php,11,2,0.2,0,,316.56,254,369,28.47,14,,,,,,30.15,276.66,1.82,,,,,,,,,,,2026-08-18
+345,345,Mac Jones,SF,QB,QB38,10.54,20156,https://www.fantasypros.com/nfl/players/mac-jones.php,8,4.3,0.4,1,,337.51,301,444,26.88,14,160.23,0.98,2.65,8.41,0,,,,,,,,,,,,,,2026-08-18
+346,346,Noah Gray,KC,TE,TE46,50.95,19539,https://www.fantasypros.com/nfl/players/noah-gray.php,5,2.6,0.4,0,,325.97,290,369,24.11,14,,,,,,21.04,211.78,1.48,,,,,,,,,,,2026-08-18
+347,347,Brenen Thompson,LAC,WR,WR123,27.45,28133,https://www.fantasypros.com/nfl/players/brenen-thompson.php,7,2.9,0.3,0,,306.57,247,384,35.25,14,,,,,,9.53,121.67,0.71,,,,,,,,,,,2026-08-18
+348,348,Chris Brazzell II,CAR,WR,WR124,,28047,https://www.fantasypros.com/nfl/players/chris-brazzell-ii.php,5,5.5,0.4,1,,288.38,227,366,35.56,14,,,,,,,,,,,,,,,,,,,2026-08-18
+349,349,Erick All Jr.,CIN,TE,TE47,68.76,23837,https://www.fantasypros.com/nfl/players/erick-all.php,6,0.9,0.2,0,,320.68,261,411,34.90,14,,,,,,30.47,268.63,1.94,,,,,,,,,,,2026-08-18
+350,350,Carolina Panthers,CAR,D/ST,DST23,86.52,8040,https://www.fantasypros.com/nfl/players/carolina-defense.php,5,3.8,6.1,2,,288.91,172,367,52.19,14,,,,,,,,,,,,38.18,11.59,1.82,0,10.64,7.13,0,2026-08-18
+351,351,Bam Knight,ARI,RB,RB101,0,24901,https://www.fantasypros.com/nfl/players/zonovan-bam-knight.php,14,0.7,0.2,0,,300.68,201,394,43.22,14,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-18
+352,352,Eli Heidenreich,PIT,RB,RB102,,28297,https://www.fantasypros.com/nfl/players/eli-heidenreich.php,9,1.3,0.2,0,,307.46,238,373,32.78,14,,,,,,,,,,,,,,,,,,,2026-08-18
+353,353,Eli Raridon,NE,TE,TE48,46.22,28154,https://www.fantasypros.com/nfl/players/eli-raridon.php,11,3.6,0.4,1,,324.20,259,413,29.49,14,,,,,,18.79,192.77,1.55,,,,,,,,,,,2026-08-18
+354,354,Ja'Tavion Sanders,CAR,TE,TE49,46.57,24334,https://www.fantasypros.com/nfl/players/jatavion-sanders.php,5,2.4,0.4,0,-5,328.29,243,400,32.28,14,,,,,,21.51,190.43,1.03,,,,,,,,,,,2026-08-18
+355,355,Dawson Knox,BUF,TE,TE50,79.21,18631,https://www.fantasypros.com/nfl/players/dawson-knox.php,7,4.2,0.9,1,,336.33,280,416,28.35,14,,,,,,28.65,331.67,2.92,,,,,,,,,,,2026-08-18
+356,356,Justin Joly,DEN,TE,TE51,9.55,28079,https://www.fantasypros.com/nfl/players/justin-joly.php,10,5.1,0.2,0,,335.75,270,386,30.85,14,,,,,,4.02,37.85,0.3,,,,,,,,,,,2026-08-18
+357,357,Justin Fields,KC,QB,QB39,12.06,19781,https://www.fantasypros.com/nfl/players/justin-fields.php,5,4.1,0.6,1,,343.49,293,390,22.62,14,175.18,0.98,3.59,18.44,0.05,,,,,,,,,,,,,,2026-08-18
+358,358,New York Giants,NYG,D/ST,DST24,91.32,8200,https://www.fantasypros.com/nfl/players/new-york-giants-defense.php,8,17.9,32.9,4,,275.88,186,387,61.71,14,,,,,,,,,,,,40.86,10.48,1.99,0,12.41,8.79,1,2026-08-18
+359,359,Joshua Palmer,BUF,WR,WR125,69.73,22845,https://www.fantasypros.com/nfl/players/josh-palmer.php,7,0.8,0.3,0,,321.42,250,385,36.76,14,,,,,,25.94,342.22,1.62,,,,,,,,,,,2026-08-18
+360,360,Ty Simpson,LAR,QB,QB40,23.37,25368,https://www.fantasypros.com/nfl/players/ty-simpson.php,11,8.4,0.6,1,,344.13,294,386,23.50,14,298.18,2.6,4.05,18.42,0.03,,,,,,,,,,,,,,2026-08-18
+361,361,Charlie Kolar,LAC,TE,TE52,55.41,22756,https://www.fantasypros.com/nfl/players/charlie-kolar.php,7,1.4,0.1,0,,306.45,226,377,39.54,14,,,,,,20.22,230.28,2.04,,,,,,,,,,,2026-08-18
+362,362,Raheim Sanders,CLE,RB,RB103,,24351,https://www.fantasypros.com/nfl/players/raheim-sanders.php,11,0.6,0.1,0,,312.24,256,384,30.79,14,,,,,,,,,,,,,,,,,,,2026-08-18
+363,363,Tampa Bay Buccaneers,TB,D/ST,DST25,97.28,8290,https://www.fantasypros.com/nfl/players/tampa-bay-defense.php,10,15.2,36.6,2,,281.69,190,365,55.48,14,,,,,,,,,,,,41.12,11.69,1.95,0.5,13.44,10.04,0,2026-08-18
+364,364,Michael Carter,TEN,RB,RB104,,22728,https://www.fantasypros.com/nfl/players/michael-carter-rb.php,9,0.6,0.1,0,,330.75,217,416,39.05,14,,,,,,,,,,,,,,,,,,,2026-08-18
+365,365,Treylon Burks,WAS,WR,WR126,44.74,22905,https://www.fantasypros.com/nfl/players/treylon-burks.php,7,1.7,0.2,0,,333.75,234,410,37.24,14,,,,,,15.04,217.77,1.36,,,,,,,,,,,2026-08-18
+366,366,Kendrick Bourne,ARI,WR,WR127,50.24,17066,https://www.fantasypros.com/nfl/players/kendrick-bourne.php,14,2.1,0.2,0,,318.45,227,447,51.84,14,,,,,,22.76,239.22,0.67,,,,,,,,,,,2026-08-18
+367,367,Jake Elliott,PHI,K,K19,119.8,16540,https://www.fantasypros.com/nfl/players/jake-elliott.php,10,8.7,8.2,8,,296.88,209,383,46.68,14,,,,,,,,,31.83,26.05,41.66,,,,,,,,2026-08-18
+368,368,Zane Gonzalez,MIA,K,K20,0,16548,https://www.fantasypros.com/nfl/players/zane-gonzalez.php,6,1.6,0.3,1,,299.56,203,408,61.29,14,,,,,,,,,0,0,0,,,,,,,,2026-08-18
+369,369,Malik Benson,LV,WR,WR128,84.41,26012,https://www.fantasypros.com/nfl/players/malik-benson.php,13,1.3,0.2,0,,318.28,236,436,61.33,14,,,,,,33.72,401.22,1.9,,,,,,,,,,,2026-08-18
+370,370,Jawhar Jordan,HOU,RB,RB105,50.14,26329,https://www.fantasypros.com/nfl/players/jawhar-jordan.php,8,0.6,0.2,0,,330.80,226,409,38.83,14,,,51.31,218.04,1.13,11,86,0.5,,,,,,,,,,,2026-08-18
+371,371,Kevin Coleman Jr.,MIA,WR,WR129,32.81,28067,https://www.fantasypros.com/nfl/players/kevin-coleman-jr.php,6,1.1,0.2,0,,323.39,240,421,46.99,14,,,,,,13.49,170.19,0.43,,,,,,,,,,,2026-08-18
+372,372,Tutu Atwell,MIA,WR,WR130,57.02,20126,https://www.fantasypros.com/nfl/players/tutu-atwell.php,6,1.1,0.3,0,,328.84,175,425,54.29,14,,,,,,21.76,311.6,0.49,,,,,,,,,,,2026-08-18
+373,373,Savion Williams,GB,WR,WR131,59.77,27144,https://www.fantasypros.com/nfl/players/savion-williams.php,11,1.1,0.6,0,,342.14,292,445,32.10,14,,,,,,20.49,230.85,1.69,,,,,,,,,,,2026-08-18
+374,374,Nick Chubb,FA,RB,RB106,,17246,https://www.fantasypros.com/nfl/players/nick-chubb.php,,0.8,0.3,1,,331.06,275,402,28.56,14,,,,,,,,,,,,,,,,,,,2026-08-18
+375,375,John Metchie III,CAR,WR,WR132,,22895,https://www.fantasypros.com/nfl/players/john-metchie.php,5,1.3,0.1,0,,328.24,272,417,39.97,14,,,,,,,,,,,,,,,,,,,2026-08-18
+376,376,Noah Fant,NO,TE,TE53,63.22,17527,https://www.fantasypros.com/nfl/players/noah-fant.php,8,1.3,0.2,0,,346.52,290,386,23.35,14,,,,,,29.3,274.46,1.6,,,,,,,,,,,2026-08-18
+377,377,Nick Folk,ATL,K,K21,128.57,9491,https://www.fantasypros.com/nfl/players/nick-folk.php,11,3.4,4.2,3,,268.40,199,366,51.02,14,,,,,,,,,32.82,30.01,38.54,,,,,,,,2026-08-18
+378,378,Phil Mafah,DAL,RB,RB107,30.87,22928,https://www.fantasypros.com/nfl/players/phil-mafah.php,14,0.6,0.1,0,,311.21,234,400,42.78,14,,,31.59,137.22,1.55,4.19,32.35,0.1,,,,,,,,,,,2026-08-18
+379,379,Tyler Bass,BUF,K,K22,123.58,19760,https://www.fantasypros.com/nfl/players/tyler-bass.php,7,8.1,3.6,8,,303.85,243,410,48.19,14,,,,,,,,,30.87,25.61,46.75,,,,,,,,2026-08-18
+380,380,Jaylin Lane,WAS,WR,WR133,34.67,27454,https://www.fantasypros.com/nfl/players/jaylin-lane.php,7,0.9,0.2,0,,347.38,296,412,30.45,14,,,,,,12.44,159.47,1.09,,,,,,,,,,,2026-08-18
+381,381,Blake Grupe,IND,K,K23,133.44,25533,https://www.fantasypros.com/nfl/players/blake-grupe.php,13,1.3,1.1,1,,255.67,214,354,49.72,14,,,,,,,,,36.48,30.18,42.89,,,,,,,,2026-08-18
+382,382,Nick Westbrook-Ikhine,IND,WR,WR134,17.15,19747,https://www.fantasypros.com/nfl/players/nick-westbrook.php,13,0.7,0.3,0,,320.93,199,414,65.86,14,,,,,,6.11,76.63,0.58,,,,,,,,,,,2026-08-18
+383,383,J'Mari Taylor,JAC,RB,RB108,,28109,https://www.fantasypros.com/nfl/players/jmari-taylor.php,7,2.3,0,0,,326.60,285,365,23.11,14,,,,,,,,,,,,,,,,,,,2026-08-18
+384,384,KaVontae Turpin,DAL,WR,WR135,63.53,18520,https://www.fantasypros.com/nfl/players/kavontae-turpin.php,14,3.1,1.1,3,,314.77,208,434,62.47,14,,,,,,18.1,229.48,1.72,,,,,,,,,,,2026-08-18
+385,385,Anthony Richardson Sr.,IND,QB,QB41,10.36,24347,https://www.fantasypros.com/nfl/players/anthony-richardson.php,13,6,0.3,1,,350.10,306,386,20.36,14,109,1,5,20,0,,,,,,,,,,,,,,2026-08-18
+386,386,Roman Wilson,PIT,WR,WR136,28.83,28896,https://www.fantasypros.com/nfl/players/roman-wilson-wr.php,9,1.1,0.3,0,,305.50,237,385,46.90,14,,,,,,11.78,135.07,0.63,,,,,,,,,,,2026-08-18
+387,387,Zavion Thomas,CHI,WR,WR137,34.88,28132,https://www.fantasypros.com/nfl/players/zavion-thomas.php,10,3.8,0.4,0,,337.06,264,442,46.37,14,,,,,,12.47,153.53,1.22,,,,,,,,,,,2026-08-18
+388,388,Tennessee Titans,TEN,D/ST,DST26,95.53,8300,https://www.fantasypros.com/nfl/players/tennessee-defense.php,9,8.4,11.9,6,,272.22,194,356,68.08,14,,,,,,,,,,,,44.95,10.03,2.08,0.5,13.02,8.51,1,2026-08-18
+389,389,Xavier Hutchinson,HOU,WR,WR138,33.56,25332,https://www.fantasypros.com/nfl/players/xavier-hutchinson.php,8,0.6,0.1,0,,336.56,298,373,23.56,14,,,,,,12.47,152.27,0.74,,,,,,,,,,,2026-08-18
+390,390,Trey Smack,GB,K,K24,126.85,28507,https://www.fantasypros.com/nfl/players/trey-smack.php,11,5.4,6.7,4,,274.00,215,373,50.43,14,,,,,,,,,34.13,28.93,40.07,,,,,,,,2026-08-18
+391,391,Kalif Raymond,CHI,WR,WR139,46.4,16081,https://www.fantasypros.com/nfl/players/kalif-raymond.php,10,0.6,0.2,0,,331.93,230,379,42.49,14,,,,,,19.18,186.87,0.89,,,,,,,,,,,2026-08-18
+392,392,Dont'e Thornton Jr.,LV,WR,WR140,16.02,27288,https://www.fantasypros.com/nfl/players/donte-thornton-jr.php,13,0.9,0.2,0,,332.67,277,384,38.11,14,,,,,,6.04,82.97,0.3,,,,,,,,,,,2026-08-18
+393,393,Joe Flacco,CIN,QB,QB42,10.34,9300,https://www.fantasypros.com/nfl/players/joe-flacco.php,6,2.5,0.4,1,,350.84,302,398,28.88,14,169.42,1.16,2.2,8.59,0.01,,,,,,,,,,,,,,2026-08-18
+394,394,Jameis Winston,NYG,QB,QB43,11.71,13891,https://www.fantasypros.com/nfl/players/jameis-winston.php,8,2.9,0.4,0,,345.71,320,398,20.89,14,194.74,1.31,2.58,10.89,0.01,,,,,,,,,,,,,,2026-08-18
+395,395,Cincinnati Bengals,CIN,D/ST,DST27,99.81,8060,https://www.fantasypros.com/nfl/players/cincinnati-defense.php,6,3.3,3.5,3,,283.11,194,356,58.64,14,,,,,,,,,,,,41.24,13.08,2.14,0,13.38,9.78,1,2026-08-18
+396,396,CJ Daniels,LAR,WR,WR141,9.61,28125,https://www.fantasypros.com/nfl/players/cj-daniels.php,11,1.3,0.2,0,,342.88,290,419,32.64,14,,,,,,3.35,42.82,0.34,,,,,,,,,,,2026-08-18
+397,397,Mitchell Evans,CAR,TE,TE54,21.15,27138,https://www.fantasypros.com/nfl/players/mitchell-evans.php,5,0.6,0.1,0,,356.67,297,392,24.91,14,,,,,,8,71.5,1,,,,,,,,,,,2026-08-18
+398,398,Luke Musgrave,GB,TE,TE55,47.19,25282,https://www.fantasypros.com/nfl/players/luke-musgrave.php,11,3,0.2,0,,354.59,293,384,22.67,14,,,,,,20.49,200.48,1.12,,,,,,,,,,,2026-08-18
+399,399,Kyle Juszczyk,SF,RB,RB109,54.82,11798,https://www.fantasypros.com/nfl/players/kyle-juszczyk.php,8,0.9,0.6,0,,308.11,197,364,62.30,14,,,4.21,10.3,0.08,23.72,209.04,1.48,,,,,,,,,,,2026-08-18
+400,400,Ben Sinnott,WAS,TE,TE56,30.85,26310,https://www.fantasypros.com/nfl/players/ben-sinnott.php,7,0.8,0.1,0,,353.00,327,385,18.22,14,,,,,,11.07,114.37,1.41,,,,,,,,,,,2026-08-18
+401,401,Miami Dolphins,MIA,D/ST,DST28,90.54,8160,https://www.fantasypros.com/nfl/players/miami-defense.php,6,6.6,14.5,1,,317.11,188,393,66.76,14,,,,,,,,,,,,42.26,10.16,1.63,0,13.8,9.08,0,2026-08-18
+402,402,Tommy Tremble,CAR,TE,TE57,49.35,22795,https://www.fantasypros.com/nfl/players/tommy-tremble.php,5,0.6,0.2,0,,348.46,291,403,29.79,14,,,,,,20.72,189.28,1.64,,,,,,,,,,,2026-08-18
+403,403,Daniel Carlson,LV,K,K25,,17420,https://www.fantasypros.com/nfl/players/daniel-carlson.php,13,0.7,0.1,0,,290.57,210,405,66.22,14,,,,,,,,,,,,,,,,,,,2026-08-18
+404,404,Sione Vaki,DET,RB,RB110,,26309,https://www.fantasypros.com/nfl/players/sione-vaki.php,6,0.6,0.1,0,,328.80,276,370,28.01,14,,,,,,,,,,,,,,,,,,,2026-08-18
+405,405,Austin Ekeler,FA,RB,RB111,33.1,16483,https://www.fantasypros.com/nfl/players/austin-ekeler.php,,0.6,0.1,0,,350.92,297,392,28.02,14,,,35,150,1,6,61,0,,,,,,,,,,,2026-08-18
+406,406,Joey Slye,TEN,K,K26,113.93,19028,https://www.fantasypros.com/nfl/players/joey-slye.php,9,1.2,0.5,1,,319.50,212,404,60.12,14,,,,,,,,,33.13,27.41,31.7,,,,,,,,2026-08-18
+407,407,Ben Sauls,NYG,K,K27,58.5,27798,https://www.fantasypros.com/nfl/players/ben-sauls.php,8,0.8,0.4,0,,310.86,209,454,76.07,14,,,,,,,,,18.67,15.33,12.5,,,,,,,,2026-08-18
+408,408,Roschon Johnson,CHI,RB,RB112,34.4,25322,https://www.fantasypros.com/nfl/players/roschon-johnson.php,10,0.6,0.2,0,,346.64,277,391,31.64,14,,,34,116,3,3,18,0,,,,,,,,,,,2026-08-18
+409,409,Marcus Mariota,WAS,QB,QB44,18.01,13890,https://www.fantasypros.com/nfl/players/marcus-mariota.php,7,2.8,0.2,0,,359.92,315,398,27.37,15,254.04,1.98,1.38,7.89,0.03,,,,,,,,,,,,,,2026-08-18
+410,410,Brandon McManus,FA,K,K28,0,13274,https://www.fantasypros.com/nfl/players/brandon-mcmanus.php,,0.7,0.2,0,,268.80,197,395,82.36,15,,,,,,,,,0,0,0,,,,,,,,2026-08-18
+411,411,Daniel Bellinger,TEN,TE,TE58,51.97,24238,https://www.fantasypros.com/nfl/players/daniel-bellinger.php,9,1.5,0.1,0,,356.75,311,402,25.84,15,,,,,,19.33,222.28,1.75,,,,,,,,,,,2026-08-18
+412,412,Rasheen Ali,BAL,RB,RB113,0,25983,https://www.fantasypros.com/nfl/players/rasheen-ali.php,13,0.8,0.2,0,,337.11,304,383,28.30,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-18
+413,413,John Bates,WAS,TE,TE59,42.39,22833,https://www.fantasypros.com/nfl/players/john-bates.php,7,0.7,0.1,0,,331.13,291,433,45.75,15,,,,,,17.07,169.9,1.58,,,,,,,,,,,2026-08-18
+414,414,Devontez Walker,BAL,WR,WR142,43.83,26011,https://www.fantasypros.com/nfl/players/devontez-walker.php,13,0.7,0.2,0,,343.67,287,452,51.11,15,,,,,,14.49,208.82,1.46,,,,,,,,,,,2026-08-18
+415,415,Jam Miller,NE,RB,RB114,25,27326,https://www.fantasypros.com/nfl/players/jam-miller.php,11,1.3,0.1,0,,330.25,275,378,36.40,15,,,34,145,1,2,25,0,,,,,,,,,,,2026-08-18
+416,416,Cade Klubnik,NYJ,QB,QB45,9.38,24361,https://www.fantasypros.com/nfl/players/cade-klubnik.php,13,4.6,0.2,0,,348.00,310,388,25.72,15,136.81,0.92,1.83,8.22,0.03,,,,,,,,,,,,,,2026-08-18
+417,417,Ryan Fitzgerald,CAR,K,K29,107.91,27261,https://www.fantasypros.com/nfl/players/ryan-fitzgerald.php,5,1.2,0.8,1,,305.00,213,409,72.25,15,,,,,,,,,30.16,25.51,31.39,,,,,,,,2026-08-18
+418,418,Chad Ryland,ARI,K,K30,111.66,25354,https://www.fantasypros.com/nfl/players/chad-ryland.php,14,1.2,0.4,1,,306.50,200,394,74.99,15,,,,,,,,,33.09,26.63,31.77,,,,,,,,2026-08-18
+419,419,Dameon Pierce,PHI,RB,RB115,22.1,22947,https://www.fantasypros.com/nfl/players/dameon-pierce.php,10,0.8,0.1,0,,351.70,311,381,22.01,15,,,35,161,1,0,0,0,,,,,,,,,,,2026-08-18
+420,420,Jordan Whittington,LAR,WR,WR143,31.21,23135,https://www.fantasypros.com/nfl/players/jordan-whittington.php,11,0.6,0.2,0,,360.27,298,443,41.46,15,,,,,,11.26,128.23,0.91,,,,,,,,,,,2026-08-18
+421,421,Las Vegas Raiders,LV,D/ST,DST29,90.5,8220,https://www.fantasypros.com/nfl/players/las-vegas-defense.php,13,6.8,12.6,3,,287.80,188,361,59.41,15,,,,,,,,,,,,40.86,10.23,1.79,0.5,14.04,8.73,0,2026-08-18
+422,422,Colbie Young,CIN,WR,WR144,39.47,26037,https://www.fantasypros.com/nfl/players/colbie-young.php,6,0.9,0.2,0,,340.50,304,380,31.11,15,,,,,,14.08,176.3,1.34,,,,,,,,,,,2026-08-18
+423,423,Deion Burks,IND,WR,WR145,,27093,https://www.fantasypros.com/nfl/players/deion-burks.php,13,1.1,0.1,0,,359.70,287,455,42.96,15,,,,,,,,,,,,,,,,,,,2026-08-18
+424,424,Demarcus Robinson,SF,WR,WR146,53.08,15665,https://www.fantasypros.com/nfl/players/demarcus-robinson.php,8,0.8,0.1,0,,344.38,267,415,48.72,15,,,,,,17.64,253.03,1.66,,,,,,,,,,,2026-08-18
+425,425,Washington Commanders,WAS,D/ST,DST30,94.44,8310,https://www.fantasypros.com/nfl/players/washington-defense.php,7,7.3,13.8,1,,300.60,190,403,86.08,15,,,,,,,,,,,,43.82,9.74,2.05,0.5,13.54,8.93,1,2026-08-18
+426,426,Spencer Shrader,IND,K,K31,0,26763,https://www.fantasypros.com/nfl/players/spencer-shrader.php,13,1.2,0.2,1,,272.00,211,346,49.56,15,,,,,,,,,0,0,0,,,,,,,,2026-08-18
+427,427,Jake Moody,FA,K,K32,40.5,24009,https://www.fantasypros.com/nfl/players/jake-moody.php,,1.5,0.7,1,,273.50,216,347,48.43,15,,,,,,,,,16.5,13.5,0,,,,,,,,2026-08-18
+428,428,Jeremy McNichols,WAS,RB,RB116,27.1,16445,https://www.fantasypros.com/nfl/players/jeremy-mcnichols.php,7,0.6,0.1,0,,324.67,242,389,55.35,15,,,17,88,1,7,53,0,,,,,,,,,,,2026-08-18
+429,429,Ashton Dulin,IND,WR,WR147,64.09,18656,https://www.fantasypros.com/nfl/players/ashton-dulin.php,13,0.7,0.2,0,,308.80,287,315,10.96,15,,,,,,17.51,338.26,1.3,,,,,,,,,,,2026-08-18
+430,430,Odell Beckham Jr.,NYG,WR,WR148,24.04,12127,https://www.fantasypros.com/nfl/players/odell-beckham.php,8,3.9,3.2,2,,311.20,241,369,44.86,15,,,,,,9.22,113.16,0.61,,,,,,,,,,,2026-08-18
+431,431,Joe Milton III,DAL,QB,QB46,8.54,25967,https://www.fantasypros.com/nfl/players/joe-milton.php,14,1.6,0.2,0,,359.44,328,388,18.15,15,119.33,0.67,3,14.33,0,,,,,,,,,,,,,,2026-08-18
+432,432,New York Jets,NYJ,D/ST,DST31,85.03,8210,https://www.fantasypros.com/nfl/players/new-york-jets-defense.php,13,4.9,8,1,,320.20,191,432,81.59,15,,,,,,,,,,,,37.36,9.99,1.89,0.5,12.2,7.68,1,2026-08-18
+433,433,Zavier Scott,MIN,RB,RB117,0,25748,https://www.fantasypros.com/nfl/players/zavier-scott.php,6,0.6,0.1,0,,336.33,254,387,43.71,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-18
+434,434,Terrell Jennings,FA,RB,RB118,,26964,https://www.fantasypros.com/nfl/players/terrell-jennings.php,,0.6,0.1,0,,349.71,314,407,30.04,15,,,,,,,,,,,,,,,,,,,2026-08-18
+435,435,Austin Hooper,ATL,TE,TE60,55.66,15581,https://www.fantasypros.com/nfl/players/austin-hooper.php,11,0.9,0.2,0,,358.63,325,390,19.11,15,,,,,,22.52,236.39,1.61,,,,,,,,,,,2026-08-18
+436,436,Ty Chandler,NO,RB,RB119,37.6,19471,https://www.fantasypros.com/nfl/players/ty-chandler.php,8,1.3,0,0,,306.50,248,382,49.29,15,,,51,138,1,12,58,0,,,,,,,,,,,2026-08-18
+437,437,Dyami Brown,WAS,WR,WR149,46.72,20113,https://www.fantasypros.com/nfl/players/dyami-brown.php,7,0.7,0.3,0,,377.00,317,456,36.98,15,,,,,,15.85,216.92,1.59,,,,,,,,,,,2026-08-18
+438,438,Damien Martinez,GB,RB,RB120,,25976,https://www.fantasypros.com/nfl/players/damien-martinez.php,11,1.3,0,0,,362.29,334,412,23.55,15,,,,,,,,,,,,,,,,,,,2026-08-18
+439,439,Dylan Laube,LV,RB,RB121,0,26194,https://www.fantasypros.com/nfl/players/dylan-laube.php,13,0.8,0.2,1,,340.80,261,387,42.84,15,,,0,0,0,0,0,0,,,,,,,,,,,2026-08-18
+440,440,Zach Ertz,FA,TE,TE61,24.6,11689,https://www.fantasypros.com/nfl/players/zach-ertz.php,,1.1,0.2,1,-8,364.43,309,426,34.49,15,,,,,,9,96,1,,,,,,,,,,,2026-08-18
+441,441,Elijah Higgins,ARI,TE,TE62,45.44,23119,https://www.fantasypros.com/nfl/players/elijah-higgins.php,14,0.8,0.2,0,,372.75,355,429,24.31,15,,,,,,21.95,196.03,0.84,,,,,,,,,,,2026-08-18
+442,442,Tyler Goodson,ATL,RB,RB122,,22976,https://www.fantasypros.com/nfl/players/tyler-goodson.php,11,1.2,0,0,,330.00,263,370,41.45,15,,,,,,,,,,,,,,,,,,,2026-08-18
+443,443,Greg Dortch,DET,WR,WR150,14.13,18585,https://www.fantasypros.com/nfl/players/greg-dortch.php,6,0.6,0.1,0,,347.60,303,387,33.48,15,,,,,,4.1,39.68,0.27,,,,,,,,,,,2026-08-18
+444,444,Hunter Luepke,DAL,RB,RB123,24.96,25941,https://www.fantasypros.com/nfl/players/hunter-luepke.php,14,0.7,0.2,0,,330.25,264,389,55.00,15,,,13.36,56.5,0.44,8.57,61.6,0.35,,,,,,,,,,,2026-08-18
+445,445,Tommy Myers,FA,TE,TE63,,25167,https://www.fantasypros.com/nfl/players/tommy-myers.php,,0,0,0,,351.80,300,427,46.85,15,,,,,,,,,,,,,,,,,,,2026-08-18
+446,446,Tai Felton,MIN,WR,WR151,8.79,27182,https://www.fantasypros.com/nfl/players/tai-felton.php,6,0.6,0.1,0,,343.00,272,457,69.61,15,,,,,,3.72,37.06,0.24,,,,,,,,,,,2026-08-18
+447,447,Xavier Smith,LAR,WR,WR152,9.86,25627,https://www.fantasypros.com/nfl/players/xavier-smith.php,11,0.6,0.1,0,,307.00,234,386,62.20,15,,,,,,3.58,44.41,0.32,,,,,,,,,,,2026-08-18
+448,448,Riley Leonard,IND,QB,QB47,12.42,25373,https://www.fantasypros.com/nfl/players/riley-leonard.php,13,1.6,0.1,0,,362.67,330,382,18.56,15,192.82,1.28,2.75,11.48,0.03,,,,,,,,,,,,,,2026-08-18
+449,449,Arizona Cardinals,ARI,D/ST,DST32,90.12,8000,https://www.fantasypros.com/nfl/players/arizona-defense.php,14,3.4,6.9,1,,309.67,212,363,69.16,15,,,,,,,,,,,,35.78,11.79,1.87,0.5,14.03,9.28,0,2026-08-18
+450,450,Antonio Gibson,FA,RB,RB124,,19624,https://www.fantasypros.com/nfl/players/antonio-gibson.php,,1.3,0,0,,366.67,326,435,38.96,15,,,,,,,,,,,,,,,,,,,2026-08-18
+451,451,Robert Henry Jr.,WAS,RB,RB125,,28404,https://www.fantasypros.com/nfl/players/robert-henry-jr.php,7,0,0,0,,353.80,276,399,43.21,15,,,,,,,,,,,,,,,,,,,2026-08-18
+452,452,Barion Brown,NO,WR,WR153,11.84,25416,https://www.fantasypros.com/nfl/players/barion-brown.php,8,1.7,0.2,1,50,311.67,269,350,33.21,15,,,,,,4.59,57.35,0.27,,,,,,,,,,,2026-08-18
+453,453,Jonnu Smith,FA,TE,TE64,,16460,https://www.fantasypros.com/nfl/players/jonnu-smith.php,,1.6,0.1,0,,356.60,296,430,47.84,15,,,,,,,,,,,,,,,,,,,2026-08-18
+454,454,Noah Whittington,HOU,RB,RB126,,28115,https://www.fantasypros.com/nfl/players/noah-whittington.php,8,0,0,0,,315.67,265,384,50.16,15,,,,,,,,,,,,,,,,,,,2026-08-18
+455,455,Xavier Restrepo,TEN,WR,WR154,,27066,https://www.fantasypros.com/nfl/players/xavier-restrepo.php,9,1.1,0,0,,316.00,288,330,19.80,15,,,,,,,,,,,,,,,,,,,2026-08-18
+456,456,Khalil Herbert,FA,RB,RB127,,22763,https://www.fantasypros.com/nfl/players/khalil-herbert.php,,0.7,0.1,0,,318.00,266,378,46.07,15,,,,,,,,,,,,,,,,,,,2026-08-18
+457,457,Tanner Koziol,JAC,TE,TE65,18.15,27499,https://www.fantasypros.com/nfl/players/tanner-koziol.php,7,0.8,0.1,0,,368.00,350,390,14.07,15,,,,,,6.96,73.84,0.64,,,,,,,,,,,2026-08-18
+458,458,Cash Jones,ATL,RB,RB128,,28124,https://www.fantasypros.com/nfl/players/cash-jones.php,11,0,0,0,,324.67,267,393,51.99,15,,,,,,,,,,,,,,,,,,,2026-08-18
+459,459,Adam Trautman,DEN,TE,TE66,47.94,19423,https://www.fantasypros.com/nfl/players/adam-trautman.php,10,0.6,0.1,0,,362.60,308,415,35.36,15,,,,,,19.35,197.65,1.49,,,,,,,,,,,2026-08-18
+460,460,Jahdae Walker,CHI,WR,WR155,57.22,27810,https://www.fantasypros.com/nfl/players/jahdae-walker.php,10,0.9,0.2,0,,326.00,302,371,31.84,15,,,,,,17.59,233.27,2.67,,,,,,,,,,,2026-08-18
+461,461,Roman Hemby,LV,RB,RB129,,25387,https://www.fantasypros.com/nfl/players/roman-hemby.php,13,0,0,0,,286.00,279,293,7.00,15,,,,,,,,,,,,,,,,,,,2026-08-18
+462,462,Jackson Hawes,BUF,TE,TE67,30.64,27469,https://www.fantasypros.com/nfl/players/jackson-hawes.php,7,0.6,0.1,0,,366.00,355,379,9.53,15,,,,,,10.55,115.07,1.45,,,,,,,,,,,2026-08-18
+463,463,Donovan Edwards,MIA,RB,RB130,22.9,23014,https://www.fantasypros.com/nfl/players/donovan-edwards.php,6,1,0,0,,333.67,275,381,44.01,15,,,31,130,1,2,19,0,,,,,,,,,,,2026-08-18
+464,464,Ronnie Rivers,LAR,RB,RB131,,23986,https://www.fantasypros.com/nfl/players/ronnie-rivers.php,11,0.6,0.1,0,,335.00,279,368,39.81,15,,,,,,,,,,,,,,,,,,,2026-08-18
+465,465,Frank Gore Jr.,BUF,RB,RB132,35,25980,https://www.fantasypros.com/nfl/players/frank-gore-jr.php,7,0.6,0.1,0,,337.00,281,370,39.81,15,,,37,174,2,3,26,0,,,,,,,,,,,2026-08-18
+466,466,Matt Hibner,BAL,TE,TE68,,28168,https://www.fantasypros.com/nfl/players/matthew-hibner.php,13,1.2,0.1,0,14,357.25,349,366,6.02,15,,,,,,,,,,,,,,,,,,,2026-08-18
+467,467,Theo Wease Jr.,MIA,WR,WR156,47.1,27222,https://www.fantasypros.com/nfl/players/theo-wease-jr.php,6,2,0,0,,338.33,255,420,67.37,15,,,,,,16,233,1.3,,,,,,,,,,,2026-08-18
+468,468,Juice Wells Jr.,ATL,WR,WR157,,27218,https://www.fantasypros.com/nfl/players/antwane-wells-jr.php,11,1.1,0,0,,351.33,256,459,83.33,15,,,,,,,,,,,,,,,,,,,2026-08-18
+469,469,DeAndre Hopkins,BAL,WR,WR158,,11606,https://www.fantasypros.com/nfl/players/deandre-hopkins.php,13,0.6,0.1,0,,366.25,307,451,57.01,15,,,,,,,,,,,,,,,,,,,2026-08-18
+470,470,Miles Davis,CAR,RB,RB133,,28906,https://www.fantasypros.com/nfl/players/miles-davis.php,5,0,0,0,,340.00,284,394,44.93,15,,,,,,,,,,,,,,,,,,,2026-08-18
+471,471,Quinn Ewers,MIA,QB,QB48,11.57,23680,https://www.fantasypros.com/nfl/players/quinn-ewers.php,6,1.8,0.2,0,,342.67,313,367,22.37,15,167.72,1.19,2.99,11.67,0.01,,,,,,,,,,,,,,2026-08-18
+472,472,Miles Sanders,FA,RB,RB134,,18283,https://www.fantasypros.com/nfl/players/miles-sanders.php,,1,0,0,,353.00,286,446,67.86,15,,,,,,,,,,,,,,,,,,,2026-08-18
+473,473,Mitch Tinsley,CIN,WR,WR159,9.74,24370,https://www.fantasypros.com/nfl/players/mitchell-tinsley.php,6,0.6,0.1,0,,345.33,270,396,54.32,15,,,,,,3.28,41.78,0.39,,,,,,,,,,,2026-08-18
+474,474,Elijah Mitchell,FA,RB,RB135,26.1,22813,https://www.fantasypros.com/nfl/players/elijah-mitchell-rb.php,,1.2,0,0,,361.00,287,460,72.81,15,,,35,159,1,2,22,0,,,,,,,,,,,2026-08-18
+475,475,Brandin Cooks,FA,WR,WR160,,12122,https://www.fantasypros.com/nfl/players/brandin-cooks.php,,1.1,0,0,,312.50,282,343,30.50,15,,,,,,,,,,,,,,,,,,,2026-08-18
+476,476,Josh Oliver,MIN,TE,TE69,52.12,18487,https://www.fantasypros.com/nfl/players/josh-oliver.php,6,0.6,0.2,0,,368.25,359,390,12.64,15,,,,,,18.55,194.28,2.38,,,,,,,,,,,2026-08-18
+477,477,Tyler Lockett,LV,WR,WR161,,13971,https://www.fantasypros.com/nfl/players/tyler-lockett.php,13,0.6,0.1,0,,352.67,314,413,43.22,15,,,,,,,,,,,,,,,,,,,2026-08-18
+478,478,Reggie Virgil,ARI,WR,WR162,8.07,28141,https://www.fantasypros.com/nfl/players/reggie-virgil.php,14,0.7,0.1,0,,320.50,267,374,53.50,15,,,,,,3.36,39.25,0.14,,,,,,,,,,,2026-08-18
+479,479,Jaydn Ott,KC,RB,RB136,,25394,https://www.fantasypros.com/nfl/players/jaydn-ott.php,5,1,0,0,,353.67,288,390,46.52,15,,,,,,,,,,,,,,,,,,,2026-08-18
+480,480,Luke Schoonmaker,DAL,TE,TE70,30.94,25267,https://www.fantasypros.com/nfl/players/luke-schoonmaker.php,14,0.9,0.2,0,,379.80,362,395,12.16,15,,,,,,13.18,121.52,0.95,,,,,,,,,,,2026-08-18
+481,481,Marlin Klein,HOU,TE,TE71,44.41,28157,https://www.fantasypros.com/nfl/players/marlin-klein.php,8,0.6,0.1,0,,370.50,340,395,21.87,15,,,,,,19.48,192.65,1.12,,,,,,,,,,,2026-08-18
+482,482,Nate Boerkircher,JAC,TE,TE72,37.22,28427,https://www.fantasypros.com/nfl/players/nate-boerkircher.php,7,0.9,0.1,0,,371.00,361,392,12.51,15,,,,,,14.91,156.8,1.28,,,,,,,,,,,2026-08-18
+483,483,Tyrod Taylor,GB,QB,QB49,10.86,10007,https://www.fantasypros.com/nfl/players/tyrod-taylor.php,11,0.8,0.2,0,,358.67,323,423,45.58,15,173.47,0.93,2.13,10.68,0.04,,,,,,,,,,,,,,2026-08-18
+484,484,Mo Alie-Cox,IND,TE,TE73,27.39,16579,https://www.fantasypros.com/nfl/players/mo-alie-cox.php,13,0.6,0.1,0,,328.00,298,358,30.00,15,,,,,,10.66,113.85,0.92,,,,,,,,,,,2026-08-18
+485,485,Tim Patrick,NYJ,WR,WR163,,16556,https://www.fantasypros.com/nfl/players/tim-patrick.php,13,1,0.1,0,,363.00,315,398,35.11,16,,,,,,,,,,,,,,,,,,,2026-08-18
+486,486,Taysom Hill,FA,TE,TE74,,17115,https://www.fantasypros.com/nfl/players/taysom-hill.php,,0.7,0.1,0,-31,371.00,309,441,54.18,16,,,,,,,,,,,,,,,,,,,2026-08-18
+487,487,Reggie Gilliam,NE,RB,RB137,7.95,19844,https://www.fantasypros.com/nfl/players/reggie-gilliam.php,11,0.1,0.1,0,,338.00,283,393,55.00,16,,,0,0,0,4.11,29.78,0.15,,,,,,,,,,,2026-08-18
+488,488,Michael Woods II,DEN,WR,WR164,,23893,https://www.fantasypros.com/nfl/players/michael-woods.php,10,1,0,0,,338.50,280,397,58.50,16,,,,,,,,,,,,,,,,,,,2026-08-18
+489,489,Jacob Cowing,SF,WR,WR165,0,25289,https://www.fantasypros.com/nfl/players/jacob-cowing.php,8,1,0,0,,354.50,259,450,95.50,16,,,,,,0,0,0,,,,,,,,,,,2026-08-18
+490,490,Jalen Milroe,SEA,QB,QB50,9.1,22884,https://www.fantasypros.com/nfl/players/jalen-milroe.php,11,2.4,0.2,0,,368.00,358,388,14.14,16,90,1,5,15,0,,,,,,,,,,,,,,2026-08-18
+491,491,Elijah Moore,PHI,WR,WR166,,20114,https://www.fantasypros.com/nfl/players/elijah-moore.php,10,0.6,0.1,0,,347.50,299,396,48.50,16,,,,,,,,,,,,,,,,,,,2026-08-18
+492,492,Marquez Valdes-Scantling,DAL,WR,WR167,,17528,https://www.fantasypros.com/nfl/players/marquez-valdesscantling.php,14,0.7,0.1,0,,376.33,318,431,46.20,16,,,,,,,,,,,,,,,,,,,2026-08-18
+493,493,Myles Montgomery,FA,RB,RB138,,28450,https://www.fantasypros.com/nfl/players/myles-montgomery.php,,0,0,0,,350.00,295,405,55.00,16,,,,,,,,,,,,,,,,,,,2026-08-18
+494,494,Trey Lance,LAC,QB,QB51,10.41,20082,https://www.fantasypros.com/nfl/players/trey-lance.php,7,0.8,0.1,0,,386.00,376,398,8.60,16,148.26,0.99,2.75,12.92,0.03,,,,,,,,,,,,,,2026-08-18
+495,495,Drew Sample,CIN,TE,TE75,33.87,18561,https://www.fantasypros.com/nfl/players/drew-sample.php,6,0.6,0.1,0,10,376.67,364,384,8.99,16,,,,,,15.16,123.16,1.09,,,,,,,,,,,2026-08-18
+496,496,Van Jefferson,WAS,WR,WR168,,19483,https://www.fantasypros.com/nfl/players/van-jefferson.php,7,0.8,0.1,0,,360.00,347,373,13.00,16,,,,,,,,,,,,,,,,,,,2026-08-18
+497,497,Michael Trigg,DAL,TE,TE76,,23167,https://www.fantasypros.com/nfl/players/michael-trigg.php,14,5.2,0.1,0,10,395.00,366,440,27.59,16,,,,,,,,,,,,,,,,,,,2026-08-18
+498,498,Jason Sanders,NYJ,K,K33,118.03,17533,https://www.fantasypros.com/nfl/players/jason-sanders.php,13,1.1,1,0,,381.67,365,406,17.59,16,,,,,,,,,33.2,28.71,31.91,,,,,,,,2026-08-18
+499,499,Jermaine Burton,FA,WR,WR169,,22956,https://www.fantasypros.com/nfl/players/jermaine-burton.php,,1.1,0,0,,391.00,324,458,67.00,16,,,,,,,,,,,,,,,,,,,2026-08-18
+500,500,Tyler Conklin,DET,TE,TE77,8.91,17598,https://www.fantasypros.com/nfl/players/tyler-conklin.php,6,0.6,0.1,0,,372.00,363,381,9.00,16,,,,,,3.68,37.92,0.25,,,,,,,,,,,2026-08-18
+501,501,Sam Roush,CHI,TE,TE78,17.87,28161,https://www.fantasypros.com/nfl/players/sam-roush.php,10,0.7,0.1,0,,375.00,373,377,2.00,16,,,,,,6.83,72.39,0.64,,,,,,,,,,,2026-08-18
+502,502,Jimmy Horn Jr.,CAR,WR,WR170,21.14,27294,https://www.fantasypros.com/nfl/players/jimmy-horn-jr.php,5,0.8,0.2,0,,377.00,376,378,1.00,16,,,,,,6.66,75.65,0.41,,,,,,,,,,,2026-08-18
+503,503,JuJu Smith-Schuster,FA,WR,WR171,,16427,https://www.fantasypros.com/nfl/players/juju-smith-schuster.php,,1.1,0.2,0,,384.00,373,395,11.00,16,,,,,,,,,,,,,,,,,,,2026-08-18

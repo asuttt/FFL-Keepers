@@ -71,6 +71,8 @@ type KeeperEvaluation = DraftPick & {
   sourceRank: number | null;
   valueGain: number | null;
   keeperScore: number;
+  keeperScoreRaw: number;
+  projectionSurplus: number | null;
   why: string;
 };
 
@@ -527,18 +529,26 @@ function evaluatePick(
       sourceRank: null,
       valueGain: null,
       keeperScore: 1,
+      keeperScoreRaw: 1,
+      projectionSurplus: null,
       why: `Not found in the 2026 ${rankingSource} rankings, so not recommended as a keeper`,
     };
   }
 
   const sourceRank = Number(ranking.source_rank);
   const valueGain = pick.pick - sourceRank;
+  const projectionSurplus = sourceRow?.pointsPpr !== null && sourceRow?.pointsPpr !== undefined
+    ? sourceRow.pointsPpr - (replacementLevels[ranking.pos].replacementPpr ?? sourceRow.pointsPpr)
+    : null;
+  const keeperScoreRaw = keeperStrength(valueGain, sourceRank, ranking.pos, sourceRow?.pointsPpr ?? null, replacementLevels);
   return {
     ...pick,
     ranking,
     sourceRank,
     valueGain,
-    keeperScore: keeperStrength(valueGain, sourceRank, ranking.pos, sourceRow?.pointsPpr ?? null, replacementLevels),
+    keeperScore: Math.round(keeperScoreRaw * 10) / 10,
+    keeperScoreRaw,
+    projectionSurplus,
     why: `Pick #${pick.pick} (Round ${pick.round}) versus #${sourceRank} overall rank`,
   };
 }
@@ -567,7 +577,7 @@ function keeperStrength(
     score = Math.min(score, 4.5);
   }
 
-  return Math.min(10, Math.max(1, Math.round(score * 10) / 10));
+  return Math.min(10, Math.max(1, score));
 }
 
 const keeperScoreWeights = {
@@ -1159,7 +1169,27 @@ function evaluateTeam(
       replacementLevels,
       rankingSource,
     ))
-    .sort((a, b) => Number(a.ranking === null) - Number(b.ranking === null) || b.keeperScore - a.keeperScore || (b.valueGain ?? -9999) - (a.valueGain ?? -9999) || (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999));
+    .sort((a, b) => {
+      const unrankedDifference = Number(a.ranking === null) - Number(b.ranking === null);
+      if (unrankedDifference !== 0) return unrankedDifference;
+
+      const displayedScoreDifference = Math.round(b.keeperScore * 10) - Math.round(a.keeperScore * 10);
+      if (displayedScoreDifference !== 0) return displayedScoreDifference;
+
+      const overallRankDifference = (a.sourceRank ?? 9999) - (b.sourceRank ?? 9999);
+      if (overallRankDifference !== 0) return overallRankDifference;
+
+      const projectionDifference = (b.projectionSurplus ?? -9999) - (a.projectionSurplus ?? -9999);
+      if (projectionDifference !== 0) return projectionDifference;
+
+      const quarterbackDifference = Number(a.pos === 'QB') - Number(b.pos === 'QB');
+      if (quarterbackDifference !== 0) return quarterbackDifference;
+
+      const rawScoreDifference = b.keeperScoreRaw - a.keeperScoreRaw;
+      if (Math.abs(rawScoreDifference) > 0.05) return rawScoreDifference;
+
+      return (b.valueGain ?? -9999) - (a.valueGain ?? -9999);
+    });
 }
 
 function bestKeeperForTeam(
