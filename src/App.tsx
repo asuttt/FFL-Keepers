@@ -8,9 +8,14 @@ import {
   Copyright,
   Grid2X2,
   ChevronUp,
+  Check,
+  Unlock,
+  RotateCcw,
+  Pencil,
   Search,
   Shield,
   Sparkles,
+  Lock,
 } from 'lucide-react';
 
 type Position = 'QB' | 'RB' | 'WR' | 'TE' | 'K' | 'D/ST';
@@ -64,7 +69,21 @@ type DraftDataState = {
   sourceSource: string | null;
   loading: boolean;
   error: string | null;
+  keeperLocks: KeeperLocks;
+  refreshKeeperLocks: () => Promise<void>;
 };
+
+type KeeperLock = {
+  team: string;
+  pick: number;
+  player: string;
+  position: Position;
+  nflTeam: string;
+  round: number;
+  lockedAt: string;
+};
+
+type KeeperLocks = Record<string, KeeperLock>;
 
 type KeeperEvaluation = DraftPick & {
   ranking: RankingEntry | null;
@@ -160,6 +179,7 @@ function useDraftData() {
 }
 
 function DraftDataProvider({ children }: { children: ReactNode }) {
+  const [keeperLocks, setKeeperLocks] = useState<KeeperLocks>({});
   const [state, setState] = useState<DraftDataState>({
     data: null,
     rankings: null,
@@ -168,7 +188,20 @@ function DraftDataProvider({ children }: { children: ReactNode }) {
     sourceSource: null,
     loading: true,
     error: null,
+    keeperLocks: {},
+    refreshKeeperLocks: async () => {},
   });
+
+  const refreshKeeperLocks = async () => {
+    try {
+      const response = await fetch('/api/keepers', { cache: 'no-store' });
+      if (!response.ok) return;
+      const payload = (await response.json()) as { locks?: KeeperLocks };
+      setKeeperLocks(payload.locks ?? {});
+    } catch {
+      // Local Vite development does not serve the Vercel API; treat it as empty state.
+    }
+  };
 
   useEffect(() => {
     const controller = new AbortController();
@@ -195,21 +228,24 @@ function DraftDataProvider({ children }: { children: ReactNode }) {
           sourceSource: sourceSnapshot.source,
           loading: false,
           error: null,
+          keeperLocks,
+          refreshKeeperLocks,
         });
       } catch (error) {
         if (controller.signal.aborted) {
           return;
         }
         const message = error instanceof Error ? error.message : 'Unable to load draft data';
-        setState({ data: null, rankings: null, rankingSource: null, sourceRows: null, sourceSource: null, loading: false, error: message });
+        setState({ data: null, rankings: null, rankingSource: null, sourceRows: null, sourceSource: null, loading: false, error: message, keeperLocks, refreshKeeperLocks });
       }
     }
 
     load();
+    refreshKeeperLocks();
     return () => controller.abort();
   }, []);
 
-  return <DraftDataContext.Provider value={state}>{children}</DraftDataContext.Provider>;
+  return <DraftDataContext.Provider value={{ ...state, keeperLocks, refreshKeeperLocks }}>{children}</DraftDataContext.Provider>;
 }
 
 function cn(...parts: Array<string | false | null | undefined>) {
@@ -229,6 +265,10 @@ function teamFromSlug(data: DraftData | null, slug?: string) {
     return null;
   }
   return data.teams.find((team) => slugify(team.name) === slug) ?? null;
+}
+
+function lockedPickForTeam(keeperLocks: KeeperLocks, team: string) {
+  return keeperLocks[slugify(team)]?.pick ?? null;
 }
 
 function formatSnapshotDate(value: string | undefined) {
@@ -1203,14 +1243,32 @@ function bestKeeperForTeam(
   return evaluateTeam(team, picks, rankings, sourceRowsByPick, replacementLevels, rankingSource).find((pick) => pick.ranking !== null) ?? null;
 }
 
+function selectedKeeperForTeam(
+  team: string,
+  picks: DraftPick[],
+  rankings: Map<string, RankingEntry>,
+  sourceRowsByPick: Map<string, SourceRow>,
+  replacementLevels: ProjectionReplacementLevels,
+  rankingSource: string,
+  keeperLocks: KeeperLocks,
+) {
+  const rankedPicks = evaluateTeam(team, picks, rankings, sourceRowsByPick, replacementLevels, rankingSource);
+  const lockedPick = lockedPickForTeam(keeperLocks, team);
+  return rankedPicks.find((pick) => pick.pick === lockedPick)
+    ?? rankedPicks.find((pick) => pick.ranking !== null)
+    ?? null;
+}
+
 function DashboardTable({
   rows,
   sourceRows,
   teamCount,
+  keeperLocks,
 }: {
   rows: KeeperEvaluation[];
   sourceRows: SourceRow[] | null;
   teamCount: number;
+  keeperLocks: KeeperLocks;
 }) {
   const sourceRowsByPick = useMemo(() => sourceRowLookup(sourceRows), [sourceRows]);
 
@@ -1230,6 +1288,7 @@ function DashboardTable({
         </thead>
         <tbody>
           {rows.map((rec) => {
+            const isLocked = lockedPickForTeam(keeperLocks, rec.team) === rec.pick;
             return (
               <tr key={rec.team} className="keeper-table__row">
                 <td className="keeper-table__team">
@@ -1238,7 +1297,12 @@ function DashboardTable({
                     <ChevronRight size={16} />
                   </Link>
                 </td>
-                <td className="keeper-table__rec">{<RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />}</td>
+                <td className="keeper-table__rec">
+                  <div className="keeper-table__rec-inner">
+                    {isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
+                    <RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />
+                  </div>
+                </td>
                 <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
                 <td className="keeper-table__value">
                   <RankValueCell sourceRank={rec.sourceRank} teamCount={teamCount} />
@@ -1256,25 +1320,29 @@ function DashboardTable({
         </table>
       </div>
       <div className="mobile-keeper-list">
-      {rows.map((rec) => (
-        <article className="mobile-keeper-row" key={rec.team}>
-          <Link className="mobile-keeper-row__team" to={`/teams/${slugify(rec.team)}`}>
-            <strong>{rec.team}</strong>
-            <ChevronRight size={16} />
-          </Link>
-          <div className="mobile-keeper-row__player">
-            <RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />
-          </div>
-          <MobileKeeperStats rec={rec} teamCount={teamCount} />
-        </article>
-      ))}
+        {rows.map((rec) => {
+          const isLocked = lockedPickForTeam(keeperLocks, rec.team) === rec.pick;
+          return (
+            <article className="mobile-keeper-row" key={rec.team}>
+              <Link className="mobile-keeper-row__team" to={`/teams/${slugify(rec.team)}`}>
+                <strong>{rec.team}</strong>
+                <ChevronRight size={16} />
+              </Link>
+              <div className="mobile-keeper-row__player">
+                {isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
+                <RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />
+              </div>
+              <MobileKeeperStats rec={rec} teamCount={teamCount} />
+            </article>
+          );
+        })}
       </div>
     </>
   );
 }
 
 function DashboardPage() {
-  const { data, rankings, rankingSource, sourceRows, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, sourceRows, keeperLocks, loading, error } = useDraftData();
 
   if (loading) {
     return (
@@ -1323,7 +1391,7 @@ function DashboardPage() {
   const sourceLabel = rankingSource ?? 'current rankings';
   const snapshotDate = formatSnapshotDate(sourceRows?.[0]?.source_date);
   const recs = data.teams
-    .map((team) => bestKeeperForTeam(team.name, data.picks, rankingMap, sourceRowsByPick, replacementLevels, sourceLabel))
+    .map((team) => selectedKeeperForTeam(team.name, data.picks, rankingMap, sourceRowsByPick, replacementLevels, sourceLabel, keeperLocks))
     .filter(Boolean) as KeeperEvaluation[];
 
   return (
@@ -1332,16 +1400,21 @@ function DashboardPage() {
         title="2026 Keeper Recs"
         description={`Select team for full breakdown. Data as of ${snapshotDate}`}
       />
-      <DashboardTable rows={recs} sourceRows={sourceRows} teamCount={data.teams.length} />
+      <DashboardTable rows={recs} sourceRows={sourceRows} teamCount={data.teams.length} keeperLocks={keeperLocks} />
     </div>
   );
 }
 
 function TeamPage() {
-  const { data, rankings, rankingSource, sourceRows, loading, error } = useDraftData();
+  const { data, rankings, rankingSource, sourceRows, keeperLocks, refreshKeeperLocks, loading, error } = useDraftData();
   const params = useParams();
   const navigate = useNavigate();
   const sourceRowsByPick = useMemo(() => sourceRowLookup(sourceRows), [sourceRows]);
+  const [lockMode, setLockMode] = useState(false);
+  const [pendingPick, setPendingPick] = useState<number | null>(null);
+  const [savingLock, setSavingLock] = useState(false);
+  const [lockError, setLockError] = useState<string | null>(null);
+  const [contentRefresh, setContentRefresh] = useState(false);
 
   if (loading) {
     return <LoadingPanel title="Loading team drilldown..." />;
@@ -1361,8 +1434,72 @@ function TeamPage() {
   const replacementLevels = projectionReplacementLevels(sourceRows);
   const sourceLabel = rankingSource ?? 'current rankings';
   const rankedPicks = evaluateTeam(team.name, data.picks, rankingMap, sourceRowsByPick, replacementLevels, sourceLabel);
-  const recommendation = rankedPicks.find((pick) => pick.ranking !== null) ?? null;
+  const lockedPick = lockedPickForTeam(keeperLocks, team.name);
+  const recommendation = rankedPicks.find((pick) => pick.pick === lockedPick)
+    ?? rankedPicks.find((pick) => pick.ranking !== null)
+    ?? null;
+  const pendingRecommendation = rankedPicks.find((pick) => pick.pick === pendingPick) ?? null;
   const anchorOpener = recommendation ? keeperAnchorOpener(team.name) : null;
+
+  const enterLockMode = () => {
+    setLockError(null);
+    setPendingPick(lockedPick);
+    setLockMode(true);
+  };
+
+  const cancelLockMode = () => {
+    setLockError(null);
+    setPendingPick(null);
+    setLockMode(false);
+  };
+
+  const confirmKeeper = async () => {
+    if (!pendingRecommendation) return;
+    setSavingLock(true);
+    setLockError(null);
+    try {
+      const response = await fetch('/api/keepers', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ team: team.name, pick: pendingRecommendation.pick }),
+      });
+      const payload = (await response.json()) as { error?: string };
+      if (!response.ok) throw new Error(payload.error ?? 'Unable to lock keeper');
+      await refreshKeeperLocks();
+      setContentRefresh(true);
+      window.setTimeout(() => setContentRefresh(false), 420);
+      setLockMode(false);
+      setPendingPick(null);
+    } catch (error) {
+      setLockError(error instanceof Error ? error.message : 'Unable to lock keeper');
+    } finally {
+      setSavingLock(false);
+    }
+  };
+
+  const resetKeeper = async () => {
+    if (lockedPick === null) return;
+    setSavingLock(true);
+    setLockError(null);
+    try {
+      const response = await fetch('/api/keepers', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ team: team.name, pick: lockedPick }),
+      });
+      const payload = (await response.json()) as { error?: string };
+      if (!response.ok) throw new Error(payload.error ?? 'Unable to restore recommendation');
+      await refreshKeeperLocks();
+      setContentRefresh(true);
+      window.setTimeout(() => setContentRefresh(false), 420);
+      setLockMode(false);
+      setPendingPick(null);
+    } catch (error) {
+      setLockError(error instanceof Error ? error.message : 'Unable to restore recommendation');
+    } finally {
+      setSavingLock(false);
+    }
+  };
 
   return (
     <div className="page-stack">
@@ -1375,16 +1512,14 @@ function TeamPage() {
           </button>
         }
         meta={
-          <>
-            <button className="text-link team-back-link team-back-link--desktop" type="button" onClick={() => navigate('/')}>
-              <ArrowLeft size={16} />
-              Back
-            </button>
-          </>
+          <button className="text-link team-back-link team-back-link--desktop" type="button" onClick={() => navigate('/')}>
+            <ArrowLeft size={16} />
+            Back
+          </button>
         }
       />
 
-      <section className="panel team-spotlight">
+      <section className={cn('panel', 'team-spotlight', contentRefresh && 'content-refresh-fade')}>
         <div className="spotlight-copy">
           <div className="team-card__eyebrow spotlight-copy__eyebrow">Top keeper anchor</div>
           {recommendation ? (
@@ -1396,14 +1531,37 @@ function TeamPage() {
         </div>
         <div className="meter-card">
           <div className="meter-card__head">
-          <div className="meter-card__label">Keeper score</div>
-            <KeeperScoreBar score={recommendation?.keeperScore ?? null} />
+            <div className="meter-card__label">Keeper score</div>
+            <div className="meter-card__score">
+              <KeeperScoreBar score={recommendation?.keeperScore ?? null} />
+            </div>
+            <button
+              className={cn('keeper-lock-cta', lockedPick !== null && 'keeper-lock-cta--locked', lockMode && 'keeper-lock-cta--editing')}
+              type="button"
+              onClick={lockMode ? cancelLockMode : enterLockMode}
+              aria-label={lockMode ? 'Exit keeper edit mode' : lockedPick !== null ? 'Edit locked keeper' : 'Choose keeper'}
+              title={lockMode ? 'Exit keeper edit mode' : lockedPick !== null ? 'Edit locked keeper' : 'Choose keeper'}
+            >
+              {lockMode || lockedPick === null ? <Pencil size={16} /> : <Lock size={16} />}
+            </button>
+            {lockMode && lockedPick !== null ? (
+              <button
+                className="keeper-lock-reset"
+                type="button"
+                onClick={resetKeeper}
+                disabled={savingLock}
+                aria-label="Use recommended keeper"
+                title="Use recommended keeper"
+              >
+                <RotateCcw size={15} />
+              </button>
+            ) : null}
           </div>
           <small>Adjusted for overall tier and positional replacement value</small>
         </div>
       </section>
 
-      <section className="panel table-panel table-panel--drilldown">
+      <section className={cn('panel', 'table-panel', 'table-panel--drilldown', contentRefresh && 'content-refresh-fade')}>
         <div className="panel-head panel-head--stacked panel-head--source">
           <div>
             <div className="team-card__eyebrow">Keeper Rankings</div>
@@ -1425,17 +1583,26 @@ function TeamPage() {
             <tbody>
               {rankedPicks.map((rec) => {
                 const isRecommendation = recommendation?.pick === rec.pick;
+                const isLocked = lockedPick === rec.pick;
+                  const isPending = pendingPick === rec.pick;
                 return (
-                  <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight')}>
+                  <tr key={rec.pick} className={cn('keeper-table__row', isRecommendation && 'keeper-table__row--highlight', isLocked && 'keeper-table__row--locked', isPending && 'keeper-table__row--pending')}>
                     <td className="keeper-table__player">
-                      <PlayerPreviewName
-                        row={previewRowForPick(sourceRowsByPick, rec)}
-                        compact
-                        showHeadshot
-                        showTeamLogo
-                        displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
-                        unranked={rec.ranking === null}
-                      />
+                      <div className="keeper-candidate-control">
+                        <PlayerPreviewName
+                          row={previewRowForPick(sourceRowsByPick, rec)}
+                          compact
+                          showHeadshot
+                          showTeamLogo
+                          displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
+                          unranked={rec.ranking === null}
+                        />
+                        {lockMode ? (
+                          <button className={cn('keeper-lock-select', isPending && 'keeper-lock-select--selected')} type="button" onClick={isPending ? confirmKeeper : () => setPendingPick(rec.pick)} aria-pressed={isPending} aria-label={isPending ? `Save ${rec.player} as keeper` : `Select ${rec.player} as keeper`} title={isPending ? 'Save keeper' : 'Select keeper'} disabled={isPending && savingLock}>
+                            {isPending ? <><Check size={14} /><span>Save</span></> : <Unlock size={14} />}
+                          </button>
+                        ) : null}
+                      </div>
                     </td>
                     <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
                     <td className="keeper-table__value">
@@ -1456,23 +1623,33 @@ function TeamPage() {
         <div className="mobile-keeper-list mobile-keeper-list--drilldown">
           {rankedPicks.map((rec) => {
             const isRecommendation = recommendation?.pick === rec.pick;
+            const isLocked = lockedPick === rec.pick;
+            const isPending = pendingPick === rec.pick;
             return (
-              <article className={cn('mobile-keeper-row', isRecommendation && 'mobile-keeper-row--highlight')} key={rec.pick}>
+              <article className={cn('mobile-keeper-row', isRecommendation && 'mobile-keeper-row--highlight', isLocked && 'mobile-keeper-row--locked', isPending && 'mobile-keeper-row--pending')} key={rec.pick}>
                 <div className="mobile-keeper-row__player">
-                  <PlayerPreviewName
-                    row={previewRowForPick(sourceRowsByPick, rec)}
-                    compact
-                    showHeadshot
-                    showTeamLogo
-                    displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
-                    unranked={rec.ranking === null}
-                  />
+                  <div className="keeper-candidate-control">
+                    <PlayerPreviewName
+                      row={previewRowForPick(sourceRowsByPick, rec)}
+                      compact
+                      showHeadshot
+                      showTeamLogo
+                      displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
+                      unranked={rec.ranking === null}
+                    />
+                    {lockMode ? (
+                      <button className={cn('keeper-lock-select', isPending && 'keeper-lock-select--selected')} type="button" onClick={isPending ? confirmKeeper : () => setPendingPick(rec.pick)} aria-pressed={isPending} aria-label={isPending ? `Save ${rec.player} as keeper` : `Select ${rec.player} as keeper`} title={isPending ? 'Save keeper' : 'Select keeper'} disabled={isPending && savingLock}>
+                        {isPending ? <><Check size={14} /><span>Save</span></> : <Unlock size={14} />}
+                      </button>
+                    ) : null}
+                  </div>
                 </div>
                 <MobileKeeperStats rec={rec} teamCount={data.teams.length} />
               </article>
             );
           })}
         </div>
+        {lockError ? <p className="keeper-lock-error" role="alert">{lockError}</p> : null}
       </section>
       {rankedPicks.some((rec) => rec.ranking === null) ? (
         <p className="keeper-table__note">*Player not included in current FantasyPros rankings. Keeper score defaults to 1.0; value gain is NR</p>
