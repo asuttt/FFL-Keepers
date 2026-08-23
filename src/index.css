@@ -1421,6 +1421,13 @@ a {
   margin-right: 6px;
 }
 
+.player-line__trailing {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  margin-left: 2px;
+}
+
 .keeper-rec-content {
   display: flex;
   align-items: center;

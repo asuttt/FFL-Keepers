@@ -919,12 +919,14 @@ function PlayerWithSuffix({
   pos,
   compact = false,
   unranked = false,
+  trailing,
 }: {
   player: string;
   nflTeam: string;
   pos: Position;
   compact?: boolean;
   unranked?: boolean;
+  trailing?: ReactNode;
 }) {
   return (
     <div className={cn('player-line', compact && 'player-line--compact')}>
@@ -933,6 +935,7 @@ function PlayerWithSuffix({
         <span className="player-line__team">{nflTeam.toUpperCase()}</span>
       </div>
       <PositionPill pos={pos} />
+      {trailing ? <span className="player-line__trailing">{trailing}</span> : null}
     </div>
   );
 }
@@ -1142,8 +1145,8 @@ function PlayerPreviewTrigger({ row, children, previewImageUrl = playerImageUrl(
   );
 }
 
-function RecommendationCell({ rec, sourceRow }: { rec: KeeperEvaluation; sourceRow: SourceRow | null }) {
-  const content = <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact />;
+function RecommendationCell({ rec, sourceRow, trailing }: { rec: KeeperEvaluation; sourceRow: SourceRow | null; trailing?: ReactNode }) {
+  const content = <PlayerWithSuffix player={rec.player} nflTeam={rec.nflTeam} pos={rec.pos} compact trailing={trailing} />;
   const imageUrl = sourceRow ? (rec.pos === 'D/ST' ? teamLogoUrl(sourceRow) : playerImageUrl(sourceRow)) : null;
   const display = (
     <div className="keeper-rec-content">
@@ -1170,7 +1173,7 @@ function MobileKeeperStats({ rec, teamCount }: { rec: KeeperEvaluation; teamCoun
   );
 }
 
-function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false, displayPlayer, unranked = false }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean; displayPlayer?: string; unranked?: boolean }) {
+function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTeamLogo = false, displayPlayer, unranked = false, trailing }: { row: SourceRow | null; compact?: boolean; showHeadshot?: boolean; showTeamLogo?: boolean; displayPlayer?: string; unranked?: boolean; trailing?: ReactNode }) {
   if (!row) {
     return null;
   }
@@ -1186,7 +1189,7 @@ function PlayerPreviewName({ row, compact = false, showHeadshot = false, showTea
   const content = (
     <div className={cn(showHeadshot && 'keeper-rec-content')}>
       {imageUrl ? <img className="keeper-rec__headshot" src={imageUrl} alt="" loading="lazy" /> : null}
-      <PlayerWithSuffix player={displayPlayer ?? row.player} nflTeam={row.team} pos={row.pos} compact={compact} unranked={unranked} />
+      <PlayerWithSuffix player={displayPlayer ?? row.player} nflTeam={row.team} pos={row.pos} compact={compact} unranked={unranked} trailing={trailing} />
     </div>
   );
   return <PlayerPreviewTrigger row={row} previewImageUrl={previewImageUrl}>{content}</PlayerPreviewTrigger>;
@@ -1329,8 +1332,11 @@ function DashboardTable({
                 <ChevronRight size={16} />
               </Link>
               <div className="mobile-keeper-row__player">
-                {isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
-                <RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />
+                <RecommendationCell
+                  rec={rec}
+                  sourceRow={sourceRowForPick(sourceRowsByPick, rec)}
+                  trailing={isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
+                />
               </div>
               <MobileKeeperStats rec={rec} teamCount={teamCount} />
             </article>
@@ -1636,6 +1642,7 @@ function TeamPage() {
                       showTeamLogo
                       displayPlayer={rec.pos === 'D/ST' ? rec.player : undefined}
                       unranked={rec.ranking === null}
+                      trailing={isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
                     />
                     {lockMode ? (
                       <button className={cn('keeper-lock-select', isPending && 'keeper-lock-select--selected')} type="button" onClick={isPending ? confirmKeeper : () => setPendingPick(rec.pick)} aria-pressed={isPending} aria-label={isPending ? `Save ${rec.player} as keeper` : `Select ${rec.player} as keeper`} title={isPending ? 'Save keeper' : 'Select keeper'} disabled={isPending && savingLock}>
