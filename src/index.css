@@ -1114,6 +1114,15 @@ a {
   stroke-width: 2.4;
 }
 
+.keeper-lock-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
 .keeper-table__rec-inner {
   display: flex;
   align-items: center;

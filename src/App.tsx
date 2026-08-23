@@ -913,6 +913,14 @@ function TeamBadge({ team }: { team: string }) {
   return <span className={cn('pill', `pill--${teamColors[team] ?? 'slate'}`)}>{team}</span>;
 }
 
+function KeeperLockIndicator({ isLocked }: { isLocked: boolean }) {
+  return (
+    <span className="keeper-lock-slot">
+      {isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
+    </span>
+  );
+}
+
 function PlayerWithSuffix({
   player,
   nflTeam,
@@ -1302,8 +1310,11 @@ function DashboardTable({
                 </td>
                 <td className="keeper-table__rec">
                   <div className="keeper-table__rec-inner">
-                    {isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
-                    <RecommendationCell rec={rec} sourceRow={sourceRowForPick(sourceRowsByPick, rec)} />
+                    <RecommendationCell
+                      rec={rec}
+                      sourceRow={sourceRowForPick(sourceRowsByPick, rec)}
+                      trailing={<KeeperLockIndicator isLocked={isLocked} />}
+                    />
                   </div>
                 </td>
                 <td className="keeper-table__round">Round {rec.round} <span>(#{rec.pick})</span></td>
@@ -1335,7 +1346,7 @@ function DashboardTable({
                 <RecommendationCell
                   rec={rec}
                   sourceRow={sourceRowForPick(sourceRowsByPick, rec)}
-                  trailing={isLocked ? <Lock className="keeper-lock-icon" size={15} aria-label="Keeper locked" /> : null}
+                  trailing={<KeeperLockIndicator isLocked={isLocked} />}
                 />
               </div>
               <MobileKeeperStats rec={rec} teamCount={teamCount} />
